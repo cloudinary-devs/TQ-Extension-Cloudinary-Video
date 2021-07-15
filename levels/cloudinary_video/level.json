@@ -1,0 +1,16 @@
+{
+  "title": "Cloudinary Video Adventures",
+  "description": "An adventure into cloudinary video capabilities",
+  "events": "cloudinary_video/events.js",
+  "mission_icon": "cloudinary_icon.png",
+  "is_mission": true,
+  "priority": 1,
+  "backgroundMusic": "hackertheme_104771b",
+  "backgroundEffect": {
+    "key": "starfield",
+    "options": {"baseSpeed": 2,"starCount": 100,"direction":"topToBottom"}
+  },
+  "flavorTextOverrides": {
+  },
+  "objectives": ["m1_o1_welcome","m1_o2_sign_up","m1_o3_resources"]
+}

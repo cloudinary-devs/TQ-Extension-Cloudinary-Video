@@ -1,0 +1,21 @@
+{
+  "title": "Url Validation",
+  "description": "This tests url equivalency",
+  "validation_fields": [
+    {
+      "name": "url1",
+      "type": "text",
+      "placeholder": "enter the first url here",
+      "label": "First Url"
+    },
+    {
+      "name": "url2",
+      "type": "text",
+      "placeholder": "enter the second url here",
+      "label": "Second Url"
+    }
+  ],
+  "rewards": {
+    "xp": 100
+  }
+}

@@ -1,0 +1,6 @@
+/*
+    This gets injected into the page on 'mapDidLoad' via event.js
+*/
+body {
+    border:2px solid red
+}

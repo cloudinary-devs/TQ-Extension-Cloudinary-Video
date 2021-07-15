@@ -1,0 +1,27 @@
+{
+  "title": "Orientation",
+  "description": "Let's get you signed up!",
+  "validation_fields": [
+    {
+      "name": "cloudinary_cloud_name",
+      "type": "text",
+      "placeholder": "your cloud name",
+      "label": "Enter your Cloudinary ID"
+    },
+    {
+      "name": "cloudinary_api_key",
+      "type": "text",
+      "placeholder": "your API key",
+      "label": "Enter your Cloudinary API Key"
+    },
+    {
+      "name": "cloudinary_api_secret",
+      "type": "text",
+      "placeholder": "your API secret",
+      "label": "Enter your Cloudinary API secret"
+    }
+  ],
+  "rewards": {
+    "xp": 1000
+  }
+}
