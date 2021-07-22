@@ -12,9 +12,9 @@ module.exports = async function (helper) {
 
     console.log(cloudinary.url('sample'));
 
-    helper.success(`
-    Hooray! You did it!
-  `, [
+
+    //This stores the values into environment variables of 'name'
+    helper.success(`Hooray! You did it!`, [
         {name: 'CLOUDINARY_CLOUD_NAME', value: cloudinary_cloud_name},
         {name: 'CLOUDINARY_API_KEY', value: cloudinary_api_key},
         {name: 'CLOUDINARY_API_SECRET', value: cloudinary_api_secret, concealed: true}
