@@ -1,39 +1,30 @@
 conversation(display_name="Mica")
   case lastResponse
-    //when "nice_to_meet"
     when "thank_you"
       statement#great
-    //when "you_seem_nice"
     when "confused"
       statement#final
       responses
-
-    //when "who_are_you"
-    when "really_grateful"
-      //statement#ryan
+    when "im_lost"
       statement#need_to_click
       responses
-        //response#nice_to_meet.
         response#thank_you.
           Thank you so much. I'll go ahead and do that now!
-        //response#you_seem_nice.
         response#confused.
           I'm not sure what you mean?
 
     default
       statement#default
       responses
-        //response#who_are_you.
-        response#really_grateful.
-          I'm really grateful to get started! What should I do first?
+        response#im_lost.
+          Hi Mica! Thanks for such a kind compliment. I just received my employee badge and not sure where I'm supposed to go next!
 
   statements
     statement#default
       text.
-        My name is Ryan. I work with Human Resources and I'm here to help you get set up as a new employee on this Cloudinary ship!
+        Oh hey! I heard about you! I'm so grateful we have you! We have been needing a professional to help us with manipulating and transforming videos! There's so much work to be done! 
       speech.
         Welcome aboard the #[break(strength="medium")] Cloudinary Ship!
-    //statement#ryan
     statement#need_to_click
       text.
         Well, you will need to click on the terminal to the right of me and get your Employee Badge set-up!
@@ -42,4 +33,4 @@ conversation(display_name="Mica")
         We trust you can figure this out. The computer badge system is directly to the right of me. Interact with the computer by clicking the spacebar on your keyboard.        
     statement#great 
       text.
-        Great! Enjoy your first day of work! 
+        Great! Enjoy your first day of work!
