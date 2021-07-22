@@ -13,4 +13,5 @@
 1. Conversations
 
 ## Standards
-1. Conversation
+1. Conversations naming: <mission>-<actor>-<event/conversation>
+2. 

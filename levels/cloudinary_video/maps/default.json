@@ -147,23 +147,6 @@
                  "y":408
                 }, 
                 {
-                 "height":24,
-                 "id":122,
-                 "name":"testTrigger",
-                 "properties":[
-                        {
-                         "name":"key",
-                         "type":"string",
-                         "value":"testTrigger"
-                        }],
-                 "rotation":0,
-                 "type":"triggerArea",
-                 "visible":true,
-                 "width":36,
-                 "x":366,
-                 "y":342
-                }, 
-                {
                  "gid":5230,
                  "height":24,
                  "id":124,
@@ -215,34 +198,18 @@
                  "height":32,
                  "id":127,
                  "name":"",
+                 "properties":[
+                        {
+                         "name":"conversation",
+                         "type":"string",
+                         "value":"m2-fredric_holo-wakeup"
+                        }],
                  "rotation":0,
                  "type":"",
                  "visible":true,
                  "width":32,
                  "x":372,
                  "y":246
-                }, 
-                {
-                 "height":36,
-                 "id":132,
-                 "name":"wakeup",
-                 "properties":[
-                        {
-                         "name":"conversation",
-                         "type":"string",
-                         "value":"m2-cedric-wakeup"
-                        }, 
-                        {
-                         "name":"key",
-                         "type":"string",
-                         "value":"wakeup"
-                        }],
-                 "rotation":0,
-                 "type":"triggerArea",
-                 "visible":true,
-                 "width":48,
-                 "x":348,
-                 "y":228
                 }],
          "opacity":1,
          "type":"objectgroup",

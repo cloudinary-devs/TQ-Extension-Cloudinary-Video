@@ -59,7 +59,7 @@ module.exports = function (event, world) {
             //Used primarily for rooms/areas
             switch (event.target.key) {
                 case 'wakeup':
-                    world.startConversation('cedric-wakeup','cedricNeutral.png');
+                    world.startConversation('m2-cedric-wakeup','cedricNeutral.png');
 
                     break;
                 case 'testTrigger':
@@ -110,5 +110,8 @@ module.exports = function (event, world) {
             console.log(`WARNING: unhandled event name "${event.name}"`);
     }
 
+    function getTriggerAreaProperties(triggerName,world){
+        ///world.__internals game.map.objects['type=tiggerArea','name=triggerName'];
+    }
 }
 
