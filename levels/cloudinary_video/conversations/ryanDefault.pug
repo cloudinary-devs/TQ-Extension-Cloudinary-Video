@@ -1,6 +1,9 @@
 conversation(display_name="Ryan")
   case lastResponse
-    when "nice_to_meet"
+    //when "nice_to_meet"
+    when "thank_you"
+      statement#great
+    //when "you_seem_nice"
     when "confused"
       statement#final
       responses
@@ -37,4 +40,6 @@ conversation(display_name="Ryan")
     statement#final
       text.
         We trust you can figure this out. The computer badge system is directly to the right of me. Interact with the computer by clicking the spacebar on your keyboard.        
-        
+    statement#great 
+      text.
+        Great! Enjoy your first day of work! 
