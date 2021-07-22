@@ -65,7 +65,7 @@
                         {
                          "name":"playerEntryPoint",
                          "type":"string",
-                         "value":"player_return2"
+                         "value":"player_entry2"
                         }],
                  "rotation":0,
                  "type":"levelChange",
