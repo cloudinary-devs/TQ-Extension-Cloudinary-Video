@@ -5,8 +5,10 @@ conversation(display_name="Ryan")
       statement#final
       responses
 
-    when "who_are_you"
-      statement#what_to_do
+    //when "who_are_you"
+    when "really_grateful"
+      //statement#ryan
+      statement#need_to_click
       responses
         response#nice_to_meet.
           Nice to meet you!
@@ -16,7 +18,8 @@ conversation(display_name="Ryan")
     default
       statement#default
       responses
-        response#get_started.
+        //response#who_are_you.
+        response#really_grateful.
           I'm really grateful to get started! What should I do first?
 
   statements
@@ -25,10 +28,12 @@ conversation(display_name="Ryan")
         My name is Ryan. I work with Human Resources and I'm here to help you get set up as a new employee on this ship!
       speech.
         Welcome aboard the #[break(strength="medium")] Fog Owl!
-    statement#what_to_do
+    //statement#ryan
+    statement#need_to_click
       text.
         Well, you will need to click on the terminal to the right of me and get your Employee Badge set-up!
     statement#final
       text.
         Thank you!
+        
         
