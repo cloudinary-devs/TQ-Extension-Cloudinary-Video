@@ -1,4 +1,11 @@
 { "compressionlevel":-1,
+ "editorsettings":
+    {
+     "export":
+        {
+         "target":"."
+        }
+    },
  "height":30,
  "infinite":false,
  "layers":[
@@ -174,6 +181,12 @@
                  "height":32,
                  "id":125,
                  "name":"",
+                 "properties":[
+                        {
+                         "name":"conversation",
+                         "type":"string",
+                         "value":"m2-ryan"
+                        }],
                  "rotation":0,
                  "type":"",
                  "visible":true,
@@ -186,6 +199,12 @@
                  "height":32,
                  "id":126,
                  "name":"",
+                 "properties":[
+                        {
+                         "name":"conversation",
+                         "type":"string",
+                         "value":"m2-mica"
+                        }],
                  "rotation":0,
                  "type":"",
                  "visible":true,
@@ -260,7 +279,7 @@
  "nextobjectid":135,
  "orientation":"orthogonal",
  "renderorder":"right-down",
- "tiledversion":"1.7.1",
+ "tiledversion":"1.4.3",
  "tileheight":24,
  "tilesets":[
         {
@@ -307,6 +326,6 @@
         }],
  "tilewidth":24,
  "type":"map",
- "version":"1.6",
+ "version":1.4,
  "width":32
 }
