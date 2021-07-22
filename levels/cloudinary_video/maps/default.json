@@ -159,8 +159,8 @@
                  "rotation":0,
                  "type":"triggerArea",
                  "visible":true,
-                 "width":72,
-                 "x":396,
+                 "width":36,
+                 "x":366,
                  "y":342
                 }, 
                 {
@@ -195,7 +195,7 @@
                  "type":"",
                  "visible":true,
                  "width":32,
-                 "x":408,
+                 "x":390,
                  "y":360
                 }, 
                 {

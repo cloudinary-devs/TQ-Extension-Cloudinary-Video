@@ -7,7 +7,7 @@
 
 ## Needs List
 1. Graphic Assets
-    1. Banners for each mission/office
+    1. Sign plate tile - will use overlay on interaction to show content. 
     1. Improved main corridor doorways...bonus pts for showing a peak at the (generic light themed) interior.
     1. Improved office exists...top bar to pass under
 1. Conversations
