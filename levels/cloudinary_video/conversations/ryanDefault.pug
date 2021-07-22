@@ -6,7 +6,7 @@ conversation(display_name="Ryan")
       responses
 
     when "who_are_you"
-      statement#ryan
+      statement#what_to_do
       responses
         response#nice_to_meet.
           Nice to meet you!
@@ -16,18 +16,19 @@ conversation(display_name="Ryan")
     default
       statement#default
       responses
-        response#who_are_you.
-          Hello, who are you?
+        response#get_started.
+          I'm really grateful to get started! What should I do first?
 
   statements
     statement#default
       text.
-        My name is Ryan. I am using a custom avatar image from "images/conversations". Neat, huh?
+        My name is Ryan. I work with Human Resources and I'm here to help you get set up as a new employee on this ship!
       speech.
         Welcome aboard the #[break(strength="medium")] Fog Owl!
-    statement#ryan
+    statement#what_to_do
       text.
-        ...as previously mentioned, my name is Ryan?
+        Well, you will need to click on the terminal to the right of me and get your Employee Badge set-up!
     statement#final
       text.
         Thank you!
+        
