@@ -1,9 +1,17 @@
 # Cloudinary Video - TwilioQuest Extension
 
-## Todo List
+## Todo List - Joel
 1. Browser needs to look like a browser
 1. When returning to main corridor, greeter should not appear if all objectives have been completed.
 1. "Thanks, would you like to show/complete/do it again" conversation should play when talking to greeter/npc inside their office if all objectives have been completed.
+
+## Todo List - Tessa
+1. Create custom assets for department door signs
+1. Create custom assets for "Exit" and "Enter" rooms
+1. Update NPC for entrance of corridor room - (Keren) using custom observation property for statements, not conversations
+1. Update story for first 2 office rooms
+1. Add custom obvervation for all 4 office doggos to say cute things
+1. Update Lindsey NPC to ensure user speaks to Hagit before proceeding to speak with Lindsey.
 
 ## Needs List
 1. Graphic Assets
@@ -14,4 +22,3 @@
 
 ## Standards
 1. Conversations naming: <mission>-<actor>-<event/conversation>
-2. 
