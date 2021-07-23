@@ -3,10 +3,11 @@
 const jQuery = require('jquery');
 const cssInject = require('../../lib/cssInjector');
 const observer = require('../../lib/conversationObserver');
-const keyHandler =  require('../../lib/keyboardHandler');
-const browser =  require('../../lib/browser');
+const keyHandler = require('../../lib/keyboardHandler');
+const browser = require('../../lib/browser');
 
 module.exports = function (event, world) {
+
     /**
      * Some dev mode stuff
      * warp('cloudinary_video','player_entry1','default');
@@ -49,26 +50,45 @@ module.exports = function (event, world) {
         case 'conversationDidEnd':
             console.table(observer.history);
             switch (event.npc.conversation) {
-                case 'cedricDefault':
+                case 'm2-cedric-Default':
 
             }
             observer.history = [];//clear out the history?
             break;
         case 'triggerAreaWasEntered':
             //browser.show();
-            //Used primarily for rooms/areas
-            switch (event.target.key) {
-                case 'wakeup':
-                    world.startConversation('m2-cedric-wakeup','cedricNeutral.png');
 
-                    break;
-                case 'testTrigger':
-                    console.log('Area Triggered');
-                    world.startConversation("cedricDefault", "cedricNeutral.png");
-                    break;
-                default:
-                    console.log('UNHANDLED AREA TRIGGER:' + event.target.key);
+
+            console.log({triggerAreaTarget: event.target});
+
+
+            if ('conversation' in event.target) {
+
+                // try {
+                //     world.startConversation('m2-frederic_holo-wakeup', 'cedricNeutral.png');
+                // } catch (e) {
+                //     console.log({
+                //         messsage: 'Error while trying to start a conversation as the result of an area trigger',
+                //         error:e,
+                //         event: event
+                //     });
+                // }
             }
+
+
+            // //Used primarily for rooms/areas
+            // switch (event.target.key) {
+            //     case 'wakeup':
+            //         world.startConversation('m2-cedric-wakeup', 'cedricNeutral.png');
+            //
+            //         break;
+            //     case 'testTrigger':
+            //         console.log('Area Triggered');
+            //         world.startConversation("cedricDefault", "cedricNeutral.png");
+            //         break;
+            //     default:
+            //         console.log('UNHANDLED AREA TRIGGER:' + event.target.key);
+            // }
             break;
         case 'playerDidInteract':
             //is this start of a conversation?
@@ -92,8 +112,8 @@ module.exports = function (event, world) {
             //nothing to do... so far
             break;
         case 'mapDidLoad':
-            document.addEventListener('keydown',function(event){
-                switch (event.key){
+            document.addEventListener('keydown', function (event) {
+                switch (event.key) {
                     case 'b':
                         browser.toggle();
                         break;
@@ -110,8 +130,5 @@ module.exports = function (event, world) {
             console.log(`WARNING: unhandled event name "${event.name}"`);
     }
 
-    function getTriggerAreaProperties(triggerName,world){
-        ///world.__internals game.map.objects['type=tiggerArea','name=triggerName'];
-    }
 }
 
