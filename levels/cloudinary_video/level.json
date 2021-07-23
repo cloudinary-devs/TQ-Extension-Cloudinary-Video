@@ -12,5 +12,5 @@
   },
   "flavorTextOverrides": {
   },
-  "objectives": ["m1_o1_welcome","m1_o2_sign_up","m1_o3_resources"]
+  "objectives": ["m1_o2_sign_up","m1_o3_resources","m2_o1_uploading"]
 }
