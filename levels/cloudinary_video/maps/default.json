@@ -208,12 +208,12 @@
                         {
                          "name":"conversation",
                          "type":"string",
-                         "value":"m2-galit"
+                         "value":"m2-hagit"
                         }, 
                         {
                          "name":"conversationAvatar",
                          "type":"string",
-                         "value":"galit.png"
+                         "value":"hagit.png"
                         }, 
                         {
                          "name":"spritesheet",
