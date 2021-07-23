@@ -7,4 +7,5 @@ Full Cloudinary documentation can be found here:
 
 ### Specifically
 Sections related to this mission/objective:
+* [Image Video and File Upload](https://cloudinary.com/documentation/image_video_and_file_upload)
 * [Video Transformations](https://cloudinary.com/documentation/video_manipulation_and_delivery)
