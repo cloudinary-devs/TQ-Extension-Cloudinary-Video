@@ -214,6 +214,11 @@
                          "name":"conversationAvatar",
                          "type":"string",
                          "value":"galit.png"
+                        }, 
+                        {
+                         "name":"spritesheet",
+                         "type":"string",
+                         "value":""
                         }],
                  "rotation":0,
                  "type":"",
