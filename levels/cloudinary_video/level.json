@@ -8,7 +8,7 @@
   "backgroundMusic": "hackertheme_104771b",
   "backgroundEffect": {
     "key": "starfield",
-    "options": {"baseSpeed": 2,"starCount": 100,"direction":"topToBottom"}
+    "options": {"baseSpeed": 2,"starCount": 100,"direction":"rightToLeft"}
   },
   "flavorTextOverrides": {
   },
