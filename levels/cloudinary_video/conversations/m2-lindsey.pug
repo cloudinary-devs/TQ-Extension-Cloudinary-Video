@@ -1,4 +1,4 @@
-conversation(display_name="Mica")
+conversation(display_name="Lindsey")
   case lastResponse
     when "thank_you"
       statement#great
@@ -17,12 +17,13 @@ conversation(display_name="Mica")
       statement#default
       responses
         response#im_lost.
-          Hi Mica! Thanks for such a kind compliment. I just received my employee badge and not sure where I'm supposed to go next!
+          Hi Lindsey! Thanks for such a kind compliment. I just received my employee badge and not sure where I'm supposed to go next!
 
   statements
     statement#default
       text.
-        Oh hey! I heard about you! I'm so grateful we have you! We have been needing a professional to help us with manipulating and transforming videos! There's so much work to be done! 
+        Oh hey! I'm Lindsey, the Cloudinary ship's office manager! I heard a lot about you! I'm so grateful we have you! We have been needing a professional to help us 
+        with manipulating and transforming videos! There's so much work to be done! 
       speech.
         Welcome aboard the #[break(strength="medium")] Cloudinary Ship!
     statement#need_to_click
@@ -30,7 +31,8 @@ conversation(display_name="Mica")
         Well, you will need to click on the terminal to the right of me and get your Employee Badge set-up!
     statement#final
       text.
-        We trust you can figure this out. The computer badge system is directly to the right of me. Interact with the computer by clicking the spacebar on your keyboard.        
+        We trust you can figure this out. The computer badge system is directly to the right of me. 
+        Interact with the computer by clicking the spacebar on your keyboard.        
     statement#great 
       text.
         Great! Enjoy your first day of work!
