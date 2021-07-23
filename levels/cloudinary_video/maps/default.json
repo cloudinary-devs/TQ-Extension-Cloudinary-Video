@@ -177,9 +177,32 @@
                  "y":336
                 }, 
                 {
-                 "gid":12139,
+                 "gid":12137,
                  "height":32,
                  "id":125,
+                 "name":"",
+                 "properties":[
+                        {
+                         "name":"conversation",
+                         "type":"string",
+                         "value":"m2-lindsey"
+                        }, 
+                        {
+                         "name":"conversationAvatar",
+                         "type":"string",
+                         "value":"megan.png"
+                        }],
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":32,
+                 "x":244,
+                 "y":362.666666666667
+                }, 
+                {
+                 "gid":12138,
+                 "height":32,
+                 "id":126,
                  "name":"",
                  "properties":[
                         {
@@ -191,26 +214,8 @@
                  "type":"",
                  "visible":true,
                  "width":32,
-                 "x":390,
-                 "y":360
-                }, 
-                {
-                 "gid":12138,
-                 "height":32,
-                 "id":126,
-                 "name":"",
-                 "properties":[
-                        {
-                         "name":"conversation",
-                         "type":"string",
-                         "value":"m2-lindsey"
-                        }],
-                 "rotation":0,
-                 "type":"",
-                 "visible":true,
-                 "width":32,
-                 "x":264,
-                 "y":354
+                 "x":378,
+                 "y":363.333333333333
                 }, 
                 {
                  "gid":12130,
