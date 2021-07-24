@@ -1,37 +1,47 @@
 conversation(display_name="Lindsey")
   case lastResponse
-    when "thank_you"
+    when "speak_to_hagit"
       statement#great
-    when "confused"
-      statement#final
-      responses
     when "im_lost"
       statement#need_to_click
       responses
-        response#thank_you.
-          Thank you so much. I'll be on my way now!
-        response#confused.
-          What door?
+        response#speak_to_hagit.
+          Thank you. I'll go speak with her now.
+    when "yes"
+      statement#final
+      responses
+        response#ok.
+          I'll find Hagit in the ship's corridor now. Thanks!
+    when "ok"
+      statement#byefinal
 
+      
     default
       statement#default
       responses
         response#im_lost.
-          Hi Lindsey! Thanks for such a kind compliment. I just received my employee badge and not sure where I'm supposed to go next!
+          No. Where do I find Hagit?
+        response#yes.
+          Yes. I received my employee badge. Where do I go next?
 
   statements
     statement#default
       text.
-        Oh hey! I'm Lindsey, the Cloudinary ship's office manager! I heard a lot about you! I'm so grateful we have you! We have been needing a professional to help us 
-        with manipulating and transforming videos! There's so much work to be done! 
+        Oh hey! I'm Lindsey, the Cloudinary ship's office manager! I heard a lot about you! We have been needing a professional to help us 
+        with working with videos!
+        Have you spoke with Hagit yet to set up your employee badge?
       speech.
         Welcome aboard the #[break(strength="medium")] Cloudinary Ship!
     statement#need_to_click
       text.
-        Well, you will need to go to the bottom right corner of the room, and there you will find a door that will lead you to a corridor of all the employee offices.
+        You can find Hagit to the office on the right, a few steps away from me!
     statement#final
       text.
-        You can walk right into that pathway and it will lead you straight into the room with all of the offices. Good luck! You'll be fine!     
+        You will need to go to the bottom right corner of the room, and there you will find a door that will lead you to a corridor of all the employee offices.
+        Speak with Keren who will guide you within the corridor of offices.   
     statement#great 
       text.
-        Great! Enjoy your first day of work!
+        Be sure to come visit me if you get lost. I'll guide you to where you need to go.
+    statement#byefinal
+      text.
+        Good luck!

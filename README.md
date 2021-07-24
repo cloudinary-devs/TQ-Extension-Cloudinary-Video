@@ -12,6 +12,7 @@
 1. Update story for first 2 office rooms
 1. Add custom obvervation for all 4 office doggos to say cute things
 1. Update Lindsey NPC to ensure user speaks to Hagit before proceeding to speak with Lindsey.
+1. Speak with legal dept and see if we need a copyright on any Cloudinary logo/code/content mentioned
 
 ## Needs List
 1. Graphic Assets
