@@ -11,7 +11,7 @@ body {
      div.conversation: 1000
 */
 
-#cloudinary-browser .Conversation .dialogue-box {
+#cloudinary-browser.Conversation .dialogue-box {
     display: inline-block;
     padding: 5px;
     min-height: 50%;

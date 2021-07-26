@@ -116,6 +116,7 @@ module.exports = function (event, world) {
             //nothing to do... so far
             break;
         case 'mapDidLoad':
+            cssInject('cloudinary.css');
 
             let body = jQuery('body');
             body.unbind('keydown.cloudinary');
