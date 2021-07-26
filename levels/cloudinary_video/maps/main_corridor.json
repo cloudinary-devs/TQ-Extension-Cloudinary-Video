@@ -1,4 +1,11 @@
 { "compressionlevel":-1,
+ "editorsettings":
+    {
+     "export":
+        {
+         "target":"."
+        }
+    },
  "height":24,
  "infinite":false,
  "layers":[
@@ -393,10 +400,21 @@
                  "y":234
                 }, 
                 {
-                 "gid":10704,
+                 "gid":10703,
                  "height":32,
                  "id":138,
                  "name":"",
+                 "properties":[
+                        {
+                         "name":"conversation",
+                         "type":"string",
+                         "value":"corridor-keren"
+                        }, 
+                        {
+                         "name":"conversationAvatar",
+                         "type":"string",
+                         "value":"keren.jpg"
+                        }],
                  "rotation":0,
                  "type":"",
                  "visible":true,
@@ -501,7 +519,7 @@
  "nextobjectid":161,
  "orientation":"orthogonal",
  "renderorder":"right-down",
- "tiledversion":"1.7.1",
+ "tiledversion":"1.4.3",
  "tileheight":24,
  "tilesets":[
         {
@@ -535,6 +553,6 @@
         }],
  "tilewidth":24,
  "type":"map",
- "version":"1.6",
+ "version":1.4,
  "width":75
 }
