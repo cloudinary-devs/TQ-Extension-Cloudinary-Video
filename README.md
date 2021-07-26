@@ -16,9 +16,11 @@
 
 ## Needs List
 1. Graphic Assets
+    1. A Cloudinary Employee badge like "item" to represent having successfully connected their cloudinary account. (64x64 square icon for inventory slot, and 160x160px overlay for character display)
     1. Sign plate tile - will use overlay on interaction to show content. 
     1. Improved main corridor doorways...bonus pts for showing a peak at the (generic light themed) interior.
     1. Improved office exists...top bar to pass under
+    
 1. Conversations
 
 ## Standards

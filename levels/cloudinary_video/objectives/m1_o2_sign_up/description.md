@@ -12,8 +12,6 @@ There are few things to do before we can really get started.
 
 ## Sign Up
 
-<!-- @todo-p1 explain free account, credits, etc FLAVOR IT?-->
-
 Go to [cloudinary.com/signup](https://cloudinary.com/signup) to register for a free account. This free account gives you 25 credits per month that will be far more than enough for this adventure and any other experimenting that you would like to do.
 
 ## Configure
@@ -22,9 +20,4 @@ Once you've signed up, go the Cloudinary [Dashboard](https://cloudinary.com/cons
 * API Key
 * API Secret
 
-You'll need these Credentials to complete this objective and configure your access to Cloudinary.
-<!-- @todo-p1 environment configuration settings -->
-```js
-
-```
-
+You will need these to complete this objective and configure access to Cloudinary account.  Enter the information into the form on the right and click _HACK_ to verify and save this information.
