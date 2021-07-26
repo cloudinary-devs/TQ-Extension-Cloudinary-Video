@@ -237,10 +237,34 @@
                  "width":32,
                  "x":282,
                  "y":234
+                }, 
+                {
+                 "gid":12140,
+                 "height":24,
+                 "id":137,
+                 "name":"",
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":24,
+                 "x":294,
+                 "y":396
+                }, 
+                {
+                 "gid":12141,
+                 "height":24,
+                 "id":140,
+                 "name":"",
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":24,
+                 "x":348,
+                 "y":390
                 }],
          "opacity":1,
          "type":"objectgroup",
-         "visible":false,
+         "visible":true,
          "x":0,
          "y":0
         }, 
@@ -284,7 +308,7 @@
          "y":0
         }],
  "nextlayerid":44,
- "nextobjectid":137,
+ "nextobjectid":141,
  "orientation":"orthogonal",
  "renderorder":"right-down",
  "tiledversion":"1.7.1",
@@ -331,6 +355,10 @@
         {
          "firstgid":12139,
          "source":"..\/..\/..\/tilesets\/MyCustomObjects.json"
+        }, 
+        {
+         "firstgid":12140,
+         "source":"..\/..\/..\/tilesets\/Cloudinary.json"
         }],
  "tilewidth":24,
  "type":"map",
