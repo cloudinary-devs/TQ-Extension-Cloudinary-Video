@@ -344,6 +344,12 @@
                  "height":32,
                  "id":133,
                  "name":"",
+                 "properties":[
+                        {
+                         "name":"conversation",
+                         "type":"string",
+                         "value":"cedricCorridor"
+                        }],
                  "rotation":0,
                  "type":"",
                  "visible":true,
