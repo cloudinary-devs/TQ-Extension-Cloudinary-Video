@@ -6,19 +6,19 @@
       "name": "cloudinary_cloud_name",
       "type": "text",
       "placeholder": "your cloud name",
-      "label": "Enter your Cloudinary ID"
+      "label": "Enter your Cloud Name"
     },
     {
       "name": "cloudinary_api_key",
       "type": "text",
       "placeholder": "your API key",
-      "label": "Enter your Cloudinary API Key"
+      "label": "Enter your API Key"
     },
     {
       "name": "cloudinary_api_secret",
       "type": "text",
       "placeholder": "your API secret",
-      "label": "Enter your Cloudinary API secret"
+      "label": "Enter your API secret"
     }
   ],
   "rewards": {

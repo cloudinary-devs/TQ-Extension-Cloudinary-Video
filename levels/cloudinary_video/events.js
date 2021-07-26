@@ -47,6 +47,9 @@ module.exports = function (event, world) {
         case 'objectiveDidOpen' :
 
             break;
+        case 'objectiveCompletedAgain' :
+
+            break;
         case 'conversationDidEnd':
             console.table(observer.history);
             switch (event.npc.conversation) {
@@ -55,6 +58,7 @@ module.exports = function (event, world) {
             }
             observer.history = [];//clear out the history?
             break;
+
         case 'triggerAreaWasEntered':
             //browser.show();
 
@@ -94,12 +98,12 @@ module.exports = function (event, world) {
             //is this start of a conversation?
 
             if (event.target.conversation) {
-                //the conversation hasn't started yet, it's about to.
+                //CONVERSATION STARTING
                 switch (event.target.conversation) {
 
                 }
             } else if (event.target.objectiveName) {
-                //An objective is about to start
+                //OBJECTIVE STARTING
             }
 
             break;
@@ -112,14 +116,16 @@ module.exports = function (event, world) {
             //nothing to do... so far
             break;
         case 'mapDidLoad':
-            document.addEventListener('keydown', function (event) {
+
+            let body = jQuery('body');
+            body.unbind('keydown.cloudinary');
+            body.bind('keydown.cloudinary', function (event) {
                 switch (event.key) {
                     case 'b':
                         browser.toggle();
                         break;
                     default:
                     //nothing
-
                 }
             });
             //keyHandler.registerAction('b',function(){alert('B pressed.')});
@@ -127,7 +133,7 @@ module.exports = function (event, world) {
 
 
         default:
-            console.log(`WARNING: unhandled event name "${event.name}"`);
+            console.warn(`Cloudinary received unknown event named "${event.name}"`,);
     }
 
 }

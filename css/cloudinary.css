@@ -11,29 +11,33 @@ body {
      div.conversation: 1000
 */
 
+#cloudinary-browser .Conversation .dialogue-box {
+    display: inline-block;
+    padding: 5px;
+    min-height: 50%;
+    flex-wrap: wrap;
+}
+
 #cloudinary-browser {
     z-index: 2000;
-    /*position: absolute;*/
-    /*top: 0;*/
-    /*left: 0;*/
-
-    /*height: 100%;*/
-    /*width: 100%;*/
-    /*display: flex;*/
-    /*justify-content: center;*/
-    /*align-items: center;*/
-
-    /*background-color: #777;*/
-    /*opacity: 0.6;*/
+    min-height: 400px;
 }
 
-#browser-content {
-    /*width: 80%;*/
-    /*height: 80%;*/
-    /*border: 2px solid #565b73;*/
-    /*background-color: #1f243c;*/
-    /*border-radius: 5px;*/
-    /*font-family: "Roboto Mono", Consolas, monospace;*/
-    /*overflow: scroll;*/
-    /*opacity: 1;*/
+#cloudinary-browser .header{}
+
+#cloudinary-browser .close-button:hover {
+    cursor: pointer;
 }
+
+#cloudinary-browser .close-button {
+    display: inline-block;
+    width: 100%;
+    text-align: right;
+    font-size: 32px;
+    font-weight: bolder;
+    background-color: #100558;
+    padding:3px 5px;
+}
+
+
+#browser-content {}
