@@ -20,8 +20,27 @@
     1. Sign plate tile - will use overlay on interaction to show content. 
     1. Improved main corridor doorways...bonus pts for showing a peak at the (generic light themed) interior.
     1. Improved office exists...top bar to pass under
+  
     
 1. Conversations
 
 ## Standards
 1. Conversations naming: <mission>-<actor>-<event/conversation>
+
+
+## External Assets
+### In Use
+
+### Potential
+1. https://res.cloudinary.com/demo/video/upload/dog.mp4
+1. https://res.cloudinary.com/demo/video/upload/docs/g_auto_demo.webm
+1. https://res.cloudinary.com/demo/video/upload/ship.mp4
+1. https://res.cloudinary.com/demo/video/upload/docs/Roller_Coaster.mp4
+1. https://res.cloudinary.com/demo/video/upload/docs/walking_talking.webm
+1. https://res.cloudinary.com/demo/video/upload/dog_orig_qflwce.webm
+1. https://res.cloudinary.com/demo/video/upload/kitten_fighting.mp4
+1. https://res.cloudinary.com/demo/video/upload/transition1.mp4
+1. https://res.cloudinary.com/demo/video/upload/pencil_sketch.mp4
+1. https://res.cloudinary.com/demo/video/upload/snow_deer.mp4
+1. https://res.cloudinary.com/demo/video/upload/ski_jump.mp4
+1. https://demo-res.cloudinary.com/video/upload/v1/docs/bluescreen_watches.webm
