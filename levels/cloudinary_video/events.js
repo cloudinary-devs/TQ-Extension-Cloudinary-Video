@@ -3,7 +3,6 @@
 const jQuery = require('jquery');
 const cssInject = require('../../lib/cssInjector');
 const observer = require('../../lib/conversationObserver');
-const keyHandler = require('../../lib/keyboardHandler');
 const browser = require('../../lib/browser');
 
 module.exports = function (event, world) {
@@ -99,9 +98,7 @@ module.exports = function (event, world) {
 
             if (event.target.conversation) {
                 //CONVERSATION STARTING
-                switch (event.target.conversation) {
-
-                }
+                world.startConversation(event.target.conversation,'cedricNeutral.png');
             } else if (event.target.objectiveName) {
                 //OBJECTIVE STARTING
             }
