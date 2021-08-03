@@ -1,4 +1,11 @@
 { "compressionlevel":-1,
+ "editorsettings":
+    {
+     "export":
+        {
+         "target":"."
+        }
+    },
  "height":30,
  "infinite":false,
  "layers":[
@@ -251,7 +258,7 @@
                  "y":406
                 }, 
                 {
-                 "gid":12148,
+                 "gid":12142,
                  "height":19,
                  "id":145,
                  "name":"",
@@ -259,7 +266,7 @@
                         {
                          "name":"conversation",
                          "type":"string",
-                         "value":"doggy1Default"
+                         "value":"m2-doggy-branch"
                         }, 
                         {
                          "name":"conversationAvatar",
@@ -279,7 +286,7 @@
                  "y":415
                 }, 
                 {
-                 "gid":12150,
+                 "gid":12144,
                  "height":19,
                  "id":146,
                  "name":"",
@@ -291,7 +298,7 @@
                  "y":440
                 }, 
                 {
-                 "gid":12151,
+                 "gid":12145,
                  "height":19,
                  "id":147,
                  "name":"",
@@ -351,7 +358,7 @@
  "nextobjectid":148,
  "orientation":"orthogonal",
  "renderorder":"right-down",
- "tiledversion":"1.5.0",
+ "tiledversion":"1.4.3",
  "tileheight":24,
  "tilesets":[
         {
@@ -399,13 +406,9 @@
         {
          "firstgid":12140,
          "source":"..\/..\/..\/tilesets\/Cloudinary.json"
-        }, 
-        {
-         "firstgid":12146,
-         "source":"..\/..\/..\/tilesets\/Cloudinary.json"
         }],
  "tilewidth":24,
  "type":"map",
- "version":1.5,
+ "version":1.4,
  "width":32
 }
