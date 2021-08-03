@@ -100,7 +100,7 @@ module.exports = function (event, world) {
                // world.startConversation(event.target.conversation,'cedricNeutral.png');
                switch (event.target.conversation) {
                     
-            }
+                }
             } else if (event.target.objectiveName) {
                 //OBJECTIVE STARTING
             }

@@ -1,11 +1,4 @@
 { "compressionlevel":-1,
- "editorsettings":
-    {
-     "export":
-        {
-         "target":"."
-        }
-    },
  "height":30,
  "infinite":false,
  "layers":[
@@ -246,7 +239,7 @@
                  "y":234
                 }, 
                 {
-                 "gid":12143,
+                 "gid":12142,
                  "height":19,
                  "id":144,
                  "name":"",
@@ -258,7 +251,7 @@
                  "y":406
                 }, 
                 {
-                 "gid":12142,
+                 "gid":12141,
                  "height":19,
                  "id":145,
                  "name":"",
@@ -286,7 +279,7 @@
                  "y":415
                 }, 
                 {
-                 "gid":12144,
+                 "gid":12143,
                  "height":19,
                  "id":146,
                  "name":"",
@@ -298,7 +291,7 @@
                  "y":440
                 }, 
                 {
-                 "gid":12145,
+                 "gid":12144,
                  "height":19,
                  "id":147,
                  "name":"",
@@ -358,7 +351,7 @@
  "nextobjectid":148,
  "orientation":"orthogonal",
  "renderorder":"right-down",
- "tiledversion":"1.4.3",
+ "tiledversion":"1.7.1",
  "tileheight":24,
  "tilesets":[
         {
@@ -401,14 +394,10 @@
         }, 
         {
          "firstgid":12139,
-         "source":"..\/..\/..\/tilesets\/MyCustomObjects.json"
-        }, 
-        {
-         "firstgid":12140,
          "source":"..\/..\/..\/tilesets\/Cloudinary.json"
         }],
  "tilewidth":24,
  "type":"map",
- "version":1.4,
+ "version":"1.6",
  "width":32
 }
