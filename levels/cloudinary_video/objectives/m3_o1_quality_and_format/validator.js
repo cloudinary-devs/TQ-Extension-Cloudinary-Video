@@ -29,15 +29,15 @@ module.exports = async function (helper) {
                             <div style="display: flex;flex-wrap: wrap;justify-content: space-evenly">
                                 <div>
                                     <h3>High Quality</h3>
-                                    <video autoplay><source src="${highQualityUrl}" type="video/mp4"></video>
+                                    <video width="250" autoplay><source src="${highQualityUrl}" type="video/mp4"></video>
                                 </div>
                                 <div>
                                     <h3>Auto Quality</h3>
-                                    <video autoplay><source src="${autoQualityUrl}" type="video/mp4"></video>
+                                    <video width="250"  autoplay><source src="${autoQualityUrl}" type="video/mp4"></video>
                                 </div>
                                 <div>
                                     <h3>Low Quality</h3>
-                                    <video autoplay><source src="${lowQualityUrl}" type="video/mp4"></video>
+                                    <video width="250" autoplay><source src="${lowQualityUrl}" type="video/mp4"></video>
                                 </div>
                             </div>
                         </div>`);
