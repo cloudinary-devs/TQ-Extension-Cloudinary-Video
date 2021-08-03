@@ -98,7 +98,10 @@ module.exports = function (event, world) {
 
             if (event.target.conversation) {
                 //CONVERSATION STARTING
-                world.startConversation(event.target.conversation,'cedricNeutral.png');
+               // world.startConversation(event.target.conversation,'cedricNeutral.png');
+               switch (event.target.conversation) {
+                    
+            }
             } else if (event.target.objectiveName) {
                 //OBJECTIVE STARTING
             }
