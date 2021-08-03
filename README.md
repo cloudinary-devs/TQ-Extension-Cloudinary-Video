@@ -44,12 +44,3 @@
 1. https://res.cloudinary.com/demo/video/upload/snow_deer.mp4
 1. https://res.cloudinary.com/demo/video/upload/ski_jump.mp4
 1. https://demo-res.cloudinary.com/video/upload/v1/docs/bluescreen_watches.webm
-1. https://res.cloudinary.com/demo/video/upload/docs/transparent_talking.webm
-1. https://res.cloudinary.com/demo/video/upload/v1/docs/transparent_girl.webm
-1. https://res.cloudinary.com/demo/video/upload/elephants.mp4
-1. https://res.cloudinary.com/demo/video/upload/hourglass_timer.mp4
-1. https://res.cloudinary.com/demo/video/upload/docs/shoppable_demo.mp4
-1. https://res.cloudinary.com/demo/video/upload/docs/house2.mp4
-1. https://res.cloudinary.com/demo/video/upload/docs/hotel.mp4
-1. https://res.cloudinary.com/demo/video/upload/docs/animated_hearts.webm
-1. https://res.cloudinary.com/demo/video/upload/docs/talking_head_travel.mp4
