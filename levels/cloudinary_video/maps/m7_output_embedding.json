@@ -119,6 +119,12 @@
                  "height":32,
                  "id":137,
                  "name":"",
+                 "properties":[
+                        {
+                         "name":"interactable",
+                         "type":"bool",
+                         "value":false
+                        }],
                  "rotation":0,
                  "type":"",
                  "visible":true,

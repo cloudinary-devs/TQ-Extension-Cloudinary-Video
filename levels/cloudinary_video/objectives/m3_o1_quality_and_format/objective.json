@@ -3,19 +3,19 @@
   "description": "Learn how manage the assets in your account",
   "validation_fields": [
     {
-      "name": "url1",
+      "name": "highQualityUrl",
       "type": "text",
       "placeholder": "URL of the high quality  video",
       "label": "Hiqh Quality URL (value=100)"
     },
     {
-      "name": "url2",
+      "name": "lowQualityUrl",
       "type": "text",
       "placeholder": "URL of the low quality  video",
       "label": "Low Quality URL (value=10)"
     },
     {
-      "name": "url3",
+      "name": "autoQualityUrl",
       "type": "text",
       "placeholder": "URL of the auto quality video",
       "label": "Auto Quality URL"

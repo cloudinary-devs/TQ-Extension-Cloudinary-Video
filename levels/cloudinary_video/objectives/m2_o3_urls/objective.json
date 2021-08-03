@@ -1,11 +1,17 @@
 {
-  "title": "Managing Assets",
-  "description": "Learn how manage the assets in your account",
+  "title": "URLs",
+  "description": "Learn about URLs and parameters",
   "validation_fields": [
     {
       "name": "url1",
       "type": "text",
-      "placeholder": "URL of the renamed file",
+      "placeholder": "URL of the original asset",
+      "label": "Resource URL"
+    },
+    {
+      "name": "url2",
+      "type": "text",
+      "placeholder": "URL of the scaled down asset",
       "label": "Resource URL"
     }
 
