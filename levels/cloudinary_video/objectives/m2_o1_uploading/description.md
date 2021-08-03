@@ -1,7 +1,7 @@
 # Uploading Assets
 
 <div class="aside">
-<h3>To-Do List</h3>
+<h3>AGENDA</h3>
 <ul>
   <li>Upload a stock video to your account.</li>
   <li>Access it via URL</li>
@@ -27,7 +27,7 @@ Let's upload our first asset using the Media Library.
 1. Go to [Media Library](https://cloudinary.com/console/media_library) in the [Cloudinary Console](https://cloudinary.com/console/) Direct link: https://cloudinary.com/console/media_library
 1. Upload the **Succulent - 14467.mp4** file by either dragging the file into the browser window OR clicking the **Upload button** and then selecting **Upload Local Files**
 
-Now that the file is uploaded,
+Now that the file is uploaded, click the [NEED IMAGE] icon to get the url and paste it into the Resource URL and click _HACK_ to proceed.
     
     
 

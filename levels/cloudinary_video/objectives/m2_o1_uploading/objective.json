@@ -1,19 +1,14 @@
 {
-  "title": "Url Validation",
-  "description": "This tests url equivalency",
+  "title": "Uploading Assets",
+  "description": "Learn how to upload videos to your account in Cloudinary",
   "validation_fields": [
     {
       "name": "url1",
       "type": "text",
-      "placeholder": "enter the first url here",
-      "label": "First Url"
-    },
-    {
-      "name": "url2",
-      "type": "text",
-      "placeholder": "enter the second url here",
-      "label": "Second Url"
+      "placeholder": "URL of the uploaded file",
+      "label": "Resource URL"
     }
+
   ],
   "rewards": {
     "xp": 100

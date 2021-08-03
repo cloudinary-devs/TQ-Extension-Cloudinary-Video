@@ -13,6 +13,9 @@ have completed the challenge as instructed.
 */
 module.exports = async function (helper) {
 
+    helper.success('validation not implemented yet');
+    //@todo-p1 replace following with correct implementation for this objective
+
     // We start by getting the user input from the helper
     const {url1} = helper.validationFields;
 
@@ -36,6 +39,7 @@ module.exports = async function (helper) {
                 helper.fail("Sorry, that doesn't appear to be the correct asset.");
                 //@todo-p1 add reason..description of expected vs received
             }
+
 
         });
 

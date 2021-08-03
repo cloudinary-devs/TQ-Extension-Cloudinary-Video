@@ -95,7 +95,6 @@ module.exports = function (event, world) {
             break;
         case 'playerDidInteract':
             //is this start of a conversation?
-
             if (event.target.conversation) {
                 //CONVERSATION STARTING
                // world.startConversation(event.target.conversation,'cedricNeutral.png');

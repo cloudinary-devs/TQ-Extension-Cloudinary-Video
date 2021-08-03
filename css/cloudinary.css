@@ -1,15 +1,15 @@
 /*
     This gets injected into the page on 'mapDidLoad' via event.js
-*/
-body {
-    border: 2px solid blue;
-}
 
-/*External element z-index heights
+    NOTE: External element z-index heights
      div.HUDBar: 1
      div.HackInterface div.MenuContainer: 100
      div.conversation: 1000
 */
+body {
+    /** @todo-p2 remove style active indicator  **/
+    border: 1px solid blue;
+}
 
 #cloudinary-browser.Conversation .dialogue-box {
     display: inline-block;

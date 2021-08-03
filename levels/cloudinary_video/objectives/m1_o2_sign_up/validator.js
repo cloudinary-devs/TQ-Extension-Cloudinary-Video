@@ -16,7 +16,7 @@ module.exports = async function (helper) {
 
         http.get(cloudinary.url('sample'));
         browser.show();
-        browser.render(`
+        browser.display(`
         <div style="width:100%;text-align: center;">
             <h1>Pulling a sample image from your account.</h1>
             <img src="${cloudinary.url('sample')}" alt="sample image">

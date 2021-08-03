@@ -1,0 +1,16 @@
+{
+  "title": "Managing Assets",
+  "description": "Learn how manage the assets in your account",
+  "validation_fields": [
+    {
+      "name": "url1",
+      "type": "text",
+      "placeholder": "URL of the renamed file",
+      "label": "Resource URL"
+    }
+
+  ],
+  "rewards": {
+    "xp": 100
+  }
+}
