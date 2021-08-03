@@ -3,70 +3,39 @@ conversation(display_name="Cedric")
 
     when "good_morning"
     when "what_happening"
-      statement.
-        I'm sorry, there's been some sort of mistake.
-        You aren't who you're supposed to be...I mean, you are you of course!...but, well, it doesn't look like you have had the necessary training. We need your help fixing videos being published by the crew.
+      statement#explain
       responses
         response#ok.
           Let's get going, I'm in.
         response#tell_me_more.
           I don't understand
 
+    when "ok"
+      statement#final.
+
     when "tell_me_more"
-      statement.
-        I'm sorry, there's been some sort of mistake.
-        You aren't who you're supposed to be...I mean, you are you of course!...but, well, it doesn't look like you have had the necessary training. We need your help fixing videos being published by the crew.
+      statement#explain
       responses
         response#ok.
           OK, I'm in.
 
-    when "ok"
-      statement.
-        Thank you! Go out into the orientation room and talk to Hagit to get started.
-
     default
-      statement.
-        Good morning!
+      statement#default
       responses
         response#good_morning.
           Good Morning!
         response#what_happening.
           What's going on?
 
-// VS
-//conversation(display_name="Cedric")
-//  case lastResponse
-//    when "good_morning"
-//    when "what_happening"
-//      statement#explain
-//      responses
-//        response#ok.
-//          Let's get going, I'm in.
-//        response#tell_me_more.
-//          I don't understand
-//    when "ok"
-//      statement#final.
-//    when "tell_me_more"
-//      statement#explain
-//      responses
-//        response#ok.
-//          OK, I'm in.
-//    default
-//      statement#default
-//      responses
-//        response#good_morning.
-//          Good Morning!
-//        response#what_happening.
-//          What's going on?
-//  statements
-//    statement#default
-//      text.
-//        Good morning!
-//    statement#explain
-//      text.
-//        I'm sorry, there's been some sort of mistake.
-//        You aren't who you're supposed to be...I mean, you are you of course!...but, well, it doesn't look like you have had the necessary training. We need your help fixing videos being published by the crew.
-//    statement#final
-//      text.
-//        Thank you! Go out into the orientation room and talk to Hagit to get started.
-//
+
+  statements
+    statement#default
+      text.
+        Good morning!
+    statement#explain
+      text.
+        I'm sorry, there's been some sort of mistake.
+        You aren't who you're supposed to be...I mean, you are you of course!...but, well, it doesn't look like you have had the necessary training. We need your help fixing videos being published by the crew.
+    statement#final
+      text.
+        Thank you! Go out into the orientation room and talk to Hagit to get started.
