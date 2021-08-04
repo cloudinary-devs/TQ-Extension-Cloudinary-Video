@@ -35,14 +35,72 @@ module.exports = function (event, world) {
     switch (event.name) {
 
         case 'levelDidLoad':
-            //@todo-p1 Add a step here to set a level specific event handler [strategy-pattern]
+            //nothing to do... so far
+            break;
+
+        case 'mapDidLoad':
 
             //Start our conversation eavesdropper, listening on the top level app node
             observer.start(jQuery('#app div.App')[0]);
+
             //Inject our custom css for the file browser, sign posts and other functionality
             cssInject('cloudinary.css');
 
+            //Attach/replace key listener
+            let body = jQuery('body');
+            body.unbind('keydown.cloudinary')
+            body.bind('keydown.cloudinary', function (event) {
+                let hackDialogOpen = jQuery('.HackInterface').length > 0;
+                let conversationOpen = jQuery('div.Conversation:not(#cloudinary-browser)').length > 0;
+
+                if(!hackDialogOpen && !conversationOpen){
+                    //Keys/functions that would interrupt data entry
+                    switch (event.key) {
+                        case 'b':
+                            browser.toggle();
+                            break;
+                        case '+':
+                            world.__internals.level.player.moveSpeed+=60;
+                            console.log('setting movement speed:'+world.__internals.level.player.moveSpeed);
+                            break;
+                        case '-':
+                            world.__internals.level.player.moveSpeed-=60;
+                            console.log('setting movement speed:'+world.__internals.level.player.moveSpeed);
+                            break;
+                    }
+
+                    if(!!event.shiftKey){
+                        world.__internals.level.player.moveSpeed=300;
+                        console.log('setting movement speed:'+world.__internals.level.player.moveSpeed);
+                    }
+                    return
+                }
+
+                //Keys that we trap anywhere
+                switch (event.key) {
+                    case 'Escape':
+                        browser.hide();
+                        break;
+                }
+            });
+
+            body.unbind('keyup.cloudinary')
+            body.bind('keyup.cloudinary', function (event) {
+                let hackDialogOpen = jQuery('.HackInterface').length > 0;
+                let conversationOpen = jQuery('div.Conversation:not(#cloudinary-browser)').length > 0;
+
+                if(!hackDialogOpen && !conversationOpen){
+                    //Keys/functions that would interrupt data entry
+                    if(!event.shiftKey){
+                        world.__internals.level.player.moveSpeed=120;
+                        console.log('setting movement speed:'+world.__internals.level.player.moveSpeed);
+                    }
+                }
+            });
+
+
             break;
+
         case 'objectiveDidOpen' :
 
             break;
@@ -97,9 +155,9 @@ module.exports = function (event, world) {
             //is this start of a conversation?
             if (event.target.conversation) {
                 //CONVERSATION STARTING
-               // world.startConversation(event.target.conversation,'cedricNeutral.png');
-               switch (event.target.conversation) {
-                    
+                // world.startConversation(event.target.conversation,'cedricNeutral.png');
+                switch (event.target.conversation) {
+
                 }
             } else if (event.target.objectiveName) {
                 //OBJECTIVE STARTING
@@ -112,23 +170,6 @@ module.exports = function (event, world) {
             break;
         case 'triggerAreaWasExited':
             browser.hide();
-            //nothing to do... so far
-            break;
-        case 'mapDidLoad':
-            cssInject('cloudinary.css');
-
-            let body = jQuery('body');
-            body.unbind('keydown.cloudinary');
-            body.bind('keydown.cloudinary', function (event) {
-                switch (event.key) {
-                    case 'b':
-                        browser.toggle();
-                        break;
-                    default:
-                    //nothing
-                }
-            });
-            //keyHandler.registerAction('b',function(){alert('B pressed.')});
             break;
 
 
