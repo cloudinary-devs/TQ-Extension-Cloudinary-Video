@@ -107,3 +107,6 @@ dist
 # Tiled Editor - workspace specific files unfortunately
 *.tiled-project
 *.tiled-session
+
+# JetBrains IDEs
+.idea
