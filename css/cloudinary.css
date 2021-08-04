@@ -6,37 +6,51 @@
      div.HackInterface div.MenuContainer: 100
      div.conversation: 1000
 */
-body {
-    /** @todo-p2 remove style active indicator  **/
-    border: 1px solid blue;
-}
-
-#cloudinary-browser.Conversation .dialogue-box {
-    display: inline-block;
-    padding: 5px;
-    min-height: 50%;
-    flex-wrap: wrap;
-}
-
 #cloudinary-browser {
     z-index: 2000;
     min-height: 400px;
 }
 
-#cloudinary-browser .header{}
+#cloudinary-browser.Conversation .dialogue-box {
+    display: inline-block;
+    min-height: 50%;
+}
+
+#cloudinary-browser.Conversation .dialogue-box .header {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    width: 100%;
+    font-size: 28px;
+    font-weight: bolder;
+    background-color: #100558;
+    color: lightgray;
+    padding: 8px;
+}
+
+#cloudinary-browser.Conversation .dialogue-box .title {
+    line-height: 42px;
+    padding-top: 3px;
+}
+
+/*#cloudinary-browser.Conversation .dialogue-box .header > *{*/
+/*    display: inline-block;*/
+/*}*/
+
+#cloudinary-browser .close-button {
+    height: 42px;
+    line-height: 42px;
+    width: 32px;
+    padding:0;
+
+    border: 2px solid white;
+    text-align: center;
+}
 
 #cloudinary-browser .close-button:hover {
     cursor: pointer;
 }
 
-#cloudinary-browser .close-button {
-    display: inline-block;
-    width: 100%;
-    text-align: right;
-    font-size: 32px;
-    font-weight: bolder;
-    background-color: #100558;
-    padding:3px 5px;
+#browser-content {
+    overflow-y: scroll;
 }
-
-#browser-content {}
