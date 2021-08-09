@@ -8,9 +8,17 @@
   "backgroundMusic": "hackertheme_104771b",
   "backgroundEffect": {
     "key": "starfield",
-    "options": {"baseSpeed": 2,"starCount": 100,"direction":"rightToLeft"}
+    "options": {
+      "baseSpeed": 2,
+      "starCount": 100,
+      "direction": "rightToLeft"
+    }
   },
   "flavorTextOverrides": {
   },
-  "objectives": ["m1_o2_sign_up","m1_o3_resources","m2_o1_uploading"]
+  "objectives": [
+    "m1_o2_sign_up", "m1_o3_resources",
+    "m2_o1_uploading", "m2_o2_managing", "m2_o3_urls",
+    "m3_o1_quality_and_format"
+  ]
 }

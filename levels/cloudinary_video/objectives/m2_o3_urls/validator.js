@@ -13,37 +13,31 @@ have completed the challenge as instructed.
 */
 module.exports = async function (helper) {
 
-    helper.success('validation not implemented yet');
-    //@todo-p1 replace following with correct implementation for this objective
+    const urlOriginal = helper.getNormalizedInput('urlOriginal');
+    const urlScaledDown = helper.getNormalizedInput('urlScaledDown');
 
-    // We start by getting the user input from the helper
-    const {url1} = helper.validationFields;
+    if (!urlScaledDown.includes('/upload/c_scale,w_0.5/')) {
+        helper.fail('Carefully check the url to make sure the /c_scale,w_0.5/ is specified correctly and in the proper position following /upload/');
+    }
 
+    const original = download(urlOriginal, 'cloudinary_m2_o3_original.mp4',()=>null ,(e) => helper.fail(e));
+    const scaledDown = download(urlScaledDown, 'cloudinary_m2_o3_scaledDown.mp4',()=>null,(e) => helper.fail(e));
 
-    const path = download(url1, 'test.mp4', function () {
+    helper.success('Nice Work!');
 
-        //when file is done downloading, check it
-        ffmpeg.ffprobe(path, function (err, metadata) {
-            console.log(metadata);
-
-            if(err){
-                //@todo-p1 add url processing module for typical url issues...try to figure out and explain what's wrong
-                helper.fail("Sorry, that doesn't seem to be a valid URL");
-            }
-
-            if(metadata.format.size===676502 && metadata.streams[0].coded_height===368 && metadata.streams[0].coded_width===640){
-                helper.success('Nice Work!');
-                //@todo-p1 consider autoplay muted controls properties as preferences/options
-                browser.display(`<div><h1>Success!</h1><video width="320" height="240" autoplay><source src="${url1}" type="video/mp4"></video></div>`);
-            }else{
-                helper.fail("Sorry, that doesn't appear to be the correct asset.");
-                //@todo-p1 add reason..description of expected vs received
-            }
-
-
-        });
-
-    });
+    browser.display(
+        `
+        <h1>Success!</h1>
+        <div>
+        <h3>Original</h3>
+            <video autoplay loop><source src="${urlOriginal}" type="video/mp4"></video>
+        </div>
+        <div>
+        <h3>Half Size</h3>
+            <video autoplay loop><source src="${urlScaledDown}" type="video/mp4"></video>
+        </div>
+        `
+    );
 
 
 };

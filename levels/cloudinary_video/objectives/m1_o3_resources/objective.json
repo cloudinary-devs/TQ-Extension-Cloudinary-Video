@@ -1,18 +1,18 @@
 {
-  "title": "Url Validation",
-  "description": "This tests url equivalency",
+  "title": "Resources",
+  "description": "Learn where you can go to learn more and get help",
   "validation_fields": [
     {
-      "name": "url1",
+      "name": "howManySDKs",
       "type": "text",
-      "placeholder": "enter the first url here",
-      "label": "First Url"
+      "placeholder": "",
+      "label": "How many Framework SDKs does Cloudinary provide? <a href='https://cloudinary.com/documentation'>hint</a>"
     },
     {
-      "name": "url2",
+      "name": "cloudinaryAcademy",
       "type": "text",
-      "placeholder": "enter the second url here",
-      "label": "Second Url"
+      "placeholder": "<a href='https://training.cloudinary.com/'>hint</a>",
+      "label": "What is the Cloudinary training program called?"
     }
   ],
   "rewards": {

@@ -18,40 +18,32 @@ these functions to let the game (and the player) know whether or not they
 have completed the challenge as instructed.
 */
 module.exports = async function (helper) {
-  console.log('|1.5|');
-  console.log(helper);
-  console.table(helper);
-  console.log(window);
-  let url= new URI('https://cloudinary.com/test/page.html?param1=1&param2=2').normalizeQuery();
-
-  console.log(url.path());
 
   // We start by getting the user input from the helper
-  const { answer1, answer2 } = helper.validationFields;
+  const howManySDKs = helper.getNormalizedInput('howManySDKs');
+  const cloudinaryAcademy = helper.getNormalizedInput('cloudinaryAcademy');
+
+
+  if(!howManySDKs){
+    return helper.fail('Please complete the form and click Hack again.');
+  }
 
   // Next, you test the user input - fail fast if they get one of the
   // answers wrong, or some aspect is wrong! Don't provide too much
   // negative feedback at once, have the player iterate.
-  if (!answer1 || !isTwilio(answer1)) {
+  if (parseInt(howManySDKs) < 15 ) {
     return helper.fail(`
-      The answer to the first question is incorrect. The company that
-      makes TwilioQuest starts with a "T" and ends with a "wilio".
+      There are even MORE than ${howManySDKs} Framework Integration SDKs!  Check the hint?
     `);
   }
 
-  // You can use npm or core Node.js dependencies in your validators!
-  try {
-    assert.strictEqual(R.add(2, 2), Number(answer2));
-  } catch (e) {
-    return helper.fail(`
-      The second answer you provided was either not a number, or not the
-      correct response for "what is 2 + 2".
-    `);
+  if (cloudinaryAcademy.toLowerCase() !== 'Cloudinary Academy'.toLowerCase()){
+    return helper.fail(`Hmmm, no, that's not the name of the training program... try the hint?`);
   }
 
   // The way we usually write validators is to fail fast, and then if we reach
   // the end, we know the user got all the answers right!
   helper.success(`
-    Hooray! You did it!
+    Well Done!
   `);
 };

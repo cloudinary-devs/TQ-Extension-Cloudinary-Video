@@ -5,12 +5,12 @@
     {
       "name": "url1",
       "type": "text",
-      "placeholder": "URL of the renamed file",
-      "label": "Resource URL"
+      "placeholder": "URL of the renamed/moved file",
+      "label": "What is the new url of our Flower asset?"
     }
 
   ],
   "rewards": {
-    "xp": 100
+    "xp": 800
   }
 }

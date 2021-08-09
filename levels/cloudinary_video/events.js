@@ -1,36 +1,28 @@
-// noinspection JSJQueryEfficiency
-
 const jQuery = require('jquery');
 const cssInject = require('../../lib/cssInjector');
 const observer = require('../../lib/conversationObserver');
 const browser = require('../../lib/browser');
+const setHackFormDefaults = require('../../lib/hackFormDefaultValues');
+
+console.log('Cloudinary Video Mission loaded (event.js reloaded)');
 
 module.exports = function (event, world) {
 
     /**
      * Some dev mode stuff
-     * warp('cloudinary_video','player_entry1','default');
      */
     if (process.env.USER === 'jsimpson') { //replace with your username
         if (event.name === 'levelDidLoad') {
-            //DEV MODE
             //Set javascript sources to be reloaded instead of cached
             window.reloadExternalModules = true;
             //console.clear(); //clear out all the platform errors/warnings that occur at startup
-            console.log('Cloudinary Video Mission loaded');
         }
         //log all events in dev mode
         console.log({event, world});
     }
-    /**
-     * after set, before physics
-     * world.__internals.level.player.sprite.body.velocity
-     *      world.__internals.level.player.sprite.postUpdate
-     *      .prePhysicsUpdate
-     */
 
     /**
-     * Main logic
+     * Main Extension/'Level' logic
      */
     switch (event.name) {
 
@@ -53,34 +45,40 @@ module.exports = function (event, world) {
                 let hackDialogOpen = jQuery('.HackInterface').length > 0;
                 let conversationOpen = jQuery('div.Conversation:not(#cloudinary-browser)').length > 0;
 
-                if(!hackDialogOpen && !conversationOpen){
-                    //Keys/functions that would interrupt data entry
+                /**
+                 * Keys/functions that would interrupt data entry, so only trigger when dialogs aren't in use
+                 */
+                if (!hackDialogOpen && !conversationOpen) {
+
                     switch (event.key) {
                         case 'b':
                             browser.toggle();
                             break;
                         case '+':
-                            world.__internals.level.player.moveSpeed+=60;
-                            console.log('setting movement speed:'+world.__internals.level.player.moveSpeed);
+                            world.__internals.level.player.moveSpeed += 60;
+                            console.log('setting movement speed:' + world.__internals.level.player.moveSpeed);
                             break;
                         case '-':
-                            world.__internals.level.player.moveSpeed-=60;
-                            console.log('setting movement speed:'+world.__internals.level.player.moveSpeed);
+                            world.__internals.level.player.moveSpeed -= 60;
+                            console.log('setting movement speed:' + world.__internals.level.player.moveSpeed);
                             break;
                     }
 
-                    if(!!event.shiftKey){
-                        world.__internals.level.player.moveSpeed=300;
-                        console.log('setting movement speed:'+world.__internals.level.player.moveSpeed);
+                    if (!!event.shiftKey) {//set sprinting speed
+                        world.__internals.level.player.moveSpeed = 280;
                     }
-                    return
-                }
 
-                //Keys that we trap anywhere
-                switch (event.key) {
-                    case 'Escape':
-                        browser.hide();
-                        break;
+                } else {
+
+                    /**
+                     * Key actions that are safe to trigger anywhere
+                     */
+
+                    switch (event.key) {
+                        case 'Escape':
+                            browser.hide();
+                            break;
+                    }
                 }
             });
 
@@ -89,25 +87,42 @@ module.exports = function (event, world) {
                 let hackDialogOpen = jQuery('.HackInterface').length > 0;
                 let conversationOpen = jQuery('div.Conversation:not(#cloudinary-browser)').length > 0;
 
-                if(!hackDialogOpen && !conversationOpen){
-                    //Keys/functions that would interrupt data entry
-                    if(!event.shiftKey){
-                        world.__internals.level.player.moveSpeed=120;
-                        console.log('setting movement speed:'+world.__internals.level.player.moveSpeed);
+                /**
+                 * Keys/functions that would interrupt data entry, so only trigger when dialogs aren't in use
+                 */
+                if (!hackDialogOpen && !conversationOpen) {
+                    if (!event.shiftKey) {//set regular movement speed
+                        world.__internals.level.player.moveSpeed = 120;
                     }
                 }
             });
-
-
             break;
 
         case 'objectiveDidOpen' :
+            //@todo-p2 refactor into a generic call to objectives/<objective_name>/event.js:objectiveDidOpen() call?
+            switch (event.target.objectiveName) {
+                case 'm1_o2_sign_up':
+                    //Re-enter player's information if we have already saved it
+                    let env = world.getContext().env;
+                    setHackFormDefaults([
+                        env.TQ_CLOUDINARY_CLOUD_NAME ? env.TQ_CLOUDINARY_CLOUD_NAME.value : null,
+                        env.TQ_CLOUDINARY_API_KEY ? env.TQ_CLOUDINARY_API_KEY.value : null,
+                        env.TQ_CLOUDINARY_API_SECRET ? env.TQ_CLOUDINARY_API_SECRET.value : null,
+                    ]);
 
+                    break;
+                default:
+                    //waiting .. .can't put answers in state yet..so can't retrieve them
+                    //setHackFormDefaults(world.getState())
+                    break;
+            }
             break;
+        case 'objectiveDidClose':
         case 'objectiveCompletedAgain' :
-
+        case 'objectiveFailed':
             break;
         case 'conversationDidEnd':
+            //@todo-p2 refactor into a generic call to objectives/<objective_name>/event.js:conversationDidEnd() call?
             console.table(observer.history);
             switch (event.npc.conversation) {
                 case 'm2-cedric-Default':
@@ -117,52 +132,14 @@ module.exports = function (event, world) {
             break;
 
         case 'triggerAreaWasEntered':
-            //browser.show();
-
 
             console.log({triggerAreaTarget: event.target});
-
-
-            if ('conversation' in event.target) {
-
-                // try {
-                //     world.startConversation('m2-frederic_holo-wakeup', 'cedricNeutral.png');
-                // } catch (e) {
-                //     console.log({
-                //         messsage: 'Error while trying to start a conversation as the result of an area trigger',
-                //         error:e,
-                //         event: event
-                //     });
-                // }
-            }
-
-
-            // //Used primarily for rooms/areas
-            // switch (event.target.key) {
-            //     case 'wakeup':
-            //         world.startConversation('m2-cedric-wakeup', 'cedricNeutral.png');
-            //
-            //         break;
-            //     case 'testTrigger':
-            //         console.log('Area Triggered');
-            //         world.startConversation("cedricDefault", "cedricNeutral.png");
-            //         break;
-            //     default:
-            //         console.log('UNHANDLED AREA TRIGGER:' + event.target.key);
-            // }
-            break;
         case 'playerDidInteract':
-            //is this start of a conversation?
-            if (event.target.conversation) {
-                //CONVERSATION STARTING
-                // world.startConversation(event.target.conversation,'cedricNeutral.png');
-                switch (event.target.conversation) {
-
-                }
-            } else if (event.target.objectiveName) {
-                //OBJECTIVE STARTING
+            //Is the player starting a conversation with one of our custom objects?
+            if (event.target.conversation && event.target.type.startsWith('cloudinary')) {
+                //start the conversation
+                world.startConversation(event.target.conversation, event.target.conversationAvatar);
             }
-
             break;
         case 'levelWillUnload':
             //cleanly stop our conversation eavesdropper

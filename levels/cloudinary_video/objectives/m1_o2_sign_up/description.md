@@ -1,5 +1,7 @@
 # Orientation
-
+<script>
+console.log('hello');
+</script>
 <div class="aside">
 <h3>To-Do List</h3>
 <ul>

@@ -3,13 +3,13 @@
   "description": "Learn about URLs and parameters",
   "validation_fields": [
     {
-      "name": "url1",
+      "name": "urlOriginal",
       "type": "text",
       "placeholder": "URL of the original asset",
       "label": "Resource URL"
     },
     {
-      "name": "url2",
+      "name": "urlScaledDown",
       "type": "text",
       "placeholder": "URL of the scaled down asset",
       "label": "Resource URL"

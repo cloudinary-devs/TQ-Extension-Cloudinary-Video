@@ -17,79 +17,47 @@ module.exports = async function (helper) {
     const lowQualityUrl = helper.getNormalizedInput('lowQualityUrl');
     const autoQualityUrl = helper.getNormalizedInput('autoQualityUrl');
 
-    const worldState = helper.context.levelState['com.cloudinary.video'];
 
-
-    if (true) {
-        helper.success('Nice Work!');
-        //@todo-p1 consider autoplay muted controls properties as preferences/options
-        browser.display(`
-                        <div>
-                            <h1>Success!</h1>
-                            <div style="display: flex;flex-wrap: wrap;justify-content: space-evenly">
-                                <div>
-                                    <h3>High Quality</h3>
-                                    <video width="250" autoplay loop><source src="${highQualityUrl}" type="video/mp4"></video>
-                                </div>
-                                <div>
-                                    <h3>Auto Quality</h3>
-                                    <video width="250"  autoplay loop><source src="${autoQualityUrl}" type="video/mp4"></video>
-                                </div>
-                                <div>
-                                    <h3>Low Quality</h3>
-                                    <video width="250" autoplay loop><source src="${lowQualityUrl}" type="video/mp4"></video>
-                                </div>
-                            </div>
-                        </div>`);
-        return;
-    } else {
-        helper.fail("Sorry, that doesn't appear to be the correct asset.");
-        //@todo-p1 add reason..description of expected vs received
+    if (!highQualityUrl.includes('/upload/q_100/TwilioQuest')) {
+        return helper.fail('Carefully check the Hiqh Quality Url.');
     }
 
+    if (!lowQualityUrl.includes('/upload/q_10/TwilioQuest')) {
+        return helper.fail('Carefully check the Low Quality Url.');
+    }
 
+    if (!autoQualityUrl.includes('/upload/q_auto/TwilioQuest')) {
+        return helper.fail('Carefully check the Auto Quality Url.');
+    }
 
-    // const path = download(url1, 'test.mp4', function () {
-    //
-    //     //when file is done downloading, check it
-    //     ffmpeg.ffprobe(path, function (err, metadata) {
-    //         console.log(metadata);
-    //
-    //         if (err) {
-    //             //@todo-p1 add url processing module for typical url issues...try to figure out and explain what's wrong
-    //             helper.fail("Sorry, that doesn't seem to be a valid URL");
-    //         }
-    //
-    //         if (true) {
-    //             helper.success('Nice Work!');
-    //             //@todo-p1 consider autoplay muted controls properties as preferences/options
-    //             browser.display(`
-    //                     <div>
-    //                         <h1>Success!</h1>
-    //                         <div style="display: flex;flex-wrap: wrap;justify-content: space-evenly">
-    //                             <div>
-    //                                 <h3>High Quality</h3>
-    //                                 <video autoplay><source src="${highQualityUrl}" type="video/mp4"></video>
-    //                             </div>
-    //                             <div>
-    //                                 <h3>Auto Quality</h3>
-    //                                 <video autoplay><source src="${autoQualityUrl}" type="video/mp4"></video>
-    //                             </div>
-    //                             <div>
-    //                                 <h3>Low Quality</h3>
-    //                                 <video autoplay><source src="${lowQualityUrl}" type="video/mp4"></video>
-    //                             </div>
-    //                         </div>
-    //                     </div>`);
-    //         } else {
-    //             helper.fail("Sorry, that doesn't appear to be the correct asset.");
-    //             //@todo-p1 add reason..description of expected vs received
-    //         }
-    //
-    //
-    //     });
-    //
-    // });
-
+    download(highQualityUrl, 'cloudinary_m3_o1_high_quality.mp4',
+        function(){
+            download(lowQualityUrl, 'cloudinary_m3_o1_low_quality.mp4',function(){
+                download(autoQualityUrl, 'cloudinary_m3_o1_auto_quality.mp4',function(){
+                    helper.success('Nice Work!');
+                    browser.display(
+                        `
+            <div>
+                <h1>Success!</h1>
+                <div style="display: flex;flex-wrap: wrap;justify-content: space-evenly">
+                    <div>
+                        <h3>High Quality</h3>
+                        <video width="250" autoplay loop><source src="${highQualityUrl}" type="video/mp4"></video>
+                    </div>
+                    <div>
+                        <h3>Auto Quality</h3>
+                        <video width="250"  autoplay loop><source src="${autoQualityUrl}" type="video/mp4"></video>
+                    </div>
+                    <div>
+                        <h3>Low Quality</h3>
+                        <video width="250" autoplay loop><source src="${lowQualityUrl}" type="video/mp4"></video>
+                    </div>
+                </div>
+            </div>
+        `
+                    );
+                } ,(e) => helper.fail(e));
+            },(e) => helper.fail(e));
+        },(e) => helper.fail(e));
 
 };

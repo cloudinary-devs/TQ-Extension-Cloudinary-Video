@@ -25,7 +25,8 @@ https://res.cloudinary.com
 /<cloud_name>
 /video
 /upload
-/v123456/Flower.mp4
+/v123456...
+/TwilioQuest/Flower.mp4
 ```
 We can specify transformation parameters to change how the asset is delivered. For example, let's resize the video to 50% of it's size by adding the following scale mode parameter.
 ```
@@ -39,7 +40,8 @@ https://res.cloudinary.com
 /video
 /upload
 /c_scale,w_0.5
-/<version>/Flower.mp4
+/<version>
+/TwilioQuest/Flower.mp4
 ```
 Enter the url 
 click _HACK_ to proceed.

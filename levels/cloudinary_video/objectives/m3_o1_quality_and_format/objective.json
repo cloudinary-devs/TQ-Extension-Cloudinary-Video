@@ -6,7 +6,7 @@
       "name": "highQualityUrl",
       "type": "text",
       "placeholder": "URL of the high quality  video",
-      "label": "Hiqh Quality URL (value=100)"
+      "label": "High Quality URL (value=100)"
     },
     {
       "name": "lowQualityUrl",
@@ -23,6 +23,6 @@
 
   ],
   "rewards": {
-    "xp": 100
+    "xp": 500
   }
 }
