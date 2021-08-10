@@ -6,13 +6,13 @@
       "name": "urlOriginal",
       "type": "text",
       "placeholder": "URL of the original asset",
-      "label": "Resource URL"
+      "label": "Original Asset Url"
     },
     {
       "name": "urlScaledDown",
       "type": "text",
       "placeholder": "URL of the scaled down asset",
-      "label": "Resource URL"
+      "label": "Scaled Down Url"
     }
 
   ],
