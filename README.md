@@ -2,6 +2,7 @@
 
 ## Issue List
 1. Fredric is now officially an antagonist...need to remove them or repurpose.
+2. protect the api key and secret fields in sign up mission.
 
 ## Todo List - Joel
 1. Status
@@ -14,23 +15,25 @@
    8. m3_o2 - Not Started
    9. m4_01 - Not Started
    10. m4_02 - Not Started 
-2. Save hack answers into game state (not possible at the moment?) so that our default values loader can populate them.
-3. Close the hack interface when browser closes? 
+2. Close the hack interface when browser closes? 
    1. or is it better to have close twice so they see the game information?
-4. When returning to main corridor, greeter should not appear if all objectives have been completed.
-5. "Thanks, would you like to show/complete/do it again" conversation should play when talking to greeter/npc inside their office if all objectives have been completed.
+3. When returning to main corridor, greeter should not appear if all objectives have been completed.
+4. "Thanks, would you like to show/complete/do it again" conversation should play when talking to greeter/npc inside their office if all objectives have been completed.
+5. Save hack answers into game state- so that our default values loader can populate them. NOT POSSIBLE CURRENTLY
 
 ## Todo List - Tessa
 1. Create custom assets for department door signs
-1. Create custom assets for "Exit" and "Enter" rooms
-1. Update NPC for entrance of corridor room - (Keren) using custom observation property for statements, not conversations
-1. Update story for first 2 office rooms
-1. Add custom obvervation for all 4 office doggos to say cute things
-1. Update Lindsey NPC to ensure user speaks to Hagit before proceeding to speak with Lindsey.
-1. Speak with legal dept and see if we need a copyright on any Cloudinary logo/code/content mentioned
+2. Create custom assets for "Exit" and "Enter" rooms
+3. Update NPC for entrance of corridor room - (Keren) using custom observation property for statements, not conversations
+4. Update story for first 2 office rooms
+5. Add custom obvervation for all 4 office doggos to say cute things
+6. Update Lindsey NPC to ensure user speaks to Hagit before proceeding to speak with Lindsey.
+7. Speak with legal dept and see if we need a copyright on any Cloudinary logo/code/content mentioned
+8. Add details about gravity by coordinates in m3_o2
 
 ## Final Pass Todo List
 1. Check experience awards for each objective
+2. Review and update objective descriptions
 
 ## Needs List
 1. Graphic Assets
