@@ -1,6 +1,7 @@
 # Cloudinary Video - TwilioQuest Extension
 
-
+## Issue List
+1. Fredric is now officially an antagonist...need to remove them or repurpose.
 
 ## Todo List - Joel
 1. Status

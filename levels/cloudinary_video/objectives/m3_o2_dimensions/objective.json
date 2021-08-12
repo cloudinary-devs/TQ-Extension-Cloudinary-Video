@@ -1,0 +1,70 @@
+{
+  "title": "Video Dimensions",
+  "description": "Learn how to modify the dimensions of videos",
+  "validation_fields": [
+    {
+      "name": "answer1",
+      "type": "text",
+      "placeholder": "Question 1 Answer URL",
+      "label": "Answer 1",
+      "id": "id test"
+    },
+    {
+      "name": "answer2",
+      "type": "text",
+      "placeholder": "URL that answers question 2",
+      "label": "Answer 2"
+    },
+    {
+      "name": "answer3",
+      "type": "text",
+      "placeholder": "URL that answers question 3",
+      "label": "Answer 3"
+    },
+    {
+      "name": "answer4",
+      "type": "text",
+      "placeholder": "URL that answers question 4",
+      "label": "Answer 4"
+    },
+    {
+      "name": "answer5",
+      "type": "text",
+      "placeholder": "URL that answers question 5",
+      "label": "Answer 5"
+    },
+    {
+      "name": "answer6",
+      "type": "text",
+      "placeholder": "URL that answers question 6",
+      "label": "Answer 6"
+    },
+    {
+      "name": "answer7",
+      "type": "text",
+      "placeholder": "URL that answers question 7",
+      "label": "Answer 7"
+    },
+    {
+      "name": "answer8",
+      "type": "text",
+      "placeholder": "URL that answers question 8",
+      "label": "Answer 8"
+    },
+    {
+      "name": "answer9",
+      "type": "text",
+      "placeholder": "URL that answers question 9",
+      "label": "Answer 9"
+    },
+    {
+      "name": "answer10",
+      "type": "text",
+      "placeholder": "URL that answers question 10",
+      "label": "Answer 10"
+    }
+  ],
+  "rewards": {
+    "xp": 500
+  }
+}

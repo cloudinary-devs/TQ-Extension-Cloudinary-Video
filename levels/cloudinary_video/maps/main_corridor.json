@@ -495,6 +495,23 @@
                  "width":24,
                  "x":96,
                  "y":233
+                }, 
+                {
+                 "height":93,
+                 "id":164,
+                 "name":"leaving",
+                 "properties":[
+                        {
+                         "name":"observation",
+                         "type":"string",
+                         "value":"leaving"
+                        }],
+                 "rotation":0,
+                 "type":"triggerArea",
+                 "visible":true,
+                 "width":9,
+                 "x":141,
+                 "y":265
                 }],
          "opacity":1,
          "type":"objectgroup",
@@ -542,7 +559,7 @@
          "y":0
         }],
  "nextlayerid":46,
- "nextobjectid":164,
+ "nextobjectid":165,
  "orientation":"orthogonal",
  "renderorder":"right-down",
  "tiledversion":"1.7.1",

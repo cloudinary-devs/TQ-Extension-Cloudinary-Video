@@ -115,24 +115,6 @@
                  "y":384
                 }, 
                 {
-                 "gid":12129,
-                 "height":32,
-                 "id":134,
-                 "name":"",
-                 "properties":[
-                        {
-                         "name":"interactable",
-                         "type":"bool",
-                         "value":false
-                        }],
-                 "rotation":0,
-                 "type":"",
-                 "visible":true,
-                 "width":32,
-                 "x":384,
-                 "y":438
-                }, 
-                {
                  "gid":12135,
                  "height":32,
                  "id":136,

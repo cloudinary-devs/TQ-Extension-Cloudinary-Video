@@ -1,5 +1,5 @@
 const jQuery = require('jquery');
-const cssInject = require('../../lib/cssInjector');
+const inject = require('../../lib/injector');
 const observer = require('../../lib/conversationObserver');
 const browser = require('../../lib/browser');
 const setHackFormDefaults = require('../../lib/hackFormDefaultValues');
@@ -36,7 +36,7 @@ module.exports = function (event, world) {
             observer.start(jQuery('#app div.App')[0]);
 
             //Inject our custom css for the file browser, sign posts and other functionality
-            cssInject('cloudinary.css');
+            inject.css('cloudinary.css');
 
             //Attach/replace key listener
             let body = jQuery('body');
@@ -132,6 +132,13 @@ module.exports = function (event, world) {
             break;
 
         case 'triggerAreaWasEntered':
+            if(event.target.observation){
+                switch(event.target.observation){
+                    case 'leaving':
+                        world.showNotification('This exit will take you back to the fog owl.');
+                        break;
+                }
+            }
 
             console.log({triggerAreaTarget: event.target});
         case 'playerDidInteract':
@@ -155,4 +162,3 @@ module.exports = function (event, world) {
     }
 
 }
-
