@@ -37,18 +37,14 @@
 5. Save hack answers into game state- so that our default values loader can populate them. NOT POSSIBLE CURRENTLY
 
 ## Todo List - Tessa
-1. Create custom assets for department door signs
-2. Create custom assets for "Exit" and "Enter" rooms
-3. Update NPC for entrance of corridor room - (Keren) using custom observation property for statements, not conversations
-4. Update story for first 2 office rooms
-5. Add custom obvervation for all 4 office doggos to say cute things
-6. Update Lindsey NPC to ensure user speaks to Hagit before proceeding to speak with Lindsey.
-7. Speak with legal dept and see if we need a copyright on any Cloudinary logo/code/content mentioned
-8. Add details about gravity by coordinates in m3_o2
+1. Update story for second office room
+2. Speak with legal dept and see if we need a copyright on any Cloudinary logo/code/content mentioned
+3. Add details about gravity by coordinates in m3_o2
 
 ## Final Pass Todo List
 1. Check experience awards for each objective
 2. Review and update objective descriptions
+3. Validation testing, such as ensuring they use their cloudname for each URL (ex in m2 o2 isn't working)
 
 ## Needs List
 1. Graphic Assets
