@@ -8,6 +8,10 @@
 </ul>
 </div>
 
+Welcome to the Marketing Department! We want you to get familiar with Cloudinary URL parameters before we get into using the API, so you'll have a series of tasks to follow. Before we get too deep into using Cloudinary, let's first get you working with your first asset by uploading a Video! Welcome to the team!
+
+********************
+
 When working with Cloudinary by hand, one of the first things you'll usually need to do is upload the source image or video assets.
 
 There are three ways to upload assets:
@@ -26,8 +30,8 @@ We're going to use a small, free for commercial use, no attribution required vid
     3. Click **Download**
     4. Save the file temporarily on your computer
 2. Go to [Media Library](https://cloudinary.com/console/media_library?utm_source=twilio&utm_medium=event&utm_campaign=cloudinary-twilioquest-2021) in the [Cloudinary Console](https://cloudinary.com/console?utm_source=twilio&utm_medium=event&utm_campaign=cloudinary-twilioquest-2021) 
-Direct link: https://cloudinary.com/console/media_library
-2. Upload the **Succulent - 14467.mp4** file by either dragging the file into the browser window OR clicking the **Upload button** and then selecting **Upload Local Files**
+
+3. Upload the **Succulent - 14467.mp4** file by either dragging the file into the browser window OR clicking the **Upload button** and then selecting **Upload Local Files**
 
 Now that the file is uploaded, click the 3 dots on top right corner of the asset and click on "Copy URL" and go back to TwilioQuest to paste it into the Resource URL and click _HACK_ to proceed.
 
