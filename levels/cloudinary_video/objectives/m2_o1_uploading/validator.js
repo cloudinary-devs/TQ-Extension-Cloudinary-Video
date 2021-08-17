@@ -13,9 +13,14 @@ module.exports = async function (helper) {
 
     download(url1, 'cloudinary_m2_o1_temp.mp4')
         .then(
-            (data) => {
+            (filename) => {
+                console.log(filename);
                 //Check the downloaded file to see if it looks like the right file
-                ffmpeg.ffprobe(data.downloadedFilePath, function (err, metadata) {
+                ffmpeg.ffprobe(filename, function (err, metadata) {
+                    if(err){
+                        console.log(err);
+                        helper.fail("Sorry, an error occurred"+err);
+                    }
                     console.log(metadata);
                     if (
                         metadata.streams[0].coded_height === 368 &&
