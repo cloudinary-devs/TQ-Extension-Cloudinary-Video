@@ -1,6 +1,6 @@
 {
   "title": "Managing Assets",
-  "description": "Learn how manage the assets in your account",
+  "description": "Learn how to manage the assets in your account",
   "validation_fields": [
     {
       "name": "url1",
