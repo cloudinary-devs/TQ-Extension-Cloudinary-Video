@@ -1,5 +1,6 @@
 const browser = require('../../../../lib/browser');
 const download = require('../../../../lib/download');
+const fs = require('fs');
 
 module.exports = async function (helper) {
 
@@ -13,6 +14,13 @@ module.exports = async function (helper) {
     download(url1, 'cloudinary_m2_o1_temp.mp4')
         .then(
             (filename) => {
+                //@todo validate file size
+                const fileSize = fs.statSync(filename).size;
+                const expectedFileSize = 676502;
+                if(fileSize !== expectedFileSize){
+                    return helper.fail(`This doesn't appear to be the correct file.  It should be ${expectedFileSize} bytes, but is ${fileSize} bytes. You should go back through the steps make sure you download the correct (smallest) version.`);
+                }
+
                 helper.success('Nice Work!');
                 browser.display(`
                     <div>
