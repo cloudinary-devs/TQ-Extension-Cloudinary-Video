@@ -1,6 +1,4 @@
-# More Information and Getting Help
-
-# Getting Help and Resources
+# Help Guide
 
 <div class="aside">
 <h3>To-Do List</h3>
