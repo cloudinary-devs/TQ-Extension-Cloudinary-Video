@@ -1,10 +1,17 @@
 # More Information and Getting Help
-There are several places to go if you need help along the way or want to learn more.
 
-Full documentation: http://cloudinary.com/documentation
+# Getting Help and Resources
 
-Video Transformations: https://cloudinary.com/documentation/video_manipulation_and_delivery
+<div class="aside">
+<h3>To-Do List</h3>
+<ul>
+  <li><b>Navigate</b> to the different resource URLs</li>
+  <li>Join the Media Developers <b>Discord</b> Community</li>
+</ul>
+</div>
 
-Training: https://training.cloudinary.com/
+******************
 
+Before we can really get started, you'll need to know where to find all of the resources and documentation. Also, if you want to get in contact with us with additional questions, meet others who are also working on these missions, or find other developers who work with media, you can join the Discord community.
 
+We are all about community and helping other developers succeed. Thank you for joining us and enjoy!

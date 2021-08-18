@@ -2,19 +2,20 @@
 
 ## Objective Help
 
-[Creating a Cloudinary Account](https://cloudinary.com/documentation/how_to_integrate_cloudinary#1_create_and_set_up_your_account?utm_source=twilio&utm_medium=event&utm_campaign=cloudinary-twilioquest-2021)
+[Cloudinary Documentation](https://cloudinary.com/documentation?utm_source=twilio&utm_medium=event&utm_campaign=cloudinary-twilioquest-2021)
 
-## Signing Up
+For answer 1, You can count the icons under "Framework Integration SDKs" and enter a numerical value.
 
-Go to [cloudinary.com/signup](https://cloudinary.com/signup) to register for a free account. This free account gives you [25 credits](https://cloudinary.com/blog/understanding_cloudinary_s_transformation_quotas?utm_source=twilio&utm_medium=event&utm_campaign=cloudinary-twilioquest-2021) per month that will be far more than enough for this adventure and any other experimenting that you would like to do.
+[Cloudinary Academy](https://training.cloudinary.com?utm_source=twilio&utm_medium=event&utm_campaign=cloudinary-twilioquest-2021)
+
+For answer 2, you can find it here. Hint: It's exactly what you think it is!
 
 
-
-
+Joining the Discord community is optional, so it isn't part of the answer form.
 
 
  
-### Additional Documentation
+### This is the Documentation Template that will be provided in every objective so you can easiliy find it!
 
 [Cloudinary Documentation](https://cloudinary.com/documentation?utm_source=twilio&utm_medium=event&utm_campaign=cloudinary-twilioquest-2021)
 
