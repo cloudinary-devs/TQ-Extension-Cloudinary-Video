@@ -13,7 +13,7 @@ Go to [cloudinary.com/signup](https://cloudinary.com/signup) to register for a f
 
 
 
-
+ 
 ### Additional Documentation
 
 [Cloudinary Documentation](https://cloudinary.com/documentation?utm_source=twilio&utm_medium=event&utm_campaign=cloudinary-twilioquest-2021)
@@ -21,3 +21,5 @@ Go to [cloudinary.com/signup](https://cloudinary.com/signup) to register for a f
 [Cloudinary Academy](https://training.cloudinary.com?utm_source=twilio&utm_medium=event&utm_campaign=cloudinary-twilioquest-2021)
 
 [Cloudinary CookBook Recipes - Transformation Examples](https://cloudinary.com/cookbook?utm_source=twilio&utm_medium=event&utm_campaign=cloudinary-twilioquest-2021)
+
+[Discord Community](https://discord.gg/CCsubwFbvd)
