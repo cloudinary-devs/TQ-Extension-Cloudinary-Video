@@ -28,14 +28,21 @@ module.exports = async function (helper) {
                 return;
             }
             browser.show();
-            browser.display(`
+           /* browser.display(`
                 <div style="width:100%;text-align: center;">
                     <h1>Pulling a sample image from your account.</h1>
                     <img src="${cloudinary.url('sample')}" alt="sample image">
                 </div>
+            `);*/
+
+             browser.display(`
+             <div style="width:100%;text-align: center;">
+                    <h1>You have received your new Employee Badge for the Ship!</h1>
+                    <img src="https://res.cloudinary.com/demo/image/facebook/c_fill,h_160,w_160,c_thumb,g_face,r_20/l_text:helv_bd_24_blue:Staff%20Badge,g_north/l_text:helv_bd_24_blue:Name:%0A ${cloudinary_cloud_name} ,g_south/700144026.png" alt="sample image">
+             </div>
             `);
 
-
+/* https://res.cloudinary.com/demo/image/facebook/c_fill,h_190,w_190,c_thumb,g_face,r_20/l_text:helv_bd_24_blue:Staff%20Badge,g_north/l_text:helv_bd_24_blue:Employee%20Name:%0A,g_south/700144026.png */
             //This stores the values into environment variables of 'name'
             helper.success(`Hooray! You did it!`, [
                 {name: 'CLOUDINARY_CLOUD_NAME', value: cloudinary_cloud_name},
