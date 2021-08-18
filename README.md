@@ -15,9 +15,15 @@
 11. Go back to the Fog Owl room and find the green area to access the Terminal
 12. Click on the Terminal and select "Cloudinary Video" and you'll be in the custom game!
 
-## Issue List
-1. Fredric is now officially an antagonist...need to remove them or repurpose.
-2. protect the api key and secret fields in sign up mission.
+## Issues
+### Internal
+2. Fredric is now officially an antagonist...need to remove them or repurpose.
+3. Need to add a special gravity/cropping focused lesson so that we can show off the special features like faces and auto.
+   1. https://cloudinary.com/documentation/video_manipulation_and_delivery#automatic_cropping
+### Help from TwilioQuest
+3. Need a way to reference local images/scripts/css in objectives/dialogs/browser.
+4. Need access to world state, extension state via helper in validator
+5. Style of code blocks in the markup is restricted to javascript.
 
 ## Todo List - Joel
 1. Status
@@ -48,13 +54,8 @@
 
 ## Needs List
 1. Graphic Assets
-    1. A Cloudinary Employee badge like "item" to represent having successfully connected their cloudinary account. (64x64 square icon for inventory slot, and 160x160px overlay for character display)
-    2. Sign plate tile - will use overlay on interaction to show content. 
-    3. Improved main corridor doorways...bonus pts for showing a peak at the (generic light themed) interior.
     4. Improved office exists...top bar to pass under
-    5. Doggo avatar pictures for conversations
-  
-    
+      
 1. Conversations
 
 ## Standards
