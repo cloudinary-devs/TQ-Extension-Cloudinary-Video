@@ -1,7 +1,14 @@
+<%
+const path = require('path');
+const fileUrl = require('file-url');
+
+function getLocalImage(relativePath) {
+    return fileUrl(path.join(context.extensions.directory,
+    'twilioquest-extension-template/images',relativePath));
+}
+%>
 # Staff Orientation
-<script>
-console.log('hello');
-</script>
+
 <div class="aside">
 <h3>To-Do List</h3>
 <ul>
@@ -16,4 +23,4 @@ Welcome to the Cloudinary Ship! Before you can get started you will need to gene
 
 To complete this, you will need to enter your Cloudinary Cloud Namea, API Key, and API Secret
 
- Enter the information into the form on the right and click _HACK_ to verify and save this information.
+Enter the information into the form on the right and click _HACK_ to verify and save this information.
