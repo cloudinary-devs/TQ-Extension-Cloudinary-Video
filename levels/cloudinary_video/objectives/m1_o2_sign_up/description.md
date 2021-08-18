@@ -1,7 +1,14 @@
+<%
+const path = require('path');
+const fileUrl = require('file-url');
+
+function getLocalImage(relativePath) {
+    return fileUrl(path.join(context.extensions.directory,
+    'twilioquest-extension-template/images',relativePath));
+}
+%>
+
 # Orientation
-<script>
-console.log('hello');
-</script>
 <div class="aside">
 <h3>To-Do List</h3>
 <ul>
