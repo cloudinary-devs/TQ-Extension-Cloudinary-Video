@@ -12,8 +12,8 @@ Great job on successfully uploading your first video! We have another task that 
 
 ********************
 
-You will need to rename you Succulent video to Flower, create a folder named TwilioQuest, and move the file into the TwilioQuest folder.
+You will need to rename you Succulent video to **Flower**, create a folder named **TwilioQuest**, and move the file into the ****TwilioQuest** folder.
 
-Copy the URL of your video in the new location with the new name, and post the URL to the right.
+**Copy the URL** of your video in the new location with the new name, and post the URL to the right.
 
 click _HACK_ to proceed.
