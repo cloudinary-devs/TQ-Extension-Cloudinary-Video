@@ -17,7 +17,7 @@ module.exports = async function (helper) {
             download(urlOriginal, 'cloudinary_m2_o3_original.mp4'),
             download(urlScaledDown, 'cloudinary_m2_o3_scaledDown.mp4')
         ])
-        .then((files) => {
+        .then((filenames) => {
             helper.success('Nice Work!');
 
             browser.display(

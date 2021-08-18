@@ -35,5 +35,4 @@ module.exports = async function (helper) {
         .catch((e) => {
             helper.fail(e);
         });
-
 };

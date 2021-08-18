@@ -118,6 +118,7 @@ module.exports = function (event, world) {
             }
             break;
         case 'objectiveDidClose':
+        case 'objectiveCompleted':
         case 'objectiveCompletedAgain' :
         case 'objectiveFailed':
             break;
