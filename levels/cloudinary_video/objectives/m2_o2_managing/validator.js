@@ -18,7 +18,7 @@ module.exports = async function (helper) {
     //Validate the url fully by trying to download the file
     download(url1, 'cloudinary_m2_o2_renamed.mp4')
         .then(
-            (data) => {
+            (filename) => {
                 helper.success('Well done!');
             }
         )

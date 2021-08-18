@@ -28,7 +28,7 @@ module.exports = async function (helper) {
             download(lowQualityUrl, 'cloudinary_m3_o1_low_quality.mp4'),
             download(autoQualityUrl, 'cloudinary_m3_o1_auto_quality.mp4')
         ])
-        .then((files) => {
+        .then((filenames) => {
             helper.success('Nice Work!');
 
             browser.display(

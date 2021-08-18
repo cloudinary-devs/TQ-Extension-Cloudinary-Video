@@ -16,7 +16,7 @@
     },
     {
       "name": "cloudinary_api_secret",
-      "type": "text",
+      "type": "password",
       "placeholder": "your API secret",
       "label": "Enter your API secret"
     }
