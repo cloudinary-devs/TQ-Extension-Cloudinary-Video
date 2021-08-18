@@ -8,10 +8,10 @@
 </ul>
 </div>
 
-******************
-
 Thanks for helping us here in the Business Development Department! We have a lot of work involving partners, so we could use some additional help.
 One of our partners would like a link to a video of a flower, can you upload that and share the URL?
+
+******************
 
 1. Download [this video](https://pixabay.com/videos/succulent-lemon-pig-face-flower-14467/)
 Click **Free Download**, Choose **640x360!!!**, Save the File
