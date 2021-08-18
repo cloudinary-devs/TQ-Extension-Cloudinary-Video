@@ -1,6 +1,6 @@
 {
   "title": "Employee Orientation",
-  "description": "Let's get you signed up!",
+  "description": "Create your Staff Badge!",
   "validation_fields": [
     {
       "name": "cloudinary_cloud_name",

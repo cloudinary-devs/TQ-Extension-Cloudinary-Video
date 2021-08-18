@@ -9,3 +9,5 @@ Full Cloudinary documentation can be found here:
 Sections related to this mission/objective:
 * [Image and Video Optimization - Quality](https://cloudinary.com/documentation/image_optimization#how_to_optimize_image_quality?utm_source=twilio&utm_medium=event&utm_campaign=cloudinary-twilioquest-2021)
 * [Video Quality Explanation in Depth](https://cloudinary.com/documentation/video_optimization?utm_source=twilio&utm_medium=event&utm_campaign=cloudinary-twilioquest-2021)
+
+If you get stuck, remember to add the parameter **q_auto**, **q_100**, or **q_10** after the **/upload/** parameter

@@ -1,4 +1,4 @@
-# Orientation
+# Staff Orientation
 <script>
 console.log('hello');
 </script>
@@ -6,20 +6,14 @@ console.log('hello');
 <h3>To-Do List</h3>
 <ul>
   <li><b>Sign Up</b> for a free Cloudinary Account.</li>
-  <li><b>Configure</b> your environment.</li>
+  <li><b>Configure</b> your environment by entering your Cloudinary cloudname, API Key, and API Secret</li>
 </ul>
 </div>
 
-There are few things to do before we can really get started.
+******************
 
-## Sign Up
+Welcome to the Cloudinary Ship! Before you can get started you will need to generate your Staff Badge to gain access to our ship.
 
-Go to [cloudinary.com/signup](https://cloudinary.com/signup) to register for a free account. This free account gives you 25 credits per month that will be far more than enough for this adventure and any other experimenting that you would like to do.
+To complete this, you will need to enter your Cloudinary Cloud Namea, API Key, and API Secret
 
-## Configure
-Once you've signed up, go the Cloudinary [Dashboard](https://cloudinary.com/console) to get your:
-* Cloud Name
-* API Key
-* API Secret
-
-You will need these to complete this objective and configure access to Cloudinary account.  Enter the information into the form on the right and click _HACK_ to verify and save this information.
+ Enter the information into the form on the right and click _HACK_ to verify and save this information.
