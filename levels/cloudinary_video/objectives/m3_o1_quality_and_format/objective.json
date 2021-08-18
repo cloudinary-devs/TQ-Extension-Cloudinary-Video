@@ -1,6 +1,6 @@
 {
-  "title": "Managing Assets",
-  "description": "Learn how manage the assets in your account",
+  "title": "Optimization",
+  "description": "Learn how to change the quality of your assets",
   "validation_fields": [
     {
       "name": "highQualityUrl",
