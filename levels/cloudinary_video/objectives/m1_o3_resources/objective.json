@@ -1,6 +1,6 @@
 {
   "title": "Resources",
-  "description": "Learn where you can go to learn more and get help",
+  "description": "Learn about how to find resources, documentation, and our community",
   "validation_fields": [
     {
       "name": "howManySDKs",
