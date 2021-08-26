@@ -1,0 +1,16 @@
+{
+  "title": "Adding Text To Videos",
+  "description": "Add an attribution tag to the Flower Video ",
+  "validation_fields": [
+    {
+      "name": "answer1",
+      "type": "text",
+      "placeholder": "https://res.cloudinary.com/<your cloudname>/",
+      "label": "Answer 1",
+      "id": "id test"
+    }
+  ],
+  "rewards": {
+    "xp": 500
+  }
+}
