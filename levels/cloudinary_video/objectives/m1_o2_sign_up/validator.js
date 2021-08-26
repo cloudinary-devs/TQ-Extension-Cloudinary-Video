@@ -1,5 +1,4 @@
 const http = require('http'); // or 'https' for https:// URLs
-const fs = require('fs');
 const cloudinary = require('cloudinary');
 const browser = require('../../../../lib/browser');
 

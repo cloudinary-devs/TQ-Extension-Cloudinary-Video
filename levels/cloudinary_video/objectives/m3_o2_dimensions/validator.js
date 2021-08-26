@@ -1,6 +1,5 @@
 const browser = require('../../../../lib/browser');
 const download = require('../../../../lib/download');
-const {forEach} = require("ramda");
 
 module.exports = async function (helper) {
     const tag = 'cloudinary_m3_o2_';
@@ -52,8 +51,6 @@ module.exports = async function (helper) {
 
         ])
         .then((filenames) => {
-            console.log(filenames);
-            return helper.success(correctMessage);
 
             //@todo-p2 Change this into a full page layout illustrating the purpose of each transformation
             browser.display(
@@ -77,6 +74,8 @@ module.exports = async function (helper) {
                 </div>
                 `
             )
+
+            return helper.success(correctMessage);
         }).catch((e) => {
         helper.fail(e);
     });
