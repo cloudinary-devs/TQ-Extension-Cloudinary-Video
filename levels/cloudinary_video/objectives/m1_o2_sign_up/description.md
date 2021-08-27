@@ -1,11 +1,11 @@
 <%
 const path = require('path');
-const fileUrl = require('file-url');
 
-function getLocalImage(relativePath) {
-    return fileUrl(path.join(context.extensions.directory,
-    'twilioquest-extension-template/images',relativePath));
+function getLocalImage(imageName) {
+return path.resolve(context.extensions.directory,
+'TQ-Extension-Cloudinary-Video/images', imageName);
 }
+//<img src="<%=getLocalImage('cloudinary_icon.png')%>">
 %>
 # Staff Orientation
 
