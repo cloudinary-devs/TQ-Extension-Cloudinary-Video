@@ -1,8 +1,6 @@
 const browser = require('../../../../lib/browser');
 const download = require('../../../../lib/download');
-const Advisor = require('../../../../lib/grader');
-const assert = require('assert');
-const {forEach} = require("ramda");
+const Grader = require('../../../../lib/grader');
 
 
 module.exports = async function (helper) {
@@ -11,9 +9,9 @@ module.exports = async function (helper) {
     const answers = helper.validationFields;
 
     //Use the advisor to review submitted answers and check them against our key.
-    let advisor = new Advisor(helper, {
+    let grade = new Grader(helper, {
         answer1: {
-            //https://res.cloudinary.com/joelsimpson/video/upload/c_scale,w_400/l_text:roboto_30_bold:@DeloitteNick,g_south_east/v1627081950/TwilioQuest/Flower.mp4
+            //https://res.cloudinary.com/joelsimpson/video/upload/l_cloudinary_icon_white/o_50/e_brightness:100/eo_10.0,fl_layer_apply,so_6.5/c_scale,w_400/l_text:roboto_30_bold:@DeloitteNick,g_south_east/v1627081950/TwilioQuest/Flower.mp4
             mustAppear: ['/c_scale', 'w_400', 'l_text', 'roboto', '30', 'bold', ':@DeloitteNick', 'g_south_east', 'Flower.mp4'],
             mustAppearInOrder: [
                 ['/c_scale', '/l_text']
@@ -21,9 +19,7 @@ module.exports = async function (helper) {
         }
     });
 
-    if (!advisor.passed()) {
-        return;
-    }
+    if (grade.failed()) return;
 
     //Final test by downloading...
     Promise.all(
@@ -48,7 +44,7 @@ module.exports = async function (helper) {
                 `
             )
 
-            return helper.success(advisor.correctMessage);
+            return helper.success(grade.correctMessage);
 
         }).catch((e) => {
         helper.fail(e);
