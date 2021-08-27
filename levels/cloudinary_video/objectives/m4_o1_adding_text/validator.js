@@ -11,7 +11,7 @@ module.exports = async function (helper) {
     //Use the advisor to review submitted answers and check them against our key.
     let grade = new Grader(helper, {
         answer1: {
-            //https://res.cloudinary.com/joelsimpson/video/upload/l_cloudinary_icon_white/o_50/e_brightness:100/eo_10.0,fl_layer_apply,so_6.5/c_scale,w_400/l_text:roboto_30_bold:@DeloitteNick,g_south_east/v1627081950/TwilioQuest/Flower.mp4
+            //https://res.cloudinary.com/joelsimpson/video/upload/c_scale,w_400/l_text:roboto_30_bold:@DeloitteNick,g_south_east/v1627081950/TwilioQuest/Flower.mp4
             mustAppear: ['/c_scale', 'w_400', 'l_text', 'roboto', '30', 'bold', ':@DeloitteNick', 'g_south_east', 'Flower.mp4'],
             mustAppearInOrder: [
                 ['/c_scale', '/l_text']
