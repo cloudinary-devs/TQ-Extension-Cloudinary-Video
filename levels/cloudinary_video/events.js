@@ -15,10 +15,10 @@ module.exports = function (event, world) {
         if (event.name === 'levelDidLoad') {
             //Set javascript sources to be reloaded instead of cached
             window.reloadExternalModules = true;
-            //console.clear(); //clear out all the platform errors/warnings that occur at startup
+            console.clear(); //clear out all the platform errors/warnings that occur at startup
         }
         //log all events in dev mode
-        console.log({event, world});
+        //console.log({event, world});
     }
 
     /**

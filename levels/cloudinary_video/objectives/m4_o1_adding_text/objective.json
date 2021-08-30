@@ -7,7 +7,6 @@
       "type": "text",
       "placeholder": "https://res.cloudinary.com/<your cloudname>/",
       "label": "Answer 1",
-      "id": "id test"
     }
   ],
   "rewards": {

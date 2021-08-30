@@ -1,0 +1,15 @@
+{
+  "title": "Adding Images to Videos",
+  "description": "Add the cloudinary logo to the Flower Video ",
+  "validation_fields": [
+    {
+      "name": "answer1",
+      "type": "text",
+      "placeholder": "https://res.cloudinary.com/<your cloudname>/...",
+      "label": "Answer 1"
+    }
+  ],
+  "rewards": {
+    "xp": 500
+  }
+}

@@ -51,6 +51,7 @@
 1. Check experience awards for each objective
 2. Review and update objective descriptions
 3. Validation testing, such as ensuring they use their cloudname for each URL (ex in m2 o2 isn't working)
+4. Make sure all _param_ references are also links to documentation
 
 ## Needs List
 1. Graphic Assets
