@@ -15,7 +15,20 @@
 11. Go back to the Fog Owl room and find the green area to access the Terminal
 12. Click on the Terminal and select "Cloudinary Video" and you'll be in the custom game!
 
-## Issues
+## Extension Completion
+
+|  | Status |
+| --- | --- |
+|Mission 1|First Draft Complete|
+|Mission 2|First Draft Complete|
+|Mission 3|First Draft Complete|
+|Mission 4|First Draft Complete|
+|Mission 5|In Progress (Objectives 1,2,3)|
+|Mission 6|Not Started (Objectives 1,2)|
+|Mission 7|Not Started (Objectives 1,2,3)|
+|Mission 8|Not Started (Objectives 1,2,3)|
+
+
 ### Internal
 2. Fredric is now officially an antagonist...need to remove them or repurpose.
 3. Need to add a special gravity/cropping focused lesson so that we can show off the special features like faces and auto.
@@ -26,32 +39,25 @@
 5. Style of code blocks in the markup is restricted to javascript.
 
 ## Todo List - Joel
-1. Status
-   1. m1_o1 - COMPLETE
-   2. m1_o2 - COMPLETE
-   4. m2_o1 -
-   5. m2_o2 -
-   6. m2_o3 - 
-   7. m3_o1 - 
-   8. m3_o2 - Not Started
-   9. m4_01 - Not Started
-   10. m4_02 - Not Started 
-2. Close the hack interface when browser closes? 
-   1. or is it better to have close twice so they see the game information?
-3. When returning to main corridor, greeter should not appear if all objectives have been completed.
-4. "Thanks, would you like to show/complete/do it again" conversation should play when talking to greeter/npc inside their office if all objectives have been completed.
-5. Save hack answers into game state- so that our default values loader can populate them. NOT POSSIBLE CURRENTLY
+2. When returning to main corridor, greeter should not appear if all objectives have been completed.
+3. "Thanks, would you like to show/complete/do it again" conversation should play when talking to greeter/npc inside their office if all objectives have been completed.
+4. Save hack answers into game state- so that our default values loader can populate them. NOT POSSIBLE CURRENTLY
+5. Integrate new doors and signs tilesets
 
 ## Todo List - Tessa
 1. Update story for second office room
 2. Speak with legal dept and see if we need a copyright on any Cloudinary logo/code/content mentioned
 3. Add details about gravity by coordinates in m3_o2
 
-## Final Pass Todo List
+## Refinement and Final Pass Todo List
 1. Check experience awards for each objective
-2. Review and update objective descriptions
-3. Validation testing, such as ensuring they use their cloudname for each URL (ex in m2 o2 isn't working)
-4. Make sure all _param_ references are also links to documentation
+2. Review pacing of lessons
+3. Review and update objective descriptions
+4. Replace office banners with sign plates (and add pop up information for inspection)
+5. Replace doorways with new graphics
+    1. Integrate new doors and signs tilesets
+6. Validation testing, such as ensuring they use their cloudname for each URL (ex in m2 o2 isn't working)
+7. Make sure all _param_ references in walkthrough.md and description.md are also links to documentation
 
 ## Needs List
 1. Graphic Assets
