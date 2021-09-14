@@ -1,6 +1,7 @@
 const browser = require('../../../../lib/browser');
 const download = require('../../../../lib/download');
 
+//@todo-p2 update to use new Grader class
 module.exports = async function (helper) {
     const tag = 'cloudinary_m3_o2_';
 
@@ -60,15 +61,15 @@ module.exports = async function (helper) {
                     <div style="display: flex;flex-wrap: wrap;justify-content: space-evenly">
                         <div>
                             <h3>Scaled</h3>
-                            <video autoplay loop><source src="${answers['answer1']}" type="video/mp4"></video>
+                            <video autoplay loop><source src="file://${filenames[0]}" type="video/mp4"></video>
                         </div>
                         <div>
                             <h3>Fit</h3>
-                            <video autoplay loop><source src="${answers['answer2']}" type="video/mp4"></video>
+                            <video autoplay loop><source src="file://${filenames[1]}" type="video/mp4"></video>
                         </div>
                         <div>
                             <h3>Cropped</h3>
-                            <video autoplay loop><source src="${answers['answer3']}" type="video/mp4"></video>
+                            <video autoplay loop><source src="file://${filenames[2]}" type="video/mp4"></video>
                         </div>
                     </div>
                 </div>

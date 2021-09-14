@@ -25,11 +25,11 @@ module.exports = async function (helper) {
                 <h1>Success!</h1>
                 <div>
                     <h3>Original</h3>
-                    <video autoplay loop><source src="${urlOriginal}" type="video/mp4"></video>
+                    <video autoplay loop><source src="file://${filenames[0]}" type="video/mp4"></video>
                 </div>
                 <div>
                     <h3>Half Size</h3>
-                    <video autoplay loop><source src="${urlScaledDown}" type="video/mp4"></video>
+                    <video autoplay loop><source src="file://${filenames[1]}" type="video/mp4"></video>
                 </div>
                 `
             )
