@@ -1,0 +1,15 @@
+{
+  "title": "Picture in Picture",
+  "description": "Add Video Layers to Videos",
+  "validation_fields": [
+    {
+      "name": "answer1",
+      "type": "text",
+      "placeholder": "https://res.cloudinary.com/<your cloudname>/...",
+      "label": "Answer 1"
+    }
+  ],
+  "rewards": {
+    "xp": 500
+  }
+}
