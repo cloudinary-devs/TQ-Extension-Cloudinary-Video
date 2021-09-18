@@ -23,7 +23,7 @@
 |Mission 2|First Draft Complete|
 |Mission 3|First Draft Complete|
 |Mission 4|First Draft Complete|
-|Mission 5|In Progress (Objectives 1,2,3)|
+|Mission 5|In Progress (Objectives 1,2 of 4 complete)|
 |Mission 6|Not Started (Objectives 1,2)|
 |Mission 7|Not Started (Objectives 1,2,3)|
 |Mission 8|Not Started (Objectives 1,2,3)|
@@ -43,6 +43,7 @@
 3. "Thanks, would you like to show/complete/do it again" conversation should play when talking to greeter/npc inside their office if all objectives have been completed.
 4. Save hack answers into game state- so that our default values loader can populate them. NOT POSSIBLE CURRENTLY
 5. Integrate new doors and signs tilesets
+6. Simplify m4_o2 by using cloudinary logo from sample assets in their account instead of uploading file 
 
 ## Todo List - Tessa
 1. Update story for second office room
