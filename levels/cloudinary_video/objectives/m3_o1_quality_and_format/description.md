@@ -16,8 +16,9 @@ You can control the video quality with the quality parameter (**q_** in URLs). Y
 The automatic mode typically provides an ideal balance between quality and file size.
 
 1. Enter the high quality url using the **q_100** parameter
-2. Enter the low quality url using the **q_10** parameter
-3. Enter the auto quality url using the **q_auto** parameter 
+2. Enter the auto quality url using the **q_auto** parameter
+3. Enter the low quality url using the **q_10** parameter
+ 
 4. Click _HACK_ to proceed.
 
 
