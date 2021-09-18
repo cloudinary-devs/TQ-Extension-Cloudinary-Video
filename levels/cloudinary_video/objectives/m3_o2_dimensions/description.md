@@ -151,9 +151,10 @@ Your answers to these questions must use your Flower video.
 
 1. <a name="q1"></a>Create a Flower video URL for <a onclick="jQuery('input')[0].focus()">Answer 1</a> using [scale](#scale) that is:
    - 150 pixels wide
-   - 250 pixels tall
 2. <a name="q2"></a>Create a Flower video URL for <a onclick="jQuery('input')[1].focus()">Answer 2</a> using [fill](#fill) that is:
-   - 100 pixels tall
+   - 300 pixels tall
+   - 300 pixels wide
 3. <a name="q3"></a>Create a Flower video URL for <a onclick="jQuery('input')[2].focus()">Answer 3</a> using [crop](#crop) that is
-   - 50 pixels wide 
-   - cropped at X:100, Y:0 
+   - 100 pixel high
+   - 350 pixels wide 
+   - cropped at X:230, Y:110 

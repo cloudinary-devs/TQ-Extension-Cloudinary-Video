@@ -1,84 +1,47 @@
 const browser = require('../../../../lib/browser');
-const download = require('../../../../lib/download');
+const Grader = require('../../../../lib/grader');
 
-//@todo-p2 update to use new Grader class
 module.exports = async function (helper) {
-    const tag = 'cloudinary_m3_o2_';
 
-    const correctParameters = {
-        answer1: ['c_scale','w_150'],
-        answer2: ['c_fill','w_150'],
-        answer3: ['c_crop','h_100','w_350','x_230','y_110']
-    }
 
-    let wrong = [];
-    let correct = [];
-
-    const answers = helper.validationFields;
-
-    //Identify missing answers
-    for (let i = 1; i <= Object.keys(correctParameters).length; i++) {
-        if (!answers.hasOwnProperty('answer' + i)) {
-            wrong.push(`<a href="#q${i}">Answer ${i}</a> is incomplete.`);
+    let grader = new Grader(helper, {
+        answer1: {
+            validExample: 'https://res.cloudinary.com/joelsimpson/video/upload/c_scale,w_150/TwilioQuest/Flower.mp4',
+            mustAppear: ['c_scale', 'w_150']
+        },
+        answer2: {
+            validExample: 'https://res.cloudinary.com/joelsimpson/video/upload/c_fill,w_300,h_300/TwilioQuest/Flower.mp4',
+            mustAppear: ['c_fill', 'w_300','h_300']
+        },
+        answer3: {
+            validExample: 'https://res.cloudinary.com/joelsimpson/video/upload/c_crop,h_100,w_350,x_230,y_110/TwilioQuest/Flower.mp4',
+            mustAppear: ['c_crop', 'h_100', 'w_350', 'x_230', 'y_110']
         }
-    }
-
-    //Look through submitted answers.
-    for (const key in answers) {
-
-        //replace leading non-digits with nothing to extract the Answer number
-        let answerNumber = key.replace(/^\D+/g, '');
-
-        if (correctParameters[key].every((param)=>answers[key].includes(param))) {
-            correct.push(`Answer ${answerNumber}`);
-        } else {
-            wrong.unshift(`<a href="#q${answerNumber}">Answer ${answerNumber}</a>`);
-        }
-    }
-
-    const correctMessage = "<div style='text-align: left;'>" + (correct.length >0?"Perfect:<ul><li>" + correct.join("</li><li>") + "</li></ul></div>":'');
-    const problemsMessage = "<div style='text-align: left;'>Needs Improvement:<ul><li>" + wrong.join("</li><li>") + "</li></ul></div>";
-
-    if (wrong.length > 0) {
-        return helper.fail(correctMessage+problemsMessage);
-    }
-
-    //Final test by downloading...
-    Promise.all(
-        [
-            download(answers['answer1'], tag + 'answer1.mp4'),
-            download(answers['answer2'], tag + 'answer2.mp4'),
-            download(answers['answer3'], tag + 'answer3.mp4'),
-
-        ])
-        .then((filenames) => {
-
-            //@todo-p2 Change this into a full page layout illustrating the purpose of each transformation
-            browser.display(
-                `
+    }, function pass() {
+        helper.success(grader.getSuccessMessage());
+        browser.display(
+            `
                 <div>
                     <h1>Success!</h1>
                     <div style="display: flex;flex-wrap: wrap;justify-content: space-evenly">
                         <div>
                             <h3>Scaled</h3>
-                            <video autoplay loop><source src="file://${filenames[0]}" type="video/mp4"></video>
+                            <video autoplay loop><source src="file://${grader.downloadedFiles[0]}" type="video/mp4"></video>
                         </div>
                         <div>
                             <h3>Fit</h3>
-                            <video autoplay loop><source src="file://${filenames[1]}" type="video/mp4"></video>
+                            <video autoplay loop><source src="file://${grader.downloadedFiles[1]}" type="video/mp4"></video>
                         </div>
                         <div>
                             <h3>Cropped</h3>
-                            <video autoplay loop><source src="file://${filenames[2]}" type="video/mp4"></video>
+                            <video autoplay loop><source src="file://${grader.downloadedFiles[2]}" type="video/mp4"></video>
                         </div>
                     </div>
                 </div>
                 `
-            )
-
-            return helper.success(correctMessage);
-        }).catch((e) => {
-        helper.fail(e);
+        );
     });
+
+    grader.grade();
 
 };
