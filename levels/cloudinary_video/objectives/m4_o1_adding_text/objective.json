@@ -6,7 +6,7 @@
       "name": "answer1",
       "type": "text",
       "placeholder": "https://res.cloudinary.com/<your cloudname>/",
-      "label": "Answer 1",
+      "label": "Answer 1"
     }
   ],
   "rewards": {
