@@ -1,8 +1,9 @@
 const browser = require('../../../../lib/browser');
 const Grader = require('../../../../lib/grader');
+const state = require('../../../../lib/state');
 
 module.exports = async function (helper) {
-
+    state.saveAnswers(helper);
 
     let grader = new Grader(helper, {
         answer1: {

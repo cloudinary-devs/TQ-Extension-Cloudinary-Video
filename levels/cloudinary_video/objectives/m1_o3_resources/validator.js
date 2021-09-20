@@ -1,4 +1,8 @@
+const state = require("../../../../lib/state");
+
 module.exports = async function (helper) {
+
+  state.saveAnswers(helper);
 
   const howManySDKs = helper.getNormalizedInput('howManySDKs');
   const cloudinaryAcademy = helper.getNormalizedInput('cloudinaryAcademy');

@@ -1,11 +1,12 @@
 const http = require('http'); // or 'https' for https:// URLs
 const cloudinary = require('cloudinary');
 const browser = require('../../../../lib/browser');
+const state = require('../../../../lib/state');
 
 module.exports = async function (helper) {
 
     try {
-
+        state.saveAnswers(helper);
         const cloudinary_cloud_name = helper.getNormalizedInput('cloudinary_cloud_name');
         const cloudinary_api_key = helper.getNormalizedInput('cloudinary_api_key');
         const cloudinary_api_secret = helper.getNormalizedInput('cloudinary_api_secret');

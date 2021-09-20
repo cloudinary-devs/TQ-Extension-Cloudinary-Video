@@ -1,7 +1,9 @@
 const browser = require('../../../../lib/browser');
 const download = require('../../../../lib/download');
+const state = require('../../../../lib/state');
 
 module.exports = async function (helper) {
+    state.saveAnswers(helper);
 
     const urlOriginal = helper.getNormalizedInput('urlOriginal');
     const urlScaledDown = helper.getNormalizedInput('urlScaledDown');

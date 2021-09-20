@@ -1,7 +1,8 @@
 const download = require('../../../../lib/download');
+const state = require('../../../../lib/state');
 
 module.exports = async function (helper) {
-
+    state.saveAnswers(helper);
     // We start by getting the user input from the helper
     const {url1} = helper.validationFields;
 
