@@ -7,6 +7,8 @@
     </ul>
 </div>
 
+<b>TIP:</b> Experiment with urls without leaving the game, using the <button onclick='window.CloudinaryBrowser.showUrlExplorer();'>URL Video Explorer Tool</button>
+
 ## Preparation
 We'll be using videos from the Cloudinary demo account. In order to use them in our account, we'll create an Auto Upload Mapping by:
 1. Got to [Upload Settings](https://cloudinary.com/console/lui/settings/upload) in the Cloudinary Console and create a new Auto Upload mapping with these settings:

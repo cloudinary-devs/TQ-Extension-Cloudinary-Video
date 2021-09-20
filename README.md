@@ -44,6 +44,7 @@
 4. Save hack answers into game state- so that our default values loader can populate them. NOT POSSIBLE CURRENTLY
 5. Integrate new doors and signs tilesets
 6. Simplify m4_o2 by using cloudinary logo from sample assets in their account instead of uploading file 
+7. Lock m5_04 until m5_03 has been successfully completed.
 
 ## Todo List - Tessa
 1. Update story for second office room

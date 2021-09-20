@@ -14,6 +14,8 @@ return path.resolve(context.extensions.directory,
     </ul>
 </div>
 
+<b>TIP:</b> Experiment with urls without leaving the game, using the <button onclick='window.CloudinaryBrowser.showUrlExplorer();'>URL Video Explorer Tool</button>
+
 ## <a name="questions">Questions</a>
 Create urls for the flower video that have the following specifications.
 

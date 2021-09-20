@@ -175,6 +175,46 @@
                  "width":22,
                  "x":337,
                  "y":367
+                }, 
+                {
+                 "height":19,
+                 "id":139,
+                 "name":"",
+                 "properties":[
+                        {
+                         "name":"hackable",
+                         "type":"bool",
+                         "value":true
+                        }, 
+                        {
+                         "name":"objectiveName",
+                         "type":"string",
+                         "value":"m5_o3_combining_clips"
+                        }],
+                 "rotation":0,
+                 "type":"objective",
+                 "visible":true,
+                 "width":22,
+                 "x":415,
+                 "y":365
+                }, 
+                {
+                 "gid":10010,
+                 "height":24,
+                 "id":140,
+                 "name":"",
+                 "properties":[
+                        {
+                         "name":"objectiveName",
+                         "type":"string",
+                         "value":"m5_o4_transitions"
+                        }],
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":24,
+                 "x":452,
+                 "y":442
                 }],
          "opacity":1,
          "type":"objectgroup",
@@ -222,7 +262,7 @@
          "y":0
         }],
  "nextlayerid":45,
- "nextobjectid":139,
+ "nextobjectid":141,
  "orientation":"orthogonal",
  "renderorder":"right-down",
  "tiledversion":"1.7.1",

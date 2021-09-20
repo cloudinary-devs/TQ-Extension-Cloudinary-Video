@@ -14,6 +14,8 @@ return path.resolve(context.extensions.directory,
     </ul>
 </div>
 
+<b>TIP:</b> Experiment with urls without leaving the game, using the <button onclick='window.CloudinaryBrowser.showUrlExplorer();'>URL Video Explorer Tool</button>
+
 ## Preparation Steps
 1. Upload this file to your account. <br><a download href="<%=getLocalImage('cloudinary_icon.png')%>">![](<%=getLocalImage('cloudinary_icon.png')%>)</a>(click to download)
 2. Put it in the TwilioQuest folder

@@ -2,6 +2,7 @@ const jQuery = require('jquery');
 const inject = require('../../lib/injector');
 const observer = require('../../lib/conversationObserver');
 const browser = require('../../lib/browser');
+const state = require('../../lib/state');
 const setHackFormDefaults = require('../../lib/hackFormDefaultValues');
 
 console.log('Cloudinary Video Mission loaded (event.js reloaded)');
@@ -110,6 +111,10 @@ module.exports = function (event, world) {
                         env.TQ_CLOUDINARY_API_SECRET ? env.TQ_CLOUDINARY_API_SECRET.value : null,
                     ]);
 
+                    break;
+                case 'm5_o4_transitions':
+                    //commenting out, because we can put the url into the objective for reference...left here as example
+                    //setHackFormDefaults([state.getAnswers('m5_o3_combining_clips').value().answer3,'','']);
                     break;
                 default:
                     //waiting .. .can't put answers in state yet..so can't retrieve them

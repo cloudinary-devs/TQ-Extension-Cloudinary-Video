@@ -1,0 +1,18 @@
+{
+  "title": "Combining Video Clips",
+  "description": "Make a video composed of multiple video clips",
+  "validation_fields": [
+    {
+      "name": "answer1",
+      "type": "text",
+      "label": "Answer 1: luma matte video"
+    },{
+      "name": "answer2",
+      "type": "text",
+      "label": "Answer 2"
+    }
+  ],
+  "rewards": {
+    "xp": 1500
+  }
+}

@@ -7,6 +7,8 @@
     </ul>
 </div>
 
+<b>TIP:</b> Experiment with urls without leaving the game, using the <button onclick='window.CloudinaryBrowser.showUrlExplorer();'>URL Video Explorer Tool</button>
+
 We're borrowing the Flower video and though the license granted doesn't require attribution, it would be nice to give credit.
 
 The feature we're look for is called [Text Overlays](https://cloudinary.com/documentation/video_manipulation_and_delivery#adding_text_overlays) and uses over**L**ay parameters, specifically *l_text:*
