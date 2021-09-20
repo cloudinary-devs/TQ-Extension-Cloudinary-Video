@@ -1,0 +1,22 @@
+{
+  "title": "Combining Video Clips",
+  "description": "Make a video composed of multiple video clips",
+  "validation_fields": [
+    {
+      "name": "answer1",
+      "type": "text",
+      "label": "The kitten_fighting video url"
+    },{
+      "name": "answer2",
+      "type": "text",
+      "label": "The dog video url"
+    },{
+      "name": "answer3",
+      "type": "text",
+      "label": "The combined video url"
+    }
+  ],
+  "rewards": {
+    "xp": 1500
+  }
+}
