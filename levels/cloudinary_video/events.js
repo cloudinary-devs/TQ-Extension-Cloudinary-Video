@@ -1,11 +1,10 @@
 const jQuery = require('jquery');
 const inject = require('../../lib/injector');
 const observer = require('../../lib/conversationObserver');
+const keyHandler = require('../../lib/keyboardHandler');
 const browser = require('../../lib/browser');
 const state = require('../../lib/state');
 const setHackFormDefaults = require('../../lib/hackFormDefaultValues');
-
-console.log('Cloudinary Video Mission loaded (event.js reloaded)');
 
 module.exports = function (event, world) {
 
@@ -22,6 +21,8 @@ module.exports = function (event, world) {
         //console.log({event, world});
     }
 
+    console.log('Cloudinary Video Mission Started (event.js)');
+
     /**
      * Main Extension/'Level' logic
      */
@@ -33,71 +34,16 @@ module.exports = function (event, world) {
 
         case 'mapDidLoad':
 
-            //Start our conversation eavesdropper, listening on the top level app node
-            observer.start(jQuery('#app div.App')[0]);
+            //Start our conversation eavesdropper
+            observer.start();
 
             //Inject our custom css for the file browser, sign posts and other functionality
             inject.css('cloudinary.css');
 
-            //Attach/replace key listener
-            let body = jQuery('body');
-            body.unbind('keydown.cloudinary')
-            body.bind('keydown.cloudinary', function (event) {
-                let hackDialogOpen = jQuery('.HackInterface').length > 0;
-                let conversationOpen = jQuery('div.Conversation:not(#cloudinary-browser)').length > 0;
+            //Start handler for triggering our special features
+            (new keyHandler(world,browser)).start();
 
-                /**
-                 * Keys/functions that would interrupt data entry, so only trigger when dialogs aren't in use
-                 */
-                if (!hackDialogOpen && !conversationOpen) {
-
-                    switch (event.key) {
-                        case 'b':
-                            browser.toggle();
-                            break;
-                        case '+':
-                            world.__internals.level.player.moveSpeed += 60;
-                            console.log('setting movement speed:' + world.__internals.level.player.moveSpeed);
-                            break;
-                        case '-':
-                            world.__internals.level.player.moveSpeed -= 60;
-                            console.log('setting movement speed:' + world.__internals.level.player.moveSpeed);
-                            break;
-                    }
-
-                    if (!!event.shiftKey) {//set sprinting speed
-                        world.__internals.level.player.moveSpeed = 280;
-                    }
-
-                } else {
-
-                    /**
-                     * Key actions that are safe to trigger anywhere
-                     */
-
-                    switch (event.key) {
-                        case 'Escape':
-                            browser.hide();
-                            break;
-                    }
-                }
-            });
-
-            body.unbind('keyup.cloudinary')
-            body.bind('keyup.cloudinary', function (event) {
-                let hackDialogOpen = jQuery('.HackInterface').length > 0;
-                let conversationOpen = jQuery('div.Conversation:not(#cloudinary-browser)').length > 0;
-
-                /**
-                 * Keys/functions that would interrupt data entry, so only trigger when dialogs aren't in use
-                 */
-                if (!hackDialogOpen && !conversationOpen) {
-                    if (!event.shiftKey) {//set regular movement speed
-                        world.__internals.level.player.moveSpeed = 120;
-                    }
-                }
-            });
-            break;
+           break;
 
         case 'objectiveDidOpen' :
             //@todo-p2 refactor into a generic call to objectives/<objective_name>/event.js:objectiveDidOpen() call?
