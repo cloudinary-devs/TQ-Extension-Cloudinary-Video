@@ -3,7 +3,7 @@
   "description": "Learn how to upload videos to your account in Cloudinary",
   "validation_fields": [
     {
-      "name": "url1",
+      "name": "answer1",
       "type": "text",
       "placeholder": "URL of the uploaded file",
       "label": "Resource URL"
