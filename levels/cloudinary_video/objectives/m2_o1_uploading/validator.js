@@ -4,7 +4,7 @@ const Grader = require("../../../../lib/grader");
 module.exports = async function (helper) {
     let grader = new Grader(helper, {
         answer1: {
-            validExample: 'https://res.cloudinary.com/joelsimpson/video/upload/demo/kitten_fighting.mp4',
+            validExample: 'https://res.cloudinary.com/joelsimpson/video/upload/Succulent_-_14467.mp4',
             mustAppear: ['https:','res.cloudinary.com','video/upload','Succulent_-_14467','.mp4']
         }
     }, function pass() {
