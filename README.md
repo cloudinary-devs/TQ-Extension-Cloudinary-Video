@@ -4,7 +4,7 @@
 
 1. Download TwilioQuest https://www.twilio.com/quest/download
 2. Select TQ 3.2 Preview on the latest alpha version (As of mid October 2021, you will use the current live version)
-3. Create folder on your local computer called **TwilioQuest-Extensions**
+3. Create folder on your local computer called **TwilioQuest-Extensions** (You can also find the rest of the instructions on installing an Extension here: https://github.com/TwilioQuest/twilioquest-extension-template)
 4. In your CLI, cd into TwilioQuest-Extensions folder
 5. Clone this repository (You should be able to see it as TwilioQuest-Extensions->TQ-Extension-Cloudinary-Video) for the 2 directories
 6. cd into TQ-Extension-Cloudinary-Video and do an **npm install**
