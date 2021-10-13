@@ -7,7 +7,7 @@
 </ul>
 </div>
 
-<b>TIP:</b> Experiment with urls without leaving the game, using the <button onclick='window.CloudinaryBrowser.showUrlExplorer();'>URL Video Explorer Tool</button>
+<b>TIP:</b> Experiment with urls without leaving the game, using the <button onclick='window.CloudinaryBrowser.showUrlExplorer();'>Cloudinary Explorer</button>
 
 You are becoming a pro when it comes to working with URL parameters! Soon you will be ready to dig into the API! You just need to get familiar with a few more things before we get to that point. Let's learn about changing the quality of your video!
 

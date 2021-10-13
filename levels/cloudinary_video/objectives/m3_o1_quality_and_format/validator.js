@@ -27,15 +27,15 @@ module.exports = async function (helper) {
                     <div style="display: flex;flex-wrap: wrap;justify-content: space-evenly">
                         <div>
                             <h3>High Quality (q_100) </h3>
-                            <video autoplay loop><source src="file://${grader.downloadedFiles[0]}" type="video/mp4"></video>
+                            <video autoplay loop controls><source src="${grader.getVideoUrl('answer1')}" type="video/mp4"></video>
                         </div>
                         <div>
                             <h3>Auto Quality (q_auto) </h3>
-                            <video autoplay loop><source src="file://${grader.downloadedFiles[1]}" type="video/mp4"></video>
+                            <video autoplay loop controls><source src="${grader.getVideoUrl('answer2')}" type="video/mp4"></video>
                         </div>
                         <div>
                             <h3>Low Quality (q_10) </h3>
-                            <video autoplay loop><source src="file://${grader.downloadedFiles[2]}" type="video/mp4"></video>
+                            <video autoplay loop controls><source src="${grader.getVideoUrl('answer3')}" type="video/mp4"></video>
                         </div>
                     </div>
                 </div>

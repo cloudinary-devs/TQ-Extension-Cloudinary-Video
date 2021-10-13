@@ -5,12 +5,12 @@ module.exports = async function (helper) {
 
     let grader = new Grader(helper, {
         answer1: {
-            validExample:'https://res.cloudinary.com/joelsimpson/video/upload/demo/kitten_fighting.mp4',
-            mustAppear:['demo/kitten_fighting.mp4']
-        },answer2: {
-            validExample:'https://res.cloudinary.com/joelsimpson/video/upload/demo/dog.mp4',
+            validExample: 'https://res.cloudinary.com/joelsimpson/video/upload/demo/kitten_fighting.mp4',
+            mustAppear: ['demo/kitten_fighting.mp4']
+        }, answer2: {
+            validExample: 'https://res.cloudinary.com/joelsimpson/video/upload/demo/dog.mp4',
             mustAppear: ['demo/dog.mp4']
-        },answer3: {
+        }, answer3: {
             validExample: `https://res.cloudinary.com/joelsimpson/video/upload/c_fill,h_200,w_300/fl_splice,l_video:demo:kitten_fighting.mp4/c_fill,h_200,w_300/fl_layer_apply/fl_splice,l_video:TwilioQuest:Flower.mp4/c_fill,h_200,w_300/fl_layer_apply/demo/dog.mp4`,
             mustAppear: [],
             mustAppearInOrder: [
@@ -26,7 +26,6 @@ module.exports = async function (helper) {
         //      might make sense to have some sort of query normalizer for certain parameters (width always comes before height)
         // can we use api to help?
         helper.success(grader.getSuccessMessage());
-
         browser.display(
             `
         <div>
@@ -34,9 +33,8 @@ module.exports = async function (helper) {
             <div style="display: flex;flex-wrap: wrap;justify-content: space-evenly">
                 <div>
                     <h3>A video of clips!</h3>
-                    <video autoplay loop><source src="file://${grader.downloadedFiles[2]}" type="video/mp4"></video>
+                    <video autoplay loop controls><source src="${grader.getVideoUrl('answer3')}" type="video/mp4"></video>
                 </div>
-
             </div>
         </div>
         `
@@ -44,7 +42,6 @@ module.exports = async function (helper) {
     }, function fail() {
         //@todo-p2 We may need to provide better guidance, this one is more complicated and because the grading system can't handle duplicate parameters, it's relatively ineffective in this case.
     })
-
 
     grader.grade();
 };

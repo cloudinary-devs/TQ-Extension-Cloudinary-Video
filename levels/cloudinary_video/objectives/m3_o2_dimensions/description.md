@@ -9,7 +9,7 @@
     </ul>
 </div>
 
-<b>TIP:</b> Experiment with urls without leaving the game, using the <button onclick='window.CloudinaryBrowser.showUrlExplorer();'>URL Video Explorer Tool</button>
+<b>TIP:</b> Experiment with urls without leaving the game, using the <button onclick='window.CloudinaryBrowser.showUrlExplorer();'>Cloudinary Explorer</button>
 
 Buckle up!  We're going to cover a bunch of parameters all at once. Fortunately, they are all related to changing the
 size and shape of a video.

@@ -21,6 +21,6 @@ return path.resolve(context.extensions.directory,
 
 Welcome to the Cloudinary Ship! Before you can get started you will need to generate your Staff Badge to gain access to our ship.
 
-To complete this, you will need to enter your Cloudinary Cloud Namea, API Key, and API Secret
+To complete this, you will need to enter your Cloudinary Cloud Name, API Key, and API Secret
 
 Enter the information into the form on the right and click _HACK_ to verify and save this information.

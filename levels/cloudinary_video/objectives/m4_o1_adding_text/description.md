@@ -7,7 +7,7 @@
     </ul>
 </div>
 
-<b>TIP:</b> Experiment with urls without leaving the game, using the <button onclick='window.CloudinaryBrowser.showUrlExplorer();'>URL Video Explorer Tool</button>
+<b>TIP:</b> Experiment with urls without leaving the game, using the <button onclick='window.CloudinaryBrowser.showUrlExplorer();'>Cloudinary Explorer</button>
 
 We're borrowing the Flower video and though the license granted doesn't require attribution, it would be nice to give credit.
 

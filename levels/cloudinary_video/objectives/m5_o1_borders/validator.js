@@ -29,9 +29,9 @@ module.exports = async function (helper) {
             <h1>Success!</h1>
             <div style="display: flex;flex-wrap: wrap;justify-content: space-evenly">
                 <div>
-                    <video autoplay loop><source src="file://${grader.downloadedFiles[0]}" type="video/mp4"></video>
-                    <video autoplay loop><source src="file://${grader.downloadedFiles[1]}" type="video/mp4"></video>
-                    <video autoplay loop><source src="file://${grader.downloadedFiles[2]}" type="video/mp4"></video>
+                    <video autoplay loop controls><source src="${grader.getVideoUrl('answer1')}" type="video/mp4"></video>
+                    <video autoplay loop controls><source src="${grader.getVideoUrl('answer2')}" type="video/mp4"></video>
+                    <video autoplay loop controls><source src="${grader.getVideoUrl('answer3')}" type="video/mp4"></video>
                 </div>
             </div>
         </div>

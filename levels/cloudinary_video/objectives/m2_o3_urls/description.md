@@ -8,13 +8,13 @@
 </ul>
 </div>
 
-<b>TIP:</b> Experiment with urls without leaving the game, using the <button onclick='window.CloudinaryBrowser.showUrlExplorer();'>URL Video Explorer Tool</button>
+<b>TIP:</b> Experiment with urls without leaving the game, using the <button onclick='window.CloudinaryBrowser.showUrlExplorer();'>Cloudinary Explorer</button>
 
 Now that you renamed your asset to Flower.mp4, it'll be easier to work with! We want you to understand URL parameters and scaling videos. It'll be easy, promise!
 
 ********************
 ## <a name="questions">Questions</a>
-For the first anwer, enter your original flower video URL by copying it from your Cloudinary media library.
+For the first answer, enter your original flower video URL by copying it from your Cloudinary media library.
 
 For the second answer, add **/c_scale,w_0.5/** after the **/upload/** parameter in your URL to scale it by 50% and enter the URL for your answer.
 

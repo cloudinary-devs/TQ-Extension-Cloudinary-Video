@@ -72,17 +72,18 @@
 
 
 ## External Assets
-### In Use
 
-### Potential
+### In Use
 1. https://res.cloudinary.com/demo/video/upload/dog.mp4
+2. https://res.cloudinary.com/demo/video/upload/kitten_fighting.mp4
+1. https://res.cloudinary.com/demo/video/upload/transition1.mp4 
+
+### Potential Demo Account Assets
 1. https://res.cloudinary.com/demo/video/upload/docs/g_auto_demo.webm
 1. https://res.cloudinary.com/demo/video/upload/ship.mp4
 1. https://res.cloudinary.com/demo/video/upload/docs/Roller_Coaster.mp4
 1. https://res.cloudinary.com/demo/video/upload/docs/walking_talking.webm
 1. https://res.cloudinary.com/demo/video/upload/dog_orig_qflwce.webm
-1. https://res.cloudinary.com/demo/video/upload/kitten_fighting.mp4
-1. https://res.cloudinary.com/demo/video/upload/transition1.mp4
 1. https://res.cloudinary.com/demo/video/upload/pencil_sketch.mp4
 1. https://res.cloudinary.com/demo/video/upload/snow_deer.mp4
 1. https://res.cloudinary.com/demo/video/upload/ski_jump.mp4

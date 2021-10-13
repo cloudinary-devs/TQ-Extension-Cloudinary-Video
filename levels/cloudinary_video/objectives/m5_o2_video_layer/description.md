@@ -14,7 +14,7 @@ return path.resolve(context.extensions.directory,
     </ul>
 </div>
 
-<b>TIP:</b> Experiment with urls without leaving the game, using the <button onclick='window.CloudinaryBrowser.showUrlExplorer();'>URL Video Explorer Tool</button>
+<b>TIP:</b> Experiment with urls without leaving the game, using the <button onclick='window.CloudinaryBrowser.showUrlExplorer();'>Cloudinary Explorer</button>
 
 ## Preparation Steps
 Your account starts with a set of sample videos.  In this exercise, we'll be using the sea-turtle video from the /samples folder. 

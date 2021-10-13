@@ -6,22 +6,23 @@ const browser = require('../../lib/browser');
 const state = require('../../lib/state');
 const setHackFormDefaults = require('../../lib/hackFormDefaultValues');
 
+console.log('Cloudinary Video Mission Started (event.js loaded)');
+
 module.exports = function (event, world) {
 
     /**
      * Some dev mode stuff
      */
-    if (process.env.USER === 'jsimpson') { //replace with your username
+    if (process.env.USER === 'jsimpson') { //replace with your username or another dev mode flag
         if (event.name === 'levelDidLoad') {
             //Set javascript sources to be reloaded instead of cached
             window.reloadExternalModules = true;
             console.clear(); //clear out all the platform errors/warnings that occur at startup
         }
         //log all events in dev mode
-        //console.log({event, world});
+        console.debug({event, world});
     }
 
-    console.log('Cloudinary Video Mission Started (event.js)');
 
     /**
      * Main Extension/'Level' logic
@@ -61,10 +62,6 @@ module.exports = function (event, world) {
                 case 'm5_o4_transitions':
                     //commenting out, because we can put the url into the objective for reference...left here as example
                     //setHackFormDefaults([state.getAnswers('m5_o3_combining_clips').value().answer3,'','']);
-                    break;
-                default:
-                    //waiting .. .can't put answers in state yet..so can't retrieve them
-                    //setHackFormDefaults(world.getState())
                     break;
             }
             break;
