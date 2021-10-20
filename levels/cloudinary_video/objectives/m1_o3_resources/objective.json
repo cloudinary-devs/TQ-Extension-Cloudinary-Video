@@ -11,8 +11,8 @@
     {
       "name": "cloudinaryAcademy",
       "type": "text",
-      "placeholder": "<a href='https://training.cloudinary.com/'>hint</a>",
-      "label": "What is the Cloudinary training program called?"
+      "placeholder": "",
+      "label": "What is the Cloudinary training program called? <a href='https://training.cloudinary.com/'>hint</a>"
     }
   ],
   "rewards": {
