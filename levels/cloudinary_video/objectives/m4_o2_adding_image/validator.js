@@ -5,7 +5,7 @@ module.exports = async function (helper) {
 
     let grader = new Grader(helper, {
         answer1: {
-            validExample: 'https://res.cloudinary.com/joelsimpson/video/upload/c_scale,w_400/l_twilioquest:cloudinary_icon,g_south_west,o_50,x_10,y_10,eo_10/v1627081950/TwilioQuest/Flower.mp4',
+            validExample: 'https://res.cloudinary.com/joelsimpson/video/upload/c_scale,w_400/l_twilioquest:cloudinary_icon,g_south_west,o_50,x_10,y_10,eo_10/TwilioQuest/Flower.mp4',
             mustAppear: ['c_scale', 'w_400', 'l_twilioquest:cloudinary_icon', 'g_south_west', 'o_50', 'x_10', 'y_10', 'eo_10', 'TwilioQuest/Flower.mp4'],
             mustAppearInOrder: [
                 ['/c_scale', '/l_'],

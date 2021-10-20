@@ -1,5 +1,7 @@
 # Summary
 
+
+<!--
 ## Recap Splicing 
 
 Creating a video from multiple other videos requires some fairly complicated urls so here are some useful tips.

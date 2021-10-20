@@ -23,6 +23,8 @@ module.exports = function (event, world) {
         console.debug({event, world});
     }
 
+    //CAN HAZ HAX PLZ?
+    window.world = world;
 
     /**
      * Main Extension/'Level' logic
@@ -84,7 +86,10 @@ module.exports = function (event, world) {
             if(event.target.observation){
                 switch(event.target.observation){
                     case 'leaving':
-                        world.showNotification('This exit will take you back to the fog owl.');
+                        //and moving towards the exit
+                        if(world.__internals.level.player.keys.left.isDown) {
+                            world.showNotification('This exit will take you out of the Cloudinary Video Adventure and back to the Fog Owl.');
+                        }
                         break;
                 }
             }

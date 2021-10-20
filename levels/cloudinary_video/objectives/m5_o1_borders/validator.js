@@ -10,15 +10,15 @@ module.exports = async function (helper) {
 
     let grader = new Grader(helper, {
         answer1: {//rounded corners
-            validExample: 'https://res.cloudinary.com/joelsimpson/video/upload/c_scale,w_200,r_40,b_rgb:1f243c/v1627081950/TwilioQuest/Flower.mp4',
+            validExample: 'https://res.cloudinary.com/joelsimpson/video/upload/c_scale,w_200,r_40,b_rgb:1f243c/TwilioQuest/Flower.mp4',
             mustAppear: ['c_scale', 'w_200', 'r_40', 'b_rgb:1f243c', 'TwilioQuest/Flower.mp4']
         },
         answer2: {//ellipse
-            validExample: 'https://res.cloudinary.com/joelsimpson/video/upload/c_scale,w_200,r_max,b_rgb:1f243c/v1627081950/TwilioQuest/Flower.mp4',
+            validExample: 'https://res.cloudinary.com/joelsimpson/video/upload/c_scale,w_200,r_max,b_rgb:1f243c/TwilioQuest/Flower.mp4',
             mustAppear: ['c_scale', 'w_200', 'r_max', 'b_rgb:1f243c', 'TwilioQuest/Flower.mp4']
         },
         answer3: {//circle
-            validExample: 'https://res.cloudinary.com/joelsimpson/video/upload/c_scale,w_100,h_100,r_max,b_rgb:1f243c/v1627081950/TwilioQuest/Flower.mp4',
+            validExample: 'https://res.cloudinary.com/joelsimpson/video/upload/c_scale,w_100,h_100,r_max,b_rgb:1f243c/TwilioQuest/Flower.mp4',
             mustAppear: ['c_scale', 'w_100', 'h_100', 'r_max', 'b_rgb:1f243c', 'TwilioQuest/Flower.mp4']
         }
     }, function pass() {

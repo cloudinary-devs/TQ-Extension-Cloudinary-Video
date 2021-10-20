@@ -33,10 +33,6 @@
 2. Fredric is now officially an antagonist...need to remove them or repurpose.
 3. Need to add a special gravity/cropping focused lesson so that we can show off the special features like faces and auto.
    1. https://cloudinary.com/documentation/video_manipulation_and_delivery#automatic_cropping
-### Help from TwilioQuest
-3. Need a way to reference local images/scripts/css in objectives/dialogs/browser.
-4. Need access to world state, extension state via helper in validator
-5. Style of code blocks in the markup is restricted to javascript.
 
 ## Todo List - Joel
 2. When returning to main corridor, greeter should not appear if all objectives have been completed.
@@ -60,12 +56,6 @@
     1. Integrate new doors and signs tilesets
 6. Validation testing, such as ensuring they use their cloudname for each URL (ex in m2 o2 isn't working)
 7. Make sure all _param_ references in walkthrough.md and description.md are also links to documentation
-
-## Needs List
-1. Graphic Assets
-    4. Improved office exists...top bar to pass under
-      
-1. Conversations
 
 ## Standards
 1. Conversations naming: <mission>-<actor>-<event/conversation>
