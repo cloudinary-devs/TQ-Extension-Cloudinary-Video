@@ -1,12 +1,3 @@
-<%
-const path = require('path');
-
-function getLocalImage(imageName) {
-return path.resolve(context.extensions.directory,
-'TQ-Extension-Cloudinary-Video/images', imageName);
-}
-//<img src="<%=getLocalImage('cloudinary_icon.png')%>">
-%>
 # Staff Orientation
 
 <div class="aside">
