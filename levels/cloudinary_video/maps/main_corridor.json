@@ -1,4 +1,11 @@
 { "compressionlevel":-1,
+ "editorsettings":
+    {
+     "export":
+        {
+         "target":"."
+        }
+    },
  "height":24,
  "infinite":false,
  "layers":[
@@ -351,16 +358,32 @@
                  "y":228
                 }, 
                 {
-                 "gid":11693,
+                 "gid":11704,
                  "height":32,
                  "id":134,
                  "name":"",
+                 "properties":[
+                        {
+                         "name":"conversation",
+                         "type":"string",
+                         "value":"corridor-gary"
+                        }, 
+                        {
+                         "name":"conversationAvatar",
+                         "type":"string",
+                         "value":"ryanNeutral.png"
+                        }, 
+                        {
+                         "name":"spritesheet",
+                         "type":"string",
+                         "value":"ryan"
+                        }],
                  "rotation":0,
                  "type":"",
                  "visible":true,
                  "width":32,
-                 "x":474,
-                 "y":234
+                 "x":461,
+                 "y":231
                 }, 
                 {
                  "gid":11701,
@@ -562,7 +585,7 @@
  "nextobjectid":165,
  "orientation":"orthogonal",
  "renderorder":"right-down",
- "tiledversion":"1.7.1",
+ "tiledversion":"1.4.3",
  "tileheight":24,
  "tilesets":[
         {
@@ -592,6 +615,6 @@
         }],
  "tilewidth":24,
  "type":"map",
- "version":"1.6",
+ "version":1.4,
  "width":80
 }
