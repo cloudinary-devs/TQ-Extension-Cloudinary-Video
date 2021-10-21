@@ -336,8 +336,8 @@
                  "type":"player",
                  "visible":true,
                  "width":0,
-                 "x":766,
-                 "y":299
+                 "x":305,
+                 "y":309
                 }, 
                 {
                  "gid":11694,
@@ -371,12 +371,12 @@
                         {
                          "name":"conversationAvatar",
                          "type":"string",
-                         "value":"ryanNeutral.png"
+                         "value":"coreyNeutral.png"
                         }, 
                         {
                          "name":"spritesheet",
                          "type":"string",
-                         "value":"ryan"
+                         "value":"rya"
                         }],
                  "rotation":0,
                  "type":"",
@@ -386,10 +386,16 @@
                  "y":231
                 }, 
                 {
-                 "gid":11701,
+                 "gid":11697,
                  "height":32,
                  "id":135,
                  "name":"",
+                 "properties":[
+                        {
+                         "name":"conversation",
+                         "type":"string",
+                         "value":"corridor-mickey"
+                        }],
                  "rotation":0,
                  "type":"",
                  "visible":true,
