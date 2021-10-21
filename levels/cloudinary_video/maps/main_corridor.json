@@ -491,6 +491,12 @@
                  "height":32,
                  "id":142,
                  "name":"",
+                 "properties":[
+                        {
+                         "name":"conversation",
+                         "type":"string",
+                         "value":"corridor-becky"
+                        }],
                  "rotation":0,
                  "type":"",
                  "visible":true,

@@ -1,4 +1,11 @@
 { "compressionlevel":-1,
+ "editorsettings":
+    {
+     "export":
+        {
+         "target":"."
+        }
+    },
  "height":24,
  "infinite":false,
  "layers":[
@@ -121,6 +128,11 @@
                  "name":"",
                  "properties":[
                         {
+                         "name":"conversation",
+                         "type":"string",
+                         "value":"m4-becky"
+                        }, 
+                        {
                          "name":"interactable",
                          "type":"bool",
                          "value":false
@@ -226,7 +238,7 @@
  "nextobjectid":139,
  "orientation":"orthogonal",
  "renderorder":"right-down",
- "tiledversion":"1.7.1",
+ "tiledversion":"1.4.3",
  "tileheight":24,
  "tilesets":[
         {
@@ -269,6 +281,6 @@
         }],
  "tilewidth":24,
  "type":"map",
- "version":"1.6",
+ "version":1.4,
  "width":24
 }
