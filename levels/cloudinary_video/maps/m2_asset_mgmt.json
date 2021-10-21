@@ -1,4 +1,11 @@
 { "compressionlevel":-1,
+ "editorsettings":
+    {
+     "export":
+        {
+         "target":"."
+        }
+    },
  "height":24,
  "infinite":false,
  "layers":[
@@ -115,39 +122,22 @@
                  "y":384
                 }, 
                 {
-                 "gid":13128,
+                 "gid":13139,
                  "height":32,
                  "id":133,
                  "name":"",
+                 "properties":[
+                        {
+                         "name":"conversation",
+                         "type":"string",
+                         "value":"m2-gary"
+                        }],
                  "rotation":0,
                  "type":"",
                  "visible":true,
                  "width":32,
                  "x":302,
                  "y":472
-                }, 
-                {
-                 "gid":13130,
-                 "height":32,
-                 "id":134,
-                 "name":"",
-                 "properties":[
-                        {
-                         "name":"interactable",
-                         "type":"bool",
-                         "value":false
-                        }, 
-                        {
-                         "name":"observation",
-                         "type":"string",
-                         "value":"Corey seems busy. <br\/><br\/>\n\nBy the way,  this is \"observation text\" that you can display when the player interacts with an NPC.  Check the <em>observation<\/em> property of this NPC object in the tile map."
-                        }],
-                 "rotation":0,
-                 "type":"",
-                 "visible":true,
-                 "width":32,
-                 "x":384,
-                 "y":438
                 }, 
                 {
                  "gid":5230,
@@ -267,7 +257,7 @@
  "nextobjectid":141,
  "orientation":"orthogonal",
  "renderorder":"right-down",
- "tiledversion":"1.7.1",
+ "tiledversion":"1.4.3",
  "tileheight":24,
  "tilesets":[
         {
@@ -310,6 +300,6 @@
         }],
  "tilewidth":24,
  "type":"map",
- "version":"1.6",
+ "version":1.4,
  "width":24
 }
