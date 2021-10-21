@@ -1,4 +1,11 @@
 { "compressionlevel":-1,
+ "editorsettings":
+    {
+     "export":
+        {
+         "target":"."
+        }
+    },
  "height":24,
  "infinite":false,
  "layers":[
@@ -397,18 +404,6 @@
                  "y":239
                 }, 
                 {
-                 "gid":11698,
-                 "height":32,
-                 "id":136,
-                 "name":"",
-                 "rotation":0,
-                 "type":"",
-                 "visible":true,
-                 "width":32,
-                 "x":900,
-                 "y":234
-                }, 
-                {
                  "gid":11696,
                  "height":32,
                  "id":137,
@@ -602,7 +597,7 @@
  "nextobjectid":165,
  "orientation":"orthogonal",
  "renderorder":"right-down",
- "tiledversion":"1.7.2",
+ "tiledversion":"1.4.3",
  "tileheight":24,
  "tilesets":[
         {
@@ -632,6 +627,6 @@
         }],
  "tilewidth":24,
  "type":"map",
- "version":"1.6",
+ "version":1.4,
  "width":80
 }
