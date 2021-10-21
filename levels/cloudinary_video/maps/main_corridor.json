@@ -376,14 +376,14 @@
                         {
                          "name":"spritesheet",
                          "type":"string",
-                         "value":"rya"
+                         "value":"corey"
                         }],
                  "rotation":0,
                  "type":"",
                  "visible":true,
                  "width":32,
-                 "x":461,
-                 "y":231
+                 "x":459,
+                 "y":233
                 }, 
                 {
                  "gid":11697,
@@ -400,8 +400,8 @@
                  "type":"",
                  "visible":true,
                  "width":32,
-                 "x":690,
-                 "y":234
+                 "x":688,
+                 "y":239
                 }, 
                 {
                  "gid":11698,

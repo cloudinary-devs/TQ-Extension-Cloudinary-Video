@@ -1,4 +1,11 @@
 { "compressionlevel":-1,
+ "editorsettings":
+    {
+     "export":
+        {
+         "target":"."
+        }
+    },
  "height":24,
  "infinite":false,
  "layers":[
@@ -115,10 +122,16 @@
                  "y":384
                 }, 
                 {
-                 "gid":13136,
+                 "gid":13132,
                  "height":32,
                  "id":136,
                  "name":"",
+                 "properties":[
+                        {
+                         "name":"conversation",
+                         "type":"string",
+                         "value":"m3-mickey"
+                        }],
                  "rotation":0,
                  "type":"",
                  "visible":true,
@@ -221,7 +234,7 @@
  "nextobjectid":140,
  "orientation":"orthogonal",
  "renderorder":"right-down",
- "tiledversion":"1.7.1",
+ "tiledversion":"1.4.3",
  "tileheight":24,
  "tilesets":[
         {
@@ -264,6 +277,6 @@
         }],
  "tilewidth":24,
  "type":"map",
- "version":"1.6",
+ "version":1.4,
  "width":24
 }
