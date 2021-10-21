@@ -9,11 +9,11 @@ module.exports = async function (helper) {
 
     let grader = new Grader(helper, {
         answer1: {
-            validExample: 'https://res.cloudinary.com/joelsimpson/video/upload/v1627081950/TwilioQuest/Flower.mp4',
+            validExample: 'https://res.cloudinary.com/joelsimpson/video/upload/TwilioQuest/Flower.mp4',
             mustAppear: ['https:','res.cloudinary.com','video/upload','TwilioQuest','/Flower.mp4']
         },
         answer2: {
-            validExample: '',
+            validExample: 'https://res.cloudinary.com/joelsimpson/video/upload/c_scale,w_0.5/TwilioQuest/Flower.mp4',
             mustAppear: ['c_scale', 'w_0.5', '/c_scale,w_0.5/']
         }
     }, function pass() {

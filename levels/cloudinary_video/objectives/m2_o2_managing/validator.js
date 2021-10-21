@@ -9,7 +9,7 @@ module.exports = async function (helper) {
      */
     if (!answer1.includes('TwilioQuest')) {
         //@todo-p2 could make this better by inspecting folder specified...ensuring there is a folder, etc
-        return helper.fail('Check to make sure that you created the TwilioQuest folder correctly.' + answer1);
+        return helper.fail('Check to make sure that you created the "TwilioQuest" folder and specified it correctly in the url.' + answer1);
     }
     if (!answer1.includes('Flower.mp4')) {
         //@todo-p2 could make this better by inspecting folder specified...ensuring there is a folder, etc

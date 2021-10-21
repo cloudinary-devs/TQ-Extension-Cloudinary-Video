@@ -5,13 +5,11 @@
     {
       "name": "answer1",
       "type": "text",
-      "placeholder": "URL of the original asset",
       "label": "Original Asset Url"
     },
     {
       "name": "answer2",
       "type": "text",
-      "placeholder": "URL of the scaled down asset",
       "label": "Scaled Down Url"
     }
   ],

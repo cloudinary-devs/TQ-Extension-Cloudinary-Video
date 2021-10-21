@@ -1,9 +1,9 @@
-const jQuery = require('jquery');
+// const jQuery = require('jquery');
 const inject = require('../../lib/injector');
 const observer = require('../../lib/conversationObserver');
 const keyHandler = require('../../lib/keyboardHandler');
 const browser = require('../../lib/browser');
-const state = require('../../lib/state');
+// const state = require('../../lib/state');
 const setHackFormDefaults = require('../../lib/hackFormDefaultValues');
 
 console.log('Cloudinary Video Mission Started (event.js loaded)');
@@ -95,6 +95,7 @@ module.exports = function (event, world) {
             }
 
             console.log({triggerAreaTarget: event.target});
+            break;
         case 'playerDidInteract':
             //Is the player starting a conversation with one of our custom objects?
             if (event.target.conversation && event.target.type.startsWith('cloudinary')) {
@@ -109,7 +110,6 @@ module.exports = function (event, world) {
         case 'triggerAreaWasExited':
             browser.hide();
             break;
-
 
         default:
             console.warn(`Cloudinary received unknown event named "${event.name}"`,);

@@ -8,15 +8,15 @@ module.exports = async function (helper) {
     let grader = new Grader(helper, {
         answer1: {
             validExample: 'https://res.cloudinary.com/joelsimpson/video/upload/q_100/TwilioQuest/Flower.mp4',
-            mustAppear: ['q_100']
+            mustAppear: ['q_100/','https:','res.cloudinary.com','video/upload','TwilioQuest','/Flower.mp4']
         },
         answer2: {
             validExample: 'https://res.cloudinary.com/joelsimpson/video/upload/q_auto/TwilioQuest/Flower.mp4',
-            mustAppear: ['q_auto']
+            mustAppear: ['q_auto/','https:','res.cloudinary.com','video/upload','TwilioQuest','/Flower.mp4']
         },
         answer3: {
             validExample: 'https://res.cloudinary.com/joelsimpson/video/upload/q_10/TwilioQuest/Flower.mp4',
-            mustAppear: ['q_10']
+            mustAppear: ['q_10/','https:','res.cloudinary.com','video/upload','TwilioQuest','/Flower.mp4']
         }
     }, function pass() {
         helper.success(grader.getSuccessMessage());

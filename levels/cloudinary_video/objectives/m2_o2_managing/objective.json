@@ -5,7 +5,6 @@
     {
       "name": "answer1",
       "type": "text",
-      "placeholder": "URL of the renamed/moved file",
       "label": "What is the new url of our Flower asset?"
     }
 
