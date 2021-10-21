@@ -3,30 +3,17 @@
 ## How to Start Playing
 
 1. Download TwilioQuest https://www.twilio.com/quest/download
-2. Select TQ 3.2 Preview on the latest alpha version (As of mid October 2021, you will use the current live version)
+2. For the Version, leave it at default, which should be the Current Version "Latest Stable".
 3. Create folder on your local computer called **TwilioQuest-Extensions** (You can also find the rest of the instructions on installing an Extension here: https://github.com/TwilioQuest/twilioquest-extension-template)
-4. In your CLI, cd into TwilioQuest-Extensions folder
-5. Clone this repository (You should be able to see it as TwilioQuest-Extensions->TQ-Extension-Cloudinary-Video) for the 2 directories
+4. In your CLI, cd into TwilioQuest-Extensions folder.
+5. Clone this repository (You should be able to see it as TwilioQuest-Extensions->TQ-Extension-Cloudinary-Video) for the 2 directories.
 6. cd into TQ-Extension-Cloudinary-Video and do an **npm install**
 7. Open TwilioQuest and click on **PLAY TWILIOQUEST**
 8. Go to the game's Settings by either typing the number **3** or clicking the 3 lines at the top of the middle screen.
-9. Click on **Extensions** and click on "Choose Directory* and select "TwilioQuest-Extensions" folder, which will load all of your extensions that you have in that folder.
+9. Click on **Extensions** and click on "Choose Directory* and select "TwilioQuest-Extensions". folder, which will load all of your extensions that you have in that folder.
 10. Scroll down to see a green message saying "loaded" next to the extension.
 11. Go back to the Fog Owl room and find the green area to access the Terminal
 12. Click on the Terminal and select "Cloudinary Video" and you'll be in the custom game!
-
-## Extension Completion
-
-|  | Status |
-| --- | --- |
-|Mission 1|First Draft Complete|
-|Mission 2|First Draft Complete|
-|Mission 3|First Draft Complete|
-|Mission 4|First Draft Complete|
-|Mission 5|In Progress (Objectives 1,2 of 4 complete)|
-|Mission 6|Not Started (Objectives 1,2)|
-|Mission 7|Not Started (Objectives 1,2,3)|
-|Mission 8|Not Started (Objectives 1,2,3)|
 
 
 ### Internal
@@ -43,9 +30,8 @@
 7. Lock m5_04 until m5_03 has been successfully completed.
 
 ## Todo List - Tessa
-1. Update story for second office room
-2. Speak with legal dept and see if we need a copyright on any Cloudinary logo/code/content mentioned
-3. Add details about gravity by coordinates in m3_o2
+1. Speak with legal dept and see if we need a copyright on any Cloudinary logo/code/content mentioned
+2. Add details about gravity by coordinates in m3_o2
 
 ## Refinement and Final Pass Todo List
 1. Check experience awards for each objective
