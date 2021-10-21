@@ -15,61 +15,8 @@
 11. Go back to the Fog Owl room and find the green area to access the Terminal
 12. Click on the Terminal and select "Cloudinary Video" and you'll be in the custom game!
 
+## Improvements
 
-### Internal
-2. Fredric is now officially an antagonist...need to remove them or repurpose.
-3. Need to add a special gravity/cropping focused lesson so that we can show off the special features like faces and auto.
-   1. https://cloudinary.com/documentation/video_manipulation_and_delivery#automatic_cropping
+You are welcome to make any kind of feature requests or even report any [issues](https://github.com/mediadevelopers/TQ-Extension-Cloudinary-Video/issues). Better yet, you are more than welcome to create a PR to help improve our open source extension!
 
-## Todo List - Joel
-2. When returning to main corridor, greeter should not appear if all objectives have been completed.
-3. "Thanks, would you like to show/complete/do it again" conversation should play when talking to greeter/npc inside their office if all objectives have been completed.
-4. Save hack answers into game state- so that our default values loader can populate them. NOT POSSIBLE CURRENTLY
-5. Integrate new doors and signs tilesets
-6. Simplify m4_o2 by using cloudinary logo from sample assets in their account instead of uploading file 
-7. Lock m5_04 until m5_03 has been successfully completed.
-
-## Todo List - Tessa
-1. Speak with legal dept and see if we need a copyright on any Cloudinary logo/code/content mentioned
-2. Add details about gravity by coordinates in m3_o2
-
-## Refinement and Final Pass Todo List
-1. Check experience awards for each objective
-2. Review pacing of lessons
-3. Review and update objective descriptions
-4. Replace office banners with sign plates (and add pop up information for inspection)
-5. Replace doorways with new graphics
-    1. Integrate new doors and signs tilesets
-6. Validation testing, such as ensuring they use their cloudname for each URL (ex in m2 o2 isn't working)
-7. Make sure all _param_ references in walkthrough.md and description.md are also links to documentation
-
-## Standards
-1. Conversations naming: <mission>-<actor>-<event/conversation>
-
-
-## External Assets
-
-### In Use
-1. https://res.cloudinary.com/demo/video/upload/dog.mp4
-2. https://res.cloudinary.com/demo/video/upload/kitten_fighting.mp4
-1. https://res.cloudinary.com/demo/video/upload/transition1.mp4 
-
-### Potential Demo Account Assets
-1. https://res.cloudinary.com/demo/video/upload/docs/g_auto_demo.webm
-1. https://res.cloudinary.com/demo/video/upload/ship.mp4
-1. https://res.cloudinary.com/demo/video/upload/docs/Roller_Coaster.mp4
-1. https://res.cloudinary.com/demo/video/upload/docs/walking_talking.webm
-1. https://res.cloudinary.com/demo/video/upload/dog_orig_qflwce.webm
-1. https://res.cloudinary.com/demo/video/upload/pencil_sketch.mp4
-1. https://res.cloudinary.com/demo/video/upload/snow_deer.mp4
-1. https://res.cloudinary.com/demo/video/upload/ski_jump.mp4
-1. https://demo-res.cloudinary.com/video/upload/v1/docs/bluescreen_watches.webm
-1. https://res.cloudinary.com/demo/video/upload/docs/transparent_talking.webm
-1. https://res.cloudinary.com/demo/video/upload/v1/docs/transparent_girl.webm
-1. https://res.cloudinary.com/demo/video/upload/elephants.mp4
-1. https://res.cloudinary.com/demo/video/upload/hourglass_timer.mp4
-1. https://res.cloudinary.com/demo/video/upload/docs/shoppable_demo.mp4
-1. https://res.cloudinary.com/demo/video/upload/docs/house2.mp4
-1. https://res.cloudinary.com/demo/video/upload/docs/hotel.mp4
-1. https://res.cloudinary.com/demo/video/upload/docs/animated_hearts.webm
-1. https://res.cloudinary.com/demo/video/upload/docs/talking_head_travel.mp4
+Questions? Join the [Mediadevs Discord](https://discord.gg/jCYQ5NmPvF) and you can ask questions!
