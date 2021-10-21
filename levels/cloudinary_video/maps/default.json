@@ -173,7 +173,7 @@
                         {
                          "name":"conversation",
                          "type":"string",
-                         "value":"m2-lindsey"
+                         "value":"m1-lindsey"
                         }, 
                         {
                          "name":"conversationAvatar",
@@ -196,7 +196,7 @@
                         {
                          "name":"conversation",
                          "type":"string",
-                         "value":"m2-hagit"
+                         "value":"m1-hagit"
                         }, 
                         {
                          "name":"conversationAvatar",
@@ -242,7 +242,7 @@
                         {
                          "name":"conversation",
                          "type":"string",
-                         "value":"m2-doggy-branch"
+                         "value":"m1-doggy-branch"
                         }, 
                         {
                          "name":"conversationAvatar",
