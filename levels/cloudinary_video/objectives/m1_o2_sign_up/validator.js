@@ -62,5 +62,7 @@ module.exports = async function (helper) {
 
     } catch (e) {
         console.error(e);
+        alert(e);
+        alert('You may need to run "npm install" in the extension folder.');
     }
 };
