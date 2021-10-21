@@ -1,6 +1,6 @@
 {
-  "title": "Combining Video Clips",
-  "description": "Make a video composed of multiple video clips",
+  "title": "Video Transitions",
+  "description": "Make a video composed of multiple video clips with transitions",
   "validation_fields": [
     {
       "name": "answer1",
