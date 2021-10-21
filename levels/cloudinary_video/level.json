@@ -19,6 +19,8 @@
   "objectives": [
     "m1_o2_sign_up", "m1_o3_resources",
     "m2_o1_uploading", "m2_o2_managing", "m2_o3_urls",
-    "m3_o1_quality_and_format"
+    "m3_o1_quality_and_format","m3_o2_dimensions",
+    "m4_o1_adding_text","m4_o2_adding_image",
+    "m5_o1_borders","m5_o2_video_layer","m5_o3_combining_clips","m5_o4_transitions"
   ]
 }
