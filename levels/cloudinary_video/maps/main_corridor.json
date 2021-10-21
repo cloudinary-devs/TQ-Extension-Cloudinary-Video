@@ -420,6 +420,12 @@
                  "height":32,
                  "id":137,
                  "name":"",
+                 "properties":[
+                        {
+                         "name":"conversation",
+                         "type":"string",
+                         "value":"corridor-amit"
+                        }],
                  "rotation":0,
                  "type":"",
                  "visible":true,
