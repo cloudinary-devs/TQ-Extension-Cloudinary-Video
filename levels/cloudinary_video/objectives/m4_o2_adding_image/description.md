@@ -36,5 +36,3 @@ Your answers to these questions must use your Flower video.
      - Position in the lower left corner
         - 10 pixels from the bottom edge
         - 10 pixels from the left edge
-     
-- https://res.cloudinary.com/demo/video/upload/l_cloudinary_icon_white/o_50/e_brightness:100/eo_10.0,fl_layer_apply,so_6.5/dog.mp4
