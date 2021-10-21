@@ -5,17 +5,14 @@
     {
       "name": "answer1",
       "type": "text",
-      "placeholder": "https://res.cloudinary.com/<your cloudname>/...",
       "label": "Video 1 - Rounded"
     },  {
       "name": "answer2",
       "type": "text",
-      "placeholder": "https://res.cloudinary.com/<your cloudname>/...",
       "label": "Video 2 - Ellipse"
     },  {
       "name": "answer3",
       "type": "text",
-      "placeholder": "https://res.cloudinary.com/<your cloudname>/...",
       "label": "Video 3 - Circular"
     }
   ],
