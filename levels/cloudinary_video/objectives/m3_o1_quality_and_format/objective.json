@@ -5,19 +5,16 @@
     {
       "name": "answer1",
       "type": "text",
-      "placeholder": "URL of the high quality  video",
       "label": "High Quality URL (value=100)"
     },
     {
       "name": "answer2",
       "type": "text",
-      "placeholder": "URL of the auto quality video",
       "label": "Auto Quality URL"
     },
     {
       "name": "answer3",
       "type": "text",
-      "placeholder": "URL of the low quality  video",
       "label": "Low Quality URL (value=10)"
     }
   ],

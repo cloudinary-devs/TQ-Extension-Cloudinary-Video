@@ -11,7 +11,7 @@ module.exports = async function (helper) {
             mustAppear: ['q_100']
         },
         answer2: {
-            validExample: 'https://res.cloudinary.com/joelsimpson/video/upload/c_auto/TwilioQuest/Flower.mp4',
+            validExample: 'https://res.cloudinary.com/joelsimpson/video/upload/q_auto/TwilioQuest/Flower.mp4',
             mustAppear: ['q_auto']
         },
         answer3: {
