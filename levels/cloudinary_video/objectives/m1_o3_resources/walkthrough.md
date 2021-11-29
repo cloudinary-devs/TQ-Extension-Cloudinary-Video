@@ -2,20 +2,28 @@
 
 ## Objective Help
 
-[Cloudinary Documentation](https://cloudinary.com/documentation?utm_source=twilio&utm_medium=event&utm_campaign=cloudinary-twilioquest-2021)
+**__Cloudinary Documentation__**
+The first question is referring to the Cloudinary documentation: 
 
-For answer 1, You can count the icons under "Framework Integration SDKs" and enter a numerical value.
+- [Cloudinary Documentation](https://cloudinary.com/documentation?utm_source=twilio&utm_medium=event&utm_campaign=cloudinary-twilioquest-2021)
 
-[Cloudinary Academy](https://training.cloudinary.com?utm_source=twilio&utm_medium=event&utm_campaign=cloudinary-twilioquest-2021)
+You can count the icons under "Framework Integration SDKs" to come up with the answer.
 
-For answer 2, you can find it here. Hint: It's exactly what you think it is!
+**__Cloudinary Academy__**
+The second question is referring to the Cloudinary Academy:
+
+- [Cloudinary Academy](https://training.cloudinary.com?utm_source=twilio&utm_medium=event&utm_campaign=cloudinary-twilioquest-2021)
+
+It's exactly what you think it is!
 
 
-Joining the Discord community is optional, so it isn't part of the answer form.
+**__Discord Community__**
+Joining the Discord community is optional, so it isn't part of the answer form. Feel free to join us, though!
 
+- [Discord Community](https://discord.gg/CCsubwFbvd)
 
  
-### This is the Documentation Template that will be provided in every objective so you can easiliy find it!
+### Documentation Links
 
 [Cloudinary Documentation](https://cloudinary.com/documentation?utm_source=twilio&utm_medium=event&utm_campaign=cloudinary-twilioquest-2021)
 
