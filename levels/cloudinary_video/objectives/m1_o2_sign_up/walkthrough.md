@@ -38,7 +38,7 @@ You will get the opportunity to change your default Cloud Name. Feel free to cha
 
 ## Retrieving Your Cloudinary Information
 
-After creating your account, you will land on the [Cloudinary Dashboard](https://cloudinary.com/console/). The middle of the screen should look something like this:
+After creating your account, you will land on the [Cloudinary Dashboard](https://cloudinary.com/console?utm_source=twilio&utm_medium=event&utm_campaign=cloudinary-twilioquest-2021). The middle of the screen should look something like this:
 
 ![Screenshot](<%=getImageUrl('images/objectives/m1_o2_dashboard.png')%>)
 
