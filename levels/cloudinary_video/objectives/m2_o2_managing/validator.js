@@ -27,7 +27,9 @@ module.exports = async function (helper) {
         }
     }, function pass() {
         //nothing new to show in browser, so just the success message
-        helper.success(grader.getSuccessMessage());
+        helper.success(grader.getSuccessMessage() + `
+        You did it! You renamed your video to "Flower" and moved it to the TwilioQuest folder.
+        `);
 
     });
 

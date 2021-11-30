@@ -25,7 +25,7 @@ One of our partners would like a link to a video of a flower. Can you upload tha
 
 3. Upload the **Succulent - 14467.mp4** file to your Media Library.
 
-Copy the URL to your freshly-uploaded succulent file and paste it into the field to the right and click on _HACK_.
+Copy the URL to your freshly-uploaded succulent file and paste it into the field to the right. Then, click on _HACK_.
 
 
 

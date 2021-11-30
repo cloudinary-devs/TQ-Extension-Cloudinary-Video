@@ -61,7 +61,7 @@ The download options should look something like this:
 
 Now that the file is uploaded, click the 3 dots on top right corner of the asset and click on **Copy URL**. Go back to TwilioQuest to paste it into the Resource URL input box. Finally, click _HACK_ to proceed.
 
-![Screenshot of pixabay](<%=getImageUrl('images/objectives/m2_o1_copylink.png')%>)
+![Screenshot of copy link button](<%=getImageUrl('images/objectives/m2_o1_copylink.png')%>)
 
 
 ### Additional Documentation
