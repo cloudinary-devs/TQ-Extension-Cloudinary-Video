@@ -1,6 +1,6 @@
 # Help Guide
 
-## Specific to this objective
+## URL Specifications
 
 [Image Resizing and Scaling](https://cloudinary.com/documentation/resizing_and_cropping#scale)
 
@@ -15,7 +15,7 @@ https://res.cloudinary.com
 /<version>/<public_id_full_path>.<extension>
 ```
 
-The plain url for the video you uploaded probably looks like:
+The plain URL for the video you uploaded probably looks like:
 ```
 https://res.cloudinary.com
 /<cloud_name>
@@ -24,12 +24,15 @@ https://res.cloudinary.com
 /v123456...
 /TwilioQuest/Flower.mp4
 ```
-We can specify transformation parameters to change how the asset is delivered. For example, let's resize the video to 50% of it's size by adding the following scale mode parameter.
+
+Use this plain URL for your response to question 1: Original Asset URL.
+
+We can specify transformation parameters to change how the asset is delivered. For example, let's resize the video to 50% of it's size by adding the following scale mode parameter:
 ```
 c_scale,w_0.5
 ```
 
-Modify your asset url so that it is in this format:
+Modify your asset URL so that it is in this format:
 ```
 https://res.cloudinary.com
 /<cloud_name>
@@ -39,6 +42,8 @@ https://res.cloudinary.com
 /<version>
 /TwilioQuest/Flower.mp4
 ```
+
+Use this URL for your response to question 2: Scaled Down URL.
 
 ### Additional Documentation
 

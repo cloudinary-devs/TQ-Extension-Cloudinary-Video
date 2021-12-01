@@ -1,6 +1,6 @@
 {
   "title": "URLs",
-  "description": "Learn about URLs and parameters",
+  "description": "Learn about Cloudinary URLs and parameters!",
   "validation_fields": [
     {
       "name": "answer1",
