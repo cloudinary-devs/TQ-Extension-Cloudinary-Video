@@ -4,7 +4,14 @@ Sections related to this mission/objective:
 
 ### Steps
 
+**Note: For illustration in these instructions, we'll be using a Cloudinary sample video, but your answers to the [Questions](#questions) must use your Flower video.**
 
+This is the original sample video.
+<div style="border:1px solid blue">
+   <video muted controls>
+      <source src="https://demo-res.cloudinary.com/video/upload/c_scale,w_690/dog.webm" type="video/mp4">
+   </video>
+</div>
 
 ## <a name="scale">Scale</a>
 
@@ -123,3 +130,13 @@ original proportions are retained.
 </div>
 
 
+
+### Additional Documentation
+
+[Cloudinary Documentation](https://cloudinary.com/documentation?utm_source=twilio&utm_medium=event&utm_campaign=cloudinary-twilioquest-2021)
+
+[Cloudinary Academy](https://training.cloudinary.com?utm_source=twilio&utm_medium=event&utm_campaign=cloudinary-twilioquest-2021)
+
+[Cloudinary CookBook Recipes - Transformation Examples](https://cloudinary.com/cookbook?utm_source=twilio&utm_medium=event&utm_campaign=cloudinary-twilioquest-2021)
+
+[Discord Community](https://discord.gg/CCsubwFbvd)

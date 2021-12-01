@@ -17,7 +17,9 @@ module.exports = async function (helper) {
             mustAppear: ['c_crop', 'h_100', 'w_350', 'x_230', 'y_110']
         }
     }, function pass() {
-        helper.success(grader.getSuccessMessage());
+        helper.success(grader.getSuccessMessage() + `
+            Nice work! You've figured out how to scale, fill, and crop videos!
+        `);
         browser.display(
             `
                 <div>
