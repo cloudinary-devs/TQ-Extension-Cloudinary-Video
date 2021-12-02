@@ -1,6 +1,6 @@
 {
   "title": "Adding Images to Videos",
-  "description": "Add the cloudinary logo to the Flower Video ",
+  "description": "Add the Cloudinary logo to the Flower Video in Cloudinary!",
   "validation_fields": [
     {
       "name": "answer1",

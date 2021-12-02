@@ -16,7 +16,9 @@ module.exports = async function (helper) {
             ]
         }
     }, function pass() {
-        helper.success(grader.getSuccessMessage());
+        helper.success(grader.getSuccessMessage() + `
+            Great work! You added the Cloudinary logo on the Flower video!
+        `);
         browser.display(
             `
             <div>
