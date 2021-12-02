@@ -5,9 +5,12 @@ _r__ is the general transformation parameter that is used to round corners of th
 Take a look at [Rounding Corners and creating circular videos](https://cloudinary.com/documentation/video_manipulation_and_delivery#rounding_corners_and_creating_circular_videos) to answer the questions.
 
 
-## Documentation
-Full Cloudinary documentation can be found here:
-[https://cloudinary.com/documentation](https://cloudinary.com/documentation)
+### Additional Documentation
 
-Cloudinary also offers free self-paced training in the [Cloudinary Academy](https://training.cloudinary.com/).
+[Cloudinary Documentation](https://cloudinary.com/documentation?utm_source=twilio&utm_medium=event&utm_campaign=cloudinary-twilioquest-2021)
 
+[Cloudinary Academy](https://training.cloudinary.com?utm_source=twilio&utm_medium=event&utm_campaign=cloudinary-twilioquest-2021)
+
+[Cloudinary CookBook Recipes - Transformation Examples](https://cloudinary.com/cookbook?utm_source=twilio&utm_medium=event&utm_campaign=cloudinary-twilioquest-2021)
+
+[Discord Community](https://discord.gg/CCsubwFbvd)

@@ -10,16 +10,18 @@ For complete information, see [Adding Image Overlays](https://cloudinary.com/doc
 
 This question also requires setting the opacity [_o\__](https://cloudinary.com/documentation/transformation_reference#o_opacity) so that the icon blends in with the video a little better. 
 
-
-
-# Additional Information
-This content is a subset of content from the completely free [Cloudinary Academy](https://training.cloudinary.com/). 
-
-## Documentation
-Full Cloudinary documentation can be found here:
-[https://cloudinary.com/documentation](https://cloudinary.com/documentation)
-
 ### Specifically
 Sections related to this mission/objective:
 * [Image Video and File Upload](https://cloudinary.com/documentation/image_video_and_file_upload)
 * [Video Transformations](https://cloudinary.com/documentation/video_manipulation_and_delivery)
+
+
+### Additional Documentation
+
+[Cloudinary Documentation](https://cloudinary.com/documentation?utm_source=twilio&utm_medium=event&utm_campaign=cloudinary-twilioquest-2021)
+
+[Cloudinary Academy](https://training.cloudinary.com?utm_source=twilio&utm_medium=event&utm_campaign=cloudinary-twilioquest-2021)
+
+[Cloudinary CookBook Recipes - Transformation Examples](https://cloudinary.com/cookbook?utm_source=twilio&utm_medium=event&utm_campaign=cloudinary-twilioquest-2021)
+
+[Discord Community](https://discord.gg/CCsubwFbvd)

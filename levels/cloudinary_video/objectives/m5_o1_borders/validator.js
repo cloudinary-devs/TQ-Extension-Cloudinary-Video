@@ -22,7 +22,9 @@ module.exports = async function (helper) {
             mustAppear: ['c_scale', 'w_100', 'h_100', 'r_max', 'b_rgb:1f243c', 'TwilioQuest/Flower.mp4']
         }
     }, function pass() {
-        helper.success(grader.getSuccessMessage());
+        helper.success(grader.getSuccessMessage() + `
+        Nice! You added borders to the Flower video using Cloudinary!
+        `);
         browser.display(
             `
         <div>
