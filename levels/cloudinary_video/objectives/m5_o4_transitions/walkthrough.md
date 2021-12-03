@@ -42,4 +42,14 @@ Reference: [Transform URL API](https://cloudinary.com/documentation/transformati
 ## Full Documentation
 Cloudinary documentation can be found here:
 [https://cloudinary.com/documentation](https://cloudinary.com/documentation)
+-->
 
+### Additional Documentation
+
+[Cloudinary Documentation](https://cloudinary.com/documentation?utm_source=twilio&utm_medium=event&utm_campaign=cloudinary-twilioquest-2021)
+
+[Cloudinary Academy](https://training.cloudinary.com?utm_source=twilio&utm_medium=event&utm_campaign=cloudinary-twilioquest-2021)
+
+[Cloudinary CookBook Recipes - Transformation Examples](https://cloudinary.com/cookbook?utm_source=twilio&utm_medium=event&utm_campaign=cloudinary-twilioquest-2021)
+
+[Discord Community](https://discord.gg/CCsubwFbvd)
