@@ -1,3 +1,10 @@
+...
+..
+.
+.
+REPLACE THIS SECTION
+
+
 # Summary
 
 Creating a video from multiple other videos requires some fairly complicated urls so here are some useful tips.
@@ -22,11 +29,13 @@ Reference: [Transform URL API](https://cloudinary.com/documentation/transformati
  - [_/fl_layer_apply/_](https://cloudinary.com/documentation/transformation_reference#fl_layer_apply)
 
 <br>
-# Resources
-## Training
- [Cloudinary Academy](https://training.cloudinary.com/) (it's free, comprehensive and self-paced)
 
-## Full Documentation
-Cloudinary documentation can be found here:
-[https://cloudinary.com/documentation](https://cloudinary.com/documentation)
+### Additional Documentation
 
+[Cloudinary Documentation](https://cloudinary.com/documentation?utm_source=twilio&utm_medium=event&utm_campaign=cloudinary-twilioquest-2021)
+
+[Cloudinary Academy](https://training.cloudinary.com?utm_source=twilio&utm_medium=event&utm_campaign=cloudinary-twilioquest-2021)
+
+[Cloudinary CookBook Recipes - Transformation Examples](https://cloudinary.com/cookbook?utm_source=twilio&utm_medium=event&utm_campaign=cloudinary-twilioquest-2021)
+
+[Discord Community](https://discord.gg/CCsubwFbvd)
