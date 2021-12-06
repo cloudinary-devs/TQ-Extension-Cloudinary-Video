@@ -1,9 +1,12 @@
-# Additional Information
+# Help Guide
 
-### Specific Video Documentation
-Sections related to this mission/objective:
+## Objective-specific Resources
 * [Image and Video Optimization - Quality](https://cloudinary.com/documentation/image_optimization#how_to_optimize_image_quality?utm_source=twilio&utm_medium=event&utm_campaign=cloudinary-twilioquest-2021)
 * [Video Quality Explanation in Depth](https://cloudinary.com/documentation/video_optimization?utm_source=twilio&utm_medium=event&utm_campaign=cloudinary-twilioquest-2021)
+
+This content is a subset of content from the completely free [Cloudinary Academy](https://training.cloudinary.com?utm_source=twilio&utm_medium=event&utm_campaign=cloudinary-twilioquest-2021). 
+
+## Detailed Instructions
 
 If you get stuck, remember to add the parameter `/q_auto/`, `/q_100/`, or `/q_10/` after the `/upload/` parameter, like in the previous objectives!
 
@@ -17,9 +20,8 @@ https://res.cloudinary.com
 /TwilioQuest/Flower.mp4
 ```
 
-### Cloudinary Academy
 
-This content is a subset of content from the completely free [Cloudinary Academy](https://training.cloudinary.com?utm_source=twilio&utm_medium=event&utm_campaign=cloudinary-twilioquest-2021). 
+
 
 ### Additional Documentation
 
