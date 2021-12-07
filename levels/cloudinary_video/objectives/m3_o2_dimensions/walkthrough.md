@@ -17,7 +17,7 @@ This is the original sample video.
 
 ## <a name="scale">Scale</a>
 
-We can use the same *c_scale* operation to change the size of a video to specific dimensions using the width (w) and height (h) parameters. Note: The video will be distorted if both width (w) and height (h) are specified in a different ratio than the original video.
+We can use the same *c_scale* operation to change the size of a video to specific dimensions using the width (w) and/or height (h) parameters.
 
 ### Scale Example
 
@@ -52,7 +52,7 @@ This fits the video to a maximum height or width of 250 pixels. A blue box shows
 ## <a name="fill">Fill</a>
 
 Fill *c_fill* closes the gaps that **Fit** and **Scale** leave when the aspect ratio of the container and the
-video differ. Deciding what gets filled and what gets clipped involves specifying GRAVITY.
+video differ. Deciding what gets filled and what gets clipped involves specifying the *Gravity* parameter.
 
 ### No Specific Gravity Example
 
@@ -94,7 +94,7 @@ In addition to auto *g_auto*, Gravity can be set to *g_north_east*, *g_north*, *
 
 ## <a name="crop">Crop</a>
 
-You can extract a part of a video using crop *c_crop*. You specify which part of the video to use for filling the required dimensions by giving the x and y coordinates of the top left corner, or by using the gravity parameter. The original proportions are retained.
+The crop parameter *c_crop* specifies which part of the video to use for filling the required dimensions by giving the x and y coordinates of the top left corner, or by using the gravity parameter. The original proportions are retained.
 
 ```
 /c_crop,h_100,w_350,x_230,y_110/dog.mp4
