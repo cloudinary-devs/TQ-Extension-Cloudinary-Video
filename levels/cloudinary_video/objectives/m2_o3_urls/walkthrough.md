@@ -1,9 +1,11 @@
 # Help Guide
 
-## URL Specifications
+## Objective-specific Resources
 
-[Image Resizing and Scaling](https://cloudinary.com/documentation/resizing_and_cropping#scale)
+* [Image Resizing and Scaling](https://cloudinary.com/documentation/resizing_and_cropping#scale)
 
+
+## Detailed Instructions 
 The default Cloudinary asset delivery URL has the following structure:
 
 ```
@@ -14,18 +16,6 @@ https://res.cloudinary.com
 /<transformations>
 /<version>/<public_id_full_path>.<extension>
 ```
-
-The plain URL for the video you uploaded probably looks like:
-```
-https://res.cloudinary.com
-/<cloud_name>
-/video
-/upload
-/v123456...
-/TwilioQuest/Flower.mp4
-```
-
-Use this plain URL for your response to question 1: Original Asset URL.
 
 We can specify transformation parameters to change how the asset is delivered. For example, let's resize the video to 50% of it's size by adding the following scale mode parameter:
 ```
@@ -43,7 +33,7 @@ https://res.cloudinary.com
 /TwilioQuest/Flower.mp4
 ```
 
-Use this URL for your response to question 2: Scaled Down URL.
+Use this URL for your response for the Scaled Down URL.
 
 ### Additional Documentation
 

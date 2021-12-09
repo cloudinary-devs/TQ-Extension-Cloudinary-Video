@@ -28,9 +28,15 @@ function getImageUrl(extRelativePath) {
 
 # Help Guide
 
+## Objective-Specific Resources
+* [Media Library](https://cloudinary.com/console/media_library?utm_source=twilio&utm_medium=event&utm_campaign=cloudinary-twilioquest-2021)
+* [Create a folder](https://cloudinary.com/documentation/dam_folders_collections_sharing#create_folders?utm_source=twilio&utm_medium=event&utm_campaign=cloudinary-twilioquest-2021)
+* [Change the video asset](https://cloudinary.com/documentation/dam_manage_individual_assets?utm_source=twilio&utm_medium=event&utm_campaign=cloudinary-twilioquest-2021)
+
+
 ## Detailed Instructions
 
-You can use the [Media Library](https://cloudinary.com/console/media_library?utm_source=twilio&utm_medium=event&utm_campaign=cloudinary-twilioquest-2021) to organize the assets you upload. 
+Use the [Media Library](https://cloudinary.com/console/media_library?utm_source=twilio&utm_medium=event&utm_campaign=cloudinary-twilioquest-2021) to organize the assets you upload. 
 
 Let's organize the file we uploaded by putting it into a new folder called **TwilioQuest**.
 
@@ -39,30 +45,28 @@ Let's organize the file we uploaded by putting it into a new folder called **Twi
 ![Screenshot of new folder button](<%=getImageUrl('images/objectives/m2_o2_newfolder.png')%>)
 ![Screenshot of naming the folder](<%=getImageUrl('images/objectives/m2_o2_namefolder.png')%>)
 
-3. Select your **Succulent** video file by hovering over it and clicking on the check box. Then, on the menu bar that appears on the top, click on ["Move to folder"](https://cloudinary.com/documentation/dam_folders_collections_sharing#move_assets_between_folders?utm_source=twilio&utm_medium=event&utm_campaign=cloudinary-twilioquest-2021). Pick the TwilioQuest folder and click _Move_.
+3. Select your **Succulent** video file, then click ["Move to folder"](https://cloudinary.com/documentation/dam_folders_collections_sharing#move_assets_between_folders?utm_source=twilio&utm_medium=event&utm_campaign=cloudinary-twilioquest-2021) on the top right.
 
 ![Screenshot of moving to folder 1](<%=getImageUrl('images/objectives/m2_o2_movetofolder.png')%>)
 ![Screenshot of moving to folder 2](<%=getImageUrl('images/objectives/m2_o2_movetofolderwidget.png')%>)
 
 
-4. The video will disappear from your Home folder (the folder that shows when you first go to the Media Library)
-5. Open the **TwilioQuest** folder. The URL for the asset has changed to include the folder name before the file name.
+4. Open the **TwilioQuest** folder to find your **Succulent** video.
 
-Now let's change the name of our asset to something easier to remember and type!
+Now let's change the name of our asset to something easier to remember!
 
-1. Click on the **Succulent - 14467.mp4** name on your **Succulent** video. The Manage screen will open. If this doesn't happen, try to double click the image thumbnail of the video instead.
-2. [Change the video asset](https://cloudinary.com/documentation/dam_manage_individual_assets?utm_source=twilio&utm_medium=event&utm_campaign=cloudinary-twilioquest-2021) name from **Succulent_-_14467.mp4** to **Flower**. To do this, click on the **Succulent - 14467.mp4** name on the top left and replace the text with **Flower**.
-Keep in mind that when you first load it, it may take a few seconds for the filename to be editable.
+1. Click on the **Succulent - 14467.mp4** name on your **Succulent** video to open the **Manage** screen. If this doesn't happen, try to double click the image thumbnail of the video instead.
+2. [Change the video asset](https://cloudinary.com/documentation/dam_manage_individual_assets?utm_source=twilio&utm_medium=event&utm_campaign=cloudinary-twilioquest-2021) name. Click on the **Succulent - 14467.mp4** name on the top left and replace the text with **Flower**.
 
 ![Screenshot of manage screen](<%=getImageUrl('images/objectives/m2_o2_manage.png')%>)
 ![Screenshot of manage screen](<%=getImageUrl('images/objectives/m2_o2_newname.png')%>)
 
 3. Close the Manage screen. **Copy the new URL** as you've done in the previous objective, and paste it into the hack interface to proceed.
 
-Your answer should look similar to this, but it will be using your cloudname rather than "joelsimpson".
+Your answer should look similar to this:
 
 ```
-https://res.cloudinary.com/joelsimpson/video/upload/v1627081950/TwilioQuest/Flower.mp4
+https://res.cloudinary.com/<cloud_name>/video/upload/v1627081950/TwilioQuest/Flower.mp4
 ```
 
 
