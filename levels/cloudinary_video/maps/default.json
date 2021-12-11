@@ -276,6 +276,42 @@
                  "width":60,
                  "x":438,
                  "y":456
+                }, 
+                {
+                 "height":0,
+                 "id":150,
+                 "name":"arrow",
+                 "point":true,
+                 "properties":[
+                        {
+                         "name":"key",
+                         "type":"string",
+                         "value":"arrow_m1_o2_sign_up"
+                        }],
+                 "rotation":0,
+                 "type":"arrow",
+                 "visible":true,
+                 "width":0,
+                 "x":443.368421052632,
+                 "y":306.947368421053
+                }, 
+                {
+                 "height":0,
+                 "id":166,
+                 "name":"arrow",
+                 "point":true,
+                 "properties":[
+                        {
+                         "name":"key",
+                         "type":"string",
+                         "value":"arrow_m1_o3_resources"
+                        }],
+                 "rotation":0,
+                 "type":"arrow",
+                 "visible":true,
+                 "width":0,
+                 "x":466.666666666667,
+                 "y":418
                 }],
          "opacity":1,
          "type":"objectgroup",
@@ -323,10 +359,10 @@
          "y":0
         }],
  "nextlayerid":44,
- "nextobjectid":150,
+ "nextobjectid":167,
  "orientation":"orthogonal",
  "renderorder":"right-down",
- "tiledversion":"1.7.2",
+ "tiledversion":"1.7.1",
  "tileheight":24,
  "tilesets":[
         {
