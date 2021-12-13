@@ -236,6 +236,24 @@
                  "width":0,
                  "x":371.882247992864,
                  "y":357.752007136485
+                }, 
+                {
+                 "height":0,
+                 "id":171,
+                 "name":"arrow",
+                 "point":true,
+                 "properties":[
+                        {
+                         "name":"key",
+                         "type":"string",
+                         "value":"arrow_m2_o3_urls"
+                        }],
+                 "rotation":0,
+                 "type":"arrow",
+                 "visible":true,
+                 "width":0,
+                 "x":445.5,
+                 "y":382.5
                 }],
          "opacity":1,
          "type":"objectgroup",
@@ -283,7 +301,7 @@
          "y":0
         }],
  "nextlayerid":45,
- "nextobjectid":171,
+ "nextobjectid":172,
  "orientation":"orthogonal",
  "renderorder":"right-down",
  "tiledversion":"1.7.1",

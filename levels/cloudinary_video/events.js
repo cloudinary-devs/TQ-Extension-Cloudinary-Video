@@ -5,6 +5,10 @@ const keyHandler = require('../../lib/keyboardHandler');
 const browser = require('../../lib/browser');
 // const state = require('../../lib/state');
 const setHackFormDefaults = require('../../lib/hackFormDefaultValues');
+const levelJson = require("./level.json");
+const { getObjectivesListOnMapLoad, arrowEventHandler } = require("../../lib/arrowEventHandler");
+
+var objectivesList;
 
 console.log('Cloudinary Video Mission Started (event.js loaded)');
 
@@ -13,11 +17,19 @@ module.exports = function (event, world) {
     /**
      * Some dev mode stuff
      */
-    if (process.env.USER === 'jsimpson') { //replace with your username or another dev mode flag
+    //if (process.env.USER === 'jsimpson') { //replace with your username or another dev mode flag
+    if (true) { // Debug mode on
         if (event.name === 'levelDidLoad') {
             //Set javascript sources to be reloaded instead of cached
             window.reloadExternalModules = true;
             console.clear(); //clear out all the platform errors/warnings that occur at startup
+            console.log("Reset completed objectives:");
+            levelJson.objectives.forEach (objective => {
+            if (world.isObjectiveCompleted(objective)) {
+                console.log(objective);
+                world.removeObjective("cloudinary_video", objective);
+      }
+    })
         }
         //log all events in dev mode
         console.debug({event, world});
@@ -32,7 +44,9 @@ module.exports = function (event, world) {
     switch (event.name) {
 
         case 'levelDidLoad':
-            //nothing to do... so far
+            //Introduce the player to the cloudinary ship via Fredrica
+            world.startConversation("m2-fredric_holo-wakeup", "fredricNeutral.png");
+
             break;
 
         case 'mapDidLoad':
@@ -45,6 +59,10 @@ module.exports = function (event, world) {
 
             //Start handler for triggering our special features
             (new keyHandler(world,browser)).start();
+
+            objectivesList = getObjectivesListOnMapLoad(world, event, levelJson.objectives);
+            console.log(objectivesList);
+            arrowEventHandler(world, event, objectivesList);
 
            break;
 
@@ -68,8 +86,11 @@ module.exports = function (event, world) {
             }
             break;
         case 'objectiveDidClose':
+            break;
         case 'objectiveCompleted':
         case 'objectiveCompletedAgain' :
+            arrowEventHandler(world, event, objectivesList);
+            break;
         case 'objectiveFailed':
             break;
         case 'conversationDidEnd':
