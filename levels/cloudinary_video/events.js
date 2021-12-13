@@ -10,9 +10,17 @@ const { getObjectivesListOnMapLoad, arrowEventHandler } = require("../../lib/arr
 
 var objectivesList;
 
+const DEFAULT_MISSION_STATE = {
+    interactedWithKeren: false,
+    interactedWithFredrick: false 
+}
+
 console.log('Cloudinary Video Mission Started (event.js loaded)');
 
 module.exports = function (event, world) {
+
+    //Load world state
+    let worldState = world.getState("com.cloudinary.cloudinary_ship") || DEFAULT_MISSION_STATE;
 
     /**
      * Some dev mode stuff
@@ -22,18 +30,22 @@ module.exports = function (event, world) {
         if (event.name === 'levelDidLoad') {
             //Set javascript sources to be reloaded instead of cached
             window.reloadExternalModules = true;
+            worldState = DEFAULT_MISSION_STATE;
             console.clear(); //clear out all the platform errors/warnings that occur at startup
             console.log("Reset completed objectives:");
             levelJson.objectives.forEach (objective => {
             if (world.isObjectiveCompleted(objective)) {
                 console.log(objective);
                 world.removeObjective("cloudinary_video", objective);
+            
       }
     })
         }
         //log all events in dev mode
         console.debug({event, world});
     }
+
+    
 
     //CAN HAZ HAX PLZ?
     window.world = world;
@@ -60,6 +72,14 @@ module.exports = function (event, world) {
             //Start handler for triggering our special features
             (new keyHandler(world,browser)).start();
 
+            //Map-specific conversation starters
+            if (event.mapName.indexOf("main_corridor") >= 0
+            && !worldState.interactedWithKeren) {
+                worldState.interactedWithKeren = true;
+                world.startConversation("corridor-keren", "keren.png");
+            }
+
+            //Run the arrow event handler once to set the objective arrows on the map
             objectivesList = getObjectivesListOnMapLoad(world, event, levelJson.objectives);
             console.log(objectivesList);
             arrowEventHandler(world, event, objectivesList);
@@ -89,6 +109,7 @@ module.exports = function (event, world) {
             break;
         case 'objectiveCompleted':
         case 'objectiveCompletedAgain' :
+            //Run the arrow event handler
             arrowEventHandler(world, event, objectivesList);
             break;
         case 'objectiveFailed':
@@ -135,5 +156,7 @@ module.exports = function (event, world) {
         default:
             console.warn(`Cloudinary received unknown event named "${event.name}"`,);
     }
+
+    world.setState("com.cloudinary.cloudinary_ship", worldState);
 
 }
