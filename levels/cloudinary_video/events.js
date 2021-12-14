@@ -20,7 +20,7 @@ console.log('Cloudinary Video Mission Started (event.js loaded)');
 module.exports = function (event, world) {
 
     //Load world state
-    let worldState = world.getState("com.cloudinary.cloudinary_ship") || DEFAULT_MISSION_STATE;
+    let worldState = world.getState("com.cloudinary.cloudinary_video_adventures") || DEFAULT_MISSION_STATE;
 
     /**
      * Some dev mode stuff
@@ -84,6 +84,23 @@ module.exports = function (event, world) {
             console.log(objectivesList);
             arrowEventHandler(world, event, objectivesList);
 
+            //Show map-specific pop-up to show what the mission topic is in an office
+            var missionMessage;
+            switch (event.mapName) {
+                case "m2_asset_mgmt":
+                    missionMessage = "Office 2: Asset Management";
+                    break;
+                case "m3_basic_operations":
+                    missionMessage = "Office 3: Basic Operations";
+                    break;
+                case "m4_annotation":
+                    missionMessage = "Office 4: Annotations";
+                    break;
+                case "m5_editing":
+                    missionMessage = "Office 5: Editing";
+                    break;
+            }
+            !missionMessage ? "" : world.showNotification(missionMessage);
            break;
 
         case 'objectiveDidOpen' :
@@ -129,7 +146,11 @@ module.exports = function (event, world) {
                 switch(event.target.observation){
                     case 'leaving':
                         //and moving towards the exit
-                        if(world.__internals.level.player.keys.left.isDown) {
+                        console.log(world.__internals.level.player.keys)
+                        if(
+                            world.__internals.level.player.keys.left.isDown ||
+                            world.__internals.level.player.keys.a.isDown
+                            ) {
                             world.showNotification('This exit will take you out of the Cloudinary Video Adventure and back to the Fog Owl.');
                         }
                         break;
@@ -157,6 +178,6 @@ module.exports = function (event, world) {
             console.warn(`Cloudinary received unknown event named "${event.name}"`,);
     }
 
-    world.setState("com.cloudinary.cloudinary_ship", worldState);
+    world.setState("com.cloudinary.cloudinary_video_adventures", worldState);
 
 }
