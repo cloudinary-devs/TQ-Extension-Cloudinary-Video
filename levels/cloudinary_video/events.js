@@ -6,7 +6,7 @@ const browser = require('../../lib/browser');
 // const state = require('../../lib/state');
 const setHackFormDefaults = require('../../lib/hackFormDefaultValues');
 const levelJson = require("./level.json");
-const { getObjectivesListOnMapLoad, arrowEventHandler } = require("../../lib/arrowEventHandler");
+const { getObjectivesListOnMapLoad, arrowEventHandler, areMissionObjectivesComplete } = require("../../lib/objectiveEventHandler");
 
 var objectivesList;
 
@@ -35,7 +35,7 @@ module.exports = function (event, world) {
             console.log("Reset completed objectives:");
             levelJson.objectives.forEach (objective => {
             if (world.isObjectiveCompleted(objective)) {
-                console.log(objective);
+                //console.log(objective);
                 world.removeObjective("cloudinary_video", objective);
             
       }
@@ -116,6 +116,16 @@ module.exports = function (event, world) {
                     break;
             }
             !missionMessage ? "" : world.showNotification(missionMessage, 500);
+           
+
+           // Handle mission complete
+           const officesKeys = ["m2_","m3_","m4_"];
+           officesKeys.forEach(function (key) {
+                if (areMissionObjectivesComplete(world, levelJson.objectives, key)) {
+                    world.hideEntities(key+"gate");
+                }
+           });
+
            break;
 
         case 'objectiveDidOpen' :
