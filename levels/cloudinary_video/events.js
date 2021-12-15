@@ -87,6 +87,12 @@ module.exports = function (event, world) {
             //Show map-specific pop-up to show what the mission topic is in an office
             var missionMessage;
             switch (event.mapName) {
+                case "default":
+                    //missionMessage = "Onboarding";
+                    break;
+                case "main_corridor":
+                    //missionMessage = "Main Corridor";
+                    break;
                 case "m2_asset_mgmt":
                     missionMessage = "Office 2: Asset Management";
                     break;
@@ -99,8 +105,17 @@ module.exports = function (event, world) {
                 case "m5_editing":
                     missionMessage = "Office 5: Editing";
                     break;
+                case "m6_audio":
+                    missionMessage = "Office 6: Audio";
+                    break;
+                case "m7_output_embedding":
+                    missionMessage = "Office 7: Output Embedding";
+                    break;
+                case "m8_advanced":
+                    missionMessage = "Office 8: Advanced";
+                    break;
             }
-            !missionMessage ? "" : world.showNotification(missionMessage);
+            !missionMessage ? "" : world.showNotification(missionMessage, 500);
            break;
 
         case 'objectiveDidOpen' :
