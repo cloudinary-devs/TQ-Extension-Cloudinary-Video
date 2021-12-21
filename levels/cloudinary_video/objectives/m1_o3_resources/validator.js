@@ -28,6 +28,6 @@ module.exports = async function (helper) {
   }
 
   helper.success(`
-    Well done! You now know more about Cludinary's SDKs, documentation, training program, and community resources!
+    Well done! You now know more about Cloudinary's SDKs, documentation, training program, and community resources!
   `);
 };

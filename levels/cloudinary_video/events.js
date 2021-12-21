@@ -7,6 +7,7 @@ const browser = require('../../lib/browser');
 const setHackFormDefaults = require('../../lib/hackFormDefaultValues');
 const levelJson = require("./level.json");
 const { getObjectivesListOnMapLoad, arrowEventHandler, areMissionObjectivesComplete } = require("../../lib/objectiveEventHandler");
+const { viewpointHandler } = require("../../lib/viewpointHandler"); 
 
 var objectivesList;
 
@@ -77,6 +78,7 @@ module.exports = function (event, world) {
             && !worldState.interactedWithKeren) {
                 worldState.interactedWithKeren = true;
                 world.startConversation("corridor-keren", "keren.png");
+                viewpointHandler(world, "first_mission_viewpoint", "cedricCorridor", "cedricNeutral.png");
             }
 
             //Run the arrow event handler once to set the objective arrows on the map
@@ -121,7 +123,7 @@ module.exports = function (event, world) {
            // Handle mission complete
            const officesKeys = ["m2_","m3_","m4_"];
            officesKeys.forEach(function (key) {
-                if (areMissionObjectivesComplete(world, levelJson.objectives, key)) {
+                if (true){//(areMissionObjectivesComplete(world, levelJson.objectives, key)) {
                     world.hideEntities(key+"gate");
                 }
            });
