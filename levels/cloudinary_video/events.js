@@ -12,8 +12,15 @@ const { viewpointHandler } = require("../../lib/viewpointHandler");
 var objectivesList;
 
 const DEFAULT_MISSION_STATE = {
-    interactedWithKeren: false,
-    interactedWithFredrick: false 
+    startedInteractingWithKeren: false,
+    finishedInteractingWithKeren: false,
+    interactedWithFredrick: false,
+    missionsCompleted: {
+        m2_complete: false,
+        m3_complete: false,
+        m4_complete: false,
+        m5_complete: false
+    }
 }
 
 console.log('Cloudinary Video Mission Started (event.js loaded)');
@@ -38,9 +45,8 @@ module.exports = function (event, world) {
             if (world.isObjectiveCompleted(objective)) {
                 //console.log(objective);
                 world.removeObjective("cloudinary_video", objective);
-            
-      }
-    })
+                }
+            })
         }
         //log all events in dev mode
         console.debug({event, world});
@@ -75,10 +81,10 @@ module.exports = function (event, world) {
 
             //Map-specific conversation starters
             if (event.mapName.indexOf("main_corridor") >= 0
-            && !worldState.interactedWithKeren) {
-                worldState.interactedWithKeren = true;
+            && !worldState.startedInteractingWithKeren) {
+                worldState.startedInteractingWithKeren = true;
                 world.startConversation("corridor-keren", "keren.png");
-                viewpointHandler(world, "first_mission_viewpoint", "cedricCorridor", "cedricNeutral.png");
+                // When the above conversation ends, trigger conversationDidEnd
             }
 
             //Run the arrow event handler once to set the objective arrows on the map
@@ -123,7 +129,7 @@ module.exports = function (event, world) {
            // Handle mission complete
            const officesKeys = ["m2_","m3_","m4_"];
            officesKeys.forEach(function (key) {
-                if (true){//(areMissionObjectivesComplete(world, levelJson.objectives, key)) {
+                if (areMissionObjectivesComplete(world, levelJson.objectives, key)) {
                     world.hideEntities(key+"gate");
                 }
            });
@@ -158,11 +164,22 @@ module.exports = function (event, world) {
             break;
         case 'objectiveFailed':
             break;
+        case 'objectiveDidClose':
+            if (areMissionObjectivesComplete(objectivesList,event.objectiveName)) {
+                world.showNotification("Pass");
+            }
         case 'conversationDidEnd':
             //@todo-p2 refactor into a generic call to objectives/<objective_name>/event.js:conversationDidEnd() call?
             console.table(observer.history);
             switch (event.npc.conversation) {
                 case 'm2-cedric-Default':
+                    break;
+                case 'corridor-keren':
+                    if (worldState.startedInteractingWithKeren && !worldState.finishedInteractingWithKeren) {
+                        worldState.finishedInteractingWithKeren = true;
+                        viewpointHandler(world, "first_mission_viewpoint", "cedricCorridor", "cedricNeutral.png");
+                    }
+                    break;
 
             }
             observer.history = [];//clear out the history?
@@ -195,7 +212,7 @@ module.exports = function (event, world) {
             break;
         case 'levelWillUnload':
             //cleanly stop our conversation eavesdropper
-            //observer.stop();
+            observer.stop();
             break;
         case 'triggerAreaWasExited':
             browser.hide();

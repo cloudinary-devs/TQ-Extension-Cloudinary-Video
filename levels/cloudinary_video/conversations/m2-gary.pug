@@ -1,5 +1,19 @@
 conversation(display_name="Gary")
-  statement#default
+  case lastResponse
+    when "how_to_help"
+      statement
+        text.
+          I've set up a guide that tells you which terminal you should interact 
+          with first. Use the spacebar to interact and get started with your work.
+          Once you've successfully completed the terminal, you can go to the next one 
+          that the arrow is pointing to.  
+    default
+      statement#default
+      responses
+        response#how_to_help.
+          How do I do that?
+  
+  
   statements
     statement#default
       text.

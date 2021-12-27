@@ -403,8 +403,8 @@
                  "type":"",
                  "visible":true,
                  "width":32,
-                 "x":544,
-                 "y":232.5
+                 "x":541,
+                 "y":236.5
                 }, 
                 {
                  "gid":11697,
@@ -451,7 +451,7 @@
                         {
                          "name":"conversation",
                          "type":"string",
-                         "value":"corridor-keren"
+                         "value":"cedricCorridor"
                         }, 
                         {
                          "name":"conversationAvatar",
@@ -467,8 +467,8 @@
                  "type":"",
                  "visible":true,
                  "width":32,
-                 "x":329,
-                 "y":235
+                 "x":329.5,
+                 "y":239
                 }, 
                 {
                  "gid":11697,
@@ -828,7 +828,7 @@
          "y":0
         }],
  "nextlayerid":50,
- "nextobjectid":188,
+ "nextobjectid":189,
  "orientation":"orthogonal",
  "renderorder":"right-down",
  "tiledversion":"1.7.1",
