@@ -17,11 +17,11 @@ module.exports = async function (helper) {
     `);
   }
 
-  if (parseInt(howManySDKs) > 15 ) {
+  /*if (parseInt(howManySDKs) > 15 ) {
     return helper.fail(`
       There are less than ${howManySDKs} Framework Integration SDKs. Check the hint and try again.
     `);
-  }
+  }*/
 
   if (cloudinaryAcademy.toLowerCase() !== 'Cloudinary Academy'.toLowerCase()){
     return helper.fail(`Hmmm, no, that's not the name of the training program. Check the hint and try again.`);

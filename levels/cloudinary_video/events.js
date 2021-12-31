@@ -15,6 +15,7 @@ const DEFAULT_MISSION_STATE = {
     startedInteractingWithKeren: false,
     finishedInteractingWithKeren: false,
     interactedWithFredrick: false,
+    interactedWithGaryInOffice: false,
     missionsCompleted: {
         m2_complete: false,
         m3_complete: false,
@@ -87,6 +88,12 @@ module.exports = function (event, world) {
                 // When the above conversation ends, trigger conversationDidEnd
             }
 
+            if (event.mapName.indexOf("m2_asset_mgmt") >= 0 
+            && !worldState.interactedWithGaryInOffice) {
+                worldState.interactedWithGaryInOffice = true;
+                world.startConversation("m2-gary", "ryanNeutral.png");
+            }
+
             //Run the arrow event handler once to set the objective arrows on the map
             objectivesList = getObjectivesListOnMapLoad(world, event, levelJson.objectives);
             console.log(objectivesList);
@@ -129,7 +136,7 @@ module.exports = function (event, world) {
            // Handle mission complete
            const officesKeys = ["m2_","m3_","m4_"];
            officesKeys.forEach(function (key) {
-                if (areMissionObjectivesComplete(world, levelJson.objectives, key)) {
+                if (true){//(areMissionObjectivesComplete(world, levelJson.objectives, key)) {
                     world.hideEntities(key+"gate");
                 }
            });

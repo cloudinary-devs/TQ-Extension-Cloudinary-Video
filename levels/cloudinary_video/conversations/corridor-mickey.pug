@@ -1,5 +1,23 @@
 conversation(display_name="Mickey")
-  statement#default
+  case lastResponse 
+    when "yes-i-will-help"
+      statement#great
+      responses
+    when "no-i-wont-help"
+      statement#please
+      responses
+        response#yes-i-will-help.
+          Alright, I'll try!
+        response#yes-i-will-help.
+          Fine, I need that quality time anyways.
+    default
+      statement#default
+      responses
+        response#yes-i-will-help.
+          Yes! Quality time!
+        response#no-i-wont-help.
+          No, I'm not feeling it.
+  
   statements
     statement#default
       text.
@@ -7,3 +25,10 @@ conversation(display_name="Mickey")
         We are about to publish a major press release and 
         need a video transformed using the highest quality possible.
         Can you help?
+    statement#please 
+      text.
+        Oh, come on. Our Cloudinary APIs should make it easy to make this happen! 
+        We just need the extra help. Would you please help us?
+    statement#great
+      text.
+        Great! Let's go in to the office on my right!

@@ -1,9 +1,35 @@
 conversation(display_name="Gary")
-  statement#default
+  case lastResponse 
+    when "yes-i-will-help"
+      statement#great
+      responses
+    when "no-i-wont-help"
+      statement#please
+      responses
+        response#yes-i-will-help.
+          Alright, I'll do it!
+        response#yes-i-will-help.
+          Fine, I'll give it a shot.
+    default
+      statement#default
+      responses
+        response#yes-i-will-help.
+          Yes! I'm ready!
+        response#no-i-wont-help.
+          No, I'm not feeling it.
+
   statements
     statement#default
       text.
         Hey there! I heard you were starting today! 
         I'm Gary from the Business Dev Department. 
         We could use some help with getting a video URL. 
-        Can you help? Come on in to our office!
+        Can you help? 
+    statement#please 
+      text.
+        Oh, come on. You're going to have a great time with 
+        our Cloudinary APIs! We also really need the help. Please 
+        help us, just this once?
+    statement#great
+      text.
+          Great! Come in to our office on my left!

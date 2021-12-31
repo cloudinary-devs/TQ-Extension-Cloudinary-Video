@@ -375,8 +375,8 @@
                  "type":"",
                  "visible":true,
                  "width":32,
-                 "x":459,
-                 "y":231
+                 "x":455.5,
+                 "y":235.75
                 }, 
                 {
                  "gid":11704,
@@ -425,7 +425,7 @@
                         {
                          "name":"spritesheet",
                          "type":"string",
-                         "value":"cedric"
+                         "value":""
                         }],
                  "rotation":0,
                  "type":"",
