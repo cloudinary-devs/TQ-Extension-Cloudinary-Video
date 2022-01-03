@@ -21,6 +21,7 @@ const DEFAULT_MISSION_STATE = {
         m3_complete: false,
         m4_complete: false,
         m5_complete: false
+        //skip: false // open all gates debug flag
     }
 }
 
@@ -132,16 +133,25 @@ module.exports = function (event, world) {
             }
             !missionMessage ? "" : world.showNotification(missionMessage, 500);
            
+            var openAllGatesDebugFlag;
+            console.log(world.__internals.level.player.keys);
+            
+            // Debug: if you hold the ctrl key while walking through the door,
+            //        trigger the down key
+            openAllGatesDebugFlag = world.__internals.level.player.keys.down.isDown;
 
-           // Handle mission complete
-           const officesKeys = ["m2_","m3_","m4_"];
-           officesKeys.forEach(function (key) {
-                if (true){//(areMissionObjectivesComplete(world, levelJson.objectives, key)) {
-                    world.hideEntities(key+"gate");
-                }
-           });
+            // Handle mission complete
+            const officesKeys = ["m2_","m3_","m4_"];
+            officesKeys.forEach(function (key) {
+                    if (
+                        (openAllGatesDebugFlag) || 
+                        (areMissionObjectivesComplete(world, levelJson.objectives, key))
+                        ) {
+                        world.hideEntities(key+"gate");
+                    }
+            });
 
-           break;
+            break;
 
         case 'objectiveDidOpen' :
             //@todo-p2 refactor into a generic call to objectives/<objective_name>/event.js:objectiveDidOpen() call?
