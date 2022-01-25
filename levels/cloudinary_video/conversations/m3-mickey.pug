@@ -1,6 +1,30 @@
 conversation(display_name="Mickey")
-  statement#default
+  case lastResponse
+    when "great"
+      statement
+        text.
+          WOOHOO! I love how Cloudinary lets you set your videos to high quality. 
+          Now let's make it happen right here using the Cloudinary APIs!
+      responses
+    when "i-need-more-help"
+      statement
+        text.
+          Oh, I see you need some help with these quality missions. 
+          I suggest using the <strong>Help</strong> tab in the objective modules 
+          to access our in-depth Cloudinary documentation. 
+          That should help you get the job done!
+      responses
+        response#great.
+          Sounds like a quality plan!
+    default
+      statement#default
+      responses 
+        response#i-need-more-help.
+          I need some help!
+        response#great.
+          Yeah! I'm high quality!
   statements
     statement#default
       text.
-        Thanks for your help!
+        Thanks for your help once again! 
+        I can't wait to see this high quality work!

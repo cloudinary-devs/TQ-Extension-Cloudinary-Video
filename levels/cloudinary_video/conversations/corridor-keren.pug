@@ -1,9 +1,18 @@
 conversation(display_name="Keren")
-  statement#default
+  case lastResponse 
+    when "how-to-help"
+      statement 
+        text.
+          Each office through this corridor awaits an employee with technical video related tasks for you. 
+          Visit each office and complete all objectives in the office before you proceed to the next office! 
+      responses
+    default
+      statement#default
+      responses
+        response#how-to-help.
+          How do I help?
+
   statements
     statement#default
       text.
-        Welcome! I'm Keren, the Cloudinary's Corridor Manager! We're so glad to have your help.
-        Each office through this corridor awaits an employee with technical video related tasks for you. 
-        Visit each office and complete all objectives in the office before you proceed to the next office.
-        After completing all of the objectives in the corridor, your job is complete!
+        Welcome! I'm Keren, the Cloudinary's Corridor Manager! We're so glad to have your help.        

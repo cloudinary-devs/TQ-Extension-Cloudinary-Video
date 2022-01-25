@@ -19,7 +19,9 @@ module.exports = async function (helper) {
             mustAppear: ['q_10/','https:','res.cloudinary.com','video/upload','TwilioQuest','/Flower.mp4']
         }
     }, function pass() {
-        helper.success(grader.getSuccessMessage());
+        helper.success(grader.getSuccessMessage() + `
+            Nice! You've generated nice flower videos with different video qualities!
+        `);
         browser.display(
             `
                 <div>

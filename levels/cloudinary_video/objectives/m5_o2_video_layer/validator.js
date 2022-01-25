@@ -16,7 +16,9 @@ module.exports = async function (helper) {
         }
     }, function pass() {
         console.log(grader.downloadedFiles);
-        helper.success(grader.getSuccessMessage());
+        helper.success(grader.getSuccessMessage() + `
+            Nice! You added a video layer over another video!
+        `);
         browser.display(
             `
         <div>

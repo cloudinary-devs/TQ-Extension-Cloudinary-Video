@@ -1,7 +1,19 @@
 conversation(display_name="Amit")
-  statement#default
+  case lastResponse
+    when "i-need-some-help"
+      statement
+        text.
+          Oh! I suggest using the <strong>Help</strong> tab in the objective modules 
+          to access our in-depth Cloudinary documentation. 
+          That should help you get the job done! 
+      responses
+    default
+      statement#default
+      responses 
+        response#i-need-some-help.
+          I need some help!
   statements
     statement#default
       text.
-        Don't forget there are 2 objectives to complete in this office.
+        Don't forget there are 4 objectives to complete in this office.
         You should be able to access it through the computer terminals next to me.

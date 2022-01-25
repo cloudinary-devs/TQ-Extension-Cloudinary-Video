@@ -1,24 +1,24 @@
 {
   "title": "Employee Orientation",
-  "description": "Create your Staff Badge!",
+  "description": "Create your Staff Badge by signing up for a Cloudinary account!",
   "validation_fields": [
     {
       "name": "cloudinary_cloud_name",
       "type": "text",
       "placeholder": "your cloud name",
-      "label": "Enter your Cloud Name"
+      "label": "Enter your Cloud Name:"
     },
     {
       "name": "cloudinary_api_key",
       "type": "text",
       "placeholder": "your API key",
-      "label": "Enter your API Key"
+      "label": "Enter your API Key:"
     },
     {
       "name": "cloudinary_api_secret",
       "type": "password",
       "placeholder": "your API secret",
-      "label": "Enter your API secret"
+      "label": "Enter your API Secret:"
     }
   ],
   "rewards": {

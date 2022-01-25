@@ -1,6 +1,19 @@
 conversation(display_name="Kevin")
-  statement#default
+  case lastResponse 
+    when "what-do-i-do-now"
+      statement 
+        text.
+          I'm not sure, but the staff is looking forward to a nice long break! 
+          Maybe you should hang out in the pool if you get tired of the stars.
+          By the way, do you see a cloud out there?
+      responses
+    default
+      statement#default
+      responses 
+        response#what-do-i-do-now.
+          What work is coming?
   statements
     statement#default
       text.
         Well, nothing more to do, but look out the window until new work arrives!
+      

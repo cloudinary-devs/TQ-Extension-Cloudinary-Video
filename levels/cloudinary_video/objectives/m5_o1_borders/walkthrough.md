@@ -1,13 +1,23 @@
-# Assistance
+# Help Guide
 
-_r__ is the general transformation parameter that is used to round corners of the video (and images too, with [even more options](https://cloudinary.com/documentation/transformation_reference#r_round_corners)!). 
+### Objective-specific Resources
+* [Image Video and File Upload](https://cloudinary.com/documentation/image_video_and_file_upload)
+* [Video Transformations](https://cloudinary.com/documentation/video_manipulation_and_delivery)
+* [Transformation Reference: Round Corners](https://cloudinary.com/documentation/transformation_reference#r_round_corners)
+* [Rounding Corners and Creating Circular Videos](https://cloudinary.com/documentation/video_manipulation_and_delivery#rounding_corners_and_creating_circular_videos)
 
-Take a look at [Rounding Corners and creating circular videos](https://cloudinary.com/documentation/video_manipulation_and_delivery#rounding_corners_and_creating_circular_videos) to answer the questions.
+### Detailed Instructions
+_r__ is the general transformation parameter that is used to round corners of the video (and images too, with [even more options](https://cloudinary.com/documentation/transformation_reference#r_round_corners)!). Take a look at [Rounding Corners and creating circular videos](https://cloudinary.com/documentation/video_manipulation_and_delivery#rounding_corners_and_creating_circular_videos) to answer the questions.
+
+For the other parameters, like color, refer back to the documentation or the objectives in **Mission 4**!
 
 
-## Documentation
-Full Cloudinary documentation can be found here:
-[https://cloudinary.com/documentation](https://cloudinary.com/documentation)
+### Additional Documentation
 
-Cloudinary also offers free self-paced training in the [Cloudinary Academy](https://training.cloudinary.com/).
+[Cloudinary Documentation](https://cloudinary.com/documentation?utm_source=twilio&utm_medium=event&utm_campaign=cloudinary-twilioquest-2021)
 
+[Cloudinary Academy](https://training.cloudinary.com?utm_source=twilio&utm_medium=event&utm_campaign=cloudinary-twilioquest-2021)
+
+[Cloudinary CookBook Recipes - Transformation Examples](https://cloudinary.com/cookbook?utm_source=twilio&utm_medium=event&utm_campaign=cloudinary-twilioquest-2021)
+
+[Discord Community](https://discord.gg/CCsubwFbvd)

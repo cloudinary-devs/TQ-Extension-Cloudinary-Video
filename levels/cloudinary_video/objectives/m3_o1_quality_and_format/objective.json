@@ -1,21 +1,21 @@
 {
   "title": "Optimization",
-  "description": "Learn how to change the quality of your assets",
+  "description": "Learn how to change the quality of your Cloudinary assets!",
   "validation_fields": [
     {
       "name": "answer1",
       "type": "text",
-      "label": "High Quality URL (value=100)"
+      "label": "High Quality URL (value=100):"
     },
     {
       "name": "answer2",
       "type": "text",
-      "label": "Auto Quality URL"
+      "label": "Auto Quality URL:"
     },
     {
       "name": "answer3",
       "type": "text",
-      "label": "Low Quality URL (value=10)"
+      "label": "Low Quality URL (value=10):"
     }
   ],
   "rewards": {
