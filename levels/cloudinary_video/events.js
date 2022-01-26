@@ -5,23 +5,56 @@ const keyHandler = require('../../lib/keyboardHandler');
 const browser = require('../../lib/browser');
 // const state = require('../../lib/state');
 const setHackFormDefaults = require('../../lib/hackFormDefaultValues');
+const levelJson = require("./level.json");
+const { getObjectivesListOnMapLoad, arrowEventHandler, areMissionObjectivesComplete } = require("../../lib/objectiveEventHandler");
+const { viewpointHandler } = require("../../lib/viewpointHandler"); 
+
+var objectivesList;
+
+const DEFAULT_MISSION_STATE = {
+    startedInteractingWithKeren: false,
+    finishedInteractingWithKeren: false,
+    interactedWithFredrick: false,
+    interactedWithGaryInOffice: false,
+    missionsCompleted: {
+        m2_complete: false,
+        m3_complete: false,
+        m4_complete: false,
+        m5_complete: false
+        //skip: false // open all gates debug flag
+    }
+}
 
 console.log('Cloudinary Video Mission Started (event.js loaded)');
 
 module.exports = function (event, world) {
 
+    //Load world state
+    let worldState = world.getState("com.cloudinary.cloudinary_video_adventures") || DEFAULT_MISSION_STATE;
+
     /**
      * Some dev mode stuff
      */
-    if (process.env.USER === 'jsimpson') { //replace with your username or another dev mode flag
+    //if (process.env.USER === 'jsimpson') { //replace with your username or another dev mode flag
+    if (true) { // Debug mode on
         if (event.name === 'levelDidLoad') {
             //Set javascript sources to be reloaded instead of cached
             window.reloadExternalModules = true;
+            worldState = DEFAULT_MISSION_STATE;
             console.clear(); //clear out all the platform errors/warnings that occur at startup
+            console.log("Reset completed objectives:");
+            levelJson.objectives.forEach (objective => {
+            if (world.isObjectiveCompleted(objective)) {
+                //console.log(objective);
+                world.removeObjective("cloudinary_video", objective);
+                }
+            })
         }
         //log all events in dev mode
         console.debug({event, world});
     }
+
+    
 
     //CAN HAZ HAX PLZ?
     window.world = world;
@@ -32,7 +65,9 @@ module.exports = function (event, world) {
     switch (event.name) {
 
         case 'levelDidLoad':
-            //nothing to do... so far
+            //Introduce the player to the cloudinary ship via Fredrica
+            world.startConversation("m2-fredric_holo-wakeup", "fredricNeutral.png");
+
             break;
 
         case 'mapDidLoad':
@@ -46,7 +81,77 @@ module.exports = function (event, world) {
             //Start handler for triggering our special features
             (new keyHandler(world,browser)).start();
 
-           break;
+            //Map-specific conversation starters
+            if (event.mapName.indexOf("main_corridor") >= 0
+            && !worldState.startedInteractingWithKeren) {
+                worldState.startedInteractingWithKeren = true;
+                world.startConversation("corridor-keren", "keren.png");
+                // When the above conversation ends, trigger conversationDidEnd
+            }
+
+            if (event.mapName.indexOf("m2_asset_mgmt") >= 0 
+            && !worldState.interactedWithGaryInOffice) {
+                worldState.interactedWithGaryInOffice = true;
+                world.startConversation("m2-gary", "ryanNeutral.png");
+            }
+
+            //Run the arrow event handler once to set the objective arrows on the map
+            objectivesList = getObjectivesListOnMapLoad(world, event, levelJson.objectives);
+            console.log(objectivesList);
+            arrowEventHandler(world, event, objectivesList);
+
+            //Show map-specific pop-up to show what the mission topic is in an office
+            var missionMessage;
+            switch (event.mapName) {
+                case "default":
+                    //missionMessage = "Onboarding";
+                    break;
+                case "main_corridor":
+                    //missionMessage = "Main Corridor";
+                    break;
+                case "m2_asset_mgmt":
+                    missionMessage = "Office 2: Asset Management";
+                    break;
+                case "m3_basic_operations":
+                    missionMessage = "Office 3: Basic Operations";
+                    break;
+                case "m4_annotation":
+                    missionMessage = "Office 4: Annotations";
+                    break;
+                case "m5_editing":
+                    missionMessage = "Office 5: Editing";
+                    break;
+                case "m6_audio":
+                    missionMessage = "Office 6: Audio";
+                    break;
+                case "m7_output_embedding":
+                    missionMessage = "Office 7: Output Embedding";
+                    break;
+                case "m8_advanced":
+                    missionMessage = "Office 8: Advanced";
+                    break;
+            }
+            !missionMessage ? "" : world.showNotification(missionMessage, 500);
+           
+            var openAllGatesDebugFlag;
+            console.log(world.__internals.level.player.keys);
+            
+            // Debug: if you hold the ctrl key while walking through the door,
+            //        trigger the down key
+            openAllGatesDebugFlag = world.__internals.level.player.keys.down.isDown;
+
+            // Handle mission complete
+            const officesKeys = ["m2_","m3_","m4_"];
+            officesKeys.forEach(function (key) {
+                    if (
+                        (openAllGatesDebugFlag) || 
+                        (areMissionObjectivesComplete(world, levelJson.objectives, key))
+                        ) {
+                        world.hideEntities(key+"gate");
+                    }
+            });
+
+            break;
 
         case 'objectiveDidOpen' :
             //@todo-p2 refactor into a generic call to objectives/<objective_name>/event.js:objectiveDidOpen() call?
@@ -68,15 +173,30 @@ module.exports = function (event, world) {
             }
             break;
         case 'objectiveDidClose':
+            break;
         case 'objectiveCompleted':
         case 'objectiveCompletedAgain' :
+            //Run the arrow event handler
+            arrowEventHandler(world, event, objectivesList);
+            break;
         case 'objectiveFailed':
             break;
+        case 'objectiveDidClose':
+            if (areMissionObjectivesComplete(objectivesList,event.objectiveName)) {
+                world.showNotification("Pass");
+            }
         case 'conversationDidEnd':
             //@todo-p2 refactor into a generic call to objectives/<objective_name>/event.js:conversationDidEnd() call?
             console.table(observer.history);
             switch (event.npc.conversation) {
                 case 'm2-cedric-Default':
+                    break;
+                case 'corridor-keren':
+                    if (worldState.startedInteractingWithKeren && !worldState.finishedInteractingWithKeren) {
+                        worldState.finishedInteractingWithKeren = true;
+                        viewpointHandler(world, "first_mission_viewpoint", "cedricCorridor", "cedricNeutral.png");
+                    }
+                    break;
 
             }
             observer.history = [];//clear out the history?
@@ -87,7 +207,11 @@ module.exports = function (event, world) {
                 switch(event.target.observation){
                     case 'leaving':
                         //and moving towards the exit
-                        if(world.__internals.level.player.keys.left.isDown) {
+                        console.log(world.__internals.level.player.keys)
+                        if(
+                            world.__internals.level.player.keys.left.isDown ||
+                            world.__internals.level.player.keys.a.isDown
+                            ) {
                             world.showNotification('This exit will take you out of the Cloudinary Video Adventure and back to the Fog Owl.');
                         }
                         break;
@@ -105,7 +229,7 @@ module.exports = function (event, world) {
             break;
         case 'levelWillUnload':
             //cleanly stop our conversation eavesdropper
-            //observer.stop();
+            observer.stop();
             break;
         case 'triggerAreaWasExited':
             browser.hide();
@@ -114,5 +238,7 @@ module.exports = function (event, world) {
         default:
             console.warn(`Cloudinary received unknown event named "${event.name}"`,);
     }
+
+    world.setState("com.cloudinary.cloudinary_video_adventures", worldState);
 
 }

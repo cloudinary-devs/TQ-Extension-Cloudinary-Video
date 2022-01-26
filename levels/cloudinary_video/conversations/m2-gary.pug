@@ -1,7 +1,31 @@
 conversation(display_name="Gary")
-  statement#default
+  case lastResponse
+    when "how_to_help"
+      statement
+        text.
+          I've set up a guide that tells you which terminal you should interact 
+          with first. The guide is represented by a huge red arrow!<br><br>
+          Each terminal has an objective to solve. 
+          Use the <b>spacebar</b> to interact and get started with your work!
+      responses
+        response#afterwards.
+          Then what?
+    when "afterwards"
+      statement
+        text.
+          Once you've successfully completed the terminal, you can go to the next one 
+          that the arrow is pointing to. I know you can do it!<br><br>Let's get started 
+          with the first objective on the big terminal on the left.  
+    default
+      statement#default
+      responses
+        response#how_to_help.
+          How do I solve the objectives?
+  
+  
   statements
     statement#default
       text.
-        You can interact with each of these computer terminals. There are 3 objectives within this office.
-        Could you help with these? Thank you!
+        Welcome to our office! 
+        There are 3 objectives to solve here.
+        Could you help with these?

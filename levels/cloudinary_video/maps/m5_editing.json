@@ -72,8 +72,8 @@
                  "type":"player",
                  "visible":true,
                  "width":0,
-                 "x":408,
-                 "y":474
+                 "x":412.666666666667,
+                 "y":469.666666666667
                 }, 
                 {
                  "height":12,
@@ -99,8 +99,8 @@
                  "type":"levelChange",
                  "visible":true,
                  "width":24,
-                 "x":408,
-                 "y":540
+                 "x":408.639573617588,
+                 "y":548.954030646236
                 }, 
                 {
                  "height":0,
@@ -134,8 +134,8 @@
                  "type":"",
                  "visible":true,
                  "width":32,
-                 "x":227,
-                 "y":431
+                 "x":357.666666666667,
+                 "y":474.666666666667
                 }, 
                 {
                  "height":19,
@@ -224,6 +224,78 @@
                  "width":21.5,
                  "x":481.5,
                  "y":371.5
+                }, 
+                {
+                 "height":0,
+                 "id":143,
+                 "name":"arrow",
+                 "point":true,
+                 "properties":[
+                        {
+                         "name":"key",
+                         "type":"string",
+                         "value":"arrow_m5_o1_borders"
+                        }],
+                 "rotation":0,
+                 "type":"arrow",
+                 "visible":true,
+                 "width":0,
+                 "x":275.656229180546,
+                 "y":356.242504996669
+                }, 
+                {
+                 "height":0,
+                 "id":144,
+                 "name":"arrow",
+                 "point":true,
+                 "properties":[
+                        {
+                         "name":"key",
+                         "type":"string",
+                         "value":"arrow_m5_o2_video_layer"
+                        }],
+                 "rotation":0,
+                 "type":"arrow",
+                 "visible":true,
+                 "width":0,
+                 "x":347.288474350433,
+                 "y":356.882078614257
+                }, 
+                {
+                 "height":0,
+                 "id":145,
+                 "name":"arrow",
+                 "point":true,
+                 "properties":[
+                        {
+                         "name":"key",
+                         "type":"string",
+                         "value":"arrow_m5_o3_combining_clips"
+                        }],
+                 "rotation":0,
+                 "type":"arrow",
+                 "visible":true,
+                 "width":0,
+                 "x":421.479013990673,
+                 "y":356.882078614257
+                }, 
+                {
+                 "height":0,
+                 "id":146,
+                 "name":"arrow",
+                 "point":true,
+                 "properties":[
+                        {
+                         "name":"key",
+                         "type":"string",
+                         "value":"arrow_m5_o4_transitions"
+                        }],
+                 "rotation":0,
+                 "type":"arrow",
+                 "visible":true,
+                 "width":0,
+                 "x":491.192538307795,
+                 "y":356.242504996669
                 }],
          "opacity":1,
          "type":"objectgroup",
@@ -271,10 +343,10 @@
          "y":0
         }],
  "nextlayerid":45,
- "nextobjectid":143,
+ "nextobjectid":147,
  "orientation":"orthogonal",
  "renderorder":"right-down",
- "tiledversion":"1.7.2",
+ "tiledversion":"1.7.1",
  "tileheight":24,
  "tilesets":[
         {

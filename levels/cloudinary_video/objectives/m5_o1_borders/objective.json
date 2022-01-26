@@ -1,6 +1,6 @@
 {
   "title": "Adding Borders and Rounding Corners",
-  "description": "Frame the video",
+  "description": "Frame the video using borders and corners in Cloudinary!",
   "validation_fields": [
     {
       "name": "answer1",

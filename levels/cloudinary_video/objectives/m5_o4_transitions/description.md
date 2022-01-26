@@ -24,10 +24,12 @@ try{
     </ul>
 </div>
 
-<b>TIP:</b> Experiment with URLs without leaving the game, using the <button onclick='window.CloudinaryBrowser.showUrlExplorer();'>Cloudinary Explorer</button>
+Way to go! Our **Flower** video is greatly enhanced with these complimentary videos we added. Now, can we add transitions to the spliced videos to further enhance the overall video?
+
+> <b>TIP:</b> Experiment with URLs without leaving the game, using the <button onclick='window.CloudinaryBrowser.showUrlExplorer();'>Cloudinary Explorer</button>
 
 ## Preparation
-We'll be using a [luma matte](https://cloudinary.com/documentation/video_manipulation_and_delivery#luma_matte) transition video, once again, from the Cloudinary Demo account. Since  we've already set up the Auto Upload mapping, we can request /demo/transition1 to get the file automatically uploaded into the /demo folder in our account.
+We'll be using a [luma matte](https://cloudinary.com/documentation/video_manipulation_and_delivery#luma_matte) transition video from the Cloudinary Demo account. Since we've already set up the Auto Upload mapping, we can request `/demo/transition1` to get the file automatically uploaded into the `/demo` folder in our account.
 
 
 ## <a name="questions">Questions</a>

@@ -25,7 +25,9 @@ module.exports = async function (helper) {
         // 3 of c_fill,h_200,w_300 || c_fill,w_300,h_200
         //      might make sense to have some sort of query normalizer for certain parameters (width always comes before height)
         // can we use api to help?
-        helper.success(grader.getSuccessMessage());
+        helper.success(grader.getSuccessMessage() + `
+        Great work! You've spliced together a group of videos using Cloudinary!
+        `);
         browser.display(
             `
         <div>

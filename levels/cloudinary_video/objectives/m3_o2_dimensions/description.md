@@ -9,39 +9,30 @@
     </ul>
 </div>
 
-Great job on improving the quality of the video! One more thing, we do need to resize and crop the video for our big press release! It is important we have this perfectly optimized. Are you up for the task?
+Great job on improving the quality of the **Flower** video! 
 
-<b>TIP:</b> Experiment with urls without leaving the game, using the <button onclick='window.CloudinaryBrowser.showUrlExplorer();'>Cloudinary Explorer</button>
+One more thing: we do need to resize and crop the video for our big press release! It is important we have this perfectly optimized. Are you up for the task?
 
-Buckle up!  We're going to cover a bunch of parameters all at once. Fortunately, they are all related to changing the
-size and shape of a video.
+> <b>TIP:</b> Experiment with URLs without leaving the game, using the <button onclick='window.CloudinaryBrowser.showUrlExplorer();'>Cloudinary Explorer</button>
 
-We can tell Cloudinary to resize and crop videos in order to match specific needs. You can dynamically create multiple
-resized, cropped and manipulated videos on-the-fly and deliver them via dynamic URLs.
+## Specific Instructions 
+Buckle up!  We're going to cover a bunch of parameters all at once. Fortunately, they are all related to changing the size and shape of a video.
 
-**Note: For illustration in these instructions, we'll be using a Cloudinary sample video, but your answers to
-the [Questions](#questions) must use your Flower video.**
-
-This is the original sample video.
-<div style="border:1px solid blue">
-   <video muted controls>
-      <source src="https://demo-res.cloudinary.com/video/upload/c_scale,w_690/dog.webm" type="video/mp4">
-   </video>
-</div>
-
-Parameters related to crop/resize functions are all prefixed with *c_*
+We can tell Cloudinary to **resize** and **crop** videos in order to match specific needs. You can dynamically create multiple resized, cropped and manipulated videos on-the-fly and deliver them via dynamic URLs.
 
 ## <a name="questions">Questions</a>
 
 Your answers to these questions must use your Flower video.
 <!-- @todo-p2 rewrite these with reasons for a final layout -->
 
-1. <a name="q1"></a>Create a Flower video URL for <a onclick="jQuery('input')[0].focus()">Answer 1</a> using [scale](#scale) that is:
+1. <a name="q1"></a>Create a **Flower** video URL for <a onclick="jQuery('input')[0].focus()">Answer 1</a> using the [scale](#scale) parameter. The video must have the following properties:
    - 150 pixels wide
-2. <a name="q2"></a>Create a Flower video URL for <a onclick="jQuery('input')[1].focus()">Answer 2</a> using [fill](#fill) that is:
+2. <a name="q2"></a>Create a **Flower** video URL for <a onclick="jQuery('input')[1].focus()">Answer 2</a> using the [fill](#fill) parameter. The video must have the following properties:
    - 300 pixels tall
    - 300 pixels wide
-3. <a name="q3"></a>Create a Flower video URL for <a onclick="jQuery('input')[2].focus()">Answer 3</a> using [crop](#crop) that is
-   - 100 pixel high
+3. <a name="q3"></a>Create a **Flower** video URL for <a onclick="jQuery('input')[2].focus()">Answer 3</a> using the [crop](#crop) parameter. The video must have the following properties:
+   - 100 pixels tall
    - 350 pixels wide 
    - cropped at X:230, Y:110 
+
+Note: parameters related to crop/resize functions are all prefixed with *c_*

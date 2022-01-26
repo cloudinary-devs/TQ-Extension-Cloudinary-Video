@@ -1,5 +1,15 @@
 conversation(display_name="Cedric")
-  statement#default
+  case lastResponse
+    when "what_to_do"
+      statement
+        text.
+          That's right! Why don't you get started by talking to Gary to the right of the office entrance?
+    default
+      statement#default
+      responses
+        response#what_to_do.
+          My first job?
+
   statements
     statement#default
       text.

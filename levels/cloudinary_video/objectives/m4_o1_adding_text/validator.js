@@ -14,7 +14,9 @@ module.exports = async function (helper) {
             ]
         }
     }, function pass() {
-        helper.success(grader.getSuccessMessage());
+        helper.success(grader.getSuccessMessage() + `
+            Awesome! You've added attribution text to the Flower video using Cloudinary!
+        `);
         browser.display(
             `
             <div>

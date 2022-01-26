@@ -1,45 +1,35 @@
-# Summary
+# Help Guide
 
+### Objective-specific Resources
+* [Video Transformations](https://cloudinary.com/documentation/video_manipulation_and_delivery) 
+* [Concatenate Videos with Custom Transitions](https://cloudinary.com/documentation/video_manipulation_and_delivery#concatenate_videos_with_custom_transitions)
+* [Transform URL API](https://cloudinary.com/documentation/transformation_reference)
+ - [`du`](https://cloudinary.com/documentation/transformation_reference#du_duration) (duration)
+ - [`e_transition`](https://cloudinary.com/documentation/transformation_reference#e_transition)
+ - [`fl_splice`](https://cloudinary.com/documentation/transformation_reference#fl_splice)
+ - [`l_video`](https://cloudinary.com/documentation/video_manipulation_and_delivery#adding_video_overlays)
+ - [`/fl_layer_apply/`](https://cloudinary.com/documentation/transformation_reference#fl_layer_apply)
 
-<!--
-## Recap Splicing 
+### Detailed Instructions
 
-Creating a video from multiple other videos requires some fairly complicated urls so here are some useful tips.
+Use the resources above to get the necessary parameters in to your new URL!
 
-The last part of the url (the target video) will be the first video that plays in the sequence, and then all of the _fl_splice_ sections will play in order of appearance in the url.
+By clicking on the _Load URL in Cloudinary Explorer_ button on the Objectives tab, you can load the URL you created from the previous objective and modify it directly in this objective.
 
-Each spliced clip will take the form of:
-```/fl_splice,l_video:<public id>/<any transforms of the clip>/fl_layer_apply/
+You'll also need the [luma matte](https://cloudinary.com/documentation/video_manipulation_and_delivery#luma_matte) transition to help you get the job done!
+
+Finally, recall that spliced clips will take the form of:
+```
+/fl_splice,l_video:<public id>/<any transforms of the clip>/fl_layer_apply/
 ```
 
-_fl_splice_ causes the clip to be spliced in (concatenated), instead of overlayed.
 
-_l_video_ and _/fl_layer_apply/_ are start and end tags, wrapping up any transforms that need to be applied to the clip.
+### Additional Documentation
 
-## Using Transitions
-In order to [join a video using a transition](https://cloudinary.com/documentation/video_manipulation_and_delivery#concatenate_videos_with_custom_transitions), we replace _fl_splice_ with _e_transition_,l_video:&lt;transition video public id&gt;
+[Cloudinary Documentation](https://cloudinary.com/documentation?utm_source=twilio&utm_medium=event&utm_campaign=cloudinary-twilioquest-2021)
 
-You can prefix that with a _/du_5.0/_ to make the transition last 5 seconds and other transforms can be applied to the transition luma matte video as well to vary the transition effect, see later sections of [Concatenate videos with custom transitions](https://cloudinary.com/documentation/video_manipulation_and_delivery#concatenate_videos_with_custom_transitions)
+[Cloudinary Academy](https://training.cloudinary.com?utm_source=twilio&utm_medium=event&utm_campaign=cloudinary-twilioquest-2021)
 
-<br>
+[Cloudinary CookBook Recipes - Transformation Examples](https://cloudinary.com/cookbook?utm_source=twilio&utm_medium=event&utm_campaign=cloudinary-twilioquest-2021)
 
-# Detailed Information
-Guide: [Video Transformations](https://cloudinary.com/documentation/video_manipulation_and_delivery) 
- - [Concatenate videos with custom transitions](https://cloudinary.com/documentation/video_manipulation_and_delivery#concatenate_videos_with_custom_transitions)
-
-Reference: [Transform URL API](https://cloudinary.com/documentation/transformation_reference)
- - [_du_](https://cloudinary.com/documentation/transformation_reference#du_duration) (duration)
- - [_e_transition_](https://cloudinary.com/documentation/transformation_reference#e_transition)
- - [_fl_splice_](https://cloudinary.com/documentation/transformation_reference#fl_splice)
- - [_l_video_]()
- - [_/fl_layer_apply/_](https://cloudinary.com/documentation/transformation_reference#fl_layer_apply)
-
-<br>
-# Resources
-## Training
- [Cloudinary Academy](https://training.cloudinary.com/) (it's free, comprehensive and self-paced)
-
-## Full Documentation
-Cloudinary documentation can be found here:
-[https://cloudinary.com/documentation](https://cloudinary.com/documentation)
-
+[Discord Community](https://discord.gg/CCsubwFbvd)

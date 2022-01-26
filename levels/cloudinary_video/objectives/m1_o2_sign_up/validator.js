@@ -12,7 +12,7 @@ module.exports = async function (helper) {
         const cloudinary_api_secret = helper.getNormalizedInput('cloudinary_api_secret');
 
         if (!cloudinary_cloud_name || !cloudinary_api_key || !cloudinary_api_secret) {
-            helper.fail('Please complete the form and click HACK again');
+            helper.fail('Please make sure that you complete the form before clicking HACK again!');
             return;
         }
 
@@ -51,7 +51,7 @@ module.exports = async function (helper) {
 
 /* https://res.cloudinary.com/demo/image/facebook/c_fill,h_190,w_190,c_thumb,g_face,r_20/l_text:helv_bd_24_blue:Staff%20Badge,g_north/l_text:helv_bd_24_blue:Employee%20Name:%0A,g_south/700144026.png */
             //This stores the values into environment variables of 'name'
-            helper.success(`Hooray! You did it!`, [
+            helper.success(`Hooray! You've successfully created a Cloudinary account and generated your <b>Staff Badge</b>!`, [
                 {name: 'CLOUDINARY_CLOUD_NAME', value: cloudinary_cloud_name},
                 {name: 'CLOUDINARY_API_KEY', value: cloudinary_api_key},
                 {name: 'CLOUDINARY_API_SECRET', value: cloudinary_api_secret, concealed: true}
