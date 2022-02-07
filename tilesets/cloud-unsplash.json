@@ -1,0 +1,14 @@
+{ "columns":80,
+ "image":"cloud-unsplash.png",
+ "imageheight":1272,
+ "imagewidth":1920,
+ "margin":0,
+ "name":"cloud-unsplash",
+ "spacing":0,
+ "tilecount":4240,
+ "tiledversion":"1.7.1",
+ "tileheight":24,
+ "tilewidth":24,
+ "type":"tileset",
+ "version":"1.6"
+}
