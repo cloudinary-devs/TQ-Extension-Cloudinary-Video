@@ -13,7 +13,7 @@ Nice work so far on the **Cloudinary ship**! There's a new request from our part
 
 ## Preparation
 We'll be using videos from the **Cloudinary demo account**. In order to use them in our account, we'll create an Auto Upload Mapping:
-1. Go to [Upload Settings](https://cloudinary.com/console/lui/settings/upload) in the [Cloudinary Console](https://cloudinary.com/console?utm_source=twilio&utm_medium=event&utm_campaign=cloudinary-twilioquest-2021) and create a new **Auto Upload mapping** with these settings:
+1. Go to [Upload Settings](https://cloudinary.com/console/lui/settings/upload?utm_source=twilio&utm_medium=event&utm_campaign=cloudinary-twilioquest-2021) in the [Cloudinary Console](https://cloudinary.com/console?utm_source=twilio&utm_medium=event&utm_campaign=cloudinary-twilioquest-2021) and create a new **Auto Upload mapping** with these settings:
    - Folder: demo
    - URL Prefix: https://res.cloudinary.com/demo/video/upload/
 2. Confirm that the settings are saved by pressing the **"Save"** button on the bottom of the webpage. This will make all of the Cloudinary demo account files available for transformation in our account through a virtual /demo folder.

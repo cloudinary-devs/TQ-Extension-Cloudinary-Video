@@ -1,10 +1,10 @@
 # Help Guide
 
 ### Objective-specific Resources
-Reference: [Transform URL API](https://cloudinary.com/documentation/transformation_reference)
- - [`fl_splice`](https://cloudinary.com/documentation/transformation_reference#fl_splice)
- - [`l_video`](https://cloudinary.com/documentation/video_manipulation_and_delivery#adding_video_overlays)
- - [`/fl_layer_apply/`](https://cloudinary.com/documentation/transformation_reference#fl_layer_apply)
+Reference: [Transform URL API](https://cloudinary.com/documentation/transformation_reference?utm_source=twilio&utm_medium=event&utm_campaign=cloudinary-twilioquest-2021)
+ - [`fl_splice`](https://cloudinary.com/documentation/transformation_reference?utm_source=twilio&utm_medium=event&utm_campaign=cloudinary-twilioquest-2021#fl_splice)
+ - [`l_video`](https://cloudinary.com/documentation/video_manipulation_and_delivery?utm_source=twilio&utm_medium=event&utm_campaign=cloudinary-twilioquest-2021#adding_video_overlays)
+ - [`/fl_layer_apply/`](https://cloudinary.com/documentation/transformation_reference?utm_source=twilio&utm_medium=event&utm_campaign=cloudinary-twilioquest-2021#fl_layer_apply)
 
 ### Detailed Instructions
 

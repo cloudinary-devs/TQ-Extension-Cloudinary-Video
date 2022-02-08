@@ -1,15 +1,15 @@
 # Help Guide
 
 ### Objective-specific Resources
-* [Image Video and File Upload](https://cloudinary.com/documentation/image_video_and_file_upload)
-* [Video Transformations](https://cloudinary.com/documentation/video_manipulation_and_delivery)
+* [Image Video and File Upload](https://cloudinary.com/documentation/image_video_and_file_upload?utm_source=twilio&utm_medium=event&utm_campaign=cloudinary-twilioquest-2021)
+* [Video Transformations](https://cloudinary.com/documentation/video_manipulation_and_delivery?utm_source=twilio&utm_medium=event&utm_campaign=cloudinary-twilioquest-2021)
 
 This content is a subset of content from the completely free [Cloudinary Academy](https://training.cloudinary.com/). 
 
 ### Detailed Instructions
 
 
-The feature we're look for is called [Text Overlays](https://cloudinary.com/documentation/video_manipulation_and_delivery#adding_text_overlays) and uses over**L**ay parameters, specifically *l_text:*
+The feature we're look for is called [Text Overlays](https://cloudinary.com/documentation/video_manipulation_and_delivery?utm_source=twilio&utm_medium=event&utm_campaign=cloudinary-twilioquest-2021#adding_text_overlays) and uses over**L**ay parameters, specifically *l_text:*
 
 ```
 /l_text:arial_80:Sample%20Video/
@@ -21,7 +21,7 @@ This will add a "Sample Video" watermark in Arial font, sized 80 pixels large, t
    </video>
 </div>
 
-Cloudinary supports all [Google fonts](https://fonts.google.com/) and even [your own custom/purchased fonts](https://cloudinary.com/documentation/layers#custom_fonts). 
+Cloudinary supports all [Google fonts](https://fonts.google.com/) and even [your own custom/purchased fonts](https://cloudinary.com/documentation/layers?utm_source=twilio&utm_medium=event&utm_campaign=cloudinary-twilioquest-2021#custom_fonts). 
 
 You can also use CSS-like styles: 
 

@@ -26,7 +26,7 @@ function getImageUrl(extRelativePath) {
 
 You need to create a **Cloudinary account** to complete the objectives on the **Cloudinary ship**. To learn more about creating an account, please click on the link below: 
 
-[Documentation: Creating a Cloudinary Account](https://cloudinary.com/documentation/how_to_integrate_cloudinary#1_create_and_set_up_your_account?utm_source=twilio&utm_medium=event&utm_campaign=cloudinary-twilioquest-2021)
+[Documentation: Creating a Cloudinary Account](https://cloudinary.com/documentation/how_to_integrate_cloudinary?utm_source=twilio&utm_medium=event&utm_campaign=cloudinary-twilioquest-2021#1_create_and_set_up_your_account)
 
 ## Signing Up for a Cloudinary Account
 
