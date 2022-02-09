@@ -1,0 +1,19 @@
+{
+  "title": "Volume Leveling",
+  "description": "Reduce the volume on a video that's too loud!",
+  "validation_fields": [
+    {
+      "name": "answer1",
+      "type": "text",
+      "label": "Enter the URL of the lowered volume video"
+    },
+    {
+      "name": "answer2",
+      "type": "text",
+      "label": "Enter the URL of the muted volume video"
+    }
+  ],
+  "rewards": {
+    "xp": 500
+  }
+}
