@@ -171,6 +171,60 @@
                  "width":22,
                  "x":360,
                  "y":384
+                }, 
+                {
+                 "height":0,
+                 "id":139,
+                 "name":"arrow",
+                 "point":true,
+                 "properties":[
+                        {
+                         "name":"key",
+                         "type":"string",
+                         "value":"arrow_m6_o1_manipulating_audio"
+                        }],
+                 "rotation":0,
+                 "type":"arrow",
+                 "visible":true,
+                 "width":0,
+                 "x":360,
+                 "y":360
+                }, 
+                {
+                 "gid":10013,
+                 "height":72,
+                 "id":140,
+                 "name":"",
+                 "properties":[
+                        {
+                         "name":"objectiveName",
+                         "type":"string",
+                         "value":"m6_o2_layering_audio"
+                        }],
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":24,
+                 "x":432,
+                 "y":432
+                }, 
+                {
+                 "height":0,
+                 "id":141,
+                 "name":"arrow",
+                 "point":true,
+                 "properties":[
+                        {
+                         "name":"key",
+                         "type":"string",
+                         "value":"arrow_m6_o2_layering_audio"
+                        }],
+                 "rotation":0,
+                 "type":"arrow",
+                 "visible":true,
+                 "width":0,
+                 "x":432,
+                 "y":384
                 }],
          "opacity":1,
          "type":"objectgroup",
@@ -218,7 +272,7 @@
          "y":0
         }],
  "nextlayerid":45,
- "nextobjectid":139,
+ "nextobjectid":142,
  "orientation":"orthogonal",
  "renderorder":"right-down",
  "tiledversion":"1.7.1",

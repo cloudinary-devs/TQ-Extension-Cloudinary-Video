@@ -4,8 +4,7 @@
 <h3>AGENDA</h3>
 <ul>
   <li>Fetch the dog video from your media library.</li>
-  <li>Adjust its volume.</li>
-  <li></li>
+  <li>Adjust the volume as specified.</li>
 </ul>
 </div>
 

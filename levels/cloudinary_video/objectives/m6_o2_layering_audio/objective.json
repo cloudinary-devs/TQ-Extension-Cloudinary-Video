@@ -1,0 +1,19 @@
+{
+  "title": "Audio Extraction",
+  "description": "Replace the audio of the cat video with the dog video!",
+  "validation_fields": [
+    {
+      "name": "answer1",
+      "type": "text",
+      "label": "Enter the URL of the cat video"
+    },
+    {
+      "name": "answer2",
+      "type": "text",
+      "label": "Enter the URL of the cat video with the dog music"
+    }
+  ],
+  "rewards": {
+    "xp": 500
+  }
+}

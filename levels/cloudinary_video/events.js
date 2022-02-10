@@ -20,7 +20,8 @@ const DEFAULT_MISSION_STATE = {
         m2_complete: false,
         m3_complete: false,
         m4_complete: false,
-        m5_complete: false
+        m5_complete: false,
+        m6_complete: false
         //skip: false // open all gates debug flag
     }
 }
