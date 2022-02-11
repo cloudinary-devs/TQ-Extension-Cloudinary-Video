@@ -7,24 +7,20 @@ module.exports = async function (helper) {
 
     let grader = new Grader(helper, {
         answer1: {
-            validExample: 'https://res.cloudinary.com/dwbnpn4z6/video/upload/e_volume:-80/v1638549970/demo/dog.mp4',
-            mustAppear: ['demo/dog.mp4','https:','res.cloudinary.com','video/upload','e_volume:-80'],
-            mustAppearInOrder: [
-                ['upload', 'e_volume:-80'],
-                ['e_volume:-80','demo']
-            ]
+            validExample: 'https://res.cloudinary.com/dwbnpn4z6/video/upload/v1638549969/demo/kitten_fighting.mp4',
+            mustAppear: ['demo/kitten_fighting.mp4','https:','res.cloudinary.com','video/upload']
         },
         answer2: {
-            validExample: 'https://res.cloudinary.com/dwbnpn4z6/video/upload/e_volume:mute/v1638549970/demo/dog.mp4',
-            mustAppear: ['demo/dog.mp4','https:','res.cloudinary.com','video/upload','e_volume:mute'],
+            validExample: 'https://res.cloudinary.com/dwbnpn4z6/video/upload/l_video:demo:dog.mp3/fl_layer_apply/v1638549969/demo/kitten_fighting.mp4',
+            mustAppear: ['demo/kitten_fighting.mp4','https:','res.cloudinary.com','video/upload','l_video:demo:dog.mp3','fl_layer_apply'],
             mustAppearInOrder: [
-                ['upload', 'e_volume:mute'],
-                ['e_volume:mute','demo']
+                ['upload', 'l_'],
+                ['l_','fl_layer_apply']
             ]
         }        
     }, function pass() {
         helper.success(grader.getSuccessMessage() + `
-            Nice! You've changed the volumes of the dog videos!
+            Nice! You've added the dog music on top of the fighting kittens video!
         `);
         browser.display(
             `
@@ -32,11 +28,11 @@ module.exports = async function (helper) {
                     <h1>Success!</h1>
                     <div style="display: flex;flex-wrap: wrap;justify-content: space-evenly">
                         <div>
-                            <center><h3> 80% lower volume </h3></center>
+                            <center><h3> original kitten </h3></center>
                             <video autoplay loop controls><source src="${grader.getVideoUrl('answer1')}" type="video/mp4" width=200></video>
                         </div>
                         <div>
-                            <center><h3> muted volume </h3></center>
+                            <center><h3> kitten with music </h3></center>
                             <video autoplay loop controls><source src="${grader.getVideoUrl('answer2')}" type="video/mp4" width=200></video>
                         </div>
                     </div>

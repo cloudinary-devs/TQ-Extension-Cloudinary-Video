@@ -1,10 +1,12 @@
 # Help Guide
 
 ## Objective-specific Resources
-- [Adjust the Audio Volume](https://cloudinary.com/documentation/audio_transformations?utm_source=twilio&utm_medium=event&utm_campaign=cloudinary-twilioquest-2021#adjust_the_audio_volume) 
+- [Audio Overlays](https://cloudinary.com/documentation/video_layers?utm_source=twilio&utm_medium=event&utm_campaign=cloudinary-twilioquest-2021#audio_overlays) 
 
 ## Detailed Instructions
+(Add something about audio overlays here)
 
+(This mission might need to be expanded)
 
 
 
