@@ -1,0 +1,15 @@
+{
+  "title": "Test HTML NPM",
+  "description": "Test",
+  "show_ide": true,
+  "validation_fields": [
+    {
+      "name": "answer1",
+      "type": "text",
+      "label": "Enter the URL "
+    }
+  ],
+  "rewards": {
+    "xp": 500
+  }
+}
