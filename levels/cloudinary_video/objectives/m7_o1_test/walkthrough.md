@@ -1,10 +1,14 @@
 # Help Guide
 
 ## Objective-specific Resources
-- [Audio Overlays](https://cloudinary.com/documentation/video_layers?utm_source=twilio&utm_medium=event&utm_campaign=cloudinary-twilioquest-2021#audio_overlays) 
+- [Video Player](https://cloudinary.com/documentation/cloudinary_video_player?utm_source=twilio&utm_medium=event&utm_campaign=cloudinary-twilioquest-2021)
 
 ## Detailed Instructions
+The Cloudinary Video Player can be used in any webpage thanks to the power of HTML and Javascript. Learn more about its basic implementations [here](https://cloudinary.com/documentation/cloudinary_video_player?utm_source=twilio&utm_medium=event&utm_campaign=cloudinary-twilioquest-2021).
 
+To solve this challenge, you should focus on the Javascript implementation to make the `doc-player` video element work. Find the `// ----- Put your JS code below ----- //` comment on line ### and start implementing the Javascript code for the video player there.
+
+If you have trouble running the localhost server after pressing the _▶_ button, please check your firewall settings to make sure the local server can run. 
 
 ### Additional Documentation
 
