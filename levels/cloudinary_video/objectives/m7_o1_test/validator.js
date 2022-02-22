@@ -1,6 +1,9 @@
 const browser = require('../../../../lib/browser');
 const Grader = require('../../../../lib/grader');
 const state = require('../../../../lib/state');
+//const validate = require('validate.js');
+const jslint = require('jslint');
+
 
 module.exports = async function (helper) {
     state.saveAnswers(helper);
@@ -21,6 +24,18 @@ module.exports = async function (helper) {
         const parser = new DOMParser();
         var xmlResponseText = parser.parseFromString(responseText, "text/html");
         var scriptText = xmlResponseText.getElementById("video-code").text;
+
+        l = new jslint.LintStream();
+        l.write({file: "user_code.js", body: scriptText});
+        await l.on('data', function (chunk, encoding, callback) {
+          //TODO: Only check for failed closures of brackets.
+          //      Otherwise, use the rest of the conditionals to check if the template is in place
+          //      and that key tokens are there.
+          if (chunk.linted.errors.length > 0) {
+            console.log(chunk.linted.errors);
+            return helper.fail(`fail`);
+          }
+        })
         if (!
             (  scriptText.indexOf('var cld = cloudinary.') > 0 
             && scriptText.indexOf('var demoplayer = cld.') > 0
@@ -34,26 +49,20 @@ module.exports = async function (helper) {
             helper.fail(`The video player's width needs to be 600 pixels! 
             `);
         } else if (!
-            (scriptText.indexOf("race_road_car") > 0 && scriptText.indexOf("demoplayer.source(") > 0)
+            (scriptText.indexOf("TwilioQuest/Flower") > 0 && scriptText.indexOf("demoplayer.source(") > 0)
         ) {
-            helper.fail(`Something's not quite right with the demoplayer.source function! Make sure you're using the race_road_car video!
+            helper.fail(`Something's not quite right with the demoplayer.source function! Make sure you're using the TwilioQuest/Flower video!
+            `);
+        } else if (!
+          (scriptText.indexOf("transformation:") > 0)
+        ) {
+            helper.fail(`Make sure you're using at least one transformation by using the {transformation:{ }} argument under demoplayer.source!
             `);
         } else {
             helper.success(`
             `+xmlResponseText.getElementById("video-code").text+`
             `)
         }
-        /*if (
-          lcaseBody.indexOf('hello world') >= 0
-          || lcaseBody.indexOf('hello, world') >= 0
-        ){
-          helper.success(`Woop woop! Your server responded with: ${responseText}`);
-        } else {
-          helper.fail(`
-            Womp womp - we got a response from your server, but it did not 
-            contain the text "hello world".
-          `);
-        }*/
       } catch (e) {
         console.log(e);
         helper.fail(`
@@ -74,6 +83,6 @@ module.exports = async function (helper) {
         //);
     });*/
 
-    grader.grade();
+    //grader.grade();
 
 };
