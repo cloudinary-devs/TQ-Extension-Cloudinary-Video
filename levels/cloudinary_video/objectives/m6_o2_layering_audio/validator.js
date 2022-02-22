@@ -11,8 +11,8 @@ module.exports = async function (helper) {
             mustAppear: ['demo/kitten_fighting.mp4','https:','res.cloudinary.com','video/upload']
         },
         answer2: {
-            validExample: 'https://res.cloudinary.com/dwbnpn4z6/video/upload/l_video:demo:dog.mp3/fl_layer_apply/v1638549969/demo/kitten_fighting.mp4',
-            mustAppear: ['demo/kitten_fighting.mp4','https:','res.cloudinary.com','video/upload','l_video:demo:dog.mp3','fl_layer_apply'],
+            validExample: 'https://res.cloudinary.com/dwbnpn4z6/video/upload/l_video:demo:dog.mp3/fl_layer_apply/l_video:TwilioQuest:dog.wav/fl_layer_apply/v1638549969/demo/kitten_fighting.mp4',
+            mustAppear: ['demo/kitten_fighting.mp4','https:','res.cloudinary.com','video/upload','l_video:demo:dog.mp3','l_video:TwilioQuest:dog.wav','fl_layer_apply'],
             mustAppearInOrder: [
                 ['upload', 'l_'],
                 ['l_','fl_layer_apply']
@@ -28,11 +28,11 @@ module.exports = async function (helper) {
                     <h1>Success!</h1>
                     <div style="display: flex;flex-wrap: wrap;justify-content: space-evenly">
                         <div>
-                            <center><h3> original kitten </h3></center>
+                            <center><h3> original kitten (no audio) </h3></center>
                             <video autoplay loop controls><source src="${grader.getVideoUrl('answer1')}" type="video/mp4" width=200></video>
                         </div>
                         <div>
-                            <center><h3> kitten with music </h3></center>
+                            <center><h3> kitten with dog sounds </h3></center>
                             <video autoplay loop controls><source src="${grader.getVideoUrl('answer2')}" type="video/mp4" width=200></video>
                         </div>
                     </div>

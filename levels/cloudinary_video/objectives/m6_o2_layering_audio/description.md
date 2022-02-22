@@ -21,9 +21,16 @@ Nice work with the dog video! Now, we want to take that video and apply it to a 
 ```
 https://res.cloudinary.com/<cloud_name>/video/upload/<version>/demo/kitten_fighting.mp4
 ```
+2. Now, go to [this website](https://mixkit.co/free-sound-effects/dog/) to download a free dog sound effect to put on top of the fighting kittens video.
 
-2. Now, apply the `/demo/dog.mp3` audio file as a video layer on top of the fighting kitten video.
+3. After downloading the file, upload it to the **TwilioQuest** folder in your [Media Library](https://cloudinary.com/console/media_library?utm_source=twilio&utm_medium=event&utm_campaign=cloudinary-twilioquest-2021). 
 
-3. Click _HACK_ to proceed.
+4. Rename the uploaded file to `dog.wav`.
+
+5. Now, apply the `/TwilioQuest/dog.wav` audio file as a video layer on top of the fighting kitten video.
+
+6. In addition, transform the `demo/dog.mp4` video into an mp3, and apply it as a video layer on top of the fighting kitten video.
+
+7. Put your resulting responses in the answer box on the right, and click _HACK_ to proceed.
 
 
