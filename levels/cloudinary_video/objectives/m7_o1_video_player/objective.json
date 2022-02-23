@@ -6,7 +6,7 @@
     {
       "name": "label1",
       "type": "prompt",
-      "label": "Enter the server URL below, then press __HACK__!"
+      "label": "Press the _▶_ button to start / restart the web server with your code. Then, enter the server URL below and press __HACK__!"
     },
     {
       "name": "serverUrl",

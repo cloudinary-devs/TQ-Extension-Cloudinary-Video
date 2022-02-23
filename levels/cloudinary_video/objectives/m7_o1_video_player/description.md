@@ -3,7 +3,8 @@
 <div class="aside">
 <h3>AGENDA</h3>
 <ul>
-  <li>...</li>
+  <li>Use the code editor to set up a web server with the Cloudinary video editor embedded in it.</li>
+  <li>Modify the video editor to show the Flower video.</li>
 </ul>
 </div>
 
@@ -19,7 +20,12 @@ Learn more about our Cloudinary video player [here](https://cloudinary.com/docum
 
 1. Open the **code editor** by clicking on the _\</> Show Code Editor_ button on the right.
 2. You'll notice a web application's source code in the code box. Fill in the code block that says `// ----- Put your JS code below ----- //` . Use the example in the link above to help you!
-3. Run the server by pressing the _▶_ button.
-4. If the code looks correct, then click _HACK_ to proceed.
+3. Be sure to add the following attributes:
+- The sample code's defined variable names should be left as is.
+- The video player's width needs to be 600 pixels wide.
+- The video should be the Flower video from your Media Library.
+- One transformation needs to be applied to your video via the demoplayer's source function parameters!
+4. Run the server by pressing the _▶_ button.
+5. If the code looks correct, then click _HACK_ to proceed.
 
 
