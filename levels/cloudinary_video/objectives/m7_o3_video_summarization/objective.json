@@ -1,0 +1,15 @@
+{
+  "title": "Video Summarization",
+  "description": "Description",
+  "show_ide": false,
+  "validation_fields": [
+    {
+      "name": "label1",
+      "type": "prompt",
+      "label": "Press __HACK__!"
+    }
+  ],
+  "rewards": {
+    "xp": 500
+  }
+}

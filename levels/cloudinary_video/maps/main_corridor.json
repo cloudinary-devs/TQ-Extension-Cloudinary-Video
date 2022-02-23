@@ -494,8 +494,8 @@
                  "type":"",
                  "visible":true,
                  "width":32,
-                 "x":1353,
-                 "y":22
+                 "x":1388.33333333333,
+                 "y":242
                 }, 
                 {
                  "gid":11703,
@@ -506,8 +506,8 @@
                  "type":"",
                  "visible":true,
                  "width":32,
-                 "x":1546,
-                 "y":22
+                 "x":1546.66666666667,
+                 "y":235.333333333333
                 }, 
                 {
                  "gid":11699,
@@ -682,50 +682,14 @@
                 {
                  "gid":5026,
                  "height":24,
-                 "id":179,
-                 "name":"",
-                 "rotation":0,
-                 "type":"",
-                 "visible":true,
-                 "width":24,
-                 "x":1416,
-                 "y":240
-                }, 
-                {
-                 "gid":5026,
-                 "height":24,
-                 "id":180,
-                 "name":"",
-                 "rotation":0,
-                 "type":"",
-                 "visible":true,
-                 "width":24,
-                 "x":1560,
-                 "y":240
-                }, 
-                {
-                 "gid":5026,
-                 "height":24,
                  "id":181,
                  "name":"",
                  "rotation":0,
                  "type":"",
                  "visible":true,
                  "width":24,
-                 "x":1584,
-                 "y":240
-                }, 
-                {
-                 "gid":5026,
-                 "height":24,
-                 "id":182,
-                 "name":"",
-                 "rotation":0,
-                 "type":"",
-                 "visible":true,
-                 "width":24,
-                 "x":1608,
-                 "y":240
+                 "x":1488,
+                 "y":264
                 }, 
                 {
                  "height":0,
