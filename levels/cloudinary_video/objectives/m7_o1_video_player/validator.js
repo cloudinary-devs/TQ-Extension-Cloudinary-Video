@@ -56,6 +56,12 @@ module.exports = async function (helper) {
             ) {
                     helper.fail(`Oops! Did you edit the template code? Make sure the template code (ie. "var cld = cloudinary.[code]") is left in place.`);
                 }
+            // doc-player must be present
+            else if (!
+              (scriptText.indexOf('doc-player') > 0)
+            ) {
+                helper.fail(`The cld.videoPlayer needs to point to the video html element 'doc-player'!`);
+            }
             // Width must be 600
             else if (!
                 (scriptText.indexOf(').width(600)') > 0)

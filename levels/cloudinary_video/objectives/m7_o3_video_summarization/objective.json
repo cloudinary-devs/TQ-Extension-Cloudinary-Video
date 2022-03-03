@@ -1,12 +1,17 @@
 {
-  "title": "Video Summarization",
-  "description": "Description",
-  "show_ide": false,
+  "title": "Video Info and Transformations",
+  "description": "Add information to and transform the video using Cloudinary's API and video player!",
+  "show_ide": true,
   "validation_fields": [
     {
       "name": "label1",
       "type": "prompt",
-      "label": "Press __HACK__!"
+      "label": "Press the _▶_ button to start / restart the web server with your code. Then, enter the server URL below and press __HACK__!"
+    },
+    {
+      "name": "serverUrl",
+      "type": "text",
+      "label": "Server URL"
     }
   ],
   "rewards": {
