@@ -16,9 +16,7 @@ Nice work so far! Next, we need to use another **video player** to play our **Tw
 ## Preparation
 Learn more about our Cloudinary video player [here](https://cloudinary.com/documentation/cloudinary_video_player?utm_source=twilio&utm_medium=event&utm_campaign=cloudinary-twilioquest-2021). If you need additional resources, check out the __Help__ tab above!
 
-https://cloudinary.com/documentation/video_player_customization?utm_source=twilio&utm_medium=event&utm_campaign=cloudinary-twilioquest-2021#video_titles_subtitles_and_descriptions
 
-https://cloudinary.com/documentation/video_player_customization?utm_source=twilio&utm_medium=event&utm_campaign=cloudinary-twilioquest-2021#common_configuration_examples
 
 
 1. Open the **code editor** by clicking on the _\</> Show Code Editor_ button on the right.
