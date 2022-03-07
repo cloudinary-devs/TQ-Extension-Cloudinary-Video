@@ -167,7 +167,7 @@
                         {
                          "name":"objectiveName",
                          "type":"string",
-                         "value":"m7_o2_video_placeholders"
+                         "value":"m7_o2_video_player_transformations"
                         }],
                  "rotation":0,
                  "type":"objective",
@@ -225,7 +225,7 @@
                         {
                          "name":"key",
                          "type":"string",
-                         "value":"arrow_m7_o2_video_placeholders"
+                         "value":"arrow_m7_o2_video_player_transformations"
                         }],
                  "rotation":0,
                  "type":"arrow",

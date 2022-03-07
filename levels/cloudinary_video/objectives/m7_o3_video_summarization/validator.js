@@ -25,73 +25,59 @@ module.exports = async function (helper) {
         const parser = new DOMParser();
         var xmlResponseText = parser.parseFromString(responseText, "text/html");
         var scriptText = xmlResponseText.getElementById("video-code").text;
-        var videoTag = xmlResponseText.getElementById("tq-player");
-        console.log(videoTag);
-        //var textDataCldTransformation = videoTag.getAttribute("data-cld-transformation");
-        try {
-          var videoTagId = videoTag.getAttribute("id"); // Should be "tq-player"
-          var videoTagControl = videoTag.getAttribute("controls"); // Should be ""
-          var videoTagClass = videoTag.getAttribute("class"); // "cld-video-player"
-          var videoTagSource = videoTag.getAttribute("data-cld-source"); // Has public id, title, subtitle, description
-          var videoTagTransformation = videoTag.getAttribute("data-cld-transformation"); // Has transformation info
-        } catch (e) {
-          return helper.fail(`
-            Something went wrong with grabbing the video tag attribute names. Did you modify them on accident?
-          `);
-        }
-        //return helper.fail();
-        console.log(videoTagTransformation);
-        // When checking the code, only check for editable mistakes, 
-        if (!(
-          (videoTagId.indexOf("tq-player") >= 0) && 
-          (videoTagControl !== null) && 
-          (videoTagClass.indexOf("cld-video-player") >= 0)
-        )) {
-          return helper.fail(`
-            Make sure to not modify the id, controls, and class parameters in the template!
-          `);
-        } else if (
-          videoTagSource.indexOf("TwilioQuest/Flower") < 0
-        ) {
-          return helper.fail(`
-            Make sure to use the Flower video in your TwilioQuest folder! Did you put it as the value for the public-id parameter?
-          `)
-        } else if (!(
-          (videoTagSource.indexOf("info") >= 0) && 
-          (videoTagSource.indexOf("title") >= 0) && 
-          (videoTagSource.indexOf("subtitle") >= 0) && 
-          (videoTagSource.indexOf("description") >= 0)
-        )) {
-          return helper.fail(`
-            Please leave the "info", "title", "subtitle", and "description" parameter names alone! Maybe try filling in the values instead?
-          `);
-        } else if (
-          (videoTagSource.indexOf("[description]") >= 0) || 
-          (videoTagSource.indexOf("[title]") >= 0) || 
-          (videoTagSource.indexOf("[subtitle]") >= 0)
-        ) {
-          return helper.fail(`
-            Please fill in the title, subtitle, and description parameters!
-          `);
-        } else if (!(
-          (videoTagTransformation.indexOf("crop") >= 0) && 
-          (videoTagTransformation.indexOf("fill") >= 0) && 
-          (videoTagTransformation.indexOf("width") >= 0) && 
-          (videoTagTransformation.indexOf("300") >= 0) && 
-          (videoTagTransformation.indexOf("height") >= 0)
-        )) {
-          return helper.fail(`
-            Something's not quite right with your crop, width, and height parameters. Try again!
-          `);
-        } else if (scriptText.indexOf("[") >= 0 || scriptText.indexOf("]") >= 0 ){
-          return helper.fail(`
-          Don't forget to add your cloud name to the cld variable in the script at the bottom! 
-        `);
-        } else { 
-            helper.success(`You did it! You made a transformed Flower video play in the Cloudinary Video Player!
-            And it even has a title, subtitle, and description!`);
-        }
-      
+
+        l = new jslint.LintStream();
+        l.write({file: "user_code.js", body: scriptText});
+        await l.on('data', function (chunk, encoding, callback) {
+          // Check for specific syntax errors, namely closing brackets () {} []
+          var userCodeErrors = chunk.linted.errors;
+          console.log(userCodeErrors);
+          var errorMessage;
+          for (var errorEntry in userCodeErrors) { // var _i = 0; _i < length; ++_i
+            errorEntry = userCodeErrors[errorEntry];
+            errorMessage = `Syntax error: `+errorEntry.reason+` (line `+(18+errorEntry.line)+`)`;
+            //console.log(errorEntry);
+            //TODO: Combine if statements
+            if (errorEntry.code === "expected_a_b_from_c_d") {
+              return helper.fail(errorMessage);
+            } else if (errorEntry.code === "expected_a_b") {
+              return helper.fail(errorMessage);
+            } else if (errorEntry.code === "unexpected_char_a" && errorEntry.a !== "(space)") {
+              return helper.fail(errorMessage);
+            }
+          }
+          // Script must include certain keywords
+          if (!
+              (  scriptText.indexOf('var cld = cloudinary.') > 0 
+              && scriptText.indexOf('var demoplayer = cld.') > 0
+              && scriptText.indexOf('demoplayer.') > 0 )
+          ) {
+                  helper.fail(`Oops! Did you edit the template code? Make sure the template code (ie. "var cld = cloudinary.[code]") is left in place.`);
+              }
+          // Width must be 600
+          else if (!
+              (scriptText.indexOf(').width(600)') > 0)
+          ) {
+              helper.fail(`The video player's width needs to be 600 pixels! 
+              `);
+          // Demoplayer must source TwilioQuest/Flower
+          } else if (!
+              (scriptText.indexOf("TwilioQuest/Flower") > 0 && scriptText.indexOf("demoplayer.source(") > 0)
+          ) {
+              helper.fail(`Something's not quite right with the demoplayer.source function! Make sure you're using the TwilioQuest/Flower video!
+              `);
+          // Transformation needs to be defined at least once
+          } else if (!
+            (scriptText.indexOf("transformation") > 0)
+          ) {
+              helper.fail(`Make sure you're using at least one transformation by using the {transformation:{ }} argument under demoplayer.source!
+              `);
+          } else {
+              helper.success(`Yay! You embedded a Cloudinary video player on a webpage!`);
+              //`+xmlResponseText.getElementById("video-code").text+`
+              //`)
+          }
+        });
       } catch (e) {
         console.log(e);
         helper.fail(`
