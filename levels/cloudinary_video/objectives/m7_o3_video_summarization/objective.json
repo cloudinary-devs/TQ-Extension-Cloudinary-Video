@@ -1,12 +1,17 @@
 {
-  "title": "Video Placeholders",
-  "description": "Description",
+  "title": "Video Summarization",
+  "description": "Increase engagement/views by creating summaries!",
   "show_ide": false,
   "validation_fields": [
     {
-      "name": "label1",
-      "type": "prompt",
-      "label": "Press __HACK__!"
+      "name": "answer1",
+      "type": "text",
+      "label": "Enter the URL of the original hotel video:"
+    },
+    {
+      "name": "answer2",
+      "type": "text",
+      "label": "Enter the URL of the summarized hotel video:"
     }
   ],
   "rewards": {

@@ -1,103 +1,50 @@
 const browser = require('../../../../lib/browser');
 const Grader = require('../../../../lib/grader');
 const state = require('../../../../lib/state');
-//const validate = require('validate.js');
-const jslint = require('jslint');
-const { isUndefined } = require('lodash');
-
 
 module.exports = async function (helper) {
     state.saveAnswers(helper);
 
-    const { serverUrl } = helper.validationFields;
-
-    if (!serverUrl) {
-        return helper.fail(
-          `Oops! You didn't provide a URL for an application we can validate.`
-        );
-      }
-
-    try {
-        const response = await fetch(serverUrl);
-        const responseText = await response.text();
-        //const lcaseBody = responseText.toLowerCase();
-
-        const parser = new DOMParser();
-        var xmlResponseText = parser.parseFromString(responseText, "text/html");
-        var scriptText = xmlResponseText.getElementById("video-code").text;
-
-        l = new jslint.LintStream();
-        l.write({file: "user_code.js", body: scriptText});
-        await l.on('data', function (chunk, encoding, callback) {
-          // Check for specific syntax errors, namely closing brackets () {} []
-          var userCodeErrors = chunk.linted.errors;
-          console.log(userCodeErrors);
-          var errorMessage;
-          for (var errorEntry in userCodeErrors) { // var _i = 0; _i < length; ++_i
-            errorEntry = userCodeErrors[errorEntry];
-            errorMessage = `Syntax error: `+errorEntry.reason+` (line `+(18+errorEntry.line)+`)`;
-            //console.log(errorEntry);
-            //TODO: Combine if statements
-            if (errorEntry.code === "expected_a_b_from_c_d") {
-              return helper.fail(errorMessage);
-            } else if (errorEntry.code === "expected_a_b") {
-              return helper.fail(errorMessage);
-            } else if (errorEntry.code === "unexpected_char_a" && errorEntry.a !== "(space)") {
-              return helper.fail(errorMessage);
-            }
-          }
-          // Script must include certain keywords
-          if (!
-              (  scriptText.indexOf('var cld = cloudinary.') > 0 
-              && scriptText.indexOf('var demoplayer = cld.') > 0
-              && scriptText.indexOf('demoplayer.') > 0 )
-          ) {
-                  helper.fail(`Oops! Did you edit the template code? Make sure the template code (ie. "var cld = cloudinary.[code]") is left in place.`);
-              }
-          // Width must be 600
-          else if (!
-              (scriptText.indexOf(').width(600)') > 0)
-          ) {
-              helper.fail(`The video player's width needs to be 600 pixels! 
-              `);
-          // Demoplayer must source TwilioQuest/Flower
-          } else if (!
-              (scriptText.indexOf("TwilioQuest/Flower") > 0 && scriptText.indexOf("demoplayer.source(") > 0)
-          ) {
-              helper.fail(`Something's not quite right with the demoplayer.source function! Make sure you're using the TwilioQuest/Flower video!
-              `);
-          // Transformation needs to be defined at least once
-          } else if (!
-            (scriptText.indexOf("transformation") > 0)
-          ) {
-              helper.fail(`Make sure you're using at least one transformation by using the {transformation:{ }} argument under demoplayer.source!
-              `);
-          } else {
-              helper.success(`Yay! You embedded a Cloudinary video player on a webpage!`);
-              //`+xmlResponseText.getElementById("video-code").text+`
-              //`)
-          }
-        });
-      } catch (e) {
-        console.log(e);
-        helper.fail(`
-          We couldn't verify your server is working as we expect. Double-check the 
-          URL and try again.
-          `+String(e)+`
-        `);
-      }
-
-    /*let grader = new Grader(helper, {
+    let grader = new Grader(helper, {
+        answer1: {
+            validExample: 'https://res.cloudinary.com/dwbnpn4z6/video/upload/demo/docs/hotel.mp4',
+            mustAppear: ['demo/docs/hotel.mp4','https:','res.cloudinary.com','video/upload'],
+            mustAppearInOrder: [
+            ]
+        },
+        answer2: {
+          validExample: 'https://res.cloudinary.com/dwbnpn4z6/video/upload/e_preview:duration_25.0:max_seg_3:min_seg_dur_4.0/demo/docs/hotel.mp4',
+          mustAppear: ['demo/docs/hotel.mp4','https:','res.cloudinary.com','video/upload','e_preview', 'duration_25.0', 'max_seg_3', 'min_seg_dur_4.0'],
+          mustAppearInOrder: [
+            ["upload", "e_preview"],
+            ["e_preview", "demo"]
+          ]
+      }    
     }, function pass() {
         helper.success(grader.getSuccessMessage() + `
-            Nice!
+            Nice! You've created a video summarization of the hotel video!
         `);
-        //browser.display(
-        //    ` 
-        //    `
-        //);
-    });*/
+        browser.display(
+            `
+                <div>
+                    <h1>Success!</h1>
+                    <div style="display: flex;flex-wrap: wrap;justify-content: space-evenly">
+                        <div>
+                            <div>
+                                <center><h3> Original hotel video (full-length) </h3></center>
+                                <video autoplay loop controls width=300px><source src="${grader.getVideoUrl('answer1')}" type="video/mp4" width=200></video>
+                            </div>
+                            <div>
+                                <center><h3> Summarized hotel video (shorter) </h3></center>
+                                <video autoplay loop controls width=300px><source src="${grader.getVideoUrl('answer2')}" type="video/mp4" width=200></video>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                `
+        );
+    });
 
-    //grader.grade();
+    grader.grade();
 
 };
