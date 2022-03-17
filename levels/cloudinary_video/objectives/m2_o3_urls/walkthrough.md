@@ -2,7 +2,7 @@
 
 ## Objective-specific Resources
 
-* [Image Resizing and Scaling](https://cloudinary.com/documentation/resizing_and_cropping#scale)
+* [Image Resizing and Scaling](https://cloudinary.com/documentation/resizing_and_cropping?utm_source=twilio&utm_medium=event&utm_campaign=cloudinary-twilioquest-2021#scale)
 
 
 ## Detailed Instructions 

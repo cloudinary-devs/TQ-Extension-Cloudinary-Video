@@ -19,7 +19,7 @@ There's one key piece of information that we need: attribution. We are using a *
 Your answers to these questions must use your **Flower** video.
 
 1. <a name="q1"></a>Create a URL for the **Flower** video with an attribution line. Enter a URL in <a onclick="jQuery('input')[0].focus()">Answer 1</a> with the following properties:
-   - Video Size ([hint](https://cloudinary.com/documentation/video_manipulation_and_delivery#scale)):
+   - Video Size ([hint](https://cloudinary.com/documentation/video_manipulation_and_delivery?utm_source=twilio&utm_medium=event&utm_campaign=cloudinary-twilioquest-2021#scale)):
      - 400 pixels wide
    - Attribution Text:
      - Duration: Full

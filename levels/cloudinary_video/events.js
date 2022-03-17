@@ -20,8 +20,14 @@ const DEFAULT_MISSION_STATE = {
         m2_complete: false,
         m3_complete: false,
         m4_complete: false,
-        m5_complete: false
+        m5_complete: false,
+        m6_complete: false,
+        m7_complete: false
         //skip: false // open all gates debug flag
+    },
+    interactableState: {
+        current: "",
+        interactable: false
     }
 }
 
@@ -138,10 +144,10 @@ module.exports = function (event, world) {
             
             // Debug: if you hold the ctrl key while walking through the door,
             //        trigger the down key
-            openAllGatesDebugFlag = world.__internals.level.player.keys.down.isDown;
+            openAllGatesDebugFlag = false;//world.__internals.level.player.keys.down.isDown;
 
             // Handle mission complete
-            const officesKeys = ["m2_","m3_","m4_"];
+            const officesKeys = ["m2_","m3_","m4_","m5_", "m6_"];
             officesKeys.forEach(function (key) {
                     if (
                         (openAllGatesDebugFlag) || 
@@ -150,6 +156,9 @@ module.exports = function (event, world) {
                         world.hideEntities(key+"gate");
                     }
             });
+
+            // Reset interactable state
+            worldState.interactableState.interactable = false;
 
             break;
 
@@ -171,8 +180,6 @@ module.exports = function (event, world) {
                     //setHackFormDefaults([state.getAnswers('m5_o3_combining_clips').value().answer3,'','']);
                     break;
             }
-            break;
-        case 'objectiveDidClose':
             break;
         case 'objectiveCompleted':
         case 'objectiveCompletedAgain' :
@@ -216,9 +223,17 @@ module.exports = function (event, world) {
                         }
                         break;
                 }
+            } else if (event.target.name === "interactable" && event.target.interactableName) {
+                worldState.interactableState.current = event.target.interactableName;
+                worldState.interactableState.interactable = true;
             }
-
             console.log({triggerAreaTarget: event.target});
+            break;
+        case 'triggerAreaWasExited':
+            if (event.target.name === "interactable") {
+                worldState.interactableState.interactable = false;
+            }
+            browser.hide();
             break;
         case 'playerDidInteract':
             //Is the player starting a conversation with one of our custom objects?
@@ -226,15 +241,35 @@ module.exports = function (event, world) {
                 //start the conversation
                 world.startConversation(event.target.conversation, event.target.conversationAvatar);
             }
+            else if (worldState.interactableState.interactable) {
+                console.log(worldState.interactableState.currentinteractable);
+                var interactableMessage;
+                switch (worldState.interactableState.current) {
+                    case "chalkboard1":
+                        interactableMessage = "Wow, I can't believe people use to draw images on chalkboards instead of video screens!";
+                        break;
+                    case "computer1":
+                        interactableMessage = "This computer is so square. Do people code on a 4:3 aspect ratio?";
+                        break;
+                    case "computer2":
+                        interactableMessage = "Two monitors, two keyboards? The power of technology is staggering!";
+                        break;
+                    case "diningtable":
+                        interactableMessage = "Cloudinary's serving up some tasty food today in the delivery network!";
+                        break;
+                    case "cloudinarytrees":
+                        interactableMessage = "Clouds grow on trees...?";
+                    default:
+                        interactableMessage = worldState.interactableState.current;
+                        break;
+                }
+                world.showNotification(interactableMessage, "0");
+            }
             break;
         case 'levelWillUnload':
             //cleanly stop our conversation eavesdropper
             observer.stop();
             break;
-        case 'triggerAreaWasExited':
-            browser.hide();
-            break;
-
         default:
             console.warn(`Cloudinary received unknown event named "${event.name}"`,);
     }

@@ -1,14 +1,14 @@
 # Help Guide
 
 ### Objective-specific Resources
-* [Video Transformations](https://cloudinary.com/documentation/video_manipulation_and_delivery) 
-* [Concatenate Videos with Custom Transitions](https://cloudinary.com/documentation/video_manipulation_and_delivery#concatenate_videos_with_custom_transitions)
+* [Video Transformations](https://cloudinary.com/documentation/video_manipulation_and_delivery?utm_source=twilio&utm_medium=event&utm_campaign=cloudinary-twilioquest-2021) 
+* [Concatenate Videos with Custom Transitions](https://cloudinary.com/documentation/video_manipulation_and_delivery?utm_source=twilio&utm_medium=event&utm_campaign=cloudinary-twilioquest-2021#concatenate_videos_with_custom_transitions)
 * [Transform URL API](https://cloudinary.com/documentation/transformation_reference)
- - [`du`](https://cloudinary.com/documentation/transformation_reference#du_duration) (duration)
- - [`e_transition`](https://cloudinary.com/documentation/transformation_reference#e_transition)
- - [`fl_splice`](https://cloudinary.com/documentation/transformation_reference#fl_splice)
- - [`l_video`](https://cloudinary.com/documentation/video_manipulation_and_delivery#adding_video_overlays)
- - [`/fl_layer_apply/`](https://cloudinary.com/documentation/transformation_reference#fl_layer_apply)
+ - [`du`](https://cloudinary.com/documentation/transformation_reference?utm_source=twilio&utm_medium=event&utm_campaign=cloudinary-twilioquest-2021#du_duration) (duration)
+ - [`e_transition`](https://cloudinary.com/documentation/transformation_reference?utm_source=twilio&utm_medium=event&utm_campaign=cloudinary-twilioquest-2021#e_transition)
+ - [`fl_splice`](https://cloudinary.com/documentation/transformation_reference?utm_source=twilio&utm_medium=event&utm_campaign=cloudinary-twilioquest-2021#fl_splice)
+ - [`l_video`](https://cloudinary.com/documentation/video_manipulation_and_delivery?utm_source=twilio&utm_medium=event&utm_campaign=cloudinary-twilioquest-2021#adding_video_overlays)
+ - [`/fl_layer_apply/`](https://cloudinary.com/documentation/transformation_reference?utm_source=twilio&utm_medium=event&utm_campaign=cloudinary-twilioquest-2021#fl_layer_apply)
 
 ### Detailed Instructions
 
@@ -16,7 +16,7 @@ Use the resources above to get the necessary parameters in to your new URL!
 
 By clicking on the _Load URL in Cloudinary Explorer_ button on the Objectives tab, you can load the URL you created from the previous objective and modify it directly in this objective.
 
-You'll also need the [luma matte](https://cloudinary.com/documentation/video_manipulation_and_delivery#luma_matte) transition to help you get the job done!
+You'll also need the [luma matte](https://cloudinary.com/documentation/video_manipulation_and_delivery?utm_source=twilio&utm_medium=event&utm_campaign=cloudinary-twilioquest-2021#luma_matte) transition to help you get the job done!
 
 Finally, recall that spliced clips will take the form of:
 ```

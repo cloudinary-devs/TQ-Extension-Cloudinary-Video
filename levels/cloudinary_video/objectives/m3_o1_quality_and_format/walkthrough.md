@@ -1,7 +1,7 @@
 # Help Guide
 
 ## Objective-specific Resources
-* [Image and Video Optimization - Quality](https://cloudinary.com/documentation/image_optimization#how_to_optimize_image_quality?utm_source=twilio&utm_medium=event&utm_campaign=cloudinary-twilioquest-2021)
+* [Image and Video Optimization - Quality](https://cloudinary.com/documentation/image_optimization?utm_source=twilio&utm_medium=event&utm_campaign=cloudinary-twilioquest-2021#how_to_optimize_image_quality)
 * [Video Quality Explanation in Depth](https://cloudinary.com/documentation/video_optimization?utm_source=twilio&utm_medium=event&utm_campaign=cloudinary-twilioquest-2021)
 
 This content is a subset of content from the completely free [Cloudinary Academy](https://training.cloudinary.com?utm_source=twilio&utm_medium=event&utm_campaign=cloudinary-twilioquest-2021). 

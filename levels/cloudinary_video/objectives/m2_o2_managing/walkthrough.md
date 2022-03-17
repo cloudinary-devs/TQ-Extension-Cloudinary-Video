@@ -30,7 +30,7 @@ function getImageUrl(extRelativePath) {
 
 ## Objective-Specific Resources
 * [Media Library](https://cloudinary.com/console/media_library?utm_source=twilio&utm_medium=event&utm_campaign=cloudinary-twilioquest-2021)
-* [Create a folder](https://cloudinary.com/documentation/dam_folders_collections_sharing#create_folders?utm_source=twilio&utm_medium=event&utm_campaign=cloudinary-twilioquest-2021)
+* [Create a folder](https://cloudinary.com/documentation/dam_folders_collections_sharing?utm_source=twilio&utm_medium=event&utm_campaign=cloudinary-twilioquest-2021#create_folders)
 * [Change the video asset](https://cloudinary.com/documentation/dam_manage_individual_assets?utm_source=twilio&utm_medium=event&utm_campaign=cloudinary-twilioquest-2021)
 
 
@@ -41,11 +41,11 @@ Use the [Media Library](https://cloudinary.com/console/media_library?utm_source=
 Let's organize the file we uploaded by putting it into a new folder called **TwilioQuest**.
 
 1. Go to the [Media Library](https://cloudinary.com/console/media_library?utm_source=twilio&utm_medium=event&utm_campaign=cloudinary-twilioquest-2021) in your Cloudinary Console.
-2. [Create a folder](https://cloudinary.com/documentation/dam_folders_collections_sharing#create_folders?utm_source=twilio&utm_medium=event&utm_campaign=cloudinary-twilioquest-2021) by clicking on the **New Folder** button on the top left. Name this new folder **TwilioQuest**. Click _Save_.
+2. [Create a folder](https://cloudinary.com/documentation/dam_folders_collections_sharing?utm_source=twilio&utm_medium=event&utm_campaign=cloudinary-twilioquest-2021#create_folders) by clicking on the **New Folder** button on the top left. Name this new folder **TwilioQuest**. Click _Save_.
 ![Screenshot of new folder button](<%=getImageUrl('images/objectives/m2_o2_newfolder.png')%>)
 ![Screenshot of naming the folder](<%=getImageUrl('images/objectives/m2_o2_namefolder.png')%>)
 
-3. Select your **Succulent** video file, then click ["Move to folder"](https://cloudinary.com/documentation/dam_folders_collections_sharing#move_assets_between_folders?utm_source=twilio&utm_medium=event&utm_campaign=cloudinary-twilioquest-2021) on the top right.
+3. Select your **Succulent** video file, then click ["Move to folder"](https://cloudinary.com/documentation/dam_folders_collections_sharing?utm_source=twilio&utm_medium=event&utm_campaign=cloudinary-twilioquest-2021#move_assets_between_folders) on the top right.
 
 ![Screenshot of moving to folder 1](<%=getImageUrl('images/objectives/m2_o2_movetofolder.png')%>)
 ![Screenshot of moving to folder 2](<%=getImageUrl('images/objectives/m2_o2_movetofolderwidget.png')%>)
