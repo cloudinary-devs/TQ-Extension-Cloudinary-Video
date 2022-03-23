@@ -724,10 +724,6 @@
         {
          "firstgid":17386,
          "source":"..\/..\/..\/tilesets\/logotileset.json"
-        }, 
-        {
-         "firstgid":17425,
-         "source":"..\/..\/..\/..\/twilioquest-default-extensions\/tilesets\/MyCustomObjects.json"
         }],
  "tilewidth":24,
  "type":"map",

@@ -931,10 +931,6 @@
         {
          "firstgid":11750,
          "source":"npc.json"
-        }, 
-        {
-         "firstgid":11759,
-         "source":"..\/..\/..\/..\/twilioquest-default-extensions\/tilesets\/MyCustomObjects.json"
         }],
  "tilewidth":24,
  "type":"map",
