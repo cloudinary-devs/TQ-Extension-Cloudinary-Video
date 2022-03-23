@@ -25,12 +25,12 @@ We can tell Cloudinary to **resize** and **crop** videos in order to match speci
 Your answers to these questions must use your Flower video.
 <!-- @todo-p2 rewrite these with reasons for a final layout -->
 
-1. <a name="q1"></a>Create a **Flower** video URL for <a onclick="jQuery('input')[0].focus()">Answer 1</a> using the [scale](#scale) parameter. The video must have the following properties:
+1. <a name="q1"></a>Create a **Flower** video URL for <a onclick="jQuery('input')[0].focus()">Answer 1</a> using the **scale** parameter. The video must have the following properties:
    - 150 pixels wide
-2. <a name="q2"></a>Create a **Flower** video URL for <a onclick="jQuery('input')[1].focus()">Answer 2</a> using the [fill](#fill) parameter. The video must have the following properties:
+2. <a name="q2"></a>Create a **Flower** video URL for <a onclick="jQuery('input')[1].focus()">Answer 2</a> using the **fill** parameter. The video must have the following properties:
    - 300 pixels tall
    - 300 pixels wide
-3. <a name="q3"></a>Create a **Flower** video URL for <a onclick="jQuery('input')[2].focus()">Answer 3</a> using the [crop](#crop) parameter. The video must have the following properties:
+3. <a name="q3"></a>Create a **Flower** video URL for <a onclick="jQuery('input')[2].focus()">Answer 3</a> using the **crop** parameter. The video must have the following properties:
    - 100 pixels tall
    - 350 pixels wide 
    - cropped at X:230, Y:110 

@@ -38,6 +38,9 @@ module.exports = function (event, world) {
     //Load world state
     let worldState = world.getState("com.cloudinary.cloudinary_video_adventures") || DEFAULT_MISSION_STATE;
 
+    //Define objective list in global scope
+    //let objectivesList;
+
     /**
      * Some dev mode stuff
      */
@@ -189,9 +192,10 @@ module.exports = function (event, world) {
         case 'objectiveFailed':
             break;
         case 'objectiveDidClose':
-            if (areMissionObjectivesComplete(objectivesList,event.objectiveName)) {
+            /*if (areMissionObjectivesComplete(world, objectivesList, event.objectiveName)) {
                 world.showNotification("Pass");
-            }
+            }*/
+            break;
         case 'conversationDidEnd':
             //@todo-p2 refactor into a generic call to objectives/<objective_name>/event.js:conversationDidEnd() call?
             console.table(observer.history);
@@ -220,6 +224,16 @@ module.exports = function (event, world) {
                             world.__internals.level.player.keys.a.isDown
                             ) {
                             world.showNotification('This exit will take you out of the Cloudinary Video Adventure and back to the Fog Owl.');
+                        }
+                        break;
+                    case 'toLowerArea':
+                        //moving to main corridor
+                        console.log(world.__internals.level.player.keys)
+                        if(
+                            world.__internals.level.player.keys.down.isDown ||
+                            world.__internals.level.player.keys.s.isDown
+                            ) {
+                            world.showNotification('Looks like the main corridor is straight down from here!');
                         }
                         break;
                 }

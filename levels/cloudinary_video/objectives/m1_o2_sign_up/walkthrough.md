@@ -42,6 +42,8 @@ After creating your account, you will land on the [Cloudinary Dashboard](https:/
 
 ![Screenshot of dashboard](<%=getImageUrl('images/objectives/m1_o2_dashboard.png')%>)
 
+If you don't see this page, try clicking on "Dashboard" button on the top left. 
+
 You will find your Cloudinary **Cloud Name**, **API Key**, and **API Secret** in the middle of the screen, in the **Account Details** section. You can copy the information by clicking on the "Copy" button (the button with two rectangles overlapping each other), which appears when you hover over the boxes for each piece of information you need! Copy this information into the form on the right, and click _HACK_ to verify and save this information.
 
 

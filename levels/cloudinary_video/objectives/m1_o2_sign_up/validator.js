@@ -45,7 +45,9 @@ module.exports = async function (helper) {
             browser.display(`
              <div style="width:100%;text-align: center;">
                     <h1>You have received your new Employee Badge for the Ship!</h1>
-                    <img src=" https://res.cloudinary.com/tessamero/image/upload/dpr_auto,f_auto,w_400,c_lpad,e_colorize,co_rgb:3448C5,g_north,fl_ignore_aspect_ratio/w_160,h_300/l_text:Arial_24_bold:Staff%20Badge,co_rgb:fff,g_north,y_10/l_text:Arial_24_bold:Name:%0A ${cloudinary_cloud_name} ,co_rgb:0C163B,g_south,y_10/v1629391952/TwilioQuest/badge.png" alt="sample image">
+                    <center><div style="background-color:white;width:100%;max-width:300px">
+                        <img src="https://res.cloudinary.com/tessamero/image/upload/dpr_auto,f_auto,w_400,c_lpad,e_colorize,co_rgb:3448C5,g_north,fl_ignore_aspect_ratio/w_160,h_300/l_text:Arial_24_bold:Staff%20Badge,co_rgb:fff,g_north,y_10/l_text:Arial_24_bold:Name:%0A ${cloudinary_cloud_name} ,co_rgb:0C163B,g_south,y_10/v1629391952/TwilioQuest/badge.png" alt="sample image">
+                    </div></center>
              </div>
             `);
 

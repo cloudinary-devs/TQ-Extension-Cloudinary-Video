@@ -31,10 +31,10 @@ We also want to leave our mark on the video. Why don't we put the Cloudinary log
 Your answers to these questions must use your **Flower** video.
 
 1. <a name="q1"></a>Create a url for the **Flower** video that will show the **Cloudinary logo** in the lower left corner. Enter a URL in <a onclick="jQuery('input')[0].focus()">Answer 1</a> with the following properties:
-   - Video Size [hint](https://cloudinary.com/documentation/video_manipulation_and_delivery?utm_source=twilio&utm_medium=event&utm_campaign=cloudinary-twilioquest-2021#scale):
+   - Video Size ([hint](https://cloudinary.com/documentation/media_optimizer_transformation_reference?utm_source=twilio&utm_medium=event&utm_campaign=cloudinary-twilioquest-2021#c_scale)): 
      - 400 pixels wide
    - Overlay Image
-     - Image: the cloudinary icon image
+     - Image: the Cloudinary icon image
      - Opacity: 50%
      - Video start time: beginning of the video
      - Duration: 10 seconds
