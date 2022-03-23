@@ -357,8 +357,8 @@
                  "type":"player",
                  "visible":true,
                  "width":0,
-                 "x":1104,
-                 "y":288
+                 "x":891.5,
+                 "y":469
                 }, 
                 {
                  "gid":11694,
@@ -748,12 +748,18 @@
                  "height":72,
                  "id":191,
                  "name":"",
+                 "properties":[
+                        {
+                         "name":"objectiveName",
+                         "type":"string",
+                         "value":"co_turtle_facts"
+                        }],
                  "rotation":0,
                  "type":"",
                  "visible":true,
                  "width":24,
-                 "x":769.333333333333,
-                 "y":492
+                 "x":768.333333333333,
+                 "y":480.5
                 }, 
                 {
                  "gid":10012,
@@ -808,6 +814,52 @@
                  "width":24,
                  "x":1656,
                  "y":288
+                }, 
+                {
+                 "gid":11759,
+                 "height":24,
+                 "id":195,
+                 "name":"",
+                 "properties":[
+                        {
+                         "name":"hidden",
+                         "type":"bool",
+                         "value":true
+                        }, 
+                        {
+                         "name":"interactable",
+                         "type":"bool",
+                         "value":true
+                        }],
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":47.5,
+                 "x":384.25,
+                 "y":361
+                }, 
+                {
+                 "gid":11759,
+                 "height":24,
+                 "id":196,
+                 "name":"",
+                 "properties":[
+                        {
+                         "name":"hidden",
+                         "type":"bool",
+                         "value":true
+                        }, 
+                        {
+                         "name":"interactable",
+                         "type":"bool",
+                         "value":true
+                        }],
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":21,
+                 "x":1106.25,
+                 "y":358
                 }],
          "opacity":0.97,
          "type":"objectgroup",
@@ -883,7 +935,7 @@
          "y":0
         }],
  "nextlayerid":50,
- "nextobjectid":195,
+ "nextobjectid":197,
  "orientation":"orthogonal",
  "renderorder":"right-down",
  "tiledversion":"1.7.1",
@@ -925,6 +977,10 @@
         {
          "firstgid":11750,
          "source":"npc.json"
+        }, 
+        {
+         "firstgid":11759,
+         "source":"..\/..\/..\/..\/twilioquest-default-extensions\/tilesets\/MyCustomObjects.json"
         }],
  "tilewidth":24,
  "type":"map",

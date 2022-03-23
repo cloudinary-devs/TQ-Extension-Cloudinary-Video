@@ -7,7 +7,7 @@
 This content is a subset of content from the completely free [Cloudinary Academy](https://training.cloudinary.com/). 
 
 ### Detailed Instructions
-
+You'll need to refer back to this help section for future missions, but you'll find everything you need for this mission below!
 
 The feature we're look for is called [Text Overlays](https://cloudinary.com/documentation/video_manipulation_and_delivery?utm_source=twilio&utm_medium=event&utm_campaign=cloudinary-twilioquest-2021#adding_text_overlays) and uses over**L**ay parameters, specifically *l_text:*
 
@@ -58,7 +58,7 @@ for a long series of parameters like:
    </video>
 </div>
 
-Can you guess how to put the text for your **Flower** video on the bottom right? (Think "south east")
+Can you guess how to put the text for your **Flower** video on the bottom right? (Think "south east" with a low line to bridge the words together...)
 
 ## Color
 
