@@ -814,52 +814,6 @@
                  "width":24,
                  "x":1656,
                  "y":288
-                }, 
-                {
-                 "gid":11759,
-                 "height":24,
-                 "id":195,
-                 "name":"",
-                 "properties":[
-                        {
-                         "name":"hidden",
-                         "type":"bool",
-                         "value":true
-                        }, 
-                        {
-                         "name":"interactable",
-                         "type":"bool",
-                         "value":true
-                        }],
-                 "rotation":0,
-                 "type":"",
-                 "visible":true,
-                 "width":47.5,
-                 "x":384.25,
-                 "y":361
-                }, 
-                {
-                 "gid":11759,
-                 "height":24,
-                 "id":196,
-                 "name":"",
-                 "properties":[
-                        {
-                         "name":"hidden",
-                         "type":"bool",
-                         "value":true
-                        }, 
-                        {
-                         "name":"interactable",
-                         "type":"bool",
-                         "value":true
-                        }],
-                 "rotation":0,
-                 "type":"",
-                 "visible":true,
-                 "width":21,
-                 "x":1106.25,
-                 "y":358
                 }],
          "opacity":0.97,
          "type":"objectgroup",
