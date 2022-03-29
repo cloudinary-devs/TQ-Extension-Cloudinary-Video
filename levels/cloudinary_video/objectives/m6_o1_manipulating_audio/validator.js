@@ -33,11 +33,11 @@ module.exports = async function (helper) {
                     <div style="display: flex;flex-wrap: wrap;justify-content: space-evenly">
                         <div>
                             <center><h3> 80% lower volume </h3></center>
-                            <video autoplay loop controls><source src="${grader.getVideoUrl('answer1')}" type="video/mp4" width=200></video>
+                            <video loop controls width="250px"><source src="${grader.getVideoUrl('answer1')}" type="video/mp4"></video>
                         </div>
                         <div>
                             <center><h3> muted volume </h3></center>
-                            <video autoplay loop controls><source src="${grader.getVideoUrl('answer2')}" type="video/mp4" width=200></video>
+                            <video loop controls width="250px"><source src="${grader.getVideoUrl('answer2')}" type="video/mp4"></video>
                         </div>
                     </div>
                 </div>

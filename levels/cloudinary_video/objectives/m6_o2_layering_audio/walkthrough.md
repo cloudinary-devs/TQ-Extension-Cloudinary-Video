@@ -8,6 +8,22 @@ Add an additional audio track over the existing video using the video overlay pa
 
 By following the link above, you can learn more about audio overlays and why they may be useful in video transformations using Cloudinary!
 
+Example: Music on hourglass
+
+~~~text
+.../video/upload/l_video:electronic/fl_layer_apply/hourglass_timer.mp4
+~~~
+<div>
+   <video muted controls width="600">
+      <source src="https://res.cloudinary.com/demo/video/upload/l_video:electronic/fl_layer_apply/hourglass_timer.mp4" type="video/mp4">
+   </video>
+</div>
+
+Note that "electronic" is an .mp3 audio file.
+
+Now, what would you do if you need to apply multiple layers of audio?
+
+## Dog Sound Effect 
 If you need help looking for dog sound effects, go to [this website](https://mixkit.co/free-sound-effects/dog/) and download a dog sound effect. Why not try to download [this one](https://assets.mixkit.co/sfx/download/mixkit-horde-of-barking-dogs-60.wav)? 
 
 

@@ -37,4 +37,4 @@ https://res.cloudinary.com/<cloud_name>/video/upload/<version>/demo/dog.mp4
 
 4. Click _HACK_ to proceed.
 
-
+> Press the _HELP_ button on the top right of this window for more details!

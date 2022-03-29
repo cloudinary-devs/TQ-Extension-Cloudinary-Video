@@ -10,7 +10,7 @@
     {
       "name": "answer2",
       "type": "text",
-      "label": "Enter the URL of the fighting kitten video overlayed with the dog video's music"
+      "label": "Enter the URL of the fighting kitten video overlayed with your dog sound effect."
     }
   ],
   "rewards": {

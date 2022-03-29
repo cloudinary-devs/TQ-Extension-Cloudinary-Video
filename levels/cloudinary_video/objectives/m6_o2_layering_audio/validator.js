@@ -11,8 +11,8 @@ module.exports = async function (helper) {
             mustAppear: ['demo/kitten_fighting.mp4','https:','res.cloudinary.com','video/upload']
         },
         answer2: {
-            validExample: 'https://res.cloudinary.com/dwbnpn4z6/video/upload/l_video:demo:dog.mp3/fl_layer_apply/l_video:TwilioQuest:dog.wav/fl_layer_apply/v1638549969/demo/kitten_fighting.mp4',
-            mustAppear: ['demo/kitten_fighting.mp4','https:','res.cloudinary.com','video/upload','l_video:demo:dog.mp3','l_video:TwilioQuest:dog.wav','fl_layer_apply'],
+            validExample: 'https://res.cloudinary.com/dwbnpn4z6/video/upload/l_video:TwilioQuest:dog.wav/fl_layer_apply/v1638549969/demo/kitten_fighting.mp4',
+            mustAppear: ['demo/kitten_fighting.mp4','https:','res.cloudinary.com','video/upload','l_video:TwilioQuest:dog.wav','fl_layer_apply'],
             mustAppearInOrder: [
                 ['upload', 'l_'],
                 ['l_','fl_layer_apply']
@@ -20,7 +20,7 @@ module.exports = async function (helper) {
         }        
     }, function pass() {
         helper.success(grader.getSuccessMessage() + `
-            Nice! You've added the dog music on top of the fighting kittens video!
+            Nice! You've added the dog sound effects on top of the fighting kittens video!
         `);
         browser.display(
             `
