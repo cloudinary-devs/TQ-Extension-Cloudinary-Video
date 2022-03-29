@@ -36,3 +36,5 @@ Your answers to these questions must use your Flower video.
    - cropped at X:230, Y:110 
 
 Note: parameters related to crop/resize functions are all prefixed with *c_*
+
+> Press the _HELP_ button on the top right of this window for more details!

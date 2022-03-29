@@ -34,4 +34,7 @@ Your answers to these questions must use your Flower video and the sea-turtle sa
      - Size: 150px wide
      - Frame: Ellipse-shaped
      - Position: 10 pixels from the bottom left corner
-     - Duration: 10 seconds
+     - Start time: 0 seconds
+     - End time: 10 seconds
+
+> Press the _HELP_ button on the top right of this window for more details!

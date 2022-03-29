@@ -58,28 +58,23 @@ for a long series of parameters like:
    </video>
 </div>
 
-Can you guess how to put the text for your **Flower** video on the bottom right? (Think "south east" with a low line to bridge the words together...)
+Here is a chart of all gravity directions you can use:
 
-## Color
+||||
+|--|--|--|
+|Top Right<br>`g_north_east`|Top<br>`g_north`|Top Right<br>`g_north_west`|
+|Left<br>`g_west`|Middle<br>`g_center`|Right<br>`g_east`|
+|Bottom Left<br>`g_south_west`|Bottom<br>`g_south`|Bottom Right<br>`g_south_east`|
 
-We can also change the Color *co_* of the text by providing a color in the same way that we do with web colors.
-|Type|Example|
-|----|---|
-|Named|co_gray|
-|RGB 3 char | co_rgb:777|
-|RGB hex triplet| co_rgb:123ABC|
-|RGB quad|co_rgb:123ABC66 (66 opacity)|
 
 Example:
 ```
 /l_text:arial_80:Sample%20Video,so_2.0,eo_5.0,g_south,y_20,co_e3000088/
 ```
 
-<div>
-   <video muted controls width="600">
-      <source src="https://demo-res.cloudinary.com/video/upload/l_text:arial_80:Sample%20Video,co_rgb:e3000088,so_2.0,eo_5.0,g_south,y_20/dog.webm" type="video/mp4">
-   </video>
-</div>
+Can you guess how to put the text for your **Flower** video on the bottom right?
+
+
 
 
 ### Additional Documentation

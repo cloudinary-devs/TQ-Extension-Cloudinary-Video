@@ -22,8 +22,9 @@ Your answers to these questions must use your **Flower** video.
    - Video Size ([hint](https://cloudinary.com/documentation/media_optimizer_transformation_reference?utm_source=twilio&utm_medium=event&utm_campaign=cloudinary-twilioquest-2021#c_scale)): 
      - 400 pixels wide
    - Attribution Text:
-     - Duration: The full length of the video
+     - Duration: The full length of the video (hint: no additional parameters needed)
      - Text: `@DeloitteNick`
-     - Font: Roboto, bolded
-     - Size: 30 point
-     - Location: Bottom right (south east)
+     - Font: Roboto, bolded, 30 point
+     - Location: Bottom right
+
+> Press the _HELP_ button on the top right of this window for more details!

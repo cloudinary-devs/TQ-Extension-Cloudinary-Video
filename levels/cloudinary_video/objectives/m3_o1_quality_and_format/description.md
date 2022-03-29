@@ -29,4 +29,5 @@ The automatic mode typically provides an ideal balance between quality and file 
  
 4. Click _HACK_ to proceed.
 
+> Press the _HELP_ button on the top right of this window for more details!
 

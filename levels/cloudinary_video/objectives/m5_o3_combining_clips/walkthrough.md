@@ -20,6 +20,17 @@ _fl_splice_ causes the clip to be spliced in (concatenated), instead of overlaye
 
 _l_video_ and _/fl_layer_apply/_ are start and end tags, wrapping up any transforms that need to be applied to the clip.
 
+Example:
+~~~text
+.../video/upload/c_fill,w_300/fl_splice,l_video:cat.mp4/c_fill,w_300/fl_layer_apply/fl_splice,l_video:kitten_fighting.mp4/c_fill,w_300/fl_layer_apply/dog.mp4
+~~~
+<div>
+   <video muted controls width="600">
+      <source src="https://res.cloudinary.com/demo/video/upload/c_fill,w_300/fl_splice,l_video:cat.mp4/c_fill,w_300/fl_layer_apply/fl_splice,l_video:kitten_fighting.mp4/c_fill,w_300/fl_layer_apply/dog.mp4" type="video/mp4">
+   </video>
+</div>
+
+Notice the ordering of the videos appearing: the dog, then the cat, then the kitten. Also note that `c_fill` and the sizes are all the same. The ordering of the dog video parameters and the actual video name matters- be careful!
 
 <br>
 

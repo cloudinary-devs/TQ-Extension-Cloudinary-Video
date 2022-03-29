@@ -37,3 +37,5 @@ Create URLs for the flower video that have the following specifications:
 1. Size: 100x100 pixels
 2. Corner radius: maximum to make it a circle
 3. Background color: rgb:1f243c
+
+> Press the _HELP_ button on the top right of this window for more details!

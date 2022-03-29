@@ -26,9 +26,12 @@ We'll be using videos from the **Cloudinary demo account**. In order to use them
 1. Enter the URL for the kitten_fighting video in your /demo folder.
 2. Enter the URL for the dog video in your /demo folder.
 3. <a name="q1"></a>Create a URL for a video that shows the video clips in the following order:
-   - demo/dog.mp4
-   - demo/kitten_fighting.mp4
-   - TwilioQuest/Flower.mp4
+   - `demo/dog.mp4`
+   - `demo/kitten_fighting.mp4`
+   - `TwilioQuest/Flower.mp4`
 
 Hint: the order of the splicing parameters (`fl_splice,l_video/<additional-parameters>/fl_layer_apply`) matters.
 4. For each video, `c_fill` it to a size of 300 pixels wide and 200 pixels high.
+
+
+> Press the _HELP_ button on the top right of this window for more details!

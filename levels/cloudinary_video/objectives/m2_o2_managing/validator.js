@@ -4,6 +4,10 @@ module.exports = async function (helper) {
 
     const {answer1} = helper.validationFields;
 
+    if (!answer1) {
+        return helper.fail(`Please enter an answer first before pressing HACK!`);
+    }
+
     /**
      * Some special guidance outside of what the grader will do
      */

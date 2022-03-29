@@ -36,9 +36,11 @@ Your answers to these questions must use your **Flower** video.
    - Overlay Image
      - Image: the Cloudinary icon image
      - Opacity: 50%
-     - Video start time: beginning of the video
-     - Duration: 10 seconds
+     - Video start time: 0 seconds
+     - Video end time: 10 seconds
      - Position: 
       a. bottom left corner
       b. 10 pixels from the bottom edge
       c. 10 pixels from the left edge
+
+> Press the _HELP_ button on the top right of this window for more details!

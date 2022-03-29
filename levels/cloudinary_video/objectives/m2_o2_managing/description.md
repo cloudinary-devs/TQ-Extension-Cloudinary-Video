@@ -20,3 +20,5 @@ Our partner that we're working with needs us to rename the video, and then move 
 3. Move the renamed **Flower** video file into the **TwilioQuest** folder.
 
 Copy the URL of the video you just renamed and moved, and paste it in the input box on the right. Then, click _HACK_ to proceed.
+
+> Need help with these tasks? Press the _HELP_ button on the top right of this window for more details!

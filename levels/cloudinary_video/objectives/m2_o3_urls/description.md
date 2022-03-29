@@ -25,4 +25,5 @@ Let's experiment with our URLs by adding parameters.
 
 Click _HACK_ to proceed. If you entered the URLs correctly, you will see a side by side comparison of the original and scaled versions!
 
+> Press the _HELP_ button on the top right of this window for more details!
 

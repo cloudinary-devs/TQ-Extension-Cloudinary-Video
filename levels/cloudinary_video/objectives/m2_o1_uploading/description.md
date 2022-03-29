@@ -27,6 +27,8 @@ One of our partners would like a link to a video of a flower. Can you upload tha
 
 Copy the URL to your freshly-uploaded succulent file and paste it into the field to the right. Then, click on _HACK_.
 
+> If you need help, press the _HELP_ button on the top right of this window!
+
 
 
     
