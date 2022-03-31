@@ -9,6 +9,10 @@ Sections related to this mission/objective:
 **Note: For illustration in these instructions, we'll be using a Cloudinary sample video, but your answers to the [Questions](#questions) must use your Flower video.**
 
 This is the original sample video.
+
+```
+https://demo-res.cloudinary.com/video/upload/c_scale,w_690/dog.webm
+```
 <div style="border:1px solid blue">
    <video muted controls>
       <source src="https://demo-res.cloudinary.com/video/upload/c_scale,w_690/dog.webm" type="video/mp4">
@@ -22,7 +26,7 @@ We can use the same *c_scale* operation to change the size of a video to specifi
 ### Scale Example
 
 ```
-/c_scale,w_150/dog.webm
+.../video/upload/c_scale,w_150/dog.webm
 ```
 
 This scales the video to a width of 150 pixels leaving the height to be calculated automatically.
@@ -39,7 +43,7 @@ Fit *c_fit* is like scale, but **specifically guarantees the aspect ratio won't 
 ### Fit Example
 
 ```
-/c_fit,h_250,w_250/dog.mp4
+.../video/upload/c_fit,h_250,w_250/dog.mp4
 ```
 
 This fits the video to a maximum height or width of 250 pixels. A blue box shows the requested dimensions.
@@ -57,7 +61,7 @@ video differ. Deciding what gets filled and what gets clipped involves specifyin
 ### No Specific Gravity Example
 
 ```
-c_fill,h_250,w_250/dog.mp4
+.../video/upload/c_fill,h_250,w_250/dog.mp4
 ```
 <div style="border:1px solid blue;width:250px;height:250px;">
    <video muted controls>
@@ -72,7 +76,7 @@ In addition to auto *g_auto*, Gravity can be set to *g_north_east*, *g_north*, *
 #### Specific Gravity
 
 ```
-/c_fill,g_east,h_250,w_250/dog.mp4
+.../video/upload/c_fill,g_east,h_250,w_250/dog.mp4
 ```
 
 <div style="border:1px solid blue;width:250px;height:250px;">
@@ -84,7 +88,7 @@ In addition to auto *g_auto*, Gravity can be set to *g_north_east*, *g_north*, *
 #### Auto Gravity
 
 ```
-/c_fill,g_auto,h_250,w_250/dog.mp4
+.../video/upload/c_fill,g_auto,h_250,w_250/dog.mp4
 ```
 <div style="border:1px solid blue;width:250px;height:250px;">
    <video muted controls>
@@ -97,7 +101,7 @@ In addition to auto *g_auto*, Gravity can be set to *g_north_east*, *g_north*, *
 The crop parameter *c_crop* specifies which part of the video to use for filling the required dimensions by giving the x and y coordinates of the top left corner, or by using the gravity parameter. The original proportions are retained.
 
 ```
-/c_crop,h_100,w_350,x_230,y_110/dog.mp4
+.../video/upload/c_crop,h_100,w_350,x_230,y_110/dog.mp4
 ```
 Now, our dog is peaking through a mail slot!
 <div style="border:1px solid blue;width:350px;height:100px;">

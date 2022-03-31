@@ -23,7 +23,12 @@ We'll be using videos from the **Cloudinary demo account**. In order to use them
 
 > TIP: Images can only be used in layers after they have been fetched into your account directly, so the first two questions serve a secondary purpose to cause the initial creation by requesting them directly.
 
-1. Enter the URL for the kitten_fighting video in your /demo folder.
+1. Enter the URL for the kitten_fighting video in your /demo folder. It should look something like this:
+```
+https://res.cloudinary.com/<cloud-name>/video/upload/demo/kitten_fighting.mp4
+```
+The demo folder doesn't show up in your Media Library at first, but once you try the URL after setting up Auto Upload Mapping, it will appear magically!
+
 2. Enter the URL for the dog video in your /demo folder.
 3. <a name="q1"></a>Create a URL for a video that shows the video clips in the following order:
    - `demo/dog.mp4`

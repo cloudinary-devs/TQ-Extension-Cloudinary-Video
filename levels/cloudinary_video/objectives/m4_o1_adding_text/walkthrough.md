@@ -12,7 +12,7 @@ You'll need to refer back to this help section for future missions, but you'll f
 The feature we're look for is called [Text Overlays](https://cloudinary.com/documentation/video_manipulation_and_delivery?utm_source=twilio&utm_medium=event&utm_campaign=cloudinary-twilioquest-2021#adding_text_overlays) and uses over**L**ay parameters, specifically *l_text:*
 
 ```
-/l_text:arial_80:Sample%20Video/
+.../video/upload/l_text:arial_80:Sample%20Video/
 ```
 This will add a "Sample Video" watermark in Arial font, sized 80 pixels large, to our dog video and will last the full duration of the video.
 <div>
@@ -25,13 +25,13 @@ Cloudinary supports all [Google fonts](https://fonts.google.com/) and even [your
 
 You can also use CSS-like styles: 
 
-`l_text:verdana_75_bold_underline_letter_spacing_14:Flowers`
+`.../video/upload/l_text:verdana_75_bold_underline_letter_spacing_14:Flowers`
 
 ## Duration
 
 We can provide start *so_* and end *eo_* timing parameters measuring in seconds from the start of the video:
 ```
-/l_text:arial_80:Sample%20Video,so_2.0,eo_5.0/
+.../video/upload/l_text:arial_80:Sample%20Video,so_2.0,eo_5.0/
 ```
 
 <div>
@@ -50,7 +50,7 @@ g_south,y_20
 ```
 for a long series of parameters like:
 ~~~text
-/l_text:arial_80:Sample%20Video,so_2.0,eo_5.0,g_south,y_20/
+.../video/upload/l_text:arial_80:Sample%20Video,so_2.0,eo_5.0,g_south,y_20/
 ~~~
 <div>
    <video muted controls width="600">
@@ -69,7 +69,7 @@ Here is a chart of all gravity directions you can use:
 
 Example:
 ```
-/l_text:arial_80:Sample%20Video,so_2.0,eo_5.0,g_south,y_20,co_e3000088/
+.../video/upload/l_text:arial_80:Sample%20Video,so_2.0,eo_5.0,g_south,y_20,co_e3000088/
 ```
 
 Can you guess how to put the text for your **Flower** video on the bottom right?

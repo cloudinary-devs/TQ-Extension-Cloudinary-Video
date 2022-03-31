@@ -48,7 +48,7 @@ Example:
 
 We can provide start *so_* and end *eo_* timing parameters measuring in seconds from the start of the video:
 ```
-/l_text:arial_80:Sample%20Video,so_2.0,eo_5.0/
+.../video/upload/l_text:arial_80:Sample%20Video,so_2.0,eo_5.0/
 ```
 
 <div>
@@ -71,7 +71,7 @@ Recall all the gravity directions you can use:
 Here's a modified example from the last example, for reference:
 
 ~~~text
-/l_text:arial_80:Sample%20Video,so_2.0,eo_5.0,g_south,x_10,y_20/
+.../video/upload/l_text:arial_80:Sample%20Video,so_2.0,eo_5.0,g_south,x_10,y_20/
 ~~~
 <div>
    <video muted controls width="600">

@@ -8,6 +8,16 @@ Reference: [Transform URL API](https://cloudinary.com/documentation/transformati
 
 ### Detailed Instructions
 
+## Auto Upload Mapping
+Auto Upload Mapping is discussed in the Objectives tab. See the "Preparation" section over there for the instructions. 
+
+To test that it works, try to open this URL, using your cloud name:
+```
+https://res.cloudinary.com/<cloud-name>/video/upload/demo/kitten_fighting.mp4
+```
+
+## Splicing
+
 Creating a video from multiple other videos requires some fairly complicated urls so here are some useful tips.
 
 The last part of the url (the target video) will be the first video that plays in the sequence, and then all of the _fl_splice_ sections will play in order of appearance in the url.
