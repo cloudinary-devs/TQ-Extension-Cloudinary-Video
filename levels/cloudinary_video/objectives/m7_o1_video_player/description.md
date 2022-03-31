@@ -14,15 +14,19 @@ Thanks for your help! We can't wait to deploy our website to show all the Cloudi
 ********************
 
 ## Preparation
-Learn more about our Cloudinary video player [here](https://cloudinary.com/documentation/cloudinary_video_player?utm_source=twilio&utm_medium=event&utm_campaign=cloudinary-twilioquest-2021). It's simple to add to our website! There's a sample code incuded on that webpage. Why don't you give it a shot, using that template in the code editor?
+Learn more about our Cloudinary video player [here](https://cloudinary.com/documentation/cloudinary_video_player?utm_source=twilio&utm_medium=event&utm_campaign=cloudinary-twilioquest-2021). 
 
-1. Open the **code editor** by clicking on the _\</> Show Code Editor_ button on the right.
-2. You'll notice a web application's source code in the code box. Fill in the code block that says `// ----- Put your JS code below ----- //` . Use the example in the link above to help you!
-3. Be sure to add the following attributes:
-- The sample code's defined variable names should be left as is.
-- The video player's width needs to be 600 pixels wide.
-- The video should be the Flower video from your Media Library.
-- One transformation needs to be applied to your video via the demoplayer's source function parameters!
+We can use the power of the [Video Player Studio](https://studio.cloudinary.com/?utm_source=twilio&utm_medium=event&utm_campaign=cloudinary-twilioquest-2021) to generate our embedded video player.
+
+1. Open the **Video Player Studio** using the link above.
+2. Under the Video tab, in the Video Source section, select "My Cloudinary Video".
+3. Enter your cloudname and the Public ID of your flower video in the corresponding input boxes.
+4. Under the Customization tab, in the Player Size section, select "Fixed".
+5. Set the width of the video to 600.
+6. On the bottom of the web browser, select the "Embed" tab.
+7. Select the _Copy to clipboard_ button.
+1. In TwilioQuest, open the **code editor** by clicking on the _\</> Show Code Editor_ button on the right.
+2. You'll notice a web application's source code in the code box. Fill in the code block that says `<!-- Place your iframe below this line -->` . 
 4. Run the server by pressing the _▶_ button.
 5. If the code looks correct, then click _HACK_ to proceed.
 

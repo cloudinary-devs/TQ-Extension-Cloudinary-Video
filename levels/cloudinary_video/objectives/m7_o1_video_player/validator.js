@@ -2,8 +2,8 @@ const browser = require('../../../../lib/browser');
 const Grader = require('../../../../lib/grader');
 const state = require('../../../../lib/state');
 //const validate = require('validate.js');
-const jslint = require('jslint');
-const { isUndefined, isSet } = require('lodash');
+//const jslint = require('jslint');
+//const { isUndefined, isSet } = require('lodash');
 
 
 module.exports = async function (helper) {
@@ -24,74 +24,35 @@ module.exports = async function (helper) {
 
         const parser = new DOMParser();
         var xmlResponseText = parser.parseFromString(responseText, "text/html");
-        var scriptText = xmlResponseText.getElementById("video-code").text;
+        var iframeElement = xmlResponseText.getElementsByTagName("iframe")[0];
 
-        l = new jslint.LintStream();
-        l.write({file: "user_code.js", body: scriptText});
-        await l.on('data', function (chunk, encoding, callback) {
-          // Check for specific syntax errors, namely closing brackets () {} []
-          try {
-            var userCodeErrors = chunk.linted.errors;
-            console.log(userCodeErrors);
-            var errorMessage;
-            for (var errorEntry in userCodeErrors) { // var _i = 0; _i < length; ++_i
-              errorEntry = userCodeErrors[errorEntry];
-              errorMessage = `Syntax error: `+errorEntry.reason+` (line `+(18+errorEntry.line)+`)`;
-              //console.log(errorEntry);
-              //TODO: Combine if statements
-              if (
-                (errorEntry.code === "expected_a_b_from_c_d") ||
-                (errorEntry.code === "expected_a_b") ||
-                (errorEntry.code === "unexpected_char_a" && errorEntry.a !== "(space)") ||
-                (errorEntry.code === "expected_identifier_a")
-              ) {
-                return helper.fail(errorMessage);
-              }
-            }
-            // Script must include certain keywords
-            if (!
-                (  scriptText.indexOf('var cld = cloudinary.') > 0 
-                && scriptText.indexOf('var demoplayer = cld.') > 0
-                && scriptText.indexOf('demoplayer.') > 0 )
-            ) {
-                    helper.fail(`Oops! Did you edit the template code? Make sure the template code (ie. "var cld = cloudinary.[code]") is left in place.`);
-                }
-            // doc-player must be present
-            else if (!
-              (scriptText.indexOf('doc-player') > 0)
-            ) {
-                helper.fail(`The cld.videoPlayer needs to point to the video html element 'doc-player'!`);
-            }
-            // Width must be 600
-            else if (!
-                (scriptText.indexOf(').width(600)') > 0)
-            ) {
-                helper.fail(`The video player's width needs to be 600 pixels! 
-                `);
-            // Demoplayer must source TwilioQuest/Flower
-            } else if (!
-                (scriptText.indexOf("TwilioQuest/Flower") > 0 && scriptText.indexOf("demoplayer.source(") > 0)
-            ) {
-                helper.fail(`Something's not quite right with the demoplayer.source function! Make sure you're using the TwilioQuest/Flower video!
-                `);
-            // Transformation needs to be defined at least once
-            } else if (!
-              (scriptText.indexOf("transformation") > 0)
-            ) {
-                helper.fail(`Make sure you're using at least one transformation by using the {transformation:{ }} argument under demoplayer.source!
-                `);
-            } else {
-                helper.success(`Yay! You embedded a Cloudinary video player on a webpage!`);
-                //`+xmlResponseText.getElementById("video-code").text+`
-                //`)
-            }
-          } catch (e) {
-            console.log(e);
-            helper.fail(`
-              There was an error that the code parser couldn't handle. Double-check your code and try again.
-            `);
-          }
-        });
+        if (iframeElement.width !== "600") {
+          return helper.fail(
+            `The width of the video player should be 600 pixels wide. Set it in the Player Size section under the Customization tab!`
+          );
+        }
+
+        if (iframeElement.src.indexOf("https://player.cloudinary.com/embed/") < 0) {
+          return helper.fail(
+            `Expected the iframe src parameter to include 
+            "https://player.cloudinary.com
+            /embed/"`
+          );
+        }
+
+        if (iframeElement.src.indexOf("public_id=TwilioQuest%2FFlower&cloud_name=") < 0) {
+          return helper.fail(
+            `Expected the iframe src parameter to include the Flower video. Did you set your cloud name and flower video correctly?`
+          );
+        }
+
+        if (iframeElement.src.indexOf("player%5Bwidth%5D=600") < 0) {
+          return helper.fail(
+            `Expected the iframe src parameter to include "player%5Bwidth%5D=600" and the other default URL parameters.`
+          );
+        }
+
+        return helper.success("You did it! You played the Flower video in an embedded Cloudinary video player!");
       } catch (e) {
         console.log(e);
         helper.fail(`
@@ -100,18 +61,4 @@ module.exports = async function (helper) {
           `+String(e)+`
         `);
       }
-
-    /*let grader = new Grader(helper, {
-    }, function pass() {
-        helper.success(grader.getSuccessMessage() + `
-            Nice!
-        `);
-        //browser.display(
-        //    ` 
-        //    `
-        //);
-    });*/
-
-    //grader.grade();
-
 };
