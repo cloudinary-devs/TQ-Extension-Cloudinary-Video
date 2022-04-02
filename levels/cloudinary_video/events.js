@@ -273,6 +273,10 @@ module.exports = function (event, world) {
                         break;
                     case "cloudinarytrees":
                         interactableMessage = "Clouds grow on trees...?";
+                        break;
+                    case "tocloudinaryvault":
+                        interactableMessage = "I need to solve mission 3 first before accessing the vault below.";
+                        break;
                     default:
                         interactableMessage = worldState.interactableState.current;
                         break;
