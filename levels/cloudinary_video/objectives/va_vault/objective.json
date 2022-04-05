@@ -1,0 +1,9 @@
+{
+  "title": "Cloudinary Vault",
+  "description": "View all your previous creations here!",
+  "validation_fields": [
+  ],
+  "rewards": {
+    "xp": 0
+  }
+}

@@ -874,7 +874,7 @@
                         {
                          "name":"mapName",
                          "type":"string",
-                         "value":"m4_annotation"
+                         "value":"vault"
                         }, 
                         {
                          "name":"playerEntryPoint",
@@ -960,6 +960,18 @@
                  "width":0,
                  "x":815.5,
                  "y":507
+                }, 
+                {
+                 "height":0,
+                 "id":205,
+                 "name":"player_entry2",
+                 "point":true,
+                 "rotation":0,
+                 "type":"player",
+                 "visible":true,
+                 "width":0,
+                 "x":801.5,
+                 "y":557
                 }],
          "opacity":0.97,
          "type":"objectgroup",
@@ -1035,7 +1047,7 @@
          "y":0
         }],
  "nextlayerid":50,
- "nextobjectid":205,
+ "nextobjectid":206,
  "orientation":"orthogonal",
  "renderorder":"right-down",
  "tiledversion":"1.7.1",
