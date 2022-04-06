@@ -115,40 +115,27 @@
                  "y":383
                 }, 
                 {
-                 "gid":13130,
-                 "height":32,
-                 "id":134,
-                 "name":"",
-                 "properties":[
-                        {
-                         "name":"interactable",
-                         "type":"bool",
-                         "value":false
-                        }],
-                 "rotation":0,
-                 "type":"",
-                 "visible":true,
-                 "width":32,
-                 "x":216,
-                 "y":408
-                }, 
-                {
                  "gid":13132,
                  "height":32,
                  "id":136,
                  "name":"",
                  "properties":[
                         {
+                         "name":"conversation",
+                         "type":"string",
+                         "value":"m6-mickey"
+                        }, 
+                        {
                          "name":"interactable",
                          "type":"bool",
-                         "value":false
+                         "value":true
                         }],
                  "rotation":0,
                  "type":"",
                  "visible":true,
                  "width":32,
-                 "x":216,
-                 "y":432
+                 "x":268.024977698483,
+                 "y":468.610169491525
                 }, 
                 {
                  "height":19,

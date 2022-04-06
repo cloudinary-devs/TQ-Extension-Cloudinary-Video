@@ -28,7 +28,8 @@ const DEFAULT_MISSION_STATE = {
     interactableState: {
         current: "",
         interactable: false
-    }
+    },
+    isObjectiveArrowVisible: false
 }
 
 console.log('Cloudinary Video Mission Started (event.js loaded)');
@@ -107,7 +108,7 @@ module.exports = function (event, world) {
             //Run the arrow event handler once to set the objective arrows on the map
             objectivesList = getObjectivesListOnMapLoad(world, event, levelJson.objectives);
             console.log(objectivesList);
-            arrowEventHandler(world, event, objectivesList);
+            worldState.isObjectiveArrowVisible = arrowEventHandler(world, event, objectivesList);
 
             //Show map-specific pop-up to show what the mission topic is in an office
             var missionMessage;
@@ -187,7 +188,7 @@ module.exports = function (event, world) {
         case 'objectiveCompleted':
         case 'objectiveCompletedAgain' :
             //Run the arrow event handler
-            arrowEventHandler(world, event, objectivesList);
+            worldState.isObjectiveArrowVisible = arrowEventHandler(world, event, objectivesList);
             break;
         case 'objectiveFailed':
             break;

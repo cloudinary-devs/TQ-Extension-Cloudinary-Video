@@ -7,7 +7,7 @@ conversation(display_name="Mickey")
       statement
         text.
           WOOHOO! I love how Cloudinary lets you set your videos to high quality. 
-          Now let's make it happen right here using the Cloudinary APIs!
+          I'm curious to see if the audio is also enhanced to high quality as well!
       responses
     when "i-need-more-help"
       statement
@@ -22,9 +22,9 @@ conversation(display_name="Mickey")
     when "low_quality"
       statement 
         text.
-          ... well that q_10 flower video is also HIGH QUALITY! It's all about the content, 
-          not about the resolution. Now anyone on any connection can view our beautiful flower
-          videos! Isn't that great quality time?
+          ... I don't know what you're talking about! All I see are cats on the screen.
+          Maybe you're thinking about those dogs in the distance. Speaking of which, I better 
+          check up on Branch in the main lobby!
     default
       if isObjectiveArrowVisible
         statement#default
@@ -37,12 +37,12 @@ conversation(display_name="Mickey")
         statement#done
         responses 
           response#low_quality.
-            But what about that low quality flower?
+            But do cats really sound like dogs?
   statements
     statement#done
       text.
-        YEAHHHHH! Look at all of that quality! It's so high!
+        YEAHHHHH! Look at all of that quality! And it comes with audio too!
     statement#default
       text.
-        Thanks for your help once again! 
-        I can't wait to see this high quality work!
+        Thanks for your help yet again! 
+        I can't wait to see this high quality audio work!

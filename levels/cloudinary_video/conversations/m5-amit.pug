@@ -7,12 +7,27 @@ conversation(display_name="Amit")
           to access our in-depth Cloudinary documentation. 
           That should help you get the job done! 
       responses
+    when "cats-and-dogs"
+      statement
+        text.
+          The answer is yes! See your video for itself! I think you see what I see.
     default
-      statement#default
-      responses 
-        response#i-need-some-help.
-          I need some help!
+      if isObjectiveArrowVisible
+        statement#default
+        responses 
+          response#i-need-some-help.
+            I need some help!
+      else
+        statement#done
+        responses
+          response#cats-and-dogs.
+            Is the dog a cat?
+          response#cats-and-dogs.
+            Is the cat a dog?       
   statements
+    statement#done
+      text.
+        Very nice work! That's quite a collection of videos you got there. Makes me want to adopt a dog.
     statement#default
       text.
         Don't forget there are 4 objectives to complete in this office.

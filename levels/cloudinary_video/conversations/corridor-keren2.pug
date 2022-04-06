@@ -1,0 +1,19 @@
+conversation(display_name="Keren")
+  case lastResponse 
+    when "how-to-help"
+      statement 
+        text.
+          Let's wrap up our Cloudinary adventure with some video embeds. Care to come along? Join me in the office to my right. 
+      responses
+    default
+      statement#default
+      responses
+        response#how-to-help.
+          This was a blast!
+        response#how-to-help.
+          It was no big deal!
+
+  statements
+    statement#default
+      text.
+        Congratulations on making it this far!   

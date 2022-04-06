@@ -7,13 +7,24 @@ conversation(display_name="Kevin")
           Maybe you should hang out in the pool if you get tired of the stars.
           By the way, do you see a cloud out there?
       responses
+    when "kevin-that-you"
+      statement
+        text.
+          Yeah! It's me, Kevin.
+          I think I see Keren from all the way over here. 
+          Can you tell Keren that I said hi?
+      responses
+        response#what-do-i-do-now.
+          What do I do now?
     default
       statement#default
-      responses 
+      responses
+        response#kevin-that-you.
+          Kevin! Is that you?
         response#what-do-i-do-now.
-          What work is coming?
+          That's it? There's nothing else to do?
   statements
     statement#default
       text.
-        Well, nothing more to do, but look out the window until new work arrives!
+        You made it to the end! I'm so proud of you!
       

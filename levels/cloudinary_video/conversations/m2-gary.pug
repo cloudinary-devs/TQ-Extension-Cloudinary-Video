@@ -1,3 +1,6 @@
+- var worldState = getState('com.cloudinary.cloudinary_video_adventures');
+- var isObjectiveArrowVisible = worldState.isObjectiveArrowVisible;
+
 conversation(display_name="Gary")
   case lastResponse
     when "how_to_help"
@@ -16,14 +19,31 @@ conversation(display_name="Gary")
           Once you've successfully completed the terminal, you can go to the next one 
           that the arrow is pointing to. I know you can do it!<br><br>Let's get started 
           with the first objective on the big terminal on the left.  
+    when "name_the_flower"
+      statement
+        text.
+          Gary, of course. I name all the flowers after myself!
+          ... wait, why isn't my flower video working after I named it Gary?
+          
+
     default
-      statement#default
-      responses
-        response#how_to_help.
-          How do I solve the objectives?
+      if isObjectiveArrowVisible
+        statement#default
+        responses
+          response#how_to_help.
+            How do I solve the objectives?
+      else
+        statement#done
+        responses
+          response#name_the_flower.
+            What did you name your flower?
+
   
   
   statements
+    statement#done
+      text.
+        Wow! Nice work uploading those flower videos! They sure look great, don't they?
     statement#default
       text.
         Welcome to our office! 

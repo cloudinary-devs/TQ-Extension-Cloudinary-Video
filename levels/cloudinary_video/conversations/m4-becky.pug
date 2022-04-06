@@ -1,3 +1,6 @@
+- var worldState = getState('com.cloudinary.cloudinary_video_adventures');
+- var isObjectiveArrowVisible = worldState.isObjectiveArrowVisible;
+
 conversation(display_name="Becky")
   case lastResponse 
     when "i-need-some-help"
@@ -7,12 +10,25 @@ conversation(display_name="Becky")
           to access our in-depth Cloudinary documentation. 
           That should help you get the job done! 
       responses
+    when "podcast"
+      statement
+        text.
+          Glad you asked! You can go to <a href="https://cloudinary.com/podcasts" target="_blank">this website</a> to listen along!
     default 
-      statement#default
-      responses
-        response#i-need-some-help.
-          I need some help!
+      if isObjectiveArrowVisible
+        statement#default
+        responses
+          response#i-need-some-help.
+            I need some help!
+      else
+        statement#done
+        responses
+          response#podcast.
+            Where can I listen to your podcast?
   statements
+    statement#done
+      text.
+        Wow! You're all done. I just finished recording the Cloudinary MXMatters Podcast.
     statement#default
       text.
         There are two tasks to do. Good luck!

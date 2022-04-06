@@ -357,8 +357,8 @@
                  "type":"player",
                  "visible":true,
                  "width":0,
-                 "x":883.5,
-                 "y":351.5
+                 "x":1838.5,
+                 "y":263.5
                 }, 
                 {
                  "gid":11694,
@@ -490,24 +490,46 @@
                  "height":32,
                  "id":139,
                  "name":"",
+                 "properties":[
+                        {
+                         "name":"conversation",
+                         "type":"string",
+                         "value":"corridor-mickey2"
+                        }],
                  "rotation":0,
                  "type":"",
                  "visible":true,
                  "width":32,
-                 "x":1414.33333333333,
-                 "y":32
+                 "x":1321.33333333333,
+                 "y":231
                 }, 
                 {
                  "gid":11703,
                  "height":32,
                  "id":140,
                  "name":"",
+                 "properties":[
+                        {
+                         "name":"conversation",
+                         "type":"string",
+                         "value":"corridor-keren2"
+                        }, 
+                        {
+                         "name":"conversationAvatar",
+                         "type":"string",
+                         "value":"keren.png"
+                        }, 
+                        {
+                         "name":"spritesheet",
+                         "type":"string",
+                         "value":"mica"
+                        }],
                  "rotation":0,
                  "type":"",
                  "visible":true,
                  "width":32,
-                 "x":1553.66666666667,
-                 "y":35.333333333333
+                 "x":1539.66666666667,
+                 "y":234.333333333333
                 }, 
                 {
                  "gid":11699,
@@ -688,8 +710,8 @@
                  "type":"",
                  "visible":true,
                  "width":24,
-                 "x":1320,
-                 "y":240
+                 "x":1416,
+                 "y":238
                 }, 
                 {
                  "height":0,
