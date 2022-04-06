@@ -14,8 +14,8 @@ module.exports = async function (helper) {
             validExample: 'https://res.cloudinary.com/dwbnpn4z6/video/upload/l_video:TwilioQuest:dog.wav/fl_layer_apply/v1638549969/demo/kitten_fighting.mp4',
             mustAppear: ['demo/kitten_fighting.mp4','https:','res.cloudinary.com','video/upload','l_video:TwilioQuest:dog.wav','fl_layer_apply'],
             mustAppearInOrder: [
-                ['upload', 'l_'],
-                ['l_','fl_layer_apply']
+                ['upload', '/l_'],
+                ['/l_','/fl_layer_apply']
             ]
         }        
     }, function pass() {

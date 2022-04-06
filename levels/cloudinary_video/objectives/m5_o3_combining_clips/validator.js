@@ -12,7 +12,7 @@ module.exports = async function (helper) {
             mustAppear: ['demo/dog.mp4']
         }, answer3: {
             validExample: `https://res.cloudinary.com/joelsimpson/video/upload/c_fill,h_200,w_300/fl_splice,l_video:demo:kitten_fighting.mp4/c_fill,h_200,w_300/fl_layer_apply/fl_splice,l_video:TwilioQuest:Flower.mp4/c_fill,h_200,w_300/fl_layer_apply/demo/dog.mp4`,
-            mustAppear: [],
+            mustAppear: ['c_fill','h_200','w_300'],
             mustAppearInOrder: [
                 ['demo:kitten_fighting', 'TwilioQuest:Flower'],
                 ['TwilioQuest:Flower', 'demo/dog']

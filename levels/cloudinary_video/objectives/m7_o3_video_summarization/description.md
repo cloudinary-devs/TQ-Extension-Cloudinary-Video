@@ -34,9 +34,9 @@ https://res.cloudinary.com/<cloud_name>/video/upload/demo/docs/hotel.mp4
 Post this link as your first answer to this objective.
 
 2. Now, take that video and use the `preview` parameter to get the video summarization with the following properties:
-  - The duration should be 10 seconds long.
+  - The duration should be 25.0 seconds long.
   - There should be 3 segments max.
-  - The minimum segment duration should be autoset based on video duration (hint: leave it blank).
+  - The minimum segment duration is 4.0 seconds.
 
 3. Paste the link as your second answer to this objective.
 

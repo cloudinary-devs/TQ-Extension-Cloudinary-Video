@@ -9,8 +9,12 @@ module.exports = async function (helper) {
             mustAppear: ['c_scale', 'w_400', 'l_video:TwilioQuest:Flower', 'w_150', 'r_max', 'x_10', 'y_10', 'g_south_west', 'eo_10', '/samples/sea-turtle.mp4'],
             mustAppearInOrder: [
                 ['/c_scale', '/l_'],
-                ['/c_scale', 'w_'],
-                ['w_', '/l_']
+                ['/c_scale', ',w_'],
+                ['/l_', ',r_'],
+                ['/l_', ',x_'],
+                ['/l_', ',y_'],
+                ['/l_', ',g_'],
+                ['/l_', ',eo_']
             ]
         }
     }, function pass() {

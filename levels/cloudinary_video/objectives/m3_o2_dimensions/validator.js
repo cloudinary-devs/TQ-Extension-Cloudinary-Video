@@ -6,15 +6,28 @@ module.exports = async function (helper) {
     let grader = new Grader(helper, {
         answer1: {
             validExample: 'https://res.cloudinary.com/joelsimpson/video/upload/c_scale,w_150/TwilioQuest/Flower.mp4',
-            mustAppear: ['c_scale', 'w_150/']
+            mustAppear: ['c_scale', 'w_150/'],
+            mustAppearInOrder: [
+                ['/c_scale', ',w_150']
+            ]
         },
         answer2: {
             validExample: 'https://res.cloudinary.com/joelsimpson/video/upload/c_fill,w_300,h_300/TwilioQuest/Flower.mp4',
-            mustAppear: ['c_fill', 'w_300','h_300']
+            mustAppear: ['c_fill', 'w_300','h_300'],
+            mustAppearInOrder: [
+                ['/c_fill', ',w_300'],
+                ['/c_fill', ',h_300']
+            ]
         },
         answer3: {
             validExample: 'https://res.cloudinary.com/joelsimpson/video/upload/c_crop,h_100,w_350,x_230,y_110/TwilioQuest/Flower.mp4',
-            mustAppear: ['c_crop', 'h_100', 'w_350', 'x_230', 'y_110']
+            mustAppear: ['c_crop', 'h_100', 'w_350', 'x_230', 'y_110'],
+            mustAppearInOrder: [
+                ['/c_crop', ',h_100'],
+                ['/c_crop', ',w_350'],
+                ['/c_crop', ',x_230'],
+                ['/c_crop', ',y_110']
+            ]
         }
     }, function pass() {
         helper.success(grader.getSuccessMessage() + `
