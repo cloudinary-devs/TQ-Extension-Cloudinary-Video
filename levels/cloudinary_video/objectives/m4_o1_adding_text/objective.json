@@ -1,6 +1,6 @@
 {
   "title": "Adding Text To Videos",
-  "description": "Add an attribution tag to the Flower Video ",
+  "description": "Add an attribution tag to the Flower video using Cloudinary!",
   "validation_fields": [
     {
       "name": "answer1",

@@ -1,6 +1,6 @@
 {
   "title": "Audio Extraction",
-  "description": "Replace the audio of the cat video with the dog video!",
+  "description": "Replace the audio of the cat video with the dog video using Cloudinary!",
   "validation_fields": [
     {
       "name": "answer1",

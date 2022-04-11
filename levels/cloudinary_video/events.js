@@ -151,7 +151,7 @@ module.exports = function (event, world) {
             openAllGatesDebugFlag = false;//world.__internals.level.player.keys.down.isDown;
 
             // Handle mission complete
-            const officesKeys = ["m2_","m3_","m4_","m5_", "m6_"];
+            const officesKeys = ["m2_","m3_","m4_","m5_", "m6_", "m7_"];
             officesKeys.forEach(function (key) {
                     if (
                         (openAllGatesDebugFlag) || 
@@ -278,6 +278,8 @@ module.exports = function (event, world) {
                     case "tocloudinaryvault":
                         interactableMessage = "I need to solve mission 3 first before accessing the vault below.";
                         break;
+                    case "secretcomputer":
+                        interactableMessage = "Woah, this computer has all the demo assets I need! I was expecting a bigger secret, not gonna lie..."
                     default:
                         interactableMessage = worldState.interactableState.current;
                         break;

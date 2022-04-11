@@ -1,6 +1,6 @@
 {
   "title": "Volume Leveling",
-  "description": "Reduce the volume on a video that's too loud!",
+  "description": "Reduce the volume on a video that's too loud using Cloudinary!",
   "validation_fields": [
     {
       "name": "answer1",

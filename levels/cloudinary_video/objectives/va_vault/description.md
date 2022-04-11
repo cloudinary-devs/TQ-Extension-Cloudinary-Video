@@ -8,6 +8,7 @@ path.resolve(context.extensions.directory,
 const levelJson = require(
 path.resolve(context.extensions.directory,
 'TQ-Extension-Cloudinary-Video/levels/cloudinary_video/level.json'));
+var levelObjectiveJson;
 
 let resultString = "";
 let answersValue = "";
@@ -20,11 +21,16 @@ levelJson.objectives.forEach(objective => {
     ) {
       //continue;
     } else {
-      resultString += "<hr><h2>"+objective+"</h2>";
+      levelObjectiveJson = require(path.resolve(context.extensions.directory,'TQ-Extension-Cloudinary-Video/levels/cloudinary_video/objectives/'+objective+'/objective.json'));
+      resultString += "<hr><h2>"+levelObjectiveJson.title+"</h2><p>"+levelObjectiveJson.description+"</p>";
       answersValue = state.getAnswers(objective).value();
       for (const key in answersValue) {
         resultString += "<pre><code>" + answersValue[key] + "</code></pre>";
-        resultString += `<button onclick='window.CloudinaryBrowser.showUrlExplorer("`+answersValue[key]+`");'>Load URL in Cloudinary Explorer</button><br>`
+        if (answersValue[key].indexOf("res.cloudinary.com") >= 0) {
+          resultString += `<button onclick='window.CloudinaryBrowser.showUrlExplorer("`+answersValue[key]+`");'>Load URL in Cloudinary Explorer</button><br>`;
+        } else {
+          resultString += "<br/>";
+        }
       }
     }
 });
