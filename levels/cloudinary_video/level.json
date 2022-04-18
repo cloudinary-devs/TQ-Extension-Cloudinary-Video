@@ -1,6 +1,6 @@
 {
   "title": "Cloudinary Video Adventures",
-  "description": "An adventure into cloudinary video capabilities",
+  "description": "Come aboard the Cloudinary Ship as you explore the technological advances of video!",
   "events": "cloudinary_video/events.js",
   "mission_icon": "cloudinary_icon.png",
   "is_mission": true,
@@ -14,11 +14,14 @@
       "direction": "rightToLeft"
     }
   },
+  "navMap": {
+    "x": 30,
+    "y": 75,
+    "sprite": "nav_map/CloudinaryIcon.png"
+  },
   "flavorTextOverrides": {
   },
   "objectives": [
-    "co_turtle_facts",
-    "va_vault",
     "m1_o2_sign_up", "m1_o3_resources",
     "m2_o1_uploading", "m2_o2_managing", "m2_o3_urls",
     "m3_o1_quality_and_format","m3_o2_dimensions",

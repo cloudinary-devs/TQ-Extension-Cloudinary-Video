@@ -8,6 +8,8 @@ const setHackFormDefaults = require('../../lib/hackFormDefaultValues');
 const levelJson = require("./level.json");
 const { getObjectivesListOnMapLoad, arrowEventHandler, areMissionObjectivesComplete } = require("../../lib/objectiveEventHandler");
 const { viewpointHandler } = require("../../lib/viewpointHandler"); 
+const updateQuestLogWhenComplete = require("../../lib/updateQuestLogWhenComplete");
+const packageInfo = require("../../package.json");
 
 var objectivesList;
 
@@ -16,20 +18,12 @@ const DEFAULT_MISSION_STATE = {
     finishedInteractingWithKeren: false,
     interactedWithFredrick: false,
     interactedWithGaryInOffice: false,
-    missionsCompleted: {
-        m2_complete: false,
-        m3_complete: false,
-        m4_complete: false,
-        m5_complete: false,
-        m6_complete: false,
-        m7_complete: false
-        //skip: false // open all gates debug flag
-    },
     interactableState: {
         current: "",
         interactable: false
     },
-    isObjectiveArrowVisible: false
+    isObjectiveArrowVisible: false,
+    openAllGatesDebugFlag: false,
 }
 
 console.log('Cloudinary Video Mission Started (event.js loaded)');
@@ -46,7 +40,7 @@ module.exports = function (event, world) {
      * Some dev mode stuff
      */
     //if (process.env.USER === 'jsimpson') { //replace with your username or another dev mode flag
-    if (true) { // Debug mode on
+    if (false) { // Debug mode on
         if (event.name === 'levelDidLoad') {
             //Set javascript sources to be reloaded instead of cached
             window.reloadExternalModules = true;
@@ -143,12 +137,10 @@ module.exports = function (event, world) {
             }
             !missionMessage ? "" : world.showNotification(missionMessage, 500);
            
-            var openAllGatesDebugFlag;
             console.log(world.__internals.level.player.keys);
             
-            // Debug: if you hold the ctrl key while walking through the door,
-            //        trigger the down key
-            openAllGatesDebugFlag = false;//world.__internals.level.player.keys.down.isDown;
+            // Debug: open all gates handled by areMissionObjectivesComplete
+            openAllGatesDebugFlag = worldState.openAllGatesDebugFlag;
 
             // Handle mission complete
             const officesKeys = ["m2_","m3_","m4_","m5_", "m6_", "m7_"];
@@ -279,7 +271,12 @@ module.exports = function (event, world) {
                         interactableMessage = "I need to solve mission 3 first before accessing the vault below.";
                         break;
                     case "secretcomputer":
-                        interactableMessage = "Woah, this computer has all the demo assets I need! I was expecting a bigger secret, not gonna lie..."
+                        // Special case: reload current map
+                        interactableMessage = "Woah- clicking this button did something on the ship that I can't quite pinpoint...";
+                        world.showNotification(interactableMessage, "0");
+                        worldState.openAllGatesDebugFlag = true;
+                        world.warp("cloudinary_video", "player_entry_secret", "default");
+                        break;
                     default:
                         interactableMessage = worldState.interactableState.current;
                         break;
@@ -294,6 +291,16 @@ module.exports = function (event, world) {
         default:
             console.warn(`Cloudinary received unknown event named "${event.name}"`,);
     }
+
+    updateQuestLogWhenComplete({
+        notification:
+        'Yeah! I\'ve completed everything in the <span class="highlight">Cloudinary Video Adventures</span> level!',
+        log: "I've completed everything in the Cloudinary Video Adventures challenge!",
+        event,
+        world,
+        worldStateKey: "com.cloudinary.cloudinary_video_adventures",
+        version: packageInfo.version,
+    });
 
     world.setState("com.cloudinary.cloudinary_video_adventures", worldState);
 
