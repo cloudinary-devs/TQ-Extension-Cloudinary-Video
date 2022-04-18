@@ -11,7 +11,7 @@ _r__ is the general transformation parameter that is used to round corners of th
 ## Radius 
 Use the `r_` parameter to set a bordered radius.
 
-For this objective, add the `r_` parameter to the c_scale parameter and separate them with commas.
+For this objective, add the `r_` parameter to the c_scale parameter and separate them with commas. For example, to set a radius of size 50px, use `r_50`. If you want to use to the maximum radius, rather than put a number, use `r_max` instead.
 
 Example:
 ~~~text

@@ -14,7 +14,7 @@ This content is a subset of content from the completely free [Cloudinary Academy
 
 Just like the _l_text_ layers that we added in the last objective, we can add images using the root layer _l\__ property and appending the public name of an image from our account. 
 
-See [Adding Image Overlays](https://cloudinary.com/documentation/video_layers?utm_source=twilio&utm_medium=event&utm_campaign=cloudinary-twilioquest-2021#image_overlays) and pay careful attention to the **Important** note. Since we are using an image from our TwilioQuest folder, we'll need to use the ":" notation like `.../l_twilioquest:cloudinary_icon,.../`.
+See [Adding Image Overlays](https://cloudinary.com/documentation/video_layers?utm_source=twilio&utm_medium=event&utm_campaign=cloudinary-twilioquest-2021#image_overlays) and pay careful attention to the **Important** note. Since we are using an image from our TwilioQuest folder, we'll need to use the ":" notation like `.../l_TwilioQuest:cloudinary_icon,.../`.
 
 Here is an example of overlaying an image on top of another video:
 ~~~text

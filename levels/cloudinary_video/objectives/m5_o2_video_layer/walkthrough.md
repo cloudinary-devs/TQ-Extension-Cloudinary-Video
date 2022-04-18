@@ -9,7 +9,7 @@ Sections related to this mission/objective:
 ### Detailed Instructions
 Just like the _l_text_ layers that we added in the last objective, we can add images using the root layer _l\_video:_ property and appending the public name of an image from our account. 
 
-For complete information, see [Adding Image Overlays](https://cloudinary.com/documentation/video_manipulation_and_delivery?utm_source=twilio&utm_medium=event&utm_campaign=cloudinary-twilioquest-2021#adding_image_overlays) and pay careful attention to the Important note. Since we are using an image from our TwilioQuest folder, we'll need to use the ":" notation like `.../l_video:TwilioQuest:Flower,.../`.
+For complete information, see [Adding Video Overlays](https://cloudinary.com/documentation/video_layers?utm_source=twilio&utm_medium=event&utm_campaign=cloudinary-twilioquest-2021#video_overlays). Since we are using a video from our TwilioQuest folder, we'll need to use the ":" notation like `.../l_video:TwilioQuest:Flower,.../`.
 
 The start/end time, positioning, and radius are parameters you learned in previous mission. Do you remember them?
 
