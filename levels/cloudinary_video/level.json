@@ -5,7 +5,7 @@
   "mission_icon": "cloudinary_icon.png",
   "is_mission": true,
   "priority": 1,
-  "backgroundMusic": "hackertheme_104771b",
+  "backgroundMusic": "takeabow_1615732b",
   "backgroundEffect": {
     "key": "starfield",
     "options": {
@@ -13,11 +13,6 @@
       "starCount": 100,
       "direction": "rightToLeft"
     }
-  },
-  "navMap": {
-    "x": 30,
-    "y": 75,
-    "sprite": "nav_map/CloudinaryIcon.png"
   },
   "flavorTextOverrides": {
   },

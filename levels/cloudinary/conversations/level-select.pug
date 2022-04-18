@@ -1,0 +1,28 @@
+- var worldState = getState('com.cloudinary.cloudinary');
+- var levelSelected = worldState.levelSelected;
+- var level = worldState.level;
+
+conversation(display_name="Cedric")
+  case lastResponse
+    when "level1"
+      - levelSelected = true;
+      - level = "cloudinary_video"
+      statement
+        text.
+          Alright! Let's take you on a video adventure on the Cloudinary ship!
+    default
+      statement#default
+      responses
+        response#level1.
+          Cloudinary Video Adventures
+
+  statements
+    statement#default
+      text.
+        Please select a #[span.highlight Cloudinary level] below, or click "end conversation" to go back to the Fog Owl.
+      speech.
+        Please select a #[break(strength="medium")] Cloudinary level!
+
+- worldState.levelSelected = levelSelected;
+- worldState.level = level;
+- setState('com.cloudinary.cloudinary', worldState);
