@@ -1,0 +1,20 @@
+conversation(display_name="Gary")
+    case lastResponse
+        when "ask-more"
+            statement#asked-more
+            responses
+        default
+            statement#default
+            responses
+                response#ask-more.
+                    Did you ever find Gary the flower?
+
+    statements
+        statement#default
+            text.
+                Hey there! Nice to see you. I'm glad you got to the end! Those flower videos 
+                look fabulous!
+        statement#asked-more
+            text.
+                I found out that I renamed Gary the flower in the Media Library but not in my 
+                URL! Now that it's fixed, the whole world can view Gary the flower!
