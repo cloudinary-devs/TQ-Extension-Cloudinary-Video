@@ -1,6 +1,6 @@
 {
   "title": "Cloudinary Video Ship",
-  "description": "Come aboard the Cloudinary Ship as you explore the technological advances of video!",
+  "description": "Come aboard the Cloudinary Ship as you explore the Cloudinary Video API!",
   "events": "cloudinary_video/events.js",
   "mission_icon": "cloudinary_icon.png",
   "is_mission": true,

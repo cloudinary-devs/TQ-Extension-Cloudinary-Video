@@ -40,7 +40,7 @@ module.exports = function (event, world) {
      * Some dev mode stuff
      */
     //if (process.env.USER === 'jsimpson') { //replace with your username or another dev mode flag
-    if (false) { // Debug mode on
+    /*if (false) { // Debug mode on
         if (event.name === 'levelDidLoad') {
             //Set javascript sources to be reloaded instead of cached
             window.reloadExternalModules = true;
@@ -56,7 +56,7 @@ module.exports = function (event, world) {
         }
         //log all events in dev mode
         console.debug({event, world});
-    }
+    }*/
 
     
 
@@ -274,7 +274,7 @@ module.exports = function (event, world) {
                         // Special case: reload current map
                         interactableMessage = "Woah- clicking this button did something on the ship that I can't quite pinpoint...";
                         world.showNotification(interactableMessage, "0");
-                        worldState.openAllGatesDebugFlag = true;
+                        worldState.openAllGatesDebugFlag = !worldState.openAllGatesDebugFlag;
                         world.warp("cloudinary_video", "player_entry_secret", "default");
                         break;
                     default:
