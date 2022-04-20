@@ -14,11 +14,6 @@
       "direction": "rightToLeft"
     }
   },
-  "navMap": {
-    "x": 30,
-    "y": 75,
-    "sprite": "nav_map/CloudinaryIcon.png"
-  },
   "flavorTextOverrides": {
   },
   "objectives": [

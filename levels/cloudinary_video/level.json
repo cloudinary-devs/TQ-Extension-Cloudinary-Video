@@ -1,5 +1,5 @@
 {
-  "title": "Cloudinary Video Adventures",
+  "title": "Cloudinary Video Ship",
   "description": "Come aboard the Cloudinary Ship as you explore the technological advances of video!",
   "events": "cloudinary_video/events.js",
   "mission_icon": "cloudinary_icon.png",
@@ -13,6 +13,11 @@
       "starCount": 100,
       "direction": "rightToLeft"
     }
+  },
+  "navMap": {
+    "x": 30,
+    "y": 75,
+    "sprite": "nav_map/CloudinaryIcon.png"
   },
   "flavorTextOverrides": {
   },

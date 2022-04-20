@@ -1,15 +1,21 @@
 - var worldState = getState('com.cloudinary.cloudinary');
 - var levelSelected = worldState.levelSelected;
 - var level = worldState.level;
+- const path = require('path');
 
 conversation(display_name="Cedric")
   case lastResponse
     when "level1"
       - levelSelected = true;
       - level = "cloudinary_video"
-      statement
-        text.
-          Alright! Let's take you on a video adventure on the Cloudinary ship!
+      if (require(path.resolve(context.extensions.directory,'TQ-Extension-Cloudinary-Video/levels/cloudinary_video/level.json')))
+        statement
+          text.
+            Alright! Let's take you on a video adventure on the Cloudinary ship!
+      else
+        statement
+          text.
+            Rip
     default
       statement#default
       responses
