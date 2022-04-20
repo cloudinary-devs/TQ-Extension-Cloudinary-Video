@@ -1,0 +1,48 @@
+- var worldState = getState('com.cloudinary.cloudinary_video_adventures');
+- var isObjectiveArrowVisible = worldState.isObjectiveArrowVisible;
+
+conversation(display_name="Mickey")
+  case lastResponse
+    when "great"
+      statement
+        text.
+          WOOHOO! I love how Cloudinary lets you set your videos to high quality. 
+          I'm curious to see if the audio is also enhanced to high quality as well!
+      responses
+    when "i-need-more-help"
+      statement
+        text.
+          Oh, I see you need some help with these quality missions. 
+          I suggest using the <strong>Help</strong> tab in the objective modules 
+          to access our in-depth Cloudinary documentation. 
+          That should help you get the job done!
+      responses
+        response#great.
+          Sounds like a quality plan!
+    when "low_quality"
+      statement 
+        text.
+          ... I don't know what you're talking about! All I see are cats on the screen.
+          Maybe you're thinking about those dogs in the distance. Speaking of which, I better 
+          check up on Branch in the main lobby!
+    default
+      if isObjectiveArrowVisible
+        statement#default
+        responses 
+          response#i-need-more-help.
+            I need some help!
+          response#great.
+            Yeah! I'm high quality!
+      else
+        statement#done
+        responses 
+          response#low_quality.
+            But do cats really sound like dogs?
+  statements
+    statement#done
+      text.
+        YEAHHHHH! Look at all of that quality! And it comes with audio too!
+    statement#default
+      text.
+        Thanks for your help yet again! 
+        I can't wait to see this high quality audio work!

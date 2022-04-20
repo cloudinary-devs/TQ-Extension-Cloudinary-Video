@@ -17,7 +17,9 @@ module.exports = async function (helper) {
             mustAppear: ['c_scale', 'w_0.5', '/c_scale,w_0.5/']
         }
     }, function pass() {
-        helper.success(grader.getSuccessMessage());
+        helper.success(grader.getSuccessMessage() + `
+        Great work! You scaled the flower video to half its original size by modifying the URL!
+        `);
         browser.display(`
         <div>
             <h1>Success!</h1>

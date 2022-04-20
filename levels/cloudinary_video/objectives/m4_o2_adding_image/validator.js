@@ -9,14 +9,16 @@ module.exports = async function (helper) {
             mustAppear: ['c_scale', 'w_400', 'l_twilioquest:cloudinary_icon', 'g_south_west', 'o_50', 'x_10', 'y_10', 'eo_10', 'TwilioQuest/Flower.mp4'],
             mustAppearInOrder: [
                 ['/c_scale', '/l_'],
-                ['l_', 'x_'],
-                ['l_', 'y_'],
-                ['l_', 'o_'],
-                ['l_', 'eo_'],
+                ['l_', ',x_'],
+                ['l_', ',y_'],
+                ['l_', ',o_'],
+                ['l_', ',eo_'],
             ]
         }
     }, function pass() {
-        helper.success(grader.getSuccessMessage());
+        helper.success(grader.getSuccessMessage() + `
+            Great work! You added the Cloudinary logo on the Flower video!
+        `);
         browser.display(
             `
             <div>

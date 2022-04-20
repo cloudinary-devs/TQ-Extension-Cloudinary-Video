@@ -1,0 +1,20 @@
+conversation(display_name="Mickey")
+    case lastResponse
+        when "ask-more"
+            statement#asked-more
+            responses
+        default
+            statement#default
+            responses
+                response#ask-more.
+                    Do you see anything pixelated around here?
+
+    statements
+        statement#default
+            text.
+                Yay! You did it! Now we can have some QUALITEA TIME! 
+                There's nothing quite pixelated in your knowledge on quality videos!
+        statement#asked-more
+            text.
+                As I said, your knowledge is high quality. Imagine seeing anything pixelated
+                around here in the Cloudinary ship! ... unless you set my flower video to q_10 again?!

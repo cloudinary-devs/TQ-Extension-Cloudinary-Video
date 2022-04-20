@@ -10,11 +10,14 @@ module.exports = async function (helper) {
             validExample: 'https://res.cloudinary.com/joelsimpson/video/upload/c_scale,w_400/l_text:roboto_30_bold:@DeloitteNick,g_south_east/v1627081950/TwilioQuest/Flower.mp4',
             mustAppear: ['/c_scale', 'w_400', 'l_text', 'roboto', '30', 'bold', ':@DeloitteNick', 'g_south_east', 'Flower.mp4'],
             mustAppearInOrder: [
-                ['/c_scale', '/l_text']
+                ['/c_scale', '/l_text'],
+                ['/l_text', ',g_south_east']
             ]
         }
     }, function pass() {
-        helper.success(grader.getSuccessMessage());
+        helper.success(grader.getSuccessMessage() + `
+            Awesome! You've added attribution text to the Flower video using Cloudinary!
+        `);
         browser.display(
             `
             <div>

@@ -8,10 +8,9 @@
 </ul>
 </div>
 
-******************
 
-Welcome to the Cloudinary Ship! Before you can get started you will need to generate your Staff Badge to gain access to our ship.
+Welcome to the **Cloudinary Ship**! We're excited to have you on deck. 
 
-To complete this, you will need to enter your Cloudinary Cloud Name, API Key, and API Secret
+Before you get started, you will need to generate your **Staff Badge** to gain access to our ship. Generate this information by creating an account on [Cloudinary's sign up page](https://cloudinary.com/signup?utm_source=twilio&utm_medium=event&utm_campaign=cloudinary-twilioquest-2021). (If you already have a Cloudinary account, you can skip this step!)
 
-Enter the information into the form on the right and click _HACK_ to verify and save this information.
+After creating an account, you will land on the [Cloudinary Dashboard](https://cloudinary.com/console?utm_source=twilio&utm_medium=event&utm_campaign=cloudinary-twilioquest-2021), our main hub of information we need to validate your Staff Badge. You will find your Cloudinary **Cloud Name**, **API Key**, and **API Secret** in the middle of the screen, in the **Account Details** section. If you don't see it, press "Dashboard" on the top left of the browser window. Enter that information into the form on the right, and click _HACK_ to verify and save this information.

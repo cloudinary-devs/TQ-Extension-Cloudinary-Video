@@ -1,6 +1,6 @@
 {
   "title": "Video Transitions",
-  "description": "Make a video composed of multiple video clips with transitions",
+  "description": "Make a video composed of multiple video clips with transitions using Cloudinary!",
   "validation_fields": [
     {
       "name": "answer1",

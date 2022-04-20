@@ -1,0 +1,20 @@
+conversation(display_name="Cedric")
+    case lastResponse
+        when "ask-more"
+            statement#asked-more
+            responses
+        default
+            statement#default
+            responses
+                response#ask-more.
+                    What's next?
+
+    statements
+        statement#default
+            text.
+                You've made it to the end! Congratulations on finishing the Cloudinary Video Adventures.
+        statement#asked-more
+            text.
+                I suggest talking to your fellow colleagues on the left! They must be very excited for you.
+                Oh, and don't forget to check out your work in the Cloudinary Vault, in the computer right 
+                below me!

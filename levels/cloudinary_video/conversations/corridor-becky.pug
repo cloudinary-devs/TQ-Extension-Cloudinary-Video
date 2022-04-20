@@ -1,10 +1,36 @@
 conversation(display_name="Becky")
-  statement#default
+  case lastResponse 
+    when "yes-i-will-help"
+      statement#great
+      responses
+    when "no-i-wont-help"
+      statement#please
+      responses
+        response#yes-i-will-help.
+          Alright, I'll do it!
+        response#yes-i-will-help.
+          Fine, let's do some overlays!
+    default
+      statement#default
+      responses
+        response#yes-i-will-help.
+          Yes! Let's add some overlays!
+        response#no-i-wont-help.
+          No, I'm not feeling it.
+  
   statements
     statement#default
       text.
-        How are you doing? I'm Becky from the Developer Education team!
-        I'm really excited to meet you. I think we will work really well together.
+        How are you doing? I'm Becky from the Developer Education team!<br><br>
+        
         We could use some help on our team as we are getting spread a bit thin here.
         Do you mind doing some text and image overlays for a video that we need? 
         That would be really awesome!
+    statement#please 
+      text.
+        Oh, come on. Overlays are so much fun! It's much more fun than layovers!
+        But we really do need some help here. Please 
+        help us, just this once?
+    statement#great
+      text.
+          Great! Come in to our office on my right!

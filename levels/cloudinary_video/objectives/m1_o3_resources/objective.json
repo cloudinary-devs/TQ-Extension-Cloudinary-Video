@@ -1,6 +1,6 @@
 {
   "title": "Resources",
-  "description": "Learn about how to find resources, documentation, and our community",
+  "description": "Learn about how to find Cloudinary resources and documentation, and learn more about our community!",
   "validation_fields": [
     {
       "name": "howManySDKs",

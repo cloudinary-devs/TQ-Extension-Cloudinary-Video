@@ -14,25 +14,33 @@ return path.resolve(context.extensions.directory,
     </ul>
 </div>
 
-<b>TIP:</b> Experiment with urls without leaving the game, using the <button onclick='window.CloudinaryBrowser.showUrlExplorer();'>Cloudinary Explorer</button>
+Wow, way to go! You're doing great with the management of our **Flower** video. Our partners will be very excited to use it.
+
+We also want to leave our mark on the video. Why don't we put the Cloudinary logo on it? A picture on a video... sounds like a challenge!
+
+> <b>TIP:</b> Experiment with URLs without leaving the game, using the <button onclick='window.CloudinaryBrowser.showUrlExplorer();'>Cloudinary Explorer</button>
 
 ## Preparation Steps
-1. Upload this file to your account. <br><a download href="<%=getLocalImage('cloudinary_icon.png')%>">![](<%=getLocalImage('cloudinary_icon.png')%>)</a>(click to download)
-2. Put it in the TwilioQuest folder
-3. Maker sure it's named "cloudinary_icon". (strip off any extra unique characters if they have been added to the name.)
+1. Upload this **Cloudinary icon file** to your account in your [Media Library](https://cloudinary.com/console/media_library?utm_source=twilio&utm_medium=event&utm_campaign=cloudinary-twilioquest-2021): <br><a download href="<%=getLocalImage('cloudinary_icon.png')%>"><%=getLocalImage('cloudinary_icon.png')%></a>(click to download)
+2. Put it in the **TwilioQuest** folder in your Media Library.
+3. Rename the uploaded **Cloudinary icon file** to "cloudinary_icon". (strip off any extra unique characters if they have been added to the name.)
 
 
 ## <a name="questions">Questions</a>
 
-Your answers to these questions must use your Flower video.
+Your answers to these questions must use your **Flower** video.
 
-1. <a name="q1"></a>Create a url for the flower video that will show the cloudinary logo in the lower left corner. Enter a url in <a onclick="jQuery('input')[0].focus()">Answer 1</a> that specifies:
-   - Video Sized [hint](https://cloudinary.com/documentation/video_manipulation_and_delivery#scale):
+1. <a name="q1"></a>Create a url for the **Flower** video that will show the **Cloudinary logo** in the lower left corner. Enter a URL in <a onclick="jQuery('input')[0].focus()">Answer 1</a> with the following properties:
+   - Video Size ([hint](https://cloudinary.com/documentation/media_optimizer_transformation_reference?utm_source=twilio&utm_medium=event&utm_campaign=cloudinary-twilioquest-2021#c_scale)): 
      - 400 pixels wide
-   - With Overlay Image
-     - Image is the cloudinary icon image you uploaded as cloudinary_logo
-     - Opacity 50%
-     - Start showing at the beginning of the video and stop at the 10s mark to disappear just before the video fades to black 
-     - Position in the lower left corner
-        - 10 pixels from the bottom edge
-        - 10 pixels from the left edge
+   - Overlay Image
+     - Image: the Cloudinary icon image
+     - Opacity: 50%
+     - Video start time: 0 seconds
+     - Video end time: 10 seconds
+     - Position: 
+      a. bottom left corner
+      b. 10 pixels from the bottom edge
+      c. 10 pixels from the left edge
+
+> Press the _HELP_ button on the top right of this window for more details!

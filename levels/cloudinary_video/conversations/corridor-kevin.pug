@@ -1,6 +1,30 @@
 conversation(display_name="Kevin")
-  statement#default
+  case lastResponse 
+    when "what-do-i-do-now"
+      statement 
+        text.
+          I'm not sure, but the staff is looking forward to a nice long break! 
+          Maybe you should check out the party room straight down from here.
+          By the way, do you see a cloud out there?
+      responses
+    when "kevin-that-you"
+      statement
+        text.
+          Yeah! It's me, Kevin.
+          I think I see Gary from here.
+          He must be having a good time with his flower video!
+      responses
+        response#what-do-i-do-now.
+          What do I do now?
+    default
+      statement#default
+      responses
+        response#kevin-that-you.
+          Kevin! Is that you?
+        response#what-do-i-do-now.
+          That's it? There's nothing else to do?
   statements
     statement#default
       text.
-        Well, nothing more to do, but look out the window until new work arrives!
+        You made it to the end! I'm so proud of you!
+      

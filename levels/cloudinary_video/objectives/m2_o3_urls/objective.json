@@ -1,16 +1,16 @@
 {
   "title": "URLs",
-  "description": "Learn about URLs and parameters",
+  "description": "Learn about Cloudinary URLs and parameters!",
   "validation_fields": [
     {
       "name": "answer1",
       "type": "text",
-      "label": "Original Asset Url"
+      "label": "Original Asset URL:"
     },
     {
       "name": "answer2",
       "type": "text",
-      "label": "Scaled Down Url"
+      "label": "Scaled Down URL:"
     }
   ],
   "rewards": {

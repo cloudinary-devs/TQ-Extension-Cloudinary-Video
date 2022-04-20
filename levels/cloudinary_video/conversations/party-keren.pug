@@ -1,0 +1,21 @@
+conversation(display_name="Keren")
+    case lastResponse
+        when "ask-more"
+            statement#asked-more
+            responses
+        default
+            statement#default
+            responses
+                response#ask-more.
+                    How can I learn more about Cloudinary?
+
+    statements
+        statement#default
+            text.
+                Congrats on working your way through the corridor! I hope you enjoyed the Cloudinary Video Adventures.
+        statement#asked-more
+            text.
+                You can go to our website at <a href="https://cloudinary.com">https://cloudinary.com</a>. Check out our
+                <a href="https://training.cloudinary.com/">Cloudinary Academy</a> as well! Oh, did I mention that there could
+                be more TwilioQuest Cloudinary extensions in the future? Stay tuned! 
+                

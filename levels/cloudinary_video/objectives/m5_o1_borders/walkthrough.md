@@ -1,13 +1,56 @@
-# Assistance
+# Help Guide
 
-_r__ is the general transformation parameter that is used to round corners of the video (and images too, with [even more options](https://cloudinary.com/documentation/transformation_reference#r_round_corners)!). 
+### Objective-specific Resources
+* [Image Video and File Upload](https://cloudinary.com/documentation/image_video_and_file_upload?utm_source=twilio&utm_medium=event&utm_campaign=cloudinary-twilioquest-2021)
+* [Video Transformations](https://cloudinary.com/documentation/video_manipulation_and_delivery?utm_source=twilio&utm_medium=event&utm_campaign=cloudinary-twilioquest-2021)
+* [Transformation Reference: Round Corners](https://cloudinary.com/documentation/transformation_reference?utm_source=twilio&utm_medium=event&utm_campaign=cloudinary-twilioquest-2021#r_round_corners)
 
-Take a look at [Rounding Corners and creating circular videos](https://cloudinary.com/documentation/video_manipulation_and_delivery#rounding_corners_and_creating_circular_videos) to answer the questions.
+### Detailed Instructions
+_r__ is the general transformation parameter that is used to round corners of the video (and images too, with even more options). Take a look at this documentation on [rounded corners](https://cloudinary.com/documentation/transformation_reference?utm_source=twilio&utm_medium=event&utm_campaign=cloudinary-twilioquest-2021#r_round_corners) to answer the questions.
+
+## Radius 
+Use the `r_` parameter to set a bordered radius.
+
+For this objective, add the `r_` parameter to the c_scale parameter and separate them with commas. For example, to set a radius of size 50px, use `r_50`. If you want to use to the maximum radius, rather than put a number, use `r_max` instead.
+
+Example:
+~~~text
+.../video/upload/c_scale,w_600,r_50/dog.webm
+~~~
+<div>
+   <video muted controls width="600">
+      <source src="https://demo-res.cloudinary.com//video/upload/c_scale,w_600,r_50/dog.webm" type="video/mp4">
+   </video>
+</div>
 
 
-## Documentation
-Full Cloudinary documentation can be found here:
-[https://cloudinary.com/documentation](https://cloudinary.com/documentation)
+## Color
+We can change the color of the video background by providing a color in the same way that we do with web colors.
 
-Cloudinary also offers free self-paced training in the [Cloudinary Academy](https://training.cloudinary.com/).
+|Type|Example|
+|----|---|
+|Named|b_gray|
+|RGB 3 char | b_rgb:777|
+|RGB hex triplet| b_rgb:123ABC|
+|RGB quad|b_rgb:123ABC66 (66 opacity)|
 
+Example:
+~~~text
+.../video/upload/c_scale,w_600,r_250/dog.webm
+~~~
+<div>
+   <video muted controls width="600">
+      <source src="https://demo-res.cloudinary.com/video/upload/c_scale,w_600,r_250,b_rgb:123ABC/dog.webm" type="video/mp4">
+   </video>
+</div>
+
+
+### Additional Documentation
+
+[Cloudinary Documentation](https://cloudinary.com/documentation?utm_source=twilio&utm_medium=event&utm_campaign=cloudinary-twilioquest-2021)
+
+[Cloudinary Academy](https://training.cloudinary.com?utm_source=twilio&utm_medium=event&utm_campaign=cloudinary-twilioquest-2021)
+
+[Cloudinary CookBook Recipes - Transformation Examples](https://cloudinary.com/cookbook?utm_source=twilio&utm_medium=event&utm_campaign=cloudinary-twilioquest-2021)
+
+[Discord Community](https://discord.gg/CCsubwFbvd)

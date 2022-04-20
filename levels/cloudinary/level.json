@@ -1,0 +1,21 @@
+{
+  "title": "Cloudinary",
+  "description": "Learn the Cloudinary API in these collection of TwilioQuest extensions!",
+  "events": "cloudinary/events.js",
+  "mission_icon": "cloudinary_icon.png",
+  "is_mission": false,
+  "priority": 1,
+  "backgroundMusic": "tq_christmas",
+  "backgroundEffect": {
+    "key": "starfield",
+    "options": {
+      "baseSpeed": 2,
+      "starCount": 100,
+      "direction": "rightToLeft"
+    }
+  },
+  "flavorTextOverrides": {
+  },
+  "objectives": [
+  ]
+}

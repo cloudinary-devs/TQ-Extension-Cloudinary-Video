@@ -1,0 +1,23 @@
+conversation(display_name="Amit")
+    case lastResponse
+        when "ask-more"
+            statement#asked-more
+            responses
+        default
+            statement#default
+            responses
+                response#ask-more.
+                    Is the dog a cat?
+                response#ask-more.
+                    Is the cat a dog?
+
+    statements
+        statement#default
+            text.
+                Hiiiii! I see you rounded the corner to our party room. That means you must 
+                have finished learning the basics of our great Cloudinary API. Nice work!
+        statement#asked-more
+            text.
+                The answer is still yes! Just look at the videos yourself. Oh, by the way, you 
+                can view your past videos by viewing the Cloudinary Vault on the top computer 
+                on your right.

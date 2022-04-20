@@ -1,0 +1,9 @@
+{
+  "title": "Video Fun Facts",
+  "description": "In the future, answer these  fun fact questions to gain more experience points!",
+  "validation_fields": [
+  ],
+  "rewards": {
+    "xp": 0
+  }
+}
