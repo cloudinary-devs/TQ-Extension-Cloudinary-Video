@@ -1,11 +1,11 @@
 {
   "title": "Managing Assets",
-  "description": "Learn how to manage the assets in your account",
+  "description": "Learn how to manage the assets in your Cloudinary account!",
   "validation_fields": [
     {
       "name": "answer1",
       "type": "text",
-      "label": "What is the new url of our Flower asset?"
+      "label": "What is the new URL of our Flower video asset?"
     }
 
   ],

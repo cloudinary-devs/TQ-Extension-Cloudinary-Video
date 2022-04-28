@@ -1,11 +1,4 @@
 { "compressionlevel":-1,
- "editorsettings":
-    {
-     "export":
-        {
-         "target":"."
-        }
-    },
  "height":24,
  "infinite":false,
  "layers":[
@@ -107,7 +100,7 @@
                  "visible":true,
                  "width":24,
                  "x":408,
-                 "y":540
+                 "y":549.5
                 }, 
                 {
                  "height":0,
@@ -135,14 +128,14 @@
                         {
                          "name":"interactable",
                          "type":"bool",
-                         "value":false
+                         "value":true
                         }],
                  "rotation":0,
                  "type":"",
                  "visible":true,
                  "width":32,
-                 "x":297,
-                 "y":457
+                 "x":335,
+                 "y":478.5
                 }, 
                 {
                  "gid":4133,
@@ -188,6 +181,42 @@
                  "width":13,
                  "x":365,
                  "y":382
+                }, 
+                {
+                 "height":0,
+                 "id":139,
+                 "name":"arrow",
+                 "point":true,
+                 "properties":[
+                        {
+                         "name":"key",
+                         "type":"string",
+                         "value":"arrow_m4_o1_adding_text"
+                        }],
+                 "rotation":0,
+                 "type":"arrow",
+                 "visible":true,
+                 "width":0,
+                 "x":277,
+                 "y":386
+                }, 
+                {
+                 "height":0,
+                 "id":140,
+                 "name":"arrow",
+                 "point":true,
+                 "properties":[
+                        {
+                         "name":"key",
+                         "type":"string",
+                         "value":"arrow_m4_o2_adding_image"
+                        }],
+                 "rotation":0,
+                 "type":"arrow",
+                 "visible":true,
+                 "width":0,
+                 "x":371.5,
+                 "y":370.5
                 }],
          "opacity":1,
          "type":"objectgroup",
@@ -235,10 +264,10 @@
          "y":0
         }],
  "nextlayerid":45,
- "nextobjectid":139,
+ "nextobjectid":141,
  "orientation":"orthogonal",
  "renderorder":"right-down",
- "tiledversion":"1.4.3",
+ "tiledversion":"1.7.1",
  "tileheight":24,
  "tilesets":[
         {
@@ -281,6 +310,6 @@
         }],
  "tilewidth":24,
  "type":"map",
- "version":1.4,
+ "version":"1.6",
  "width":24
 }

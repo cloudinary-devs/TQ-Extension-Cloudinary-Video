@@ -1,0 +1,1 @@
+In the future, answer the questions featured in these terminals for extra knowledge on digital media and more experience points!

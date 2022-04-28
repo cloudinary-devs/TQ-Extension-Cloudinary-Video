@@ -8,7 +8,9 @@ module.exports = async function (helper) {
             mustAppear: ['https:','res.cloudinary.com','video/upload','Succulent_-_14467','.mp4']
         }
     }, function pass() {
-        helper.success(grader.getSuccessMessage());
+        helper.success(grader.getSuccessMessage() + `
+            <br>You did it! You uploaded a video to the Media Library on your Cloudinary account!
+        `);
         browser.display(`
             <div>
                 <h1>Success!</h1>

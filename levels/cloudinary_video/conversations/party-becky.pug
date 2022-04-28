@@ -1,0 +1,19 @@
+conversation(display_name="Keren")
+    case lastResponse
+        when "ask-more"
+            statement#asked-more
+            responses
+        default
+            statement#default
+            responses
+                response#ask-more.
+                    Where can I listen to your podcast?
+
+    statements
+        statement#default
+            text.
+                Nice job, operator! Thanks to your hard work, I can focus on the MXPodcast now.
+        statement#asked-more
+            text.
+                Glad you asked! You can go to <a href="https://cloudinary.com/podcasts" target="_blank">this website</a> to listen along!
+                

@@ -1,6 +1,6 @@
 {
   "title": "Picture in Picture",
-  "description": "Add Video Layers to Videos",
+  "description": "Add video layers to videos using Cloudinary!",
   "validation_fields": [
     {
       "name": "answer1",

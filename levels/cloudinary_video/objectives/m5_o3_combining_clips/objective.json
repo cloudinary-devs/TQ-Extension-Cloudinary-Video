@@ -1,6 +1,6 @@
 {
   "title": "Combining Video Clips",
-  "description": "Make a video composed of multiple video clips",
+  "description": "Make a video composed of multiple video clips in Cloudinary!",
   "validation_fields": [
     {
       "name": "answer1",

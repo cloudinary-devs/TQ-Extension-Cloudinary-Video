@@ -1,0 +1,19 @@
+{
+  "title": "Audio Extraction",
+  "description": "Replace the audio of the cat video with the dog video using Cloudinary!",
+  "validation_fields": [
+    {
+      "name": "answer1",
+      "type": "text",
+      "label": "Enter the URL of the fighting kitten video"
+    },
+    {
+      "name": "answer2",
+      "type": "text",
+      "label": "Enter the URL of the fighting kitten video overlayed with your dog sound effect."
+    }
+  ],
+  "rewards": {
+    "xp": 500
+  }
+}

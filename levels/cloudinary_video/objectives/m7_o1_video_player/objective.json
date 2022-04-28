@@ -1,0 +1,20 @@
+{
+  "title": "Video Player Widget",
+  "description": "Add a Cloudinary video player to a webpage using the Cloudinary Video Player Studio!",
+  "show_ide": true,
+  "validation_fields": [
+    {
+      "name": "label1",
+      "type": "prompt",
+      "label": "Press the _▶_ button to start / restart the web server with your code. Then, enter the server URL below and press __HACK__!"
+    },
+    {
+      "name": "serverUrl",
+      "type": "text",
+      "label": "Server URL"
+    }
+  ],
+  "rewards": {
+    "xp": 500
+  }
+}

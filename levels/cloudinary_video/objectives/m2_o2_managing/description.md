@@ -8,12 +8,17 @@
 </ul>
 </div>
 
-Great job on successfully uploading your first video! We have another task that you need to learn how to rename your video and then move your video to another location. Good luck!
+Great job on successfully uploading your first video! We have another task for you at the **Business Development Department**.
+
+Our partner that we're working with needs us to rename the video, and then move it to another location in the Media Library. Can you do that for us?
 
 ********************
 
-You will need to rename you Succulent video to **Flower**, create a folder named **TwilioQuest**, and move the file into the ****TwilioQuest** folder.
+## Instructions
+1. Rename your **Succulent** video to **Flower**.
+2. Create a new folder and name it **TwilioQuest**.
+3. Move the renamed **Flower** video file into the **TwilioQuest** folder.
 
-**Copy the URL** of your video in the new location with the new name, and post the URL to the right.
+Copy the URL of the video you just renamed and moved, and paste it in the input box on the right. Then, click _HACK_ to proceed.
 
-click _HACK_ to proceed.
+> Need help with these tasks? Press the _HELP_ button on the top right of this window for more details!

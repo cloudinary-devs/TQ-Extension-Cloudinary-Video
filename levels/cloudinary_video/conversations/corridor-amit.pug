@@ -1,8 +1,35 @@
 conversation(display_name="Amit")
-  statement#default
+  case lastResponse 
+    when "yes-i-will-help"
+      statement#great
+      responses
+    when "no-i-wont-help"
+      statement#please
+      responses
+        response#yes-i-will-help.
+          Alright, I'll do it!
+        response#yes-i-will-help.
+          Fine, let's get those borders and rounded corners going!
+    default
+      statement#default
+      responses
+        response#yes-i-will-help.
+          Yes! Let's add some borders and rounded corners!
+        response#no-i-wont-help.
+          No, I'm not feeling it.
+
   statements
     statement#default
       text.
         Hellooooooo!!!! I'm Amit from the Business Lines team!
-        I have to prepare for a presentation and need a video to have borders and rounded corners.
-        I'd really appreciate your help. This really means a lot to us!
+        I have to prepare for a presentation and need a video
+        to have borders and rounded corners.
+        Can you help me?
+    statement#please 
+      text.
+        Oh, but the others are busy at the moment and need
+        those rounded corners ASAP. I'd really appreciate your help. 
+        This really means a lot to us! Please help, just this once?
+    statement#great
+      text.
+        Great! Come in to our office on my right!

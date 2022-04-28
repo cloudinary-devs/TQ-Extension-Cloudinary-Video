@@ -1,6 +1,6 @@
 {
   "title": "Video Dimensions",
-  "description": "Learn how to modify the dimensions of videos",
+  "description": "Learn how to modify the dimensions of videos on Cloudinary!",
   "validation_fields": [
     {
       "name": "answer1",

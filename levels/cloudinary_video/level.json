@@ -1,11 +1,11 @@
 {
-  "title": "Cloudinary Video Adventures",
-  "description": "An adventure into cloudinary video capabilities",
+  "title": "Cloudinary Video Ship",
+  "description": "Come aboard the Cloudinary Ship as you explore the Cloudinary Video API!",
   "events": "cloudinary_video/events.js",
   "mission_icon": "cloudinary_icon.png",
   "is_mission": true,
   "priority": 1,
-  "backgroundMusic": "hackertheme_104771b",
+  "backgroundMusic": "takeabow_1615732b",
   "backgroundEffect": {
     "key": "starfield",
     "options": {
@@ -14,6 +14,11 @@
       "direction": "rightToLeft"
     }
   },
+  "navMap": {
+    "x": 30,
+    "y": 75,
+    "sprite": "nav_map/CloudinaryIcon.png"
+  },
   "flavorTextOverrides": {
   },
   "objectives": [
@@ -21,6 +26,8 @@
     "m2_o1_uploading", "m2_o2_managing", "m2_o3_urls",
     "m3_o1_quality_and_format","m3_o2_dimensions",
     "m4_o1_adding_text","m4_o2_adding_image",
-    "m5_o1_borders","m5_o2_video_layer","m5_o3_combining_clips","m5_o4_transitions"
+    "m5_o1_borders","m5_o2_video_layer","m5_o3_combining_clips",
+    "m6_o1_manipulating_audio", "m6_o2_layering_audio",
+    "m7_o1_video_player", "m7_o3_video_summarization"
   ]
 }

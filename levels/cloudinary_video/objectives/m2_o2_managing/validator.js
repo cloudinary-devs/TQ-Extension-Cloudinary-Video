@@ -4,6 +4,10 @@ module.exports = async function (helper) {
 
     const {answer1} = helper.validationFields;
 
+    if (!answer1) {
+        return helper.fail(`Please enter an answer first before pressing HACK!`);
+    }
+
     /**
      * Some special guidance outside of what the grader will do
      */
@@ -27,7 +31,9 @@ module.exports = async function (helper) {
         }
     }, function pass() {
         //nothing new to show in browser, so just the success message
-        helper.success(grader.getSuccessMessage());
+        helper.success(grader.getSuccessMessage() + `
+        You did it! You renamed your video to "Flower" and moved it to the TwilioQuest folder.
+        `);
 
     });
 
